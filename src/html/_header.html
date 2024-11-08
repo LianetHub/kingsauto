@@ -1,38 +1,96 @@
-<header class="header">
-    <div class="header__container container-lg">
-        <div class="header__menu ">
-            <nav class="header__menu-left">
-                <a href="" class="header__catalog icon-catalog">Каталог</a>
-                <ul class="menu__list">
-                    <li class="menu__item">
-                        <a href="" class="menu__link icon-chevron">Услуги</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="" class="menu__link icon-chevron">О компании</a>
-                    </li>
-                </ul>
-            </nav>
-            <nav class="header__menu-right">
-                <ul class="menu__list">
-                    <li class="menu__item">
-                        <a href="" class="menu__link">Журнал</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="" class="menu__link">Отзывы</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="" class="menu__link">Контакты</a>
-                    </li>
-                </ul>
-                <a href="" class="header__btn btn btn-white-outline icon-arrow">Вход</a>
-            </nav>
+<header class="header open-menu">
+    <div class="header__wrapper">
+        <div class="header__container container-lg">
+            <div class="header__menu">
+                <nav class="header__menu-left">
+                    <a href="" class="header__catalog icon-catalog">Каталог</a>
+                    <ul class="menu__list">
+                        <li class="menu__item menu-parent">
+                            <a href="" class="menu__link">Услуги</a>
+                            <button aria-label="Открыть подменю" class="menu__arrow icon-chevron"></button>
+                            <div class="submenu">
+                                <ul class="submenu__list">
+                                    <li class="submenu__item">
+                                        <a href="" class="submenu__link">
+                                            Подбор авто
+                                        </a>
+                                    </li>
+                                    <li class="submenu__item">
+                                        <a href="" class="submenu__link">
+                                            Калькулятор авто
+                                            под полную пошлину
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu__item menu-parent">
+                            <a href="" class="menu__link">О компании</a>
+                            <button aria-label="Открыть подменю" class="menu__arrow icon-chevron"></button>
+                            <div class="submenu">
+                                <ul class="submenu__list">
+                                    <li class="submenu__item">
+                                        <a href="" class="submenu__link">
+                                            О нас
+                                        </a>
+                                    </li>
+                                    <li class="submenu__item">
+                                        <a href="" class="submenu__link">
+                                            Вопрос–ответ
+                                        </a>
+                                    </li>
+                                    <li class="submenu__item">
+                                        <a href="" class="submenu__link">
+                                            Способы оплаты
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="header__menu-right">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="" class="menu__link">Журнал</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">Отзывы</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="header__contacts">
+                        <div class="header__contacts-block">
+                            <div class="header__contacts-caption">По любым вопросам:</div>
+                            <div class="header__contacts-body">
+                                <a href="tel:+74959999999" class="header__contacts-link">+7 495 999 99 99</a>
+                                <a href="mailto:info@kings-auto.ru" class="header__contacts-link">info@kings-auto.ru</a>
+                                <div class="header__socials">
+                                    <a href="" class="header__social icon-telegram"></a>
+                                    <a href="" class="header__social icon-wa"></a>
+                                    <a href="" class="header__social icon-vk"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header__contacts-block">
+                            <div class="header__contacts-caption">Личный кабинет:</div>
+                            <a href="" class="header__btn btn icon-arrow">Вход</a>
+                        </div>
+                    </div>
+                    <div class="header__copy">© 2024 Kings Auto </div>
+                </nav>
+            </div>
+            <button type="button" class="menu__btn icon-catalog">
+                <span class="menu__btn-default">Меню</span>
+                <span class="menu__btn-active">Закрыть</span>
+            </button>
+            <a href="/" class="header__logo">
+                <img src="@img/logo.svg" class="header__logo-static" alt="logo">
+                <img src="@img/logo-black.svg" class="header__logo-scroll" alt="logo">
+                <span class="header__logo-text">Покупка авто из-за рубежа</span>
+            </a>
         </div>
-        <button type="button" class="menu__btn icon-catalog">
-            Меню
-        </button>
-        <a href="/" class="header__logo">
-            <img src="@img/logo.svg" alt="logo">
-            <span class="header__logo-text">Покупка авто из-за рубежа</span>
-        </a>
     </div>
 </header>

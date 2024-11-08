@@ -38,50 +38,99 @@
 	<meta property="twitter:image:src" content="/OG.png">
 	<!-- Twitter -->
 	<!-- plugnis -->
-	<link rel="stylesheet" href="css/libs/swiper-bundle.min.css?_v=20241107012816">
-	<link rel="stylesheet" href="css/libs/fancybox.css?_v=20241107012816">
-	<link rel="stylesheet" href="css/libs/nouislider.min.css?_v=20241107012816">
+	<link rel="stylesheet" href="css/libs/swiper-bundle.min.css?_v=20241108130125">
+	<link rel="stylesheet" href="css/libs/fancybox.css?_v=20241108130125">
+	<link rel="stylesheet" href="css/libs/nouislider.min.css?_v=20241108130125">
 	<!-- plugnis -->
-	<link rel="stylesheet" href="css/reset.min.css?_v=20241107012816">
-	<link rel="stylesheet" href="css/style.min.css?_v=20241107012816">
+	<link rel="stylesheet" href="css/reset.min.css?_v=20241108130125">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241108130125">
 </head>
 
 <body>
 	<section class="wrapper">
-		<header class="header">
-			<div class="header__container container-lg">
-				<div class="header__menu ">
-					<nav class="header__menu-left">
-						<a href="" class="header__catalog icon-catalog">Каталог</a>
-						<ul class="menu__list">
-							<li class="menu__item">
-								<a href="" class="menu__link icon-chevron">Услуги</a>
-							</li>
-							<li class="menu__item">
-								<a href="" class="menu__link icon-chevron">О компании</a>
-							</li>
-						</ul>
-					</nav>
-					<nav class="header__menu-right">
-						<ul class="menu__list">
-							<li class="menu__item">
-								<a href="" class="menu__link">Журнал</a>
-							</li>
-							<li class="menu__item">
-								<a href="" class="menu__link">Отзывы</a>
-							</li>
-							<li class="menu__item">
-								<a href="" class="menu__link">Контакты</a>
-							</li>
-						</ul>
-						<a href="" class="header__btn btn btn-white-outline icon-arrow">Вход</a>
-					</nav>
+		<header class="header open-menu">
+			<div class="header__wrapper">
+				<div class="header__container container-lg">
+					<div class="header__menu">
+						<nav class="header__menu-left">
+							<a href="" class="header__catalog icon-catalog">Каталог</a>
+							<ul class="menu__list">
+								<li class="menu__item menu-parent">
+									<a href="" class="menu__link">Услуги</a>
+									<button aria-label="Открыть подменю" class="menu__arrow icon-chevron"></button>
+									<div class="submenu">
+										<ul class="submenu__list">
+											<li class="submenu__item">
+												<a href="" class="submenu__link"> Подбор авто </a>
+											</li>
+											<li class="submenu__item">
+												<a href="" class="submenu__link"> Калькулятор авто под полную пошлину </a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="menu__item menu-parent">
+									<a href="" class="menu__link">О компании</a>
+									<button aria-label="Открыть подменю" class="menu__arrow icon-chevron"></button>
+									<div class="submenu">
+										<ul class="submenu__list">
+											<li class="submenu__item">
+												<a href="" class="submenu__link"> О нас </a>
+											</li>
+											<li class="submenu__item">
+												<a href="" class="submenu__link"> Вопрос–ответ </a>
+											</li>
+											<li class="submenu__item">
+												<a href="" class="submenu__link"> Способы оплаты </a>
+											</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+						<nav class="header__menu-right">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="" class="menu__link">Журнал</a>
+								</li>
+								<li class="menu__item">
+									<a href="" class="menu__link">Отзывы</a>
+								</li>
+								<li class="menu__item">
+									<a href="" class="menu__link">Контакты</a>
+								</li>
+							</ul>
+							<div class="header__contacts">
+								<div class="header__contacts-block">
+									<div class="header__contacts-caption">По любым вопросам:</div>
+									<div class="header__contacts-body">
+										<a href="tel:+74959999999" class="header__contacts-link">+7 495 999 99 99</a>
+										<a href="mailto:info@kings-auto.ru" class="header__contacts-link">info@kings-auto.ru</a>
+										<div class="header__socials">
+											<a href="" class="header__social icon-telegram"></a>
+											<a href="" class="header__social icon-wa"></a>
+											<a href="" class="header__social icon-vk"></a>
+										</div>
+									</div>
+								</div>
+								<div class="header__contacts-block">
+									<div class="header__contacts-caption">Личный кабинет:</div>
+									<a href="" class="header__btn btn icon-arrow">Вход</a>
+								</div>
+							</div>
+							<div class="header__copy">© 2024 Kings Auto&nbsp;</div>
+						</nav>
+					</div>
+					<button type="button" class="menu__btn icon-catalog">
+						<span class="menu__btn-default">Меню</span>
+						<span class="menu__btn-active">Закрыть</span>
+					</button>
+					<a href="/" class="header__logo">
+						<img src="img/logo.svg" class="header__logo-static" alt="logo">
+						<img src="img/logo-black.svg" class="header__logo-scroll" alt="logo">
+						<span class="header__logo-text">Покупка авто из-за рубежа</span>
+					</a>
 				</div>
-				<button type="button" class="menu__btn icon-catalog"> Меню </button>
-				<a href="/" class="header__logo">
-					<img src="img/logo.svg" alt="logo">
-					<span class="header__logo-text">Покупка авто из-за рубежа</span>
-				</a>
 			</div>
 		</header>
 		<main class="page">
@@ -112,591 +161,3131 @@
 			<section class="brands">
 				<div class="brands__container">
 					<h2 class="brands__title title"> Марки автомобилей </h2>
-					<div class="brands__header">
-						<div class="brands__filters filters">
-							<a href="" class="filters__item active">Все</a>
-							<a href="" class="filters__item">Новые</a>
-							<a href="" class="filters__item">С пробегом</a>
+					<div class="tabs-wrapper">
+						<div class="brands__header">
+							<div class="brands__tabs tabs">
+								<button type="button" class="tabs__item active">Все</button>
+								<button type="button" class="tabs__item">Новые</button>
+								<button type="button" class="tabs__item">С пробегом</button>
+							</div>
+							<a href="" class="brands__more more-link">[ перейти в каталог ]</a>
 						</div>
-						<a href="" class="brands__more more-link">[ перейти в каталог ]</a>
+						<div class="brands__tabs-contents">
+							<div class="brands__tabs-content tab-content active">
+								<ul class="brands__list">
+									<li class="brands__item">
+										<a href="" class="brands__item-link">
+											<span class="brands__item-name">Audi</span>
+											<span class="brands__item-quantity">214</span>
+										</a>
+									</li>
+									<li class="brands__item">
+										<a href="" class="brands__item-link">
+											<span class="brands__item-name">Ford</span>
+											<span class="brands__item-quantity">341</span>
+										</a>
+									</li>
+									<li class="brands__item">
+										<a href="" class="brands__item-link">
+											<span class="brands__item-name">Mazda</span>
+											<span class="brands__item-quantity">366</span>
+										</a>
+									</li>
+									<li class="brands__item">
+										<a href="" class="brands__item-link">
+											<span class="brands__item-name">Nissan</span>
+											<span class="brands__item-quantity">992</span>
+										</a>
+									</li>
+									<li class="brands__item">
+										<a href="" class="brands__item-link">
+											<span class="brands__item-name">Skoda</span>
+											<span class="brands__item-quantity">792</span>
+										</a>
+									</li>
+									<li class="brands__item">
+										<a href="" class="brands__item-link">
+											<span class="brands__item-name">Tesla</span>
+											<span class="brands__item-quantity">9</span>
+										</a>
+									</li>
+									<li class="brands__item">
+										<a href="" class="brands__item-link">
+											<span class="brands__item-name">BMW</span>
+											<span class="brands__item-quantity">405</span>
+										</a>
+									</li>
+									<li class="brands__item">
+										<a href="" class="brands__item-link">
+											<span class="brands__item-name">Honda</span>
+											<span class="brands__item-quantity">200</span>
+										</a>
+									</li>
+									<li class="brands__item">
+										<a href="" class="brands__item-link">
+											<span class="brands__item-name">Mercedes-Benz</span>
+											<span class="brands__item-quantity">896</span>
+										</a>
+									</li>
+									<li class="brands__item">
+										<a href="" class="brands__item-link">
+											<span class="brands__item-name">Opel</span>
+											<span class="brands__item-quantity">336</span>
+										</a>
+									</li>
+									<li class="brands__item">
+										<a href="" class="brands__item-link">
+											<span class="brands__item-name">Subaru</span>
+											<span class="brands__item-quantity">98</span>
+										</a>
+									</li>
+									<li class="brands__item">
+										<a href="" class="brands__item-link">
+											<span class="brands__item-name">Toyota</span>
+											<span class="brands__item-quantity">1063</span>
+										</a>
+									</li>
+									<li class="brands__item">
+										<a href="" class="brands__item-link">
+											<span class="brands__item-name">Daihatsu</span>
+											<span class="brands__item-quantity">9</span>
+										</a>
+									</li>
+									<li class="brands__item">
+										<a href="" class="brands__item-link">
+											<span class="brands__item-name">Lexus</span>
+											<span class="brands__item-quantity">268</span>
+										</a>
+									</li>
+									<li class="brands__item">
+										<a href="" class="brands__item-link">
+											<span class="brands__item-name">Mitsubishi</span>
+											<span class="brands__item-quantity">896</span>
+										</a>
+									</li>
+									<li class="brands__item">
+										<a href="" class="brands__item-link">
+											<span class="brands__item-name">Renault</span>
+											<span class="brands__item-quantity">703</span>
+										</a>
+									</li>
+									<li class="brands__item">
+										<a href="" class="brands__item-link">
+											<span class="brands__item-name">Suzuki</span>
+											<span class="brands__item-quantity">147</span>
+										</a>
+									</li>
+									<li class="brands__item">
+										<a href="" class="brands__all icon-chevron"> Все марки </a>
+									</li>
+								</ul>
+								<ul class="brands__options">
+									<li class="brands__option">
+										<a href="" class="brands__option-card">
+											<span class="brands__option-image">
+												<picture>
+													<source srcset="img/brands/SUVs.webp" type="image/webp"><img src="img/brands/SUVs.png" alt="Фото">
+												</picture>
+											</span>
+											<span class="brands__option-text"> Внедорожники </span>
+										</a>
+									</li>
+									<li class="brands__option">
+										<a href="" class="brands__option-card">
+											<span class="brands__option-image">
+												<picture>
+													<source srcset="img/brands/Middle.webp" type="image/webp"><img src="img/brands/Middle.png" alt="Фото">
+												</picture>
+											</span>
+											<span class="brands__option-text"> Средний класс </span>
+										</a>
+									</li>
+									<li class="brands__option">
+										<a href="" class="brands__option-card">
+											<span class="brands__option-image">
+												<picture>
+													<source srcset="img/brands/Budget.webp" type="image/webp"><img src="img/brands/Budget.png" alt="Фото">
+												</picture>
+											</span>
+											<span class="brands__option-text"> Бюджетные </span>
+										</a>
+									</li>
+									<li class="brands__option">
+										<a href="" class="brands__option-card">
+											<span class="brands__option-image">
+												<picture>
+													<source srcset="img/brands/Sports.webp" type="image/webp"><img src="img/brands/Sports.png" alt="Фото">
+												</picture>
+											</span>
+											<span class="brands__option-text"> Спортивные </span>
+										</a>
+									</li>
+									<li class="brands__option">
+										<a href="" class="brands__option-card">
+											<span class="brands__option-image">
+												<picture>
+													<source srcset="img/brands/Pickups.webp" type="image/webp"><img src="img/brands/Pickups.png" alt="Фото">
+												</picture>
+											</span>
+											<span class="brands__option-text"> Пикапы </span>
+										</a>
+									</li>
+									<li class="brands__option">
+										<a href="" class="brands__option-card">
+											<span class="brands__option-image">
+												<picture>
+													<source srcset="img/brands/Exclusives.webp" type="image/webp"><img src="img/brands/Exclusives.png" alt="Фото">
+												</picture>
+											</span>
+											<span class="brands__option-text"> Эксклюзивы </span>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="brands__tabs-content tab-content">
+								<ul class="brands__list">
+									<li class="brands__item">
+										<a href="" class="brands__item-link">
+											<span class="brands__item-name">Audi</span>
+											<span class="brands__item-quantity">214</span>
+										</a>
+									</li>
+									<li class="brands__item">
+										<a href="" class="brands__item-link">
+											<span class="brands__item-name">Ford</span>
+											<span class="brands__item-quantity">341</span>
+										</a>
+									</li>
+									<li class="brands__item">
+										<a href="" class="brands__item-link">
+											<span class="brands__item-name">Mazda</span>
+											<span class="brands__item-quantity">366</span>
+										</a>
+									</li>
+									<li class="brands__item">
+										<a href="" class="brands__item-link">
+											<span class="brands__item-name">Nissan</span>
+											<span class="brands__item-quantity">992</span>
+										</a>
+									</li>
+									<li class="brands__item">
+										<a href="" class="brands__item-link">
+											<span class="brands__item-name">Skoda</span>
+											<span class="brands__item-quantity">792</span>
+										</a>
+									</li>
+									<li class="brands__item">
+										<a href="" class="brands__item-link">
+											<span class="brands__item-name">Tesla</span>
+											<span class="brands__item-quantity">9</span>
+										</a>
+									</li>
+									<li class="brands__item">
+										<a href="" class="brands__item-link">
+											<span class="brands__item-name">BMW</span>
+											<span class="brands__item-quantity">405</span>
+										</a>
+									</li>
+									<li class="brands__item">
+										<a href="" class="brands__all icon-chevron"> Все марки </a>
+									</li>
+								</ul>
+								<ul class="brands__options">
+									<li class="brands__option">
+										<a href="" class="brands__option-card">
+											<span class="brands__option-image">
+												<picture>
+													<source srcset="img/brands/SUVs.webp" type="image/webp"><img src="img/brands/SUVs.png" alt="Фото">
+												</picture>
+											</span>
+											<span class="brands__option-text"> Внедорожники </span>
+										</a>
+									</li>
+									<li class="brands__option">
+										<a href="" class="brands__option-card">
+											<span class="brands__option-image">
+												<picture>
+													<source srcset="img/brands/Exclusives.webp" type="image/webp"><img src="img/brands/Exclusives.png" alt="Фото">
+												</picture>
+											</span>
+											<span class="brands__option-text"> Эксклюзивы </span>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="brands__tabs-content tab-content">
+								<ul class="brands__list">
+									<li class="brands__item">
+										<a href="" class="brands__item-link">
+											<span class="brands__item-name">Audi</span>
+											<span class="brands__item-quantity">214</span>
+										</a>
+									</li>
+									<li class="brands__item">
+										<a href="" class="brands__item-link">
+											<span class="brands__item-name">Ford</span>
+											<span class="brands__item-quantity">341</span>
+										</a>
+									</li>
+									<li class="brands__item">
+										<a href="" class="brands__item-link">
+											<span class="brands__item-name">Mazda</span>
+											<span class="brands__item-quantity">366</span>
+										</a>
+									</li>
+									<li class="brands__item">
+										<a href="" class="brands__item-link">
+											<span class="brands__item-name">Nissan</span>
+											<span class="brands__item-quantity">992</span>
+										</a>
+									</li>
+									<li class="brands__item">
+										<a href="" class="brands__item-link">
+											<span class="brands__item-name">Renault</span>
+											<span class="brands__item-quantity">703</span>
+										</a>
+									</li>
+									<li class="brands__item">
+										<a href="" class="brands__item-link">
+											<span class="brands__item-name">Suzuki</span>
+											<span class="brands__item-quantity">147</span>
+										</a>
+									</li>
+									<li class="brands__item">
+										<a href="" class="brands__all icon-chevron"> Все марки </a>
+									</li>
+								</ul>
+								<ul class="brands__options">
+									<li class="brands__option">
+										<a href="" class="brands__option-card">
+											<span class="brands__option-image">
+												<picture>
+													<source srcset="img/brands/SUVs.webp" type="image/webp"><img src="img/brands/SUVs.png" alt="Фото">
+												</picture>
+											</span>
+											<span class="brands__option-text"> Внедорожники </span>
+										</a>
+									</li>
+									<li class="brands__option">
+										<a href="" class="brands__option-card">
+											<span class="brands__option-image">
+												<picture>
+													<source srcset="img/brands/Middle.webp" type="image/webp"><img src="img/brands/Middle.png" alt="Фото">
+												</picture>
+											</span>
+											<span class="brands__option-text"> Средний класс </span>
+										</a>
+									</li>
+									<li class="brands__option">
+										<a href="" class="brands__option-card">
+											<span class="brands__option-image">
+												<picture>
+													<source srcset="img/brands/Budget.webp" type="image/webp"><img src="img/brands/Budget.png" alt="Фото">
+												</picture>
+											</span>
+											<span class="brands__option-text"> Бюджетные </span>
+										</a>
+									</li>
+									<li class="brands__option">
+										<a href="" class="brands__option-card">
+											<span class="brands__option-image">
+												<picture>
+													<source srcset="img/brands/Sports.webp" type="image/webp"><img src="img/brands/Sports.png" alt="Фото">
+												</picture>
+											</span>
+											<span class="brands__option-text"> Спортивные </span>
+										</a>
+									</li>
+									<li class="brands__option">
+										<a href="" class="brands__option-card">
+											<span class="brands__option-image">
+												<picture>
+													<source srcset="img/brands/Pickups.webp" type="image/webp"><img src="img/brands/Pickups.png" alt="Фото">
+												</picture>
+											</span>
+											<span class="brands__option-text"> Пикапы </span>
+										</a>
+									</li>
+									<li class="brands__option">
+										<a href="" class="brands__option-card">
+											<span class="brands__option-image">
+												<picture>
+													<source srcset="img/brands/Exclusives.webp" type="image/webp"><img src="img/brands/Exclusives.png" alt="Фото">
+												</picture>
+											</span>
+											<span class="brands__option-text"> Эксклюзивы </span>
+										</a>
+									</li>
+									<li class="brands__option">
+										<a href="" class="brands__option-card">
+											<span class="brands__option-image">
+												<picture>
+													<source srcset="img/brands/SUVs.webp" type="image/webp"><img src="img/brands/SUVs.png" alt="Фото">
+												</picture>
+											</span>
+											<span class="brands__option-text"> Внедорожники </span>
+										</a>
+									</li>
+									<li class="brands__option">
+										<a href="" class="brands__option-card">
+											<span class="brands__option-image">
+												<picture>
+													<source srcset="img/brands/Middle.webp" type="image/webp"><img src="img/brands/Middle.png" alt="Фото">
+												</picture>
+											</span>
+											<span class="brands__option-text"> Средний класс </span>
+										</a>
+									</li>
+									<li class="brands__option">
+										<a href="" class="brands__option-card">
+											<span class="brands__option-image">
+												<picture>
+													<source srcset="img/brands/Budget.webp" type="image/webp"><img src="img/brands/Budget.png" alt="Фото">
+												</picture>
+											</span>
+											<span class="brands__option-text"> Бюджетные </span>
+										</a>
+									</li>
+									<li class="brands__option">
+										<a href="" class="brands__option-card">
+											<span class="brands__option-image">
+												<picture>
+													<source srcset="img/brands/Sports.webp" type="image/webp"><img src="img/brands/Sports.png" alt="Фото">
+												</picture>
+											</span>
+											<span class="brands__option-text"> Спортивные </span>
+										</a>
+									</li>
+									<li class="brands__option">
+										<a href="" class="brands__option-card">
+											<span class="brands__option-image">
+												<picture>
+													<source srcset="img/brands/Pickups.webp" type="image/webp"><img src="img/brands/Pickups.png" alt="Фото">
+												</picture>
+											</span>
+											<span class="brands__option-text"> Пикапы </span>
+										</a>
+									</li>
+									<li class="brands__option">
+										<a href="" class="brands__option-card">
+											<span class="brands__option-image">
+												<picture>
+													<source srcset="img/brands/Exclusives.webp" type="image/webp"><img src="img/brands/Exclusives.png" alt="Фото">
+												</picture>
+											</span>
+											<span class="brands__option-text"> Эксклюзивы </span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
 					</div>
-					<ul class="brands__list">
-						<li class="brands__item">
-							<a href="" class="brands__item-link">
-								<span class="brands__item-name">Audi</span>
-								<span class="brands__item-quantity">214</span>
-							</a>
-						</li>
-						<li class="brands__item">
-							<a href="" class="brands__item-link">
-								<span class="brands__item-name">Ford</span>
-								<span class="brands__item-quantity">341</span>
-							</a>
-						</li>
-						<li class="brands__item">
-							<a href="" class="brands__item-link">
-								<span class="brands__item-name">Mazda</span>
-								<span class="brands__item-quantity">366</span>
-							</a>
-						</li>
-						<li class="brands__item">
-							<a href="" class="brands__item-link">
-								<span class="brands__item-name">Nissan</span>
-								<span class="brands__item-quantity">992</span>
-							</a>
-						</li>
-						<li class="brands__item">
-							<a href="" class="brands__item-link">
-								<span class="brands__item-name">Skoda</span>
-								<span class="brands__item-quantity">792</span>
-							</a>
-						</li>
-						<li class="brands__item">
-							<a href="" class="brands__item-link">
-								<span class="brands__item-name">Tesla</span>
-								<span class="brands__item-quantity">9</span>
-							</a>
-						</li>
-						<li class="brands__item">
-							<a href="" class="brands__item-link">
-								<span class="brands__item-name">BMW</span>
-								<span class="brands__item-quantity">405</span>
-							</a>
-						</li>
-						<li class="brands__item">
-							<a href="" class="brands__item-link">
-								<span class="brands__item-name">Honda</span>
-								<span class="brands__item-quantity">200</span>
-							</a>
-						</li>
-						<li class="brands__item">
-							<a href="" class="brands__item-link">
-								<span class="brands__item-name">Mercedes-Benz</span>
-								<span class="brands__item-quantity">896</span>
-							</a>
-						</li>
-						<li class="brands__item">
-							<a href="" class="brands__item-link">
-								<span class="brands__item-name">Opel</span>
-								<span class="brands__item-quantity">336</span>
-							</a>
-						</li>
-						<li class="brands__item">
-							<a href="" class="brands__item-link">
-								<span class="brands__item-name">Subaru</span>
-								<span class="brands__item-quantity">98</span>
-							</a>
-						</li>
-						<li class="brands__item">
-							<a href="" class="brands__item-link">
-								<span class="brands__item-name">Toyota</span>
-								<span class="brands__item-quantity">1063</span>
-							</a>
-						</li>
-						<li class="brands__item">
-							<a href="" class="brands__item-link">
-								<span class="brands__item-name">Daihatsu</span>
-								<span class="brands__item-quantity">9</span>
-							</a>
-						</li>
-						<li class="brands__item">
-							<a href="" class="brands__item-link">
-								<span class="brands__item-name">Lexus</span>
-								<span class="brands__item-quantity">268</span>
-							</a>
-						</li>
-						<li class="brands__item">
-							<a href="" class="brands__item-link">
-								<span class="brands__item-name">Mitsubishi</span>
-								<span class="brands__item-quantity">896</span>
-							</a>
-						</li>
-						<li class="brands__item">
-							<a href="" class="brands__item-link">
-								<span class="brands__item-name">Renault</span>
-								<span class="brands__item-quantity">703</span>
-							</a>
-						</li>
-						<li class="brands__item">
-							<a href="" class="brands__item-link">
-								<span class="brands__item-name">Suzuki</span>
-								<span class="brands__item-quantity">147</span>
-							</a>
-						</li>
-						<li class="brands__item">
-							<a href="" class="brands__all icon-chevron"> Все марки </a>
-						</li>
-					</ul>
-					<ul class="brands__options">
-						<li class="brands__option">
-							<a href="" class="brands__option-card">
-								<span class="brands__option-image">
-									<picture>
-										<source srcset="img/brands/SUVs.webp" type="image/webp"><img src="img/brands/SUVs.png" alt="Фото">
-									</picture>
-								</span>
-								<span class="brands__option-text"> Внедорожники </span>
-							</a>
-						</li>
-						<li class="brands__option">
-							<a href="" class="brands__option-card">
-								<span class="brands__option-image">
-									<picture>
-										<source srcset="img/brands/Middle.webp" type="image/webp"><img src="img/brands/Middle.png" alt="Фото">
-									</picture>
-								</span>
-								<span class="brands__option-text"> Средний класс </span>
-							</a>
-						</li>
-						<li class="brands__option">
-							<a href="" class="brands__option-card">
-								<span class="brands__option-image">
-									<picture>
-										<source srcset="img/brands/Budget.webp" type="image/webp"><img src="img/brands/Budget.png" alt="Фото">
-									</picture>
-								</span>
-								<span class="brands__option-text"> Бюджетные </span>
-							</a>
-						</li>
-						<li class="brands__option">
-							<a href="" class="brands__option-card">
-								<span class="brands__option-image">
-									<picture>
-										<source srcset="img/brands/Sports.webp" type="image/webp"><img src="img/brands/Sports.png" alt="Фото">
-									</picture>
-								</span>
-								<span class="brands__option-text"> Спортивные </span>
-							</a>
-						</li>
-						<li class="brands__option">
-							<a href="" class="brands__option-card">
-								<span class="brands__option-image">
-									<picture>
-										<source srcset="img/brands/Pickups.webp" type="image/webp"><img src="img/brands/Pickups.png" alt="Фото">
-									</picture>
-								</span>
-								<span class="brands__option-text"> Пикапы </span>
-							</a>
-						</li>
-						<li class="brands__option">
-							<a href="" class="brands__option-card">
-								<span class="brands__option-image">
-									<picture>
-										<source srcset="img/brands/Exclusives.webp" type="image/webp"><img src="img/brands/Exclusives.png" alt="Фото">
-									</picture>
-								</span>
-								<span class="brands__option-text"> Эксклюзивы </span>
-							</a>
-						</li>
-					</ul>
 				</div>
 			</section>
 			<section class="selections">
 				<div class="selections__container">
 					<div class="selections__hint">Лучшие предложения</div>
 					<h2 class="selections__title title"> Подборки автомобилей </h2>
-					<div class="selections__header">
-						<div class="selections__filters filters">
-							<a href="" class="filters__item active">В наличии</a>
-							<a href="" class="filters__item">С аукционов</a>
-							<a href="" class="filters__item">Гибриды</a>
-							<a href="" class="filters__item">Кроссоверы</a>
-							<a href="" class="filters__item">Корейские авто</a>
+					<div class="tabs-wrapper">
+						<div class="selections__header">
+							<div class="selections__tabs tabs">
+								<button type="button" class="tabs__item active">В наличии</button>
+								<button type="button" class="tabs__item">С аукционов</button>
+								<button type="button" class="tabs__item">Гибриды</button>
+								<button type="button" class="tabs__item">Кроссоверы</button>
+								<button type="button" class="tabs__item">Корейские авто</button>
+							</div>
+							<a href="" class="selections__more more-link">[ перейти в подборку ]</a>
 						</div>
-						<a href="" class="selections__more more-link">[ перейти в подборку ]</a>
-					</div>
-					<div class="selections__slider">
-						<div class="swiper">
-							<div class="swiper-wrapper">
-								<div class="auto-card swiper-slide">
-									<a href="" class="auto-card__image">
-										<picture>
-											<source srcset="img/offers/01.webp" type="image/webp"><img src="img/offers/01.png" class="cover-image" alt="Фото автомобиля">
-										</picture>
-									</a>
-									<div class="auto-card__body">
-										<a href="" class="auto-card__name">Porsche Cayenne</a>
-										<ul class="auto-card__props">
-											<li class="auto-card__props-item">
-												<div class="auto-card__props-name">Двигатель</div>
-												<div class="auto-card__props-value">Бензиновый</div>
-											</li>
-											<li class="auto-card__props-item">
-												<div class="auto-card__props-name">Пробег</div>
-												<div class="auto-card__props-value">37 000 км</div>
-											</li>
-											<li class="auto-card__props-item">
-												<div class="auto-card__props-name">Год</div>
-												<div class="auto-card__props-value">2021</div>
-											</li>
-										</ul>
-										<div class="auto-card__price">
-											<div class="auto-card__price-caption">Цена</div>
-											<div class="auto-card__price-value"> 6 851 000 ₽* </div>
-										</div>
-										<div class="auto-card__bottom">
-											<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-											<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+						<div class="selections__tabs-contents">
+							<div class="selections__tabs-content tab-content active">
+								<div class="selections__slider">
+									<div class="swiper">
+										<div class="swiper-wrapper">
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/01.webp" type="image/webp"><img src="img/offers/01.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+												</div>
+												<div class="auto-card__body">
+													<a href="" class="auto-card__name">Porsche Cayenne</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">37 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 6 851 000 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+												</div>
+												<div class="auto-card__body">
+													<a href="" class="auto-card__name">BMW X7 xDrive40i</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">62 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 6 597 093 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+												</div>
+												<div class="auto-card__body">
+													<a href="" class="auto-card__name">Porsche Panamera 4s</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">51 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 8 634 000 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/01.webp" type="image/webp"><img src="img/offers/01.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+												</div>
+												<div class="auto-card__body">
+													<a href="" class="auto-card__name">Porsche Cayenne</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">37 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 6 851 000 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+												</div>
+												<div class="auto-card__body">
+													<a href="" class="auto-card__name">BMW X7 xDrive40i</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">62 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 6 597 093 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+												</div>
+												<div class="auto-card__body">
+													<a href="" class="auto-card__name">Porsche Panamera 4s</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">51 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 8 634 000 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/01.webp" type="image/webp"><img src="img/offers/01.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+												</div>
+												<div class="auto-card__body">
+													<a href="" class="auto-card__name">Porsche Cayenne</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">37 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 6 851 000 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+												</div>
+												<div class="auto-card__body">
+													<a href="" class="auto-card__name">BMW X7 xDrive40i</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">62 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 6 597 093 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+												</div>
+												<div class="auto-card__body">
+													<a href="" class="auto-card__name">Porsche Panamera 4s</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">51 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 8 634 000 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/01.webp" type="image/webp"><img src="img/offers/01.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+												</div>
+												<div class="auto-card__body">
+													<a href="" class="auto-card__name">Porsche Cayenne</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">37 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 6 851 000 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+												</div>
+												<div class="auto-card__body">
+													<a href="" class="auto-card__name">BMW X7 xDrive40i</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">62 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 6 597 093 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+												</div>
+												<div class="auto-card__body">
+													<a href="" class="auto-card__name">Porsche Panamera 4s</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">51 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 8 634 000 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
 										</div>
 									</div>
+									<div class="selections__prev swiper-button-prev"></div>
+									<div class="selections__next swiper-button-next"></div>
+									<div class="selections__pagination swiper-pagination"></div>
 								</div>
-								<div class="auto-card swiper-slide">
-									<a href="" class="auto-card__image">
-										<picture>
-											<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
-										</picture>
-									</a>
-									<div class="auto-card__body">
-										<a href="" class="auto-card__name">BMW X7 xDrive40i</a>
-										<ul class="auto-card__props">
-											<li class="auto-card__props-item">
-												<div class="auto-card__props-name">Двигатель</div>
-												<div class="auto-card__props-value">Бензиновый</div>
-											</li>
-											<li class="auto-card__props-item">
-												<div class="auto-card__props-name">Пробег</div>
-												<div class="auto-card__props-value">62 000 км</div>
-											</li>
-											<li class="auto-card__props-item">
-												<div class="auto-card__props-name">Год</div>
-												<div class="auto-card__props-value">2021</div>
-											</li>
-										</ul>
-										<div class="auto-card__price">
-											<div class="auto-card__price-caption">Цена</div>
-											<div class="auto-card__price-value"> 6 597 093 ₽* </div>
-										</div>
-										<div class="auto-card__bottom">
-											<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-											<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+							</div>
+							<div class="selections__tabs-content tab-content">
+								<div class="selections__slider">
+									<div class="swiper">
+										<div class="swiper-wrapper">
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+												</div>
+												<div class="auto-card__body">
+													<a href="" class="auto-card__name">BMW X7 xDrive40i</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">62 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 6 597 093 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+												</div>
+												<div class="auto-card__body">
+													<a href="" class="auto-card__name">Porsche Panamera 4s</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">51 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 8 634 000 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/01.webp" type="image/webp"><img src="img/offers/01.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+												</div>
+												<div class="auto-card__body">
+													<a href="" class="auto-card__name">Porsche Cayenne</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">37 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 6 851 000 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+												</div>
+												<div class="auto-card__body">
+													<a href="" class="auto-card__name">BMW X7 xDrive40i</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">62 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 6 597 093 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+												</div>
+												<div class="auto-card__body">
+													<a href="" class="auto-card__name">Porsche Panamera 4s</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">51 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 8 634 000 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/01.webp" type="image/webp"><img src="img/offers/01.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+												</div>
+												<div class="auto-card__body">
+													<a href="" class="auto-card__name">Porsche Cayenne</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">37 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 6 851 000 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+												</div>
+												<div class="auto-card__body">
+													<a href="" class="auto-card__name">BMW X7 xDrive40i</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">62 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 6 597 093 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+												</div>
+												<div class="auto-card__body">
+													<a href="" class="auto-card__name">Porsche Panamera 4s</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">51 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 8 634 000 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/01.webp" type="image/webp"><img src="img/offers/01.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+												</div>
+												<div class="auto-card__body">
+													<a href="" class="auto-card__name">Porsche Cayenne</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">37 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 6 851 000 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+												</div>
+												<div class="auto-card__body">
+													<a href="" class="auto-card__name">BMW X7 xDrive40i</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">62 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 6 597 093 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+												</div>
+												<div class="auto-card__body">
+													<a href="" class="auto-card__name">Porsche Panamera 4s</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">51 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 8 634 000 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
 										</div>
 									</div>
+									<div class="selections__prev swiper-button-prev"></div>
+									<div class="selections__next swiper-button-next"></div>
+									<div class="selections__pagination swiper-pagination"></div>
 								</div>
-								<div class="auto-card swiper-slide">
-									<a href="" class="auto-card__image">
-										<picture>
-											<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
-										</picture>
-									</a>
-									<div class="auto-card__body">
-										<a href="" class="auto-card__name">Porsche Panamera 4s</a>
-										<ul class="auto-card__props">
-											<li class="auto-card__props-item">
-												<div class="auto-card__props-name">Двигатель</div>
-												<div class="auto-card__props-value">Бензиновый</div>
-											</li>
-											<li class="auto-card__props-item">
-												<div class="auto-card__props-name">Пробег</div>
-												<div class="auto-card__props-value">51 000 км</div>
-											</li>
-											<li class="auto-card__props-item">
-												<div class="auto-card__props-name">Год</div>
-												<div class="auto-card__props-value">2021</div>
-											</li>
-										</ul>
-										<div class="auto-card__price">
-											<div class="auto-card__price-caption">Цена</div>
-											<div class="auto-card__price-value"> 8 634 000 ₽* </div>
-										</div>
-										<div class="auto-card__bottom">
-											<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-											<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+							</div>
+							<div class="selections__tabs-content tab-content">
+								<div class="selections__slider">
+									<div class="swiper">
+										<div class="swiper-wrapper">
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+												</div>
+												<div class="auto-card__body">
+													<a href="" class="auto-card__name">Porsche Panamera 4s</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">51 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 8 634 000 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/01.webp" type="image/webp"><img src="img/offers/01.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+												</div>
+												<div class="auto-card__body">
+													<a href="" class="auto-card__name">Porsche Cayenne</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">37 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 6 851 000 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+												</div>
+												<div class="auto-card__body">
+													<a href="" class="auto-card__name">BMW X7 xDrive40i</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">62 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 6 597 093 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+												</div>
+												<div class="auto-card__body">
+													<a href="" class="auto-card__name">Porsche Panamera 4s</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">51 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 8 634 000 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/01.webp" type="image/webp"><img src="img/offers/01.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+												</div>
+												<div class="auto-card__body">
+													<a href="" class="auto-card__name">Porsche Cayenne</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">37 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 6 851 000 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+												</div>
+												<div class="auto-card__body">
+													<a href="" class="auto-card__name">BMW X7 xDrive40i</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">62 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 6 597 093 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+												</div>
+												<div class="auto-card__body">
+													<a href="" class="auto-card__name">Porsche Panamera 4s</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">51 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 8 634 000 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/01.webp" type="image/webp"><img src="img/offers/01.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+												</div>
+												<div class="auto-card__body">
+													<a href="" class="auto-card__name">Porsche Cayenne</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">37 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 6 851 000 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+												</div>
+												<div class="auto-card__body">
+													<a href="" class="auto-card__name">BMW X7 xDrive40i</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">62 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 6 597 093 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+												</div>
+												<div class="auto-card__body">
+													<a href="" class="auto-card__name">Porsche Panamera 4s</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">51 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 8 634 000 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
 										</div>
 									</div>
+									<div class="selections__prev swiper-button-prev"></div>
+									<div class="selections__next swiper-button-next"></div>
+									<div class="selections__pagination swiper-pagination"></div>
 								</div>
-								<div class="auto-card swiper-slide">
-									<a href="" class="auto-card__image">
-										<picture>
-											<source srcset="img/offers/01.webp" type="image/webp"><img src="img/offers/01.png" class="cover-image" alt="Фото автомобиля">
-										</picture>
-									</a>
-									<div class="auto-card__body">
-										<a href="" class="auto-card__name">Porsche Cayenne</a>
-										<ul class="auto-card__props">
-											<li class="auto-card__props-item">
-												<div class="auto-card__props-name">Двигатель</div>
-												<div class="auto-card__props-value">Бензиновый</div>
-											</li>
-											<li class="auto-card__props-item">
-												<div class="auto-card__props-name">Пробег</div>
-												<div class="auto-card__props-value">37 000 км</div>
-											</li>
-											<li class="auto-card__props-item">
-												<div class="auto-card__props-name">Год</div>
-												<div class="auto-card__props-value">2021</div>
-											</li>
-										</ul>
-										<div class="auto-card__price">
-											<div class="auto-card__price-caption">Цена</div>
-											<div class="auto-card__price-value"> 6 851 000 ₽* </div>
-										</div>
-										<div class="auto-card__bottom">
-											<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-											<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+							</div>
+							<div class="selections__tabs-content tab-content">
+								<div class="selections__slider">
+									<div class="swiper">
+										<div class="swiper-wrapper">
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/01.webp" type="image/webp"><img src="img/offers/01.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+												</div>
+												<div class="auto-card__body">
+													<a href="" class="auto-card__name">Porsche Cayenne</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">37 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 6 851 000 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+												</div>
+												<div class="auto-card__body">
+													<a href="" class="auto-card__name">BMW X7 xDrive40i</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">62 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 6 597 093 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+												</div>
+												<div class="auto-card__body">
+													<a href="" class="auto-card__name">Porsche Panamera 4s</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">51 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 8 634 000 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/01.webp" type="image/webp"><img src="img/offers/01.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+												</div>
+												<div class="auto-card__body">
+													<a href="" class="auto-card__name">Porsche Cayenne</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">37 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 6 851 000 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+												</div>
+												<div class="auto-card__body">
+													<a href="" class="auto-card__name">BMW X7 xDrive40i</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">62 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 6 597 093 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+												</div>
+												<div class="auto-card__body">
+													<a href="" class="auto-card__name">Porsche Panamera 4s</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">51 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 8 634 000 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/01.webp" type="image/webp"><img src="img/offers/01.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+												</div>
+												<div class="auto-card__body">
+													<a href="" class="auto-card__name">Porsche Cayenne</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">37 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 6 851 000 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+												</div>
+												<div class="auto-card__body">
+													<a href="" class="auto-card__name">BMW X7 xDrive40i</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">62 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 6 597 093 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+												</div>
+												<div class="auto-card__body">
+													<a href="" class="auto-card__name">Porsche Panamera 4s</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">51 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 8 634 000 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/01.webp" type="image/webp"><img src="img/offers/01.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+												</div>
+												<div class="auto-card__body">
+													<a href="" class="auto-card__name">Porsche Cayenne</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">37 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 6 851 000 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+												</div>
+												<div class="auto-card__body">
+													<a href="" class="auto-card__name">BMW X7 xDrive40i</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">62 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 6 597 093 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+												</div>
+												<div class="auto-card__body">
+													<a href="" class="auto-card__name">Porsche Panamera 4s</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">51 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 8 634 000 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
 										</div>
 									</div>
+									<div class="selections__prev swiper-button-prev"></div>
+									<div class="selections__next swiper-button-next"></div>
+									<div class="selections__pagination swiper-pagination"></div>
 								</div>
-								<div class="auto-card swiper-slide">
-									<a href="" class="auto-card__image">
-										<picture>
-											<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
-										</picture>
-									</a>
-									<div class="auto-card__body">
-										<a href="" class="auto-card__name">BMW X7 xDrive40i</a>
-										<ul class="auto-card__props">
-											<li class="auto-card__props-item">
-												<div class="auto-card__props-name">Двигатель</div>
-												<div class="auto-card__props-value">Бензиновый</div>
-											</li>
-											<li class="auto-card__props-item">
-												<div class="auto-card__props-name">Пробег</div>
-												<div class="auto-card__props-value">62 000 км</div>
-											</li>
-											<li class="auto-card__props-item">
-												<div class="auto-card__props-name">Год</div>
-												<div class="auto-card__props-value">2021</div>
-											</li>
-										</ul>
-										<div class="auto-card__price">
-											<div class="auto-card__price-caption">Цена</div>
-											<div class="auto-card__price-value"> 6 597 093 ₽* </div>
-										</div>
-										<div class="auto-card__bottom">
-											<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-											<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+							</div>
+							<div class="selections__tabs-content tab-content">
+								<div class="selections__slider">
+									<div class="swiper">
+										<div class="swiper-wrapper">
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+												</div>
+												<div class="auto-card__body">
+													<a href="" class="auto-card__name">BMW X7 xDrive40i</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">62 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 6 597 093 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+												</div>
+												<div class="auto-card__body">
+													<a href="" class="auto-card__name">Porsche Panamera 4s</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">51 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 8 634 000 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/01.webp" type="image/webp"><img src="img/offers/01.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+												</div>
+												<div class="auto-card__body">
+													<a href="" class="auto-card__name">Porsche Cayenne</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">37 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 6 851 000 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+												</div>
+												<div class="auto-card__body">
+													<a href="" class="auto-card__name">BMW X7 xDrive40i</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">62 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 6 597 093 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+												</div>
+												<div class="auto-card__body">
+													<a href="" class="auto-card__name">Porsche Panamera 4s</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">51 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 8 634 000 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/01.webp" type="image/webp"><img src="img/offers/01.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+												</div>
+												<div class="auto-card__body">
+													<a href="" class="auto-card__name">Porsche Cayenne</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">37 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 6 851 000 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+												</div>
+												<div class="auto-card__body">
+													<a href="" class="auto-card__name">BMW X7 xDrive40i</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">62 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 6 597 093 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+												</div>
+												<div class="auto-card__body">
+													<a href="" class="auto-card__name">Porsche Panamera 4s</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">51 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 8 634 000 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/01.webp" type="image/webp"><img src="img/offers/01.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+												</div>
+												<div class="auto-card__body">
+													<a href="" class="auto-card__name">Porsche Cayenne</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">37 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 6 851 000 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+												</div>
+												<div class="auto-card__body">
+													<a href="" class="auto-card__name">BMW X7 xDrive40i</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">62 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 6 597 093 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+												</div>
+												<div class="auto-card__body">
+													<a href="" class="auto-card__name">Porsche Panamera 4s</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">51 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 8 634 000 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
 										</div>
 									</div>
-								</div>
-								<div class="auto-card swiper-slide">
-									<a href="" class="auto-card__image">
-										<picture>
-											<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
-										</picture>
-									</a>
-									<div class="auto-card__body">
-										<a href="" class="auto-card__name">Porsche Panamera 4s</a>
-										<ul class="auto-card__props">
-											<li class="auto-card__props-item">
-												<div class="auto-card__props-name">Двигатель</div>
-												<div class="auto-card__props-value">Бензиновый</div>
-											</li>
-											<li class="auto-card__props-item">
-												<div class="auto-card__props-name">Пробег</div>
-												<div class="auto-card__props-value">51 000 км</div>
-											</li>
-											<li class="auto-card__props-item">
-												<div class="auto-card__props-name">Год</div>
-												<div class="auto-card__props-value">2021</div>
-											</li>
-										</ul>
-										<div class="auto-card__price">
-											<div class="auto-card__price-caption">Цена</div>
-											<div class="auto-card__price-value"> 8 634 000 ₽* </div>
-										</div>
-										<div class="auto-card__bottom">
-											<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-											<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
-										</div>
-									</div>
-								</div>
-								<div class="auto-card swiper-slide">
-									<a href="" class="auto-card__image">
-										<picture>
-											<source srcset="img/offers/01.webp" type="image/webp"><img src="img/offers/01.png" class="cover-image" alt="Фото автомобиля">
-										</picture>
-									</a>
-									<div class="auto-card__body">
-										<a href="" class="auto-card__name">Porsche Cayenne</a>
-										<ul class="auto-card__props">
-											<li class="auto-card__props-item">
-												<div class="auto-card__props-name">Двигатель</div>
-												<div class="auto-card__props-value">Бензиновый</div>
-											</li>
-											<li class="auto-card__props-item">
-												<div class="auto-card__props-name">Пробег</div>
-												<div class="auto-card__props-value">37 000 км</div>
-											</li>
-											<li class="auto-card__props-item">
-												<div class="auto-card__props-name">Год</div>
-												<div class="auto-card__props-value">2021</div>
-											</li>
-										</ul>
-										<div class="auto-card__price">
-											<div class="auto-card__price-caption">Цена</div>
-											<div class="auto-card__price-value"> 6 851 000 ₽* </div>
-										</div>
-										<div class="auto-card__bottom">
-											<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-											<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
-										</div>
-									</div>
-								</div>
-								<div class="auto-card swiper-slide">
-									<a href="" class="auto-card__image">
-										<picture>
-											<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
-										</picture>
-									</a>
-									<div class="auto-card__body">
-										<a href="" class="auto-card__name">BMW X7 xDrive40i</a>
-										<ul class="auto-card__props">
-											<li class="auto-card__props-item">
-												<div class="auto-card__props-name">Двигатель</div>
-												<div class="auto-card__props-value">Бензиновый</div>
-											</li>
-											<li class="auto-card__props-item">
-												<div class="auto-card__props-name">Пробег</div>
-												<div class="auto-card__props-value">62 000 км</div>
-											</li>
-											<li class="auto-card__props-item">
-												<div class="auto-card__props-name">Год</div>
-												<div class="auto-card__props-value">2021</div>
-											</li>
-										</ul>
-										<div class="auto-card__price">
-											<div class="auto-card__price-caption">Цена</div>
-											<div class="auto-card__price-value"> 6 597 093 ₽* </div>
-										</div>
-										<div class="auto-card__bottom">
-											<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-											<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
-										</div>
-									</div>
-								</div>
-								<div class="auto-card swiper-slide">
-									<a href="" class="auto-card__image">
-										<picture>
-											<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
-										</picture>
-									</a>
-									<div class="auto-card__body">
-										<a href="" class="auto-card__name">Porsche Panamera 4s</a>
-										<ul class="auto-card__props">
-											<li class="auto-card__props-item">
-												<div class="auto-card__props-name">Двигатель</div>
-												<div class="auto-card__props-value">Бензиновый</div>
-											</li>
-											<li class="auto-card__props-item">
-												<div class="auto-card__props-name">Пробег</div>
-												<div class="auto-card__props-value">51 000 км</div>
-											</li>
-											<li class="auto-card__props-item">
-												<div class="auto-card__props-name">Год</div>
-												<div class="auto-card__props-value">2021</div>
-											</li>
-										</ul>
-										<div class="auto-card__price">
-											<div class="auto-card__price-caption">Цена</div>
-											<div class="auto-card__price-value"> 8 634 000 ₽* </div>
-										</div>
-										<div class="auto-card__bottom">
-											<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-											<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
-										</div>
-									</div>
-								</div>
-								<div class="auto-card swiper-slide">
-									<a href="" class="auto-card__image">
-										<picture>
-											<source srcset="img/offers/01.webp" type="image/webp"><img src="img/offers/01.png" class="cover-image" alt="Фото автомобиля">
-										</picture>
-									</a>
-									<div class="auto-card__body">
-										<a href="" class="auto-card__name">Porsche Cayenne</a>
-										<ul class="auto-card__props">
-											<li class="auto-card__props-item">
-												<div class="auto-card__props-name">Двигатель</div>
-												<div class="auto-card__props-value">Бензиновый</div>
-											</li>
-											<li class="auto-card__props-item">
-												<div class="auto-card__props-name">Пробег</div>
-												<div class="auto-card__props-value">37 000 км</div>
-											</li>
-											<li class="auto-card__props-item">
-												<div class="auto-card__props-name">Год</div>
-												<div class="auto-card__props-value">2021</div>
-											</li>
-										</ul>
-										<div class="auto-card__price">
-											<div class="auto-card__price-caption">Цена</div>
-											<div class="auto-card__price-value"> 6 851 000 ₽* </div>
-										</div>
-										<div class="auto-card__bottom">
-											<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-											<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
-										</div>
-									</div>
-								</div>
-								<div class="auto-card swiper-slide">
-									<a href="" class="auto-card__image">
-										<picture>
-											<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
-										</picture>
-									</a>
-									<div class="auto-card__body">
-										<a href="" class="auto-card__name">BMW X7 xDrive40i</a>
-										<ul class="auto-card__props">
-											<li class="auto-card__props-item">
-												<div class="auto-card__props-name">Двигатель</div>
-												<div class="auto-card__props-value">Бензиновый</div>
-											</li>
-											<li class="auto-card__props-item">
-												<div class="auto-card__props-name">Пробег</div>
-												<div class="auto-card__props-value">62 000 км</div>
-											</li>
-											<li class="auto-card__props-item">
-												<div class="auto-card__props-name">Год</div>
-												<div class="auto-card__props-value">2021</div>
-											</li>
-										</ul>
-										<div class="auto-card__price">
-											<div class="auto-card__price-caption">Цена</div>
-											<div class="auto-card__price-value"> 6 597 093 ₽* </div>
-										</div>
-										<div class="auto-card__bottom">
-											<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-											<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
-										</div>
-									</div>
-								</div>
-								<div class="auto-card swiper-slide">
-									<a href="" class="auto-card__image">
-										<picture>
-											<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
-										</picture>
-									</a>
-									<div class="auto-card__body">
-										<a href="" class="auto-card__name">Porsche Panamera 4s</a>
-										<ul class="auto-card__props">
-											<li class="auto-card__props-item">
-												<div class="auto-card__props-name">Двигатель</div>
-												<div class="auto-card__props-value">Бензиновый</div>
-											</li>
-											<li class="auto-card__props-item">
-												<div class="auto-card__props-name">Пробег</div>
-												<div class="auto-card__props-value">51 000 км</div>
-											</li>
-											<li class="auto-card__props-item">
-												<div class="auto-card__props-name">Год</div>
-												<div class="auto-card__props-value">2021</div>
-											</li>
-										</ul>
-										<div class="auto-card__price">
-											<div class="auto-card__price-caption">Цена</div>
-											<div class="auto-card__price-value"> 8 634 000 ₽* </div>
-										</div>
-										<div class="auto-card__bottom">
-											<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-											<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
-										</div>
-									</div>
+									<div class="selections__prev swiper-button-prev"></div>
+									<div class="selections__next swiper-button-next"></div>
+									<div class="selections__pagination swiper-pagination"></div>
 								</div>
 							</div>
 						</div>
-						<div class="selections__prev swiper-button-prev"></div>
-						<div class="selections__next swiper-button-next"></div>
-						<div class="selections__pagination swiper-pagination"></div>
 					</div>
 				</div>
 			</section>
@@ -969,10 +3558,10 @@
 				</div>
 			</div>
 		</footer> <!-- plugnis -->
-		<script src="js/libs/swiper-bundle.min.js?_v=20241107012816"></script>
-		<script src="js/libs/fancybox.umd.js?_v=20241107012816"></script>
+		<script src="js/libs/swiper-bundle.min.js?_v=20241108130125"></script>
+		<script src="js/libs/fancybox.umd.js?_v=20241108130125"></script>
 		<!-- plugnis -->
-		<script src="js/app.min.js?_v=20241107012816"></script>
+		<script src="js/app.min.js?_v=20241108130125"></script>
 	</section>
 </body>
 

@@ -27,6 +27,26 @@ document.addEventListener('DOMContentLoaded', () => {
             getMenu()
         }
 
+        if (target.classList.contains('menu__arrow')) {
+
+            let subMenu = target.nextElementSibling;
+
+            if (document.querySelector('.menu__arrow.active') !== target) {
+
+                if (document.querySelector('.submenu.open')) {
+                    document.querySelector('.submenu.open').classList.remove('open');
+                }
+                if (document.querySelector('.menu__arrow.active')) {
+                    document.querySelector('.menu__arrow.active').classList.remove('active');
+                }
+
+            }
+
+            subMenu.classList.toggle('open');
+            target.classList.toggle('active');
+
+        }
+
     });
 
     function getMenu() {
@@ -66,18 +86,23 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     }
 
-    if (document.querySelector('.selections__slider')) {
+    document.querySelectorAll('.selections__slider')?.forEach(selectionsSlider => {
 
-        new Swiper('.selections__slider .swiper', {
+        const slider = selectionsSlider.querySelector('.swiper');
+        const prevBtn = selectionsSlider.querySelector('.selections__prev');
+        const nextBtn = selectionsSlider.querySelector('.selections__next');
+        const pagintionBlock = selectionsSlider.querySelector('.selections__pagination');
+
+        new Swiper(slider, {
             speed: 800,
             slidesPerView: "auto",
             spaceBetween: 20,
             navigation: {
-                nextEl: '.selections__next',
-                prevEl: '.selections__prev'
+                nextEl: nextBtn,
+                prevEl: prevBtn
             },
             pagination: {
-                el: ".selections__pagination",
+                el: pagintionBlock,
                 clickable: true
             },
             breakpoints: {
@@ -86,11 +111,66 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
         })
+    })
+
+    document.querySelectorAll('.auto-card__slider')?.forEach(autoImagesSlider => {
+
+        const pagintionBlock = autoImagesSlider.querySelector('.auto-card__slider-pagination');
+
+        new Swiper(autoImagesSlider, {
+            speed: 800,
+            slidesPerView: 1,
+            pagination: {
+                el: pagintionBlock,
+                clickable: true
+            },
+        })
+    })
+
+
+    const headerElement = document.querySelector('.header');
+
+    const callback = function (entries, observer) {
+        if (entries[0].isIntersecting) {
+            headerElement.classList.remove('scroll');
+        } else {
+            headerElement.classList.add('scroll');
+        }
+    };
+
+    const headerObserver = new IntersectionObserver(callback);
+    headerObserver.observe(headerElement);
+
+
+    // tabs
+
+    class Tabs {
+        constructor(wrapper) {
+            this.wrapper = wrapper;
+            this.tabButtons = this.wrapper.querySelectorAll('.tabs__item');
+            this.tabContents = this.wrapper.querySelectorAll('.tab-content');
+            this.init();
+        }
+
+        init() {
+            this.tabButtons.forEach((button, index) => {
+                button.addEventListener('click', () => this.activateTab(index));
+            });
+        }
+
+        activateTab(index) {
+
+            this.tabButtons.forEach(button => button.classList.remove('active'));
+            this.tabContents.forEach(content => content.classList.remove('active'));
+
+
+            this.tabButtons[index].classList.add('active');
+            this.tabContents[index].classList.add('active');
+        }
     }
 
 
-
-
+    document.querySelectorAll('.tabs-wrapper')?.forEach(wrapper => new Tabs(wrapper));
 
 
 

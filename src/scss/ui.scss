@@ -27,11 +27,11 @@
 	}
 }
 
-.filters {
+.tabs {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 0.31rem;
-	// .filters__item
+	// .tabs__item
 	&__item {
 		line-height: 155%;
 		background: #f3f6fa;
@@ -60,6 +60,14 @@
 		}
 	}
 }
+
+.tab-content {
+	display: none;
+	&.active {
+		display: block;
+	}
+}
+
 .more-link {
 	font-size: 0.875rem;
 	font-weight: 500;
