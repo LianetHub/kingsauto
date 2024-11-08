@@ -1,7 +1,18 @@
 .footer {
-	padding: rem(50) 0 0;
-	@media (min-width: $md4) {
-		padding: rem(70) 0 0;
+	background-image: url('@img/footer-car.jpg');
+	background-attachment: fixed;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: auto 17.875rem;
+	@media (min-width: $md5) {
+		background-size: 100% auto;
+	}
+	&__main {
+		background: #fff;
+		padding: rem(50) 0 0;
+		@media (min-width: $md4) {
+			padding: rem(70) 0 0;
+		}
 	}
 	// .footer__container
 	&__container {
@@ -183,17 +194,23 @@
 }
 
 .footer-bottom {
-	margin-top: 3.75rem;
+	margin-bottom: 17.875rem;
+	@media (min-width: $md5) {
+		margin-bottom: 41.875%;
+	}
 	// .footer-bottom__container
 	&__container {
 	}
 	// .footer-bottom__heading
 	&__heading {
+		margin-top: 3.75rem;
 		display: grid;
+		align-items: end;
 		color: rgba(43, 50, 57, 0.3);
 		font-size: 0.75rem;
 		line-height: 140%;
 		padding: 0 0 2rem;
+		background: #fff;
 		gap: 0.75rem;
 		@media (min-width: $md3) {
 			gap: 1.25rem;
@@ -203,6 +220,7 @@
 	// .footer-bottom__copy
 	&__copy {
 		order: 1;
+		color: rgba(43, 50, 57, 0.3);
 		@media (min-width: $md4) {
 			order: 0;
 		}

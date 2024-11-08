@@ -1030,7 +1030,18 @@ body.lock {
   transition: color 0.3s ease 0s;
 }
 
+.no-webp .footer {
+  background-image: url("../img/footer-car.jpg"); }
+
 .footer {
+  background-attachment: fixed;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: auto 17.875rem;
+}
+
+.footer__main {
+  background: #fff;
   padding: 3.125rem 0 0;
 }
 
@@ -1177,16 +1188,21 @@ body.lock {
 }
 
 .footer-bottom {
-  margin-top: 3.75rem;
+  margin-bottom: 17.875rem;
 }
 
 .footer-bottom__heading {
+  margin-top: 3.75rem;
   display: -ms-grid;
   display: grid;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
   color: rgba(43, 50, 57, 0.3);
   font-size: 0.75rem;
   line-height: 140%;
   padding: 0 0 2rem;
+  background: #fff;
   gap: 0.75rem;
 }
 
@@ -1194,6 +1210,7 @@ body.lock {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
+  color: rgba(43, 50, 57, 0.3);
 }
 
 .footer-bottom__menu {
@@ -2033,6 +2050,14 @@ body.lock {
     font-size: 1rem;
   }
 
+  .footer {
+    background-size: 100% auto;
+  }
+
+  .footer-bottom {
+    margin-bottom: 41.875%;
+  }
+
   .footer-bottom__menu-list {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -2108,7 +2133,7 @@ body.lock {
     font-size: 0.75rem;
   }
 
-  .footer {
+  .footer__main {
     padding: 4.375rem 0 0;
   }
 
@@ -2883,5 +2908,7 @@ body.lock {
             transform: rotate(180deg);
   }
 }
+
+.webp .footer { background-image: url(../img/footer-car.webp); }
 
 .webp .promo { background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, rgba(16, 22, 28, 0)), to(#10161c)), -webkit-gradient(linear, left top, left bottom, color-stop(43.31%, rgba(16, 22, 28, 0)), to(#10161c)), url(../img/main.webp) 0 0/cover no-repeat, #2b3239; background: linear-gradient(0deg, rgba(16, 22, 28, 0) 50%, #10161c 100%), linear-gradient(180deg, rgba(16, 22, 28, 0) 43.31%, #10161c 100%), url(../img/main.webp) 0 0/cover no-repeat, #2b3239; }
