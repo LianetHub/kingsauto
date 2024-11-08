@@ -444,7 +444,7 @@ body {
 	&__slider {
 		margin-top: 2.5rem;
 		position: relative;
-		.swiper {
+		& > .swiper {
 			@media (max-width: $md4) {
 				overflow: visible;
 			}
@@ -504,7 +504,9 @@ body {
 	&__slider-pagination {
 		position: absolute;
 		bottom: 0;
-		opacity: 0;
+		@media (any-hover: hover) {
+			opacity: 0;
+		}
 		.swiper-pagination-bullet {
 			width: 0.75rem;
 			height: 0.75rem;
