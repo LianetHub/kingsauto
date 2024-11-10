@@ -88,6 +88,13 @@
 				}
 			}
 		}
+		&.error {
+			& + .form__checkbox-text {
+				&::before {
+					border: rem(1) solid red;
+				}
+			}
+		}
 	}
 
 	// .form__checkbox-content
