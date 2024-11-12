@@ -72,6 +72,16 @@ $(function () {
             $subMenu.toggleClass('open');
             $target.toggleClass('active');
         }
+
+        if ($target.is('.brands__all')) {
+            $target.closest('.brands__list').find('.brands__item.brands__item-more').toggleClass('visible');
+            $target.toggleClass('active')
+            if ($target.hasClass('active')) {
+                $target.text("Скрыть")
+            } else {
+                $target.text(" Все марки")
+            }
+        }
     });
 
     function toggleMenu() {

@@ -1,4 +1,12 @@
 @font-face {
+  font-family: "InterTight";
+  font-display: swap;
+  src: url("../fonts/InterTight-Medium.woff") format("woff"), url("../fonts/InterTight-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "icons";
   font-display: swap;
   src: url("../fonts/icons.woff") format("woff"), url("../fonts/icons.woff2") format("woff2");
@@ -17,14 +25,6 @@
 @font-face {
   font-family: "InterTight";
   font-display: swap;
-  src: url("../fonts/InterTight-Medium.woff") format("woff"), url("../fonts/InterTight-Medium.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "InterTight";
-  font-display: swap;
   src: url("../fonts/InterTight-SemiBold.woff") format("woff"), url("../fonts/InterTight-SemiBold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
@@ -33,8 +33,8 @@
 @font-face {
   font-family: "VelaSans";
   font-display: swap;
-  src: url("../fonts/VelaSans-Medium.woff") format("woff"), url("../fonts/VelaSans-Medium.woff2") format("woff2");
-  font-weight: 500;
+  src: url("../fonts/VelaSans-Regular.woff") format("woff"), url("../fonts/VelaSans-Regular.woff2") format("woff2");
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -49,8 +49,8 @@
 @font-face {
   font-family: "VelaSans";
   font-display: swap;
-  src: url("../fonts/VelaSans-Regular.woff") format("woff"), url("../fonts/VelaSans-Regular.woff2") format("woff2");
-  font-weight: 400;
+  src: url("../fonts/VelaSans-Medium.woff") format("woff"), url("../fonts/VelaSans-Medium.woff2") format("woff2");
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -175,11 +175,7 @@ body.lock {
   width: 100%;
   padding: 0;
   background: none;
-  max-width: 36.25rem;
-}
-
-.popup.popup-lg {
-  max-width: 35rem;
+  max-width: 31.25rem;
 }
 
 .popup__body {
@@ -194,15 +190,16 @@ body.lock {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 2.5rem;
+  border-radius: 0.625rem;
+  padding: 1.56rem;
 }
 
 .popup__close {
   position: absolute;
   top: 0.94rem;
   right: 0.94rem;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 1.125rem;
+  height: 1.125rem;
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M5 5L19 19M5 19L19 5' stroke='%231E1E1E' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/1.5rem no-repeat;
   color: #fff;
   display: -webkit-box;
@@ -219,14 +216,25 @@ body.lock {
   transition: background-color 0.3s ease 0s;
 }
 
+.popup__title {
+  color: #2b3239;
+  font-weight: 500;
+  line-height: 140%;
+  font-size: 1.25rem;
+}
+
 .popup__subtitle {
   line-height: 155%;
+  max-width: 20rem;
+  font-size: 0.875rem;
   margin-top: 1.25rem;
-  font-size: 1rem;
 }
 
 .popup__form {
-  margin-top: 1.25rem;
+  margin-top: 1.75rem;
+}
+
+.popup__form-rows {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -234,81 +242,7 @@ body.lock {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 0.94rem;
-}
-
-.popup__form .btn {
-  border-radius: 0.9375rem;
-}
-
-.popup__productions {
-  background: #fff;
-  color: #1e1e1e;
-  width: 100%;
-  padding: 0.31em;
-}
-
-.popup__productions-body {
-  border: 1px dashed #998755;
-  padding: 1.56rem;
-}
-
-.popup__productions-body .popup__close {
-  position: absolute;
-  top: 0.31rem;
-  right: 0.31rem;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M5 5L19 19M5 19L19 5' stroke='%23B41A24' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-}
-
-.popup__title {
-  font-weight: 500;
-}
-
-.popup__productions-images {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 1.56rem;
-}
-
-.popup__productions-image {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  width: 4.375rem;
-  height: 4.375rem;
-}
-
-.popup__productions-image img {
-  border-radius: 50%;
-}
-
-.popup__productions-image:not(:last-child) {
-  margin-right: -1.25rem;
-}
-
-.popup__productions-list {
-  margin-top: 1.56rem;
-}
-
-.popup__productions-item:not(:last-child) {
-  margin-bottom: 1.56rem;
-}
-
-.popup__productions-name {
-  font-size: 1rem;
-  line-height: 120%;
-  letter-spacing: -0.03125rem;
-  font-weight: 500;
-  line-height: 120%;
-  -webkit-transition: color 0.3s ease 0s;
-  transition: color 0.3s ease 0s;
-}
-
-.popup__productions-desc {
-  margin-top: 0.63rem;
-  color: rgba(30, 30, 30, 0.4);
-  line-height: 120%;
-  font-size: 0.875rem;
+  gap: 2rem;
 }
 
 .title-lg {
@@ -1450,6 +1384,14 @@ body.lock {
   padding: 1.25rem 0;
 }
 
+.brands__item.brands__item-more {
+  display: none;
+}
+
+.brands__item.brands__item-more.visible {
+  display: block;
+}
+
 .brands__item-link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1481,6 +1423,16 @@ body.lock {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
+  -webkit-transition: -webkit-transform 0.3s ease 0s;
+  transition: -webkit-transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
+}
+
+.brands__all.active::before {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .brands__item-name {
@@ -2014,42 +1966,20 @@ body.lock {
     max-width: 33.75rem;
   }
 
-  .popup__productions {
-    padding: 0.62rem;
+  .popup__body {
+    padding: 2.5rem;
   }
 
-  .popup__productions-body {
-    padding: 1.87rem;
+  .popup__close {
+    width: 2.5rem;
+    height: 2.5rem;
   }
 
-  .popup__productions-body .popup__close {
-    top: 0.63rem;
-    right: 0.63rem;
+  .popup__title {
+    font-size: 1.625rem;
   }
 
-  .popup__productions-images {
-    margin-top: 1.87rem;
-  }
-
-  .popup__productions-image {
-    width: 6.25rem;
-    height: 6.25rem;
-  }
-
-  .popup__productions-list {
-    margin-top: 1.87rem;
-  }
-
-  .popup__productions-item:not(:last-child) {
-    margin-bottom: 2rem;
-  }
-
-  .popup__productions-name {
-    letter-spacing: -0.0625rem;
-    font-size: 1.375rem;
-  }
-
-  .popup__productions-desc {
+  .popup__subtitle {
     font-size: 1rem;
   }
 
@@ -2742,10 +2672,6 @@ body.lock {
 }
 
 @media (max-width: 575.98px) {
-  .popup__productions-body .popup__title {
-    font-size: 1.375rem;
-  }
-
   .header__menu {
     padding: 5.4375rem 1.25rem 1.5625rem;
   }
@@ -2760,10 +2686,6 @@ body.lock {
 }
 
 @media (any-hover: hover) {
-  .popup__productions-name:hover {
-    color: #82a6ca;
-  }
-
   .tabs__item:hover {
     color: #fff;
     background: #2b3239;

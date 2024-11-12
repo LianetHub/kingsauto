@@ -296,6 +296,12 @@ body {
 	&__item {
 		border-bottom: rem(1) solid #eaeaee;
 		padding: 1.25rem 0;
+		&.brands__item-more {
+			display: none;
+			&.visible {
+				display: block;
+			}
+		}
 	}
 	// .brands__item-link
 	&__item-link {
@@ -316,6 +322,13 @@ body {
 		&::before {
 			font-size: 0.75rem;
 			order: 1;
+			transition: transform 0.3s ease 0s;
+		}
+		&.active {
+			&::before {
+				transform: rotate(180deg);
+				
+			}
 		}
 		@media (any-hover: hover) {
 			&:hover {
