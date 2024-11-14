@@ -1,15 +1,15 @@
 // Использование модулей SASS
-@use 'sass:math';
+@use "sass:math";
 // Использование модулей SASS
 // ======================================МИКСИНЫ==============================================
-@import 'mixins';
+@import "mixins";
 // ======================================МИКСИНЫ==============================================
 
 // ======================================ШРИФТЫ===============================================
 
 // &display=swap&subset=cyrillic-ext
-@import 'fonts';
-@import 'icons';
+@import "fonts";
+@import "icons";
 
 // ======================================ШРИФТЫ===============================================
 // ======================================ИКОНОЧНЫЙ ШРИФТ======================================
@@ -17,8 +17,8 @@
 // ======================================ИКОНОЧНЫЙ ШРИФТ======================================
 
 // Шрифт по умолчанию
-$fontfamily: 'VelaSans';
-$font-inter: 'InterTight';
+$fontfamily: "VelaSans";
+$font-inter: "InterTight";
 
 // Шрифт по умолчанию
 
@@ -79,7 +79,7 @@ body {
 //=============== ОСНОВНАЯ СЕТКА===============================
 
 // Отзывчивая
-[class*='__container'] {
+[class*="__container"] {
 	margin: 0 auto;
 	max-width: 100%;
 	padding: 0 rem(20);
@@ -108,11 +108,11 @@ body {
 //=================Подключаем файлы стилей
 //================Общий файл для элементов страницы
 // @import "grid";
-@import 'ui';
-@import 'forms';
+@import "ui";
+@import "forms";
 //================Общий файл для элементов страницы
-@import 'header';
-@import 'footer';
+@import "header";
+@import "footer";
 //=======================================
 
 // =======================ОСНОВНОЙ БЛОК==================
@@ -123,7 +123,7 @@ body {
 
 .promo {
 	background: linear-gradient(0deg, rgba(16, 22, 28, 0) 50%, #10161c 100%), linear-gradient(180deg, rgba(16, 22, 28, 0) 43.31%, #10161c 100%),
-		url('@img/main.jpg') 0 0 / cover no-repeat, #2b3239;
+		url("@img/main.jpg") 0 0 / cover no-repeat, #2b3239;
 	color: #fff;
 	display: flex;
 	align-items: flex-end;
@@ -182,7 +182,7 @@ body {
 				max-width: rem(35);
 				position: relative;
 				&::before {
-					content: '';
+					content: "";
 					position: absolute;
 					top: 0;
 					border-radius: 0.3125rem;
@@ -196,7 +196,7 @@ body {
 					background: #fff;
 				}
 				&::after {
-					content: '';
+					content: "";
 					position: absolute;
 					top: 50%;
 					transform: translateY(-50%);
@@ -327,7 +327,6 @@ body {
 		&.active {
 			&::before {
 				transform: rotate(180deg);
-				
 			}
 		}
 		@media (any-hover: hover) {
@@ -709,11 +708,14 @@ body {
 		-webkit-line-clamp: 4;
 		text-overflow: ellipsis;
 		overflow: hidden;
-		margin-bottom: auto;
+
 		line-height: 155%;
+		&.full {
+			display: block;
+		}
 	}
-	// .reviews__card-link
-	&__card-link {
+	// .reviews__card-btn
+	&__card-btn {
 		margin-top: 2.19rem;
 		display: flex;
 		align-items: center;
@@ -729,6 +731,11 @@ body {
 		@media (any-hover: hover) {
 			&:hover {
 				color: $accent;
+			}
+		}
+		&.active {
+			&::before {
+				transform: rotate(180deg);
 			}
 		}
 	}

@@ -79,9 +79,20 @@ $(function () {
             if ($target.hasClass('active')) {
                 $target.text("Скрыть")
             } else {
-                $target.text(" Все марки")
+                $target.text("Все марки")
             }
         }
+
+        if ($target.is('.reviews__card-btn')) {
+            $target.prev().toggleClass('full');
+            $target.toggleClass('active')
+            if ($target.hasClass('active')) {
+                $target.text("Скрыть")
+            } else {
+                $target.text("Читать полностью")
+            }
+        }
+
     });
 
     function toggleMenu() {

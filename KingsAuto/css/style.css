@@ -1,12 +1,4 @@
 @font-face {
-  font-family: "InterTight";
-  font-display: swap;
-  src: url("../fonts/InterTight-Medium.woff") format("woff"), url("../fonts/InterTight-Medium.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "icons";
   font-display: swap;
   src: url("../fonts/icons.woff") format("woff"), url("../fonts/icons.woff2") format("woff2");
@@ -25,8 +17,24 @@
 @font-face {
   font-family: "InterTight";
   font-display: swap;
+  src: url("../fonts/InterTight-Medium.woff") format("woff"), url("../fonts/InterTight-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "InterTight";
+  font-display: swap;
   src: url("../fonts/InterTight-SemiBold.woff") format("woff"), url("../fonts/InterTight-SemiBold.woff2") format("woff2");
   font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "VelaSans";
+  font-display: swap;
+  src: url("../fonts/VelaSans-Medium.woff") format("woff"), url("../fonts/VelaSans-Medium.woff2") format("woff2");
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -43,14 +51,6 @@
   font-display: swap;
   src: url("../fonts/VelaSans-SemiBold.woff") format("woff"), url("../fonts/VelaSans-SemiBold.woff2") format("woff2");
   font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "VelaSans";
-  font-display: swap;
-  src: url("../fonts/VelaSans-Medium.woff") format("woff"), url("../fonts/VelaSans-Medium.woff2") format("woff2");
-  font-weight: 500;
   font-style: normal;
 }
 
@@ -1757,11 +1757,14 @@ body.lock {
   -webkit-line-clamp: 4;
   text-overflow: ellipsis;
   overflow: hidden;
-  margin-bottom: auto;
   line-height: 155%;
 }
 
-.reviews__card-link {
+.reviews__card-quote.full {
+  display: block;
+}
+
+.reviews__card-btn {
   margin-top: 2.19rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1778,10 +1781,16 @@ body.lock {
   transition: color 0.3s ease 0s;
 }
 
-.reviews__card-link::before {
+.reviews__card-btn::before {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
+}
+
+.reviews__card-btn.active::before {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .benefits {
@@ -2816,7 +2825,7 @@ body.lock {
     color: #82a6ca;
   }
 
-  .reviews__card-link:hover {
+  .reviews__card-btn:hover {
     color: #82a6ca;
   }
 
