@@ -22,7 +22,6 @@ $(function () {
         },
     };
 
-
     function getNavigator() {
         if (isMobile.any() || $(window).width() < 992) {
             $('body').removeClass('_pc').addClass('_touch');
@@ -38,8 +37,8 @@ $(function () {
     });
 
 
-    // detect support WebP
 
+    // detect support WebP
     function testWebP(callback) {
         let webP = new Image();
         webP.onload = webP.onerror = function () {
@@ -51,6 +50,7 @@ $(function () {
     testWebP((support) => {
         $('body').addClass(support ? 'webp' : 'no-webp');
     });
+
 
 
     // event handlers
@@ -93,6 +93,20 @@ $(function () {
             }
         }
 
+        if ($target.is('.favorite-btn')) {
+            $target.toggleClass('active')
+        }
+
+        if ($target.is('.catalog__filter-btn')) {
+            $('.filter').addClass('visible');
+            $('body').addClass('filter-lock');
+        }
+
+        if ($target.is('.filter.visible') || $target.is('.filter__close') || $target.is('.filter__reset')) {
+            $('.filter').removeClass('visible');
+            $('body').removeClass('filter-lock');
+        }
+
     });
 
     function toggleMenu() {
@@ -101,7 +115,6 @@ $(function () {
     }
 
     //  sliders
-
     if ($('.promo__slider').length) {
         new Swiper('.promo__slider', {
             slidesPerView: 1,
@@ -169,19 +182,54 @@ $(function () {
         });
     });
 
+    if ($('.catalog__filter-categories').length) {
+        new Swiper('.catalog__filter-categories', {
+            slidesPerView: "auto",
+            speed: 800,
+            spaceBetween: 5,
+        });
+    }
 
-    const $headerElement = $('.header');
 
+
+    // observer header scroll
     const callback = (entries) => {
         if (entries[0].isIntersecting) {
-            $headerElement.removeClass('scroll');
+            $('.header').removeClass('scroll');
         } else {
-            $headerElement.addClass('scroll');
+            $('.header').addClass('scroll');
         }
     };
 
     const headerObserver = new IntersectionObserver(callback);
-    headerObserver.observe($headerElement[0]);
+    headerObserver.observe($('.header')[0]);
+
+
+
+    // observer header height
+    function updateHeaderHeight() {
+        var headerHeight = $('.header__wrapper').outerHeight() / parseFloat($('html').css('font-size'));
+
+        $('body').css('--header-height', headerHeight + 'rem');
+    }
+
+    updateHeaderHeight();
+
+    $(window).on('resize', function () {
+        updateHeaderHeight();
+    });
+
+
+    // change layout type in catalog
+    $('.catalog__layout-input').on('change', function (e) {
+        if ($(e.target).val() === 'rows') {
+            $(".catalog__grid").addClass('rows')
+        } else {
+            $(".catalog__grid").removeClass('rows')
+        }
+    })
+
+
 
 
     // tabs
@@ -211,8 +259,9 @@ $(function () {
     $('.tabs-wrapper').each((_, wrapper) => new Tabs(wrapper));
 
 
-    // form submit checkbox validation
 
+
+    // form submit checkbox validation
     $('form').on('submit', function (e) {
         let isValid = true;
 
@@ -237,7 +286,6 @@ $(function () {
         }
     });
 
-
     $('[aria-required="true"]').on('change input', function () {
         if ($(this).is(':checkbox')) {
             if ($(this).is(':checked')) {
@@ -249,6 +297,166 @@ $(function () {
             }
         }
     });
+
+
+
+
+
+
+    // dropdown
+
+    const saveInitialState = ($dropdown) => {
+        const $btn = $dropdown.find('.dropdown__button');
+        const $list = $dropdown.find('.dropdown__list');
+        const $dropdownInput = $dropdown.find('.dropdown__input');
+
+        const initialState = {
+            selectedText: $btn.html(),
+            selectedValue: $dropdownInput.val(),
+            isOpen: $btn.attr('aria-expanded') === 'true',
+            hasScroll: $list[0].scrollHeight > $list[0].clientHeight
+        };
+
+        $dropdown.data('initialState', initialState);
+    };
+
+
+    const restoreInitialState = ($dropdown) => {
+        const initialState = $dropdown.data('initialState');
+
+
+        if (!initialState) return;
+
+        const $btn = $dropdown.find('.dropdown__button');
+        const $list = $dropdown.find('.dropdown__list');
+        const $dropdownItems = $dropdown.find('.dropdown__list-item');
+        const $dropdownInput = $dropdown.find('.dropdown__input');
+
+
+        $btn.html(initialState.selectedText);
+
+        $dropdownInput.val(initialState.selectedValue);
+        $btn.attr('aria-expanded', initialState.isOpen ? 'true' : 'false');
+        $list.attr('aria-hidden', initialState.isOpen ? 'false' : 'true');
+
+
+        if (initialState.hasScroll) {
+            $list.addClass('has-scroll');
+        } else {
+            $list.removeClass('has-scroll');
+        }
+
+        if (initialState.isOpen) {
+            $dropdown.addClass('visible');
+        } else {
+            $dropdown.removeClass('visible');
+        }
+
+        const $firstItem = $dropdownItems.first();
+        $dropdownItems.removeClass('active').removeAttr('aria-checked');
+        $firstItem.addClass('active').attr('aria-checked', 'true');
+    };
+
+
+    const toggleDropdown = ($dropdown, isOpen) => {
+        const $btn = $dropdown.find('.dropdown__button');
+        const $list = $dropdown.find('.dropdown__list');
+        $btn.attr('aria-expanded', isOpen);
+        $list.attr('aria-hidden', !isOpen);
+        if (isOpen) {
+            $dropdown.removeClass('dropdown-top');
+            const dropdownRect = $list[0].getBoundingClientRect();
+            const viewportHeight = window.innerHeight;
+
+            if (dropdownRect.bottom > viewportHeight) {
+                $dropdown.addClass('dropdown-top');
+            }
+
+            $dropdown.addClass('visible');
+            $btn.addClass('active');
+            if ($list[0].scrollHeight > $list[0].clientHeight) {
+                $list.addClass('has-scroll');
+            } else {
+                $list.removeClass('has-scroll');
+            }
+        } else {
+            $dropdown.removeClass('visible');
+            $btn.removeClass('active');
+        }
+    };
+
+    const setupDropdown = $dropdown => {
+        const $dropdownBtn = $dropdown.find('.dropdown__button');
+        const $dropdownList = $dropdown.find('.dropdown__list');
+        const $dropdownItems = $dropdownList.find('.dropdown__list-item');
+        const $dropdownInput = $dropdown.find('.dropdown__input');
+
+        $dropdown.attr('role', 'listbox');
+        $dropdownItems.attr('role', 'option');
+
+
+        $dropdownBtn.on('click', () => {
+            const isOpen = $dropdownBtn.attr('aria-expanded') === 'true';
+            toggleDropdown($dropdown, !isOpen);
+        });
+
+        $dropdownItems.on('click', function () {
+            $dropdownItems
+                .removeClass('active')
+                .removeAttr('aria-checked');
+
+            $(this)
+                .addClass('active')
+                .attr('aria-checked', 'true');
+
+            const $textContainer = $dropdownBtn.find('.dropdown__button-text');
+            if ($textContainer.length) {
+                $textContainer.text($(this).text());
+            } else {
+                $dropdownBtn.text($(this).text());
+            }
+            $dropdownInput.val($(this).data('value'));
+
+            toggleDropdown($dropdown, false);
+            $dropdownInput.trigger('change');
+        });
+    };
+
+
+    const closeAllDropdownsOnClickOutside = e => {
+        $('.dropdown.visible').each(function () {
+            const $dropdown = $(this);
+            if (!$dropdown.is(e.target) && $dropdown.has(e.target).length === 0) {
+                toggleDropdown($dropdown, false);
+            }
+        });
+    };
+
+    const closeAllDropdownsOnEscape = e => {
+        if (e.key === 'Escape') {
+            $('.dropdown.visible').each(function () {
+                toggleDropdown($(this), false);
+            });
+        }
+    };
+
+    const handleFormReset = (e) => {
+        $(e.target).closest('form').find('.dropdown').each(function () {
+            restoreInitialState($(this));
+        });
+    };
+
+    $('.dropdown').each(function () {
+        saveInitialState($(this));
+        setupDropdown($(this));
+    });
+
+    $(document).on('click', closeAllDropdownsOnClickOutside);
+    $(document).on('keydown', closeAllDropdownsOnEscape);
+
+    $(document).on('reset', 'form', handleFormReset);
+
+
 
 
 

@@ -1,0 +1,406 @@
+<div class="filter">
+    <div class="filter__content">
+        <div class="filter__header">
+            <div class="filter__title title">Фильтры</div>
+            <button type="button" aria-label="Закрыть фильтр" class="filter__close icon-close"></button>
+        </div>
+        <div class="filter__body">
+            <button type="reset" class="filter__reset icon-close-circle">Очистить фильтры</button>
+            <div class="filter__switcher">
+                <div class="filter__switcher-hint">С пробегом</div>
+                <label class="switcher">
+                    <input type="checkbox" name="switcher" class="switcher__input hidden" hidden>
+                    <span class="switcher__btn"></span>
+                </label>
+                <div class="filter__switcher-hint">Новые</div>
+            </div>
+            <div class="filter__grid">
+                <div class="filter__grid-item lg-item">
+                    <div class="filter__dropdown dropdown">
+                        <button type="button" class="dropdown__button icon-chevron" aria-expanded="false" aria-haspopup="true">
+                            <span class="dropdown__button-column">
+                                <span class="dropdown__button-caption">Марка</span>
+                                <span class="dropdown__button-text">Все модели</span>
+                            </span>
+                        </button>
+                        <div class="dropdown__body" aria-hidden="true">
+                            <ul class="dropdown__list" role="listbox">
+                                <li role="option" data-value="all" aria-checked="true" class="dropdown__list-item">
+                                    Все модели
+                                </li>
+                                <li role="option" data-value="audi" aria-checked="false" class="dropdown__list-item">
+                                    Audi
+                                </li>
+                                <li role="option" data-value="bmw" aria-checked="false" class="dropdown__list-item">
+                                    BMW
+                                </li>
+                                <li role="option" data-value="daihatsu" aria-checked="false" class="dropdown__list-item">
+                                    Daihatsu
+                                </li>
+                                <li role="option" data-value="honda" aria-checked="false" class="dropdown__list-item">
+                                    Honda
+                                </li>
+                                <li role="option" data-value="lexus" aria-checked="false" class="dropdown__list-item">
+                                    Lexus
+                                </li>
+                                <li role="option" data-value="mazda" aria-checked="false" class="dropdown__list-item">
+                                    Mazda
+                                </li>
+                                <li role="option" data-value="mercedes" aria-checked="false" class="dropdown__list-item">
+                                    Mercedes-Benz
+                                </li>
+                                <li role="option" data-value="toyota" aria-checked="false" class="dropdown__list-item">
+                                    Toyota
+                                </li>
+                                <li role="option" data-value="nissan" aria-checked="false" class="dropdown__list-item">
+                                    Nissan
+                                </li>
+                                <li role="option" data-value="volkswagen" aria-checked="false" class="dropdown__list-item">
+                                    Volkswagen
+                                </li>
+                                <li role="option" data-value="volvo" aria-checked="false" class="dropdown__list-item">
+                                    Volvo
+                                </li>
+                                <li role="option" data-value="chevrolet" aria-checked="false" class="dropdown__list-item">
+                                    Chevrolet
+                                </li>
+                                <li role="option" data-value="ford" aria-checked="false" class="dropdown__list-item">
+                                    Ford
+                                </li>
+                                <li role="option" data-value="kia" aria-checked="false" class="dropdown__list-item">
+                                    Kia
+                                </li>
+                                <li role="option" data-value="hyundai" aria-checked="false" class="dropdown__list-item">
+                                    Hyundai
+                                </li>
+                                <li role="option" data-value="porsche" aria-checked="false" class="dropdown__list-item">
+                                    Porsche
+                                </li>
+                                <li role="option" data-value="jaguar" aria-checked="false" class="dropdown__list-item">
+                                    Jaguar
+                                </li>
+                                <li role="option" data-value="subaru" aria-checked="false" class="dropdown__list-item">
+                                    Subaru
+                                </li>
+                                <li role="option" data-value="peugeot" aria-checked="false" class="dropdown__list-item">
+                                    Peugeot
+                                </li>
+                                <li role="option" data-value="mitsubishi" aria-checked="false" class="dropdown__list-item">
+                                    Mitsubishi
+                                </li>
+                                <li role="option" data-value="land-rover" aria-checked="false" class="dropdown__list-item">
+                                    Land Rover
+                                </li>
+                                <li role="option" data-value="tesla" aria-checked="false" class="dropdown__list-item">
+                                    Tesla
+                                </li>
+                                <li role="option" data-value="renault" aria-checked="false" class="dropdown__list-item">
+                                    Renault
+                                </li>
+                                <li role="option" data-value="infiniti" aria-checked="false" class="dropdown__list-item">
+                                    Infiniti
+                                </li>
+                                <li role="option" data-value="alfa-romeo" aria-checked="false" class="dropdown__list-item">
+                                    Alfa Romeo
+                                </li>
+                            </ul>
+
+                        </div>
+                        <input type="text" name="brands" class="dropdown__input hidden" hidden value="offers">
+                    </div>
+                </div>
+                <div class="filter__grid-item lg-item">
+                    <div class="filter__dropdown dropdown">
+                        <button type="button" disabled class="dropdown__button icon-chevron" aria-expanded="false" aria-haspopup="true">
+                            <span class="dropdown__button-column">
+                                <span class="dropdown__button-caption">Модель</span>
+                                <span class="dropdown__button-text">в начале выберите марку</span>
+                            </span>
+                        </button>
+                        <div class="dropdown__body" aria-hidden="true">
+                            <ul class="dropdown__list" role="listbox">
+                                <li role="option" data-value="none" aria-checked="true" class="dropdown__list-item">
+                                    в начале выберите марку
+                                </li>
+                                <li role="option" data-value="1" aria-checked="false" class="dropdown__list-item">
+                                    Марка 1
+                                </li>
+                                <li role="option" data-value="2" aria-checked="false" class="dropdown__list-item">
+                                    Марка 2
+                                </li>
+                                <li role="option" data-value="3" aria-checked="false" class="dropdown__list-item">
+                                    Марка 3
+                                </li>
+                            </ul>
+                        </div>
+                        <input type="text" name="car-make" class="dropdown__input hidden" hidden value="none">
+                    </div>
+                </div>
+                <div class="filter__grid-item lg-item">
+                    <div class="filter__dropdown dropdown">
+                        <button type="button" disabled class="dropdown__button icon-chevron" aria-expanded="false" aria-haspopup="true">
+                            <span class="dropdown__button-column">
+                                <span class="dropdown__button-caption">Кузов</span>
+                                <span class="dropdown__button-text">в начале выберите марку</span>
+                            </span>
+                        </button>
+                        <div class="dropdown__body" aria-hidden="true">
+                            <ul class="dropdown__list" role="listbox">
+                                <li role="option" data-value="none" aria-checked="true" class="dropdown__list-item">
+                                    в начале выберите модель
+                                </li>
+                                <li role="option" data-value="1" aria-checked="false" class="dropdown__list-item">
+                                    Кузов 1
+                                </li>
+                                <li role="option" data-value="2" aria-checked="false" class="dropdown__list-item">
+                                    Кузов 2
+                                </li>
+                                <li role="option" data-value="3" aria-checked="false" class="dropdown__list-item">
+                                    Кузов 3
+                                </li>
+                            </ul>
+                        </div>
+                        <input type="text" name="car-body" class="dropdown__input hidden" hidden value="none">
+                    </div>
+                </div>
+                <div class="filter__grid-item">
+                    <div class="filter__dropdown dropdown">
+                        <button type="button" class="dropdown__button icon-chevron" aria-expanded="false" aria-haspopup="true">
+                            <span class="dropdown__button-column">
+                                <span class="dropdown__button-caption">Год выпуска</span>
+                                <span class="dropdown__button-text">От</span>
+                            </span>
+                        </button>
+                        <div class="dropdown__body" aria-hidden="true">
+                            <ul class="dropdown__list" role="listbox">
+                                <li role="option" data-value="none" aria-checked="true" class="dropdown__list-item">От</li>
+                                <li role="option" data-value="1980" aria-checked="false" class="dropdown__list-item">1980</li>
+                                <li role="option" data-value="1981" aria-checked="false" class="dropdown__list-item">1981</li>
+                                <li role="option" data-value="1982" aria-checked="false" class="dropdown__list-item">1982</li>
+                                <li role="option" data-value="1983" aria-checked="false" class="dropdown__list-item">1983</li>
+                                <li role="option" data-value="1984" aria-checked="false" class="dropdown__list-item">1984</li>
+                                <li role="option" data-value="1985" aria-checked="false" class="dropdown__list-item">1985</li>
+                                <li role="option" data-value="1986" aria-checked="false" class="dropdown__list-item">1986</li>
+                                <li role="option" data-value="1987" aria-checked="false" class="dropdown__list-item">1987</li>
+                                <li role="option" data-value="1988" aria-checked="false" class="dropdown__list-item">1988</li>
+                                <li role="option" data-value="1989" aria-checked="false" class="dropdown__list-item">1989</li>
+                                <li role="option" data-value="1990" aria-checked="false" class="dropdown__list-item">1990</li>
+                                <li role="option" data-value="1991" aria-checked="false" class="dropdown__list-item">1991</li>
+                                <li role="option" data-value="1992" aria-checked="false" class="dropdown__list-item">1992</li>
+                                <li role="option" data-value="1993" aria-checked="false" class="dropdown__list-item">1993</li>
+                                <li role="option" data-value="1994" aria-checked="false" class="dropdown__list-item">1994</li>
+                                <li role="option" data-value="1995" aria-checked="false" class="dropdown__list-item">1995</li>
+                                <li role="option" data-value="1996" aria-checked="false" class="dropdown__list-item">1996</li>
+                                <li role="option" data-value="1997" aria-checked="false" class="dropdown__list-item">1997</li>
+                                <li role="option" data-value="1998" aria-checked="false" class="dropdown__list-item">1998</li>
+                                <li role="option" data-value="1999" aria-checked="false" class="dropdown__list-item">1999</li>
+                                <li role="option" data-value="2000" aria-checked="false" class="dropdown__list-item">2000</li>
+                                <li role="option" data-value="2001" aria-checked="false" class="dropdown__list-item">2001</li>
+                                <li role="option" data-value="2002" aria-checked="false" class="dropdown__list-item">2002</li>
+                                <li role="option" data-value="2003" aria-checked="false" class="dropdown__list-item">2003</li>
+                                <li role="option" data-value="2004" aria-checked="false" class="dropdown__list-item">2004</li>
+                                <li role="option" data-value="2005" aria-checked="false" class="dropdown__list-item">2005</li>
+                                <li role="option" data-value="2006" aria-checked="false" class="dropdown__list-item">2006</li>
+                                <li role="option" data-value="2007" aria-checked="false" class="dropdown__list-item">2007</li>
+                                <li role="option" data-value="2008" aria-checked="false" class="dropdown__list-item">2008</li>
+                                <li role="option" data-value="2009" aria-checked="false" class="dropdown__list-item">2009</li>
+                                <li role="option" data-value="2010" aria-checked="false" class="dropdown__list-item">2010</li>
+                                <li role="option" data-value="2011" aria-checked="false" class="dropdown__list-item">2011</li>
+                                <li role="option" data-value="2012" aria-checked="false" class="dropdown__list-item">2012</li>
+                                <li role="option" data-value="2013" aria-checked="false" class="dropdown__list-item">2013</li>
+                                <li role="option" data-value="2014" aria-checked="false" class="dropdown__list-item">2014</li>
+                                <li role="option" data-value="2015" aria-checked="false" class="dropdown__list-item">2015</li>
+                                <li role="option" data-value="2016" aria-checked="false" class="dropdown__list-item">2016</li>
+                                <li role="option" data-value="2017" aria-checked="false" class="dropdown__list-item">2017</li>
+                                <li role="option" data-value="2018" aria-checked="false" class="dropdown__list-item">2018</li>
+                                <li role="option" data-value="2019" aria-checked="false" class="dropdown__list-item">2019</li>
+                                <li role="option" data-value="2020" aria-checked="false" class="dropdown__list-item">2020</li>
+                                <li role="option" data-value="2021" aria-checked="false" class="dropdown__list-item">2021</li>
+                                <li role="option" data-value="2022" aria-checked="false" class="dropdown__list-item">2022</li>
+                                <li role="option" data-value="2023" aria-checked="false" class="dropdown__list-item">2023</li>
+                                <li role="option" data-value="2024" aria-checked="false" class="dropdown__list-item">2024</li>
+                            </ul>
+                        </div>
+                        <input type="text" name="start-year" class="dropdown__input hidden" hidden value="none">
+                    </div>
+                </div>
+                <div class="filter__grid-item">
+                    <div class="filter__dropdown dropdown">
+                        <button type="button" class="dropdown__button icon-chevron" aria-expanded="false" aria-haspopup="true">
+                            <span class="dropdown__button-column">
+                                <span class="dropdown__button-caption">Год выпуска</span>
+                                <span class="dropdown__button-text">До</span>
+                            </span>
+                        </button>
+                        <div class="dropdown__body" aria-hidden="true">
+                            <ul class="dropdown__list" role="listbox">
+                                <li role="option" data-value="none" aria-checked="true" class="dropdown__list-item">До</li>
+                                <li role="option" data-value="1980" aria-checked="false" class="dropdown__list-item">1980</li>
+                                <li role="option" data-value="1981" aria-checked="false" class="dropdown__list-item">1981</li>
+                                <li role="option" data-value="1982" aria-checked="false" class="dropdown__list-item">1982</li>
+                                <li role="option" data-value="1983" aria-checked="false" class="dropdown__list-item">1983</li>
+                                <li role="option" data-value="1984" aria-checked="false" class="dropdown__list-item">1984</li>
+                                <li role="option" data-value="1985" aria-checked="false" class="dropdown__list-item">1985</li>
+                                <li role="option" data-value="1986" aria-checked="false" class="dropdown__list-item">1986</li>
+                                <li role="option" data-value="1987" aria-checked="false" class="dropdown__list-item">1987</li>
+                                <li role="option" data-value="1988" aria-checked="false" class="dropdown__list-item">1988</li>
+                                <li role="option" data-value="1989" aria-checked="false" class="dropdown__list-item">1989</li>
+                                <li role="option" data-value="1990" aria-checked="false" class="dropdown__list-item">1990</li>
+                                <li role="option" data-value="1991" aria-checked="false" class="dropdown__list-item">1991</li>
+                                <li role="option" data-value="1992" aria-checked="false" class="dropdown__list-item">1992</li>
+                                <li role="option" data-value="1993" aria-checked="false" class="dropdown__list-item">1993</li>
+                                <li role="option" data-value="1994" aria-checked="false" class="dropdown__list-item">1994</li>
+                                <li role="option" data-value="1995" aria-checked="false" class="dropdown__list-item">1995</li>
+                                <li role="option" data-value="1996" aria-checked="false" class="dropdown__list-item">1996</li>
+                                <li role="option" data-value="1997" aria-checked="false" class="dropdown__list-item">1997</li>
+                                <li role="option" data-value="1998" aria-checked="false" class="dropdown__list-item">1998</li>
+                                <li role="option" data-value="1999" aria-checked="false" class="dropdown__list-item">1999</li>
+                                <li role="option" data-value="2000" aria-checked="false" class="dropdown__list-item">2000</li>
+                                <li role="option" data-value="2001" aria-checked="false" class="dropdown__list-item">2001</li>
+                                <li role="option" data-value="2002" aria-checked="false" class="dropdown__list-item">2002</li>
+                                <li role="option" data-value="2003" aria-checked="false" class="dropdown__list-item">2003</li>
+                                <li role="option" data-value="2004" aria-checked="false" class="dropdown__list-item">2004</li>
+                                <li role="option" data-value="2005" aria-checked="false" class="dropdown__list-item">2005</li>
+                                <li role="option" data-value="2006" aria-checked="false" class="dropdown__list-item">2006</li>
+                                <li role="option" data-value="2007" aria-checked="false" class="dropdown__list-item">2007</li>
+                                <li role="option" data-value="2008" aria-checked="false" class="dropdown__list-item">2008</li>
+                                <li role="option" data-value="2009" aria-checked="false" class="dropdown__list-item">2009</li>
+                                <li role="option" data-value="2010" aria-checked="false" class="dropdown__list-item">2010</li>
+                                <li role="option" data-value="2011" aria-checked="false" class="dropdown__list-item">2011</li>
+                                <li role="option" data-value="2012" aria-checked="false" class="dropdown__list-item">2012</li>
+                                <li role="option" data-value="2013" aria-checked="false" class="dropdown__list-item">2013</li>
+                                <li role="option" data-value="2014" aria-checked="false" class="dropdown__list-item">2014</li>
+                                <li role="option" data-value="2015" aria-checked="false" class="dropdown__list-item">2015</li>
+                                <li role="option" data-value="2016" aria-checked="false" class="dropdown__list-item">2016</li>
+                                <li role="option" data-value="2017" aria-checked="false" class="dropdown__list-item">2017</li>
+                                <li role="option" data-value="2018" aria-checked="false" class="dropdown__list-item">2018</li>
+                                <li role="option" data-value="2019" aria-checked="false" class="dropdown__list-item">2019</li>
+                                <li role="option" data-value="2020" aria-checked="false" class="dropdown__list-item">2020</li>
+                                <li role="option" data-value="2021" aria-checked="false" class="dropdown__list-item">2021</li>
+                                <li role="option" data-value="2022" aria-checked="false" class="dropdown__list-item">2022</li>
+                                <li role="option" data-value="2023" aria-checked="false" class="dropdown__list-item">2023</li>
+                                <li role="option" data-value="2024" aria-checked="false" class="dropdown__list-item">2024</li>
+                            </ul>
+                        </div>
+                        <input type="text" name="end-year" class="dropdown__input hidden" hidden value="none">
+                    </div>
+                </div>
+                <div class="filter__grid-item lg-item">
+                    <div class="filter__dropdown dropdown">
+                        <button type="button" class="dropdown__button icon-chevron" aria-expanded="false" aria-haspopup="true">
+                            <span class="dropdown__button-column">
+                                <span class="dropdown__button-caption">Двигатель</span>
+                                <span class="dropdown__button-text">Любой</span>
+                            </span>
+                        </button>
+                        <div class="dropdown__body" aria-hidden="true">
+                            <ul class="dropdown__list" role="listbox">
+                                <li role="option" data-value="all" aria-checked="true" class="dropdown__list-item">Любой</li>
+                                <li role="option" data-value="gasoline" aria-checked="false" class="dropdown__list-item">Бензиновый</li>
+                                <li role="option" data-value="diesel" aria-checked="false" class="dropdown__list-item">Дизельный</li>
+                                <li role="option" data-value="electric" aria-checked="false" class="dropdown__list-item">Электрический</li>
+                                <li role="option" data-value="hybrid" aria-checked="false" class="dropdown__list-item">Гибридный</li>
+                                <li role="option" data-value="lpg" aria-checked="false" class="dropdown__list-item">Газовый</li>
+                                <li role="option" data-value="hydrogen" aria-checked="false" class="dropdown__list-item">Водородный</li>
+                            </ul>
+                        </div>
+                        <input type="text" name="engine" class="dropdown__input hidden" hidden value="none">
+                    </div>
+                </div>
+                <div class="filter__grid-item">
+                    <div class="filter__dropdown dropdown">
+                        <button type="button" class="dropdown__button icon-chevron" aria-expanded="false" aria-haspopup="true">
+                            <span class="dropdown__button-column">
+                                <span class="dropdown__button-caption">Мощность</span>
+                                <span class="dropdown__button-text">От</span>
+                            </span>
+                        </button>
+                        <div class="dropdown__body" aria-hidden="true">
+                            <ul class="dropdown__list" role="listbox">
+                                <li role="option" data-value="none" aria-checked="true" class="dropdown__list-item">От</li>
+                                <li role="option" data-value="50" aria-checked="false" class="dropdown__list-item">до 50 л.с.</li>
+                                <li role="option" data-value="100" aria-checked="false" class="dropdown__list-item">50-100 л.с.</li>
+                                <li role="option" data-value="150" aria-checked="false" class="dropdown__list-item">100-150 л.с.</li>
+                                <li role="option" data-value="200" aria-checked="false" class="dropdown__list-item">150-200 л.с.</li>
+                                <li role="option" data-value="250" aria-checked="false" class="dropdown__list-item">200-250 л.с.</li>
+                                <li role="option" data-value="300" aria-checked="false" class="dropdown__list-item">250-300 л.с.</li>
+                                <li role="option" data-value="400" aria-checked="false" class="dropdown__list-item">300-400 л.с.</li>
+                                <li role="option" data-value="500" aria-checked="false" class="dropdown__list-item">400-500 л.с.</li>
+                                <li role="option" data-value="500+" aria-checked="false" class="dropdown__list-item">свыше 500 л.с.</li>
+                            </ul>
+                        </div>
+                        <input type="text" name="motor-power-start" class="dropdown__input hidden" hidden value="none">
+                    </div>
+                </div>
+                <div class="filter__grid-item">
+                    <div class="filter__dropdown dropdown">
+                        <button type="button" class="dropdown__button icon-chevron" aria-expanded="false" aria-haspopup="true">
+                            <span class="dropdown__button-column">
+                                <span class="dropdown__button-caption">Мощность</span>
+                                <span class="dropdown__button-text">До</span>
+                            </span>
+                        </button>
+                        <div class="dropdown__body" aria-hidden="true">
+                            <ul class="dropdown__list" role="listbox">
+                                <li role="option" data-value="none" aria-checked="true" class="dropdown__list-item">До</li>
+                                <li role="option" data-value="50" aria-checked="false" class="dropdown__list-item">до 50 л.с.</li>
+                                <li role="option" data-value="100" aria-checked="false" class="dropdown__list-item">50-100 л.с.</li>
+                                <li role="option" data-value="150" aria-checked="false" class="dropdown__list-item">100-150 л.с.</li>
+                                <li role="option" data-value="200" aria-checked="false" class="dropdown__list-item">150-200 л.с.</li>
+                                <li role="option" data-value="250" aria-checked="false" class="dropdown__list-item">200-250 л.с.</li>
+                                <li role="option" data-value="300" aria-checked="false" class="dropdown__list-item">250-300 л.с.</li>
+                                <li role="option" data-value="400" aria-checked="false" class="dropdown__list-item">300-400 л.с.</li>
+                                <li role="option" data-value="500" aria-checked="false" class="dropdown__list-item">400-500 л.с.</li>
+                                <li role="option" data-value="500+" aria-checked="false" class="dropdown__list-item">свыше 500 л.с.</li>
+                            </ul>
+                        </div>
+                        <input type="text" name="motor-power-end" class="dropdown__input hidden" hidden value="none">
+                    </div>
+                </div>
+                <div class="filter__grid-item lg-item">
+                    <div class="filter__dropdown dropdown">
+                        <button type="button" class="dropdown__button icon-chevron" aria-expanded="false" aria-haspopup="true">
+                            <span class="dropdown__button-column">
+                                <span class="dropdown__button-caption">Коробка</span>
+                                <span class="dropdown__button-text">Любая</span>
+                            </span>
+                        </button>
+                        <div class="dropdown__body" aria-hidden="true">
+                            <ul class="dropdown__list" role="listbox">
+                                <li role="option" data-value="all" aria-checked="true" class="dropdown__list-item">Любая</li>
+                                <li role="option" data-value="manual" aria-checked="false" class="dropdown__list-item">Механическая</li>
+                                <li role="option" data-value="automatic" aria-checked="false" class="dropdown__list-item">Автоматическая</li>
+                                <li role="option" data-value="robotic" aria-checked="false" class="dropdown__list-item">Роботизированная</li>
+                                <li role="option" data-value="cvt" aria-checked="false" class="dropdown__list-item">Вариатор</li>
+                            </ul>
+                        </div>
+                        <input type="text" name="transmission" class="dropdown__input hidden" hidden value="all">
+                    </div>
+                </div>
+                <div class="filter__grid-item lg-item">
+                    <div class="filter__dropdown dropdown">
+                        <button type="button" class="dropdown__button icon-chevron" aria-expanded="false" aria-haspopup="true">
+                            <span class="dropdown__button-column">
+                                <span class="dropdown__button-caption">Привод</span>
+                                <span class="dropdown__button-text">Любой</span>
+                            </span>
+                        </button>
+                        <div class="dropdown__body" aria-hidden="true">
+                            <ul class="dropdown__list" role="listbox">
+                                <li role="option" data-value="all" aria-checked="true" class="dropdown__list-item">Любой</li>
+                                <li role="option" data-value="fwd" aria-checked="false" class="dropdown__list-item">Передний</li>
+                                <li role="option" data-value="rwd" aria-checked="false" class="dropdown__list-item">Задний</li>
+                                <li role="option" data-value="awd" aria-checked="false" class="dropdown__list-item">Полный</li>
+                            </ul>
+                        </div>
+                        <input type="text" name="drive" class="dropdown__input hidden" hidden value="all">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="filter__bottom">
+            <div class="filter__quantity">Найдено 584 автомобиля</div>
+            <button type="submit" class="filter__submit btn btn-primary btn-fullwidth">Показать</button>
+        </div>
+    </div>
+</div>

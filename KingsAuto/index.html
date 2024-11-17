@@ -38,22 +38,27 @@
 	<meta property="twitter:image:src" content="/OG.png">
 	<!-- Twitter -->
 	<!-- plugnis -->
-	<link rel="stylesheet" href="css/libs/swiper-bundle.min.css?_v=20241114200103">
-	<link rel="stylesheet" href="css/libs/fancybox.css?_v=20241114200103">
-	<link rel="stylesheet" href="css/libs/nouislider.min.css?_v=20241114200103">
+	<link rel="stylesheet" href="css/libs/swiper-bundle.min.css?_v=20241117220734">
+	<link rel="stylesheet" href="css/libs/fancybox.css?_v=20241117220734">
+	<link rel="stylesheet" href="css/libs/nouislider.min.css?_v=20241117220734">
 	<!-- plugnis -->
-	<link rel="stylesheet" href="css/reset.min.css?_v=20241114200103">
-	<link rel="stylesheet" href="css/style.min.css?_v=20241114200103">
+	<link rel="stylesheet" href="css/reset.min.css?_v=20241117220734">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241117220734">
 </head>
 
 <body>
 	<section class="wrapper">
-		<header class="header ">
+		<header class="header header-transparent">
 			<div class="header__wrapper">
 				<div class="header__container container-lg">
+					<a href="/" class="header__logo">
+						<img src="img/logo.svg" class="header__logo-static" alt="logo">
+						<img src="img/logo-black.svg" class="header__logo-scroll" alt="logo">
+						<span class="header__logo-text">Покупка авто из-за рубежа</span>
+					</a>
 					<div class="header__menu">
 						<nav class="header__menu-left">
-							<a href="" class="header__catalog icon-catalog">Каталог</a>
+							<a href="/catalog.html" class="header__catalog icon-catalog">Каталог</a>
 							<ul class="menu__list">
 								<li class="menu__item menu-parent">
 									<a href="" class="menu__link">Услуги</a>
@@ -115,21 +120,19 @@
 								</div>
 								<div class="header__contacts-block">
 									<div class="header__contacts-caption">Личный кабинет:</div>
-									<a href="" class="header__btn btn icon-arrow">Вход</a>
 								</div>
 							</div>
 							<div class="header__copy">© 2024 Kings Auto&nbsp;</div>
 						</nav>
 					</div>
+					<a href="tel:+74959999999" class="header__phone icon-phone"><span>+7 495 999 99 99</span></a>
+					<div class="header__person">
+						<a href="" class="header__btn btn icon-login"><span>Вход</span></a>
+					</div>
 					<button type="button" class="menu__btn icon-catalog">
 						<span class="menu__btn-default">Меню</span>
 						<span class="menu__btn-active">Закрыть</span>
 					</button>
-					<a href="/" class="header__logo">
-						<img src="img/logo.svg" class="header__logo-static" alt="logo">
-						<img src="img/logo-black.svg" class="header__logo-scroll" alt="logo">
-						<span class="header__logo-text">Покупка авто из-за рубежа</span>
-					</a>
 				</div>
 			</div>
 		</header>
@@ -701,26 +704,27 @@
 											<div class="auto-card swiper-slide">
 												<div class="auto-card__slider swiper">
 													<div class="swiper-wrapper">
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/01.png" data-fancybox="gallery-a1b" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/01.webp" type="image/webp"><img src="img/offers/01.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-a1b" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-a1b" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
 													</div>
 													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
 												</div>
 												<div class="auto-card__body">
-													<a href="" class="auto-card__name">Porsche Cayenne</a>
+													<a href="/product.html" class="auto-card__name">Porsche Cayenne</a>
 													<ul class="auto-card__props">
 														<li class="auto-card__props-item">
 															<div class="auto-card__props-name">Двигатель</div>
@@ -740,34 +744,35 @@
 														<div class="auto-card__price-value"> 6 851 000 ₽* </div>
 													</div>
 													<div class="auto-card__bottom">
-														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
 													</div>
 												</div>
 											</div>
 											<div class="auto-card swiper-slide">
 												<div class="auto-card__slider swiper">
 													<div class="swiper-wrapper">
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-c2d" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-c2d" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-c2d" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
 													</div>
 													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
 												</div>
 												<div class="auto-card__body">
-													<a href="" class="auto-card__name">BMW X7 xDrive40i</a>
+													<a href="/product.html" class="auto-card__name">BMW X7 xDrive40i</a>
 													<ul class="auto-card__props">
 														<li class="auto-card__props-item">
 															<div class="auto-card__props-name">Двигатель</div>
@@ -787,34 +792,35 @@
 														<div class="auto-card__price-value"> 6 597 093 ₽* </div>
 													</div>
 													<div class="auto-card__bottom">
-														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
 													</div>
 												</div>
 											</div>
 											<div class="auto-card swiper-slide">
 												<div class="auto-card__slider swiper">
 													<div class="swiper-wrapper">
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-e3f" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-e3f" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-e3f" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
 													</div>
 													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
 												</div>
 												<div class="auto-card__body">
-													<a href="" class="auto-card__name">Porsche Panamera 4s</a>
+													<a href="/product.html" class="auto-card__name">Porsche Panamera 4s</a>
 													<ul class="auto-card__props">
 														<li class="auto-card__props-item">
 															<div class="auto-card__props-name">Двигатель</div>
@@ -834,34 +840,35 @@
 														<div class="auto-card__price-value"> 8 634 000 ₽* </div>
 													</div>
 													<div class="auto-card__bottom">
-														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
 													</div>
 												</div>
 											</div>
 											<div class="auto-card swiper-slide">
 												<div class="auto-card__slider swiper">
 													<div class="swiper-wrapper">
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/04.png" data-fancybox="gallery-g4h" class="auto-card__image swiper-slide">
 															<picture>
-																<source srcset="img/offers/01.webp" type="image/webp"><img src="img/offers/01.png" class="cover-image" alt="Фото автомобиля">
+																<source srcset="img/offers/04.webp" type="image/webp"><img src="img/offers/04.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-g4h" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-g4h" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
 													</div>
 													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
 												</div>
 												<div class="auto-card__body">
-													<a href="" class="auto-card__name">Porsche Cayenne</a>
+													<a href="/product.html" class="auto-card__name">Porsche Cayenne</a>
 													<ul class="auto-card__props">
 														<li class="auto-card__props-item">
 															<div class="auto-card__props-name">Двигатель</div>
@@ -881,34 +888,35 @@
 														<div class="auto-card__price-value"> 6 851 000 ₽* </div>
 													</div>
 													<div class="auto-card__bottom">
-														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
 													</div>
 												</div>
 											</div>
 											<div class="auto-card swiper-slide">
 												<div class="auto-card__slider swiper">
 													<div class="swiper-wrapper">
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/05.png" data-fancybox="gallery-i5j" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/05.webp" type="image/webp"><img src="img/offers/05.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="img/offers/02.png" data-fancybox="gallery-i5j" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
-															<picture>
-																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
-															</picture>
-														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-i5j" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
 													</div>
 													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
 												</div>
 												<div class="auto-card__body">
-													<a href="" class="auto-card__name">BMW X7 xDrive40i</a>
+													<a href="/product.html" class="auto-card__name">BMW X7 xDrive40i</a>
 													<ul class="auto-card__props">
 														<li class="auto-card__props-item">
 															<div class="auto-card__props-name">Двигатель</div>
@@ -928,34 +936,35 @@
 														<div class="auto-card__price-value"> 6 597 093 ₽* </div>
 													</div>
 													<div class="auto-card__bottom">
-														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
 													</div>
 												</div>
 											</div>
 											<div class="auto-card swiper-slide">
 												<div class="auto-card__slider swiper">
 													<div class="swiper-wrapper">
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-k6l" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-k6l" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-k6l" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
 													</div>
 													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
 												</div>
 												<div class="auto-card__body">
-													<a href="" class="auto-card__name">Porsche Panamera 4s</a>
+													<a href="/product.html" class="auto-card__name">Porsche Panamera 4s</a>
 													<ul class="auto-card__props">
 														<li class="auto-card__props-item">
 															<div class="auto-card__props-name">Двигатель</div>
@@ -975,34 +984,35 @@
 														<div class="auto-card__price-value"> 8 634 000 ₽* </div>
 													</div>
 													<div class="auto-card__bottom">
-														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
 													</div>
 												</div>
 											</div>
 											<div class="auto-card swiper-slide">
 												<div class="auto-card__slider swiper">
 													<div class="swiper-wrapper">
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/01.png" data-fancybox="gallery-m7n" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/01.webp" type="image/webp"><img src="img/offers/01.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-m7n" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-m7n" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
 													</div>
 													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
 												</div>
 												<div class="auto-card__body">
-													<a href="" class="auto-card__name">Porsche Cayenne</a>
+													<a href="/product.html" class="auto-card__name">Porsche Cayenne</a>
 													<ul class="auto-card__props">
 														<li class="auto-card__props-item">
 															<div class="auto-card__props-name">Двигатель</div>
@@ -1022,34 +1032,35 @@
 														<div class="auto-card__price-value"> 6 851 000 ₽* </div>
 													</div>
 													<div class="auto-card__bottom">
-														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
 													</div>
 												</div>
 											</div>
 											<div class="auto-card swiper-slide">
 												<div class="auto-card__slider swiper">
 													<div class="swiper-wrapper">
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-o8p" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-o8p" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-o8p" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
 													</div>
 													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
 												</div>
 												<div class="auto-card__body">
-													<a href="" class="auto-card__name">BMW X7 xDrive40i</a>
+													<a href="/product.html" class="auto-card__name">BMW X7 xDrive40i</a>
 													<ul class="auto-card__props">
 														<li class="auto-card__props-item">
 															<div class="auto-card__props-name">Двигатель</div>
@@ -1069,34 +1080,35 @@
 														<div class="auto-card__price-value"> 6 597 093 ₽* </div>
 													</div>
 													<div class="auto-card__bottom">
-														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
 													</div>
 												</div>
 											</div>
 											<div class="auto-card swiper-slide">
 												<div class="auto-card__slider swiper">
 													<div class="swiper-wrapper">
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-q9r" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-q9r" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-q9r" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
 													</div>
 													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
 												</div>
 												<div class="auto-card__body">
-													<a href="" class="auto-card__name">Porsche Panamera 4s</a>
+													<a href="/product.html" class="auto-card__name">Porsche Panamera 4s</a>
 													<ul class="auto-card__props">
 														<li class="auto-card__props-item">
 															<div class="auto-card__props-name">Двигатель</div>
@@ -1116,34 +1128,35 @@
 														<div class="auto-card__price-value"> 8 634 000 ₽* </div>
 													</div>
 													<div class="auto-card__bottom">
-														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
 													</div>
 												</div>
 											</div>
 											<div class="auto-card swiper-slide">
 												<div class="auto-card__slider swiper">
 													<div class="swiper-wrapper">
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/01.png" data-fancybox="gallery-s1t" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/01.webp" type="image/webp"><img src="img/offers/01.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-s1t" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-s1t" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
 													</div>
 													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
 												</div>
 												<div class="auto-card__body">
-													<a href="" class="auto-card__name">Porsche Cayenne</a>
+													<a href="/product.html" class="auto-card__name">Porsche Cayenne</a>
 													<ul class="auto-card__props">
 														<li class="auto-card__props-item">
 															<div class="auto-card__props-name">Двигатель</div>
@@ -1163,34 +1176,35 @@
 														<div class="auto-card__price-value"> 6 851 000 ₽* </div>
 													</div>
 													<div class="auto-card__bottom">
-														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
 													</div>
 												</div>
 											</div>
 											<div class="auto-card swiper-slide">
 												<div class="auto-card__slider swiper">
 													<div class="swiper-wrapper">
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-u2v" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-u2v" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-u2v" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
 													</div>
 													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
 												</div>
 												<div class="auto-card__body">
-													<a href="" class="auto-card__name">BMW X7 xDrive40i</a>
+													<a href="/product.html" class="auto-card__name">BMW X7 xDrive40i</a>
 													<ul class="auto-card__props">
 														<li class="auto-card__props-item">
 															<div class="auto-card__props-name">Двигатель</div>
@@ -1210,34 +1224,35 @@
 														<div class="auto-card__price-value"> 6 597 093 ₽* </div>
 													</div>
 													<div class="auto-card__bottom">
-														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
 													</div>
 												</div>
 											</div>
 											<div class="auto-card swiper-slide">
 												<div class="auto-card__slider swiper">
 													<div class="swiper-wrapper">
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-w3x" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-w3x" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-w3x" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
 													</div>
 													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
 												</div>
 												<div class="auto-card__body">
-													<a href="" class="auto-card__name">Porsche Panamera 4s</a>
+													<a href="/product.html" class="auto-card__name">Porsche Panamera 4s</a>
 													<ul class="auto-card__props">
 														<li class="auto-card__props-item">
 															<div class="auto-card__props-name">Двигатель</div>
@@ -1257,8 +1272,152 @@
 														<div class="auto-card__price-value"> 8 634 000 ₽* </div>
 													</div>
 													<div class="auto-card__bottom">
-														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="img/offers/04.png" data-fancybox="gallery-u2y" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/04.webp" type="image/webp"><img src="img/offers/04.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="img/offers/02.png" data-fancybox="gallery-u2y" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="img/offers/03.png" data-fancybox="gallery-u2y" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
+												</div>
+												<div class="auto-card__body">
+													<a href="/product.html" class="auto-card__name">BMW X7 xDrive40i</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">62 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 6 597 093 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="img/offers/05.png" data-fancybox="gallery-w0x" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/05.webp" type="image/webp"><img src="img/offers/05.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="img/offers/02.png" data-fancybox="gallery-w0x" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="img/offers/03.png" data-fancybox="gallery-w0x" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
+												</div>
+												<div class="auto-card__body">
+													<a href="/product.html" class="auto-card__name">Porsche Panamera 4s</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">51 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 8 634 000 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="img/offers/01.png" data-fancybox="gallery-12t" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/01.webp" type="image/webp"><img src="img/offers/01.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="img/offers/02.png" data-fancybox="gallery-12t" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="img/offers/03.png" data-fancybox="gallery-12t" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
+												</div>
+												<div class="auto-card__body">
+													<a href="/product.html" class="auto-card__name">Porsche Cayenne</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">37 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 6 851 000 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
 													</div>
 												</div>
 											</div>
@@ -1276,26 +1435,27 @@
 											<div class="auto-card swiper-slide">
 												<div class="auto-card__slider swiper">
 													<div class="swiper-wrapper">
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-x1a" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-x1a" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-x1a" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
 													</div>
 													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
 												</div>
 												<div class="auto-card__body">
-													<a href="" class="auto-card__name">BMW X7 xDrive40i</a>
+													<a href="/product.html" class="auto-card__name">BMW X7 xDrive40i</a>
 													<ul class="auto-card__props">
 														<li class="auto-card__props-item">
 															<div class="auto-card__props-name">Двигатель</div>
@@ -1315,34 +1475,35 @@
 														<div class="auto-card__price-value"> 6 597 093 ₽* </div>
 													</div>
 													<div class="auto-card__bottom">
-														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
 													</div>
 												</div>
 											</div>
 											<div class="auto-card swiper-slide">
 												<div class="auto-card__slider swiper">
 													<div class="swiper-wrapper">
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-y2b" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-y2b" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-y2b" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
 													</div>
 													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
 												</div>
 												<div class="auto-card__body">
-													<a href="" class="auto-card__name">Porsche Panamera 4s</a>
+													<a href="/product.html" class="auto-card__name">Porsche Panamera 4s</a>
 													<ul class="auto-card__props">
 														<li class="auto-card__props-item">
 															<div class="auto-card__props-name">Двигатель</div>
@@ -1362,34 +1523,35 @@
 														<div class="auto-card__price-value"> 8 634 000 ₽* </div>
 													</div>
 													<div class="auto-card__bottom">
-														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
 													</div>
 												</div>
 											</div>
 											<div class="auto-card swiper-slide">
 												<div class="auto-card__slider swiper">
 													<div class="swiper-wrapper">
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/01.png" data-fancybox="gallery-z3c" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/01.webp" type="image/webp"><img src="img/offers/01.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-z3c" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-z3c" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
 													</div>
 													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
 												</div>
 												<div class="auto-card__body">
-													<a href="" class="auto-card__name">Porsche Cayenne</a>
+													<a href="/product.html" class="auto-card__name">Porsche Cayenne</a>
 													<ul class="auto-card__props">
 														<li class="auto-card__props-item">
 															<div class="auto-card__props-name">Двигатель</div>
@@ -1409,34 +1571,35 @@
 														<div class="auto-card__price-value"> 6 851 000 ₽* </div>
 													</div>
 													<div class="auto-card__bottom">
-														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
 													</div>
 												</div>
 											</div>
 											<div class="auto-card swiper-slide">
 												<div class="auto-card__slider swiper">
 													<div class="swiper-wrapper">
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-u4d" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-u4d" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-u4d" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
 													</div>
 													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
 												</div>
 												<div class="auto-card__body">
-													<a href="" class="auto-card__name">BMW X7 xDrive40i</a>
+													<a href="/product.html" class="auto-card__name">BMW X7 xDrive40i</a>
 													<ul class="auto-card__props">
 														<li class="auto-card__props-item">
 															<div class="auto-card__props-name">Двигатель</div>
@@ -1456,34 +1619,35 @@
 														<div class="auto-card__price-value"> 6 597 093 ₽* </div>
 													</div>
 													<div class="auto-card__bottom">
-														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
 													</div>
 												</div>
 											</div>
 											<div class="auto-card swiper-slide">
 												<div class="auto-card__slider swiper">
 													<div class="swiper-wrapper">
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-v5e" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-v5e" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-v5e" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
 													</div>
 													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
 												</div>
 												<div class="auto-card__body">
-													<a href="" class="auto-card__name">Porsche Panamera 4s</a>
+													<a href="/product.html" class="auto-card__name">Porsche Panamera 4s</a>
 													<ul class="auto-card__props">
 														<li class="auto-card__props-item">
 															<div class="auto-card__props-name">Двигатель</div>
@@ -1503,34 +1667,35 @@
 														<div class="auto-card__price-value"> 8 634 000 ₽* </div>
 													</div>
 													<div class="auto-card__bottom">
-														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
 													</div>
 												</div>
 											</div>
 											<div class="auto-card swiper-slide">
 												<div class="auto-card__slider swiper">
 													<div class="swiper-wrapper">
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/01.png" data-fancybox="gallery-w6f" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/01.webp" type="image/webp"><img src="img/offers/01.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-w6f" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-w6f" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
 													</div>
 													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
 												</div>
 												<div class="auto-card__body">
-													<a href="" class="auto-card__name">Porsche Cayenne</a>
+													<a href="/product.html" class="auto-card__name">Porsche Cayenne</a>
 													<ul class="auto-card__props">
 														<li class="auto-card__props-item">
 															<div class="auto-card__props-name">Двигатель</div>
@@ -1550,34 +1715,35 @@
 														<div class="auto-card__price-value"> 6 851 000 ₽* </div>
 													</div>
 													<div class="auto-card__bottom">
-														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
 													</div>
 												</div>
 											</div>
 											<div class="auto-card swiper-slide">
 												<div class="auto-card__slider swiper">
 													<div class="swiper-wrapper">
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-t7g" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-t7g" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-t7g" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
 													</div>
 													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
 												</div>
 												<div class="auto-card__body">
-													<a href="" class="auto-card__name">BMW X7 xDrive40i</a>
+													<a href="/product.html" class="auto-card__name">BMW X7 xDrive40i</a>
 													<ul class="auto-card__props">
 														<li class="auto-card__props-item">
 															<div class="auto-card__props-name">Двигатель</div>
@@ -1597,34 +1763,35 @@
 														<div class="auto-card__price-value"> 6 597 093 ₽* </div>
 													</div>
 													<div class="auto-card__bottom">
-														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
 													</div>
 												</div>
 											</div>
 											<div class="auto-card swiper-slide">
 												<div class="auto-card__slider swiper">
 													<div class="swiper-wrapper">
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-s8h" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-s8h" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-s8h" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
 													</div>
 													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
 												</div>
 												<div class="auto-card__body">
-													<a href="" class="auto-card__name">Porsche Panamera 4s</a>
+													<a href="/product.html" class="auto-card__name">Porsche Panamera 4s</a>
 													<ul class="auto-card__props">
 														<li class="auto-card__props-item">
 															<div class="auto-card__props-name">Двигатель</div>
@@ -1644,34 +1811,35 @@
 														<div class="auto-card__price-value"> 8 634 000 ₽* </div>
 													</div>
 													<div class="auto-card__bottom">
-														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
 													</div>
 												</div>
 											</div>
 											<div class="auto-card swiper-slide">
 												<div class="auto-card__slider swiper">
 													<div class="swiper-wrapper">
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/01.png" data-fancybox="gallery-r9i" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/01.webp" type="image/webp"><img src="img/offers/01.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-r9i" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-r9i" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
 													</div>
 													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
 												</div>
 												<div class="auto-card__body">
-													<a href="" class="auto-card__name">Porsche Cayenne</a>
+													<a href="/product.html" class="auto-card__name">Porsche Cayenne</a>
 													<ul class="auto-card__props">
 														<li class="auto-card__props-item">
 															<div class="auto-card__props-name">Двигатель</div>
@@ -1691,34 +1859,35 @@
 														<div class="auto-card__price-value"> 6 851 000 ₽* </div>
 													</div>
 													<div class="auto-card__bottom">
-														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
 													</div>
 												</div>
 											</div>
 											<div class="auto-card swiper-slide">
 												<div class="auto-card__slider swiper">
 													<div class="swiper-wrapper">
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-q0j" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-q0j" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-q0j" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
 													</div>
 													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
 												</div>
 												<div class="auto-card__body">
-													<a href="" class="auto-card__name">BMW X7 xDrive40i</a>
+													<a href="/product.html" class="auto-card__name">BMW X7 xDrive40i</a>
 													<ul class="auto-card__props">
 														<li class="auto-card__props-item">
 															<div class="auto-card__props-name">Двигатель</div>
@@ -1738,34 +1907,35 @@
 														<div class="auto-card__price-value"> 6 597 093 ₽* </div>
 													</div>
 													<div class="auto-card__bottom">
-														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
 													</div>
 												</div>
 											</div>
 											<div class="auto-card swiper-slide">
 												<div class="auto-card__slider swiper">
 													<div class="swiper-wrapper">
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-p1k" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-p1k" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-p1k" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
 													</div>
 													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
 												</div>
 												<div class="auto-card__body">
-													<a href="" class="auto-card__name">Porsche Panamera 4s</a>
+													<a href="/product.html" class="auto-card__name">Porsche Panamera 4s</a>
 													<ul class="auto-card__props">
 														<li class="auto-card__props-item">
 															<div class="auto-card__props-name">Двигатель</div>
@@ -1785,8 +1955,8 @@
 														<div class="auto-card__price-value"> 8 634 000 ₽* </div>
 													</div>
 													<div class="auto-card__bottom">
-														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
 													</div>
 												</div>
 											</div>
@@ -1804,26 +1974,27 @@
 											<div class="auto-card swiper-slide">
 												<div class="auto-card__slider swiper">
 													<div class="swiper-wrapper">
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-n1m" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-n1m" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-n1m" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
 													</div>
 													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
 												</div>
 												<div class="auto-card__body">
-													<a href="" class="auto-card__name">Porsche Panamera 4s</a>
+													<a href="/product.html" class="auto-card__name">Porsche Panamera 4s</a>
 													<ul class="auto-card__props">
 														<li class="auto-card__props-item">
 															<div class="auto-card__props-name">Двигатель</div>
@@ -1843,34 +2014,35 @@
 														<div class="auto-card__price-value"> 8 634 000 ₽* </div>
 													</div>
 													<div class="auto-card__bottom">
-														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
 													</div>
 												</div>
 											</div>
 											<div class="auto-card swiper-slide">
 												<div class="auto-card__slider swiper">
 													<div class="swiper-wrapper">
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/01.png" data-fancybox="gallery-n2n" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/01.webp" type="image/webp"><img src="img/offers/01.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-n2n" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-n2n" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
 													</div>
 													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
 												</div>
 												<div class="auto-card__body">
-													<a href="" class="auto-card__name">Porsche Cayenne</a>
+													<a href="/product.html" class="auto-card__name">Porsche Cayenne</a>
 													<ul class="auto-card__props">
 														<li class="auto-card__props-item">
 															<div class="auto-card__props-name">Двигатель</div>
@@ -1890,34 +2062,35 @@
 														<div class="auto-card__price-value"> 6 851 000 ₽* </div>
 													</div>
 													<div class="auto-card__bottom">
-														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
 													</div>
 												</div>
 											</div>
 											<div class="auto-card swiper-slide">
 												<div class="auto-card__slider swiper">
 													<div class="swiper-wrapper">
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-n3o" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-n3o" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-n3o" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
 													</div>
 													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
 												</div>
 												<div class="auto-card__body">
-													<a href="" class="auto-card__name">BMW X7 xDrive40i</a>
+													<a href="/product.html" class="auto-card__name">BMW X7 xDrive40i</a>
 													<ul class="auto-card__props">
 														<li class="auto-card__props-item">
 															<div class="auto-card__props-name">Двигатель</div>
@@ -1937,34 +2110,35 @@
 														<div class="auto-card__price-value"> 6 597 093 ₽* </div>
 													</div>
 													<div class="auto-card__bottom">
-														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
 													</div>
 												</div>
 											</div>
 											<div class="auto-card swiper-slide">
 												<div class="auto-card__slider swiper">
 													<div class="swiper-wrapper">
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-n4p" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-n4p" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-n4p" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
 													</div>
 													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
 												</div>
 												<div class="auto-card__body">
-													<a href="" class="auto-card__name">Porsche Panamera 4s</a>
+													<a href="/product.html" class="auto-card__name">Porsche Panamera 4s</a>
 													<ul class="auto-card__props">
 														<li class="auto-card__props-item">
 															<div class="auto-card__props-name">Двигатель</div>
@@ -1984,34 +2158,35 @@
 														<div class="auto-card__price-value"> 8 634 000 ₽* </div>
 													</div>
 													<div class="auto-card__bottom">
-														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
 													</div>
 												</div>
 											</div>
 											<div class="auto-card swiper-slide">
 												<div class="auto-card__slider swiper">
 													<div class="swiper-wrapper">
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/01.png" data-fancybox="gallery-n5q" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/01.webp" type="image/webp"><img src="img/offers/01.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-n5q" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-n5q" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
 													</div>
 													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
 												</div>
 												<div class="auto-card__body">
-													<a href="" class="auto-card__name">Porsche Cayenne</a>
+													<a href="/product.html" class="auto-card__name">Porsche Cayenne</a>
 													<ul class="auto-card__props">
 														<li class="auto-card__props-item">
 															<div class="auto-card__props-name">Двигатель</div>
@@ -2031,34 +2206,35 @@
 														<div class="auto-card__price-value"> 6 851 000 ₽* </div>
 													</div>
 													<div class="auto-card__bottom">
-														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
 													</div>
 												</div>
 											</div>
 											<div class="auto-card swiper-slide">
 												<div class="auto-card__slider swiper">
 													<div class="swiper-wrapper">
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-n6r" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-n6r" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-n6r" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
 													</div>
 													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
 												</div>
 												<div class="auto-card__body">
-													<a href="" class="auto-card__name">BMW X7 xDrive40i</a>
+													<a href="/product.html" class="auto-card__name">BMW X7 xDrive40i</a>
 													<ul class="auto-card__props">
 														<li class="auto-card__props-item">
 															<div class="auto-card__props-name">Двигатель</div>
@@ -2078,34 +2254,35 @@
 														<div class="auto-card__price-value"> 6 597 093 ₽* </div>
 													</div>
 													<div class="auto-card__bottom">
-														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
 													</div>
 												</div>
 											</div>
 											<div class="auto-card swiper-slide">
 												<div class="auto-card__slider swiper">
 													<div class="swiper-wrapper">
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-n7s" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-n7s" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-n7s" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
 													</div>
 													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
 												</div>
 												<div class="auto-card__body">
-													<a href="" class="auto-card__name">Porsche Panamera 4s</a>
+													<a href="/product.html" class="auto-card__name">Porsche Panamera 4s</a>
 													<ul class="auto-card__props">
 														<li class="auto-card__props-item">
 															<div class="auto-card__props-name">Двигатель</div>
@@ -2125,34 +2302,35 @@
 														<div class="auto-card__price-value"> 8 634 000 ₽* </div>
 													</div>
 													<div class="auto-card__bottom">
-														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
 													</div>
 												</div>
 											</div>
 											<div class="auto-card swiper-slide">
 												<div class="auto-card__slider swiper">
 													<div class="swiper-wrapper">
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/01.png" data-fancybox="gallery-n8t" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/01.webp" type="image/webp"><img src="img/offers/01.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-n8t" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-n8t" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
 													</div>
 													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
 												</div>
 												<div class="auto-card__body">
-													<a href="" class="auto-card__name">Porsche Cayenne</a>
+													<a href="/product.html" class="auto-card__name">Porsche Cayenne</a>
 													<ul class="auto-card__props">
 														<li class="auto-card__props-item">
 															<div class="auto-card__props-name">Двигатель</div>
@@ -2172,34 +2350,35 @@
 														<div class="auto-card__price-value"> 6 851 000 ₽* </div>
 													</div>
 													<div class="auto-card__bottom">
-														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
 													</div>
 												</div>
 											</div>
 											<div class="auto-card swiper-slide">
 												<div class="auto-card__slider swiper">
 													<div class="swiper-wrapper">
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-n9u" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-n9u" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-n9u" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
 													</div>
 													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
 												</div>
 												<div class="auto-card__body">
-													<a href="" class="auto-card__name">BMW X7 xDrive40i</a>
+													<a href="/product.html" class="auto-card__name">BMW X7 xDrive40i</a>
 													<ul class="auto-card__props">
 														<li class="auto-card__props-item">
 															<div class="auto-card__props-name">Двигатель</div>
@@ -2219,34 +2398,35 @@
 														<div class="auto-card__price-value"> 6 597 093 ₽* </div>
 													</div>
 													<div class="auto-card__bottom">
-														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
 													</div>
 												</div>
 											</div>
 											<div class="auto-card swiper-slide">
 												<div class="auto-card__slider swiper">
 													<div class="swiper-wrapper">
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-n10v" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-n10v" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-n10v" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
 													</div>
 													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
 												</div>
 												<div class="auto-card__body">
-													<a href="" class="auto-card__name">Porsche Panamera 4s</a>
+													<a href="/product.html" class="auto-card__name">Porsche Panamera 4s</a>
 													<ul class="auto-card__props">
 														<li class="auto-card__props-item">
 															<div class="auto-card__props-name">Двигатель</div>
@@ -2266,8 +2446,8 @@
 														<div class="auto-card__price-value"> 8 634 000 ₽* </div>
 													</div>
 													<div class="auto-card__bottom">
-														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
 													</div>
 												</div>
 											</div>
@@ -2285,26 +2465,27 @@
 											<div class="auto-card swiper-slide">
 												<div class="auto-card__slider swiper">
 													<div class="swiper-wrapper">
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/01.png" data-fancybox="gallery-a1b" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/01.webp" type="image/webp"><img src="img/offers/01.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-a1b" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-a1b" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
 													</div>
 													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
 												</div>
 												<div class="auto-card__body">
-													<a href="" class="auto-card__name">Porsche Cayenne</a>
+													<a href="/product.html" class="auto-card__name">Porsche Cayenne</a>
 													<ul class="auto-card__props">
 														<li class="auto-card__props-item">
 															<div class="auto-card__props-name">Двигатель</div>
@@ -2324,34 +2505,35 @@
 														<div class="auto-card__price-value"> 6 851 000 ₽* </div>
 													</div>
 													<div class="auto-card__bottom">
-														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
 													</div>
 												</div>
 											</div>
 											<div class="auto-card swiper-slide">
 												<div class="auto-card__slider swiper">
 													<div class="swiper-wrapper">
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-c2d" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-c2d" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-c2d" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
 													</div>
 													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
 												</div>
 												<div class="auto-card__body">
-													<a href="" class="auto-card__name">BMW X7 xDrive40i</a>
+													<a href="/product.html" class="auto-card__name">BMW X7 xDrive40i</a>
 													<ul class="auto-card__props">
 														<li class="auto-card__props-item">
 															<div class="auto-card__props-name">Двигатель</div>
@@ -2371,34 +2553,35 @@
 														<div class="auto-card__price-value"> 6 597 093 ₽* </div>
 													</div>
 													<div class="auto-card__bottom">
-														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
 													</div>
 												</div>
 											</div>
 											<div class="auto-card swiper-slide">
 												<div class="auto-card__slider swiper">
 													<div class="swiper-wrapper">
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-e3f" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-e3f" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-e3f" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
 													</div>
 													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
 												</div>
 												<div class="auto-card__body">
-													<a href="" class="auto-card__name">Porsche Panamera 4s</a>
+													<a href="/product.html" class="auto-card__name">Porsche Panamera 4s</a>
 													<ul class="auto-card__props">
 														<li class="auto-card__props-item">
 															<div class="auto-card__props-name">Двигатель</div>
@@ -2418,34 +2601,35 @@
 														<div class="auto-card__price-value"> 8 634 000 ₽* </div>
 													</div>
 													<div class="auto-card__bottom">
-														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
 													</div>
 												</div>
 											</div>
 											<div class="auto-card swiper-slide">
 												<div class="auto-card__slider swiper">
 													<div class="swiper-wrapper">
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/04.png" data-fancybox="gallery-g4h" class="auto-card__image swiper-slide">
 															<picture>
-																<source srcset="img/offers/01.webp" type="image/webp"><img src="img/offers/01.png" class="cover-image" alt="Фото автомобиля">
+																<source srcset="img/offers/04.webp" type="image/webp"><img src="img/offers/04.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-g4h" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-g4h" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
 													</div>
 													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
 												</div>
 												<div class="auto-card__body">
-													<a href="" class="auto-card__name">Porsche Cayenne</a>
+													<a href="/product.html" class="auto-card__name">Porsche Cayenne</a>
 													<ul class="auto-card__props">
 														<li class="auto-card__props-item">
 															<div class="auto-card__props-name">Двигатель</div>
@@ -2465,34 +2649,35 @@
 														<div class="auto-card__price-value"> 6 851 000 ₽* </div>
 													</div>
 													<div class="auto-card__bottom">
-														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
 													</div>
 												</div>
 											</div>
 											<div class="auto-card swiper-slide">
 												<div class="auto-card__slider swiper">
 													<div class="swiper-wrapper">
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/05.png" data-fancybox="gallery-i5j" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/05.webp" type="image/webp"><img src="img/offers/05.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="img/offers/02.png" data-fancybox="gallery-i5j" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
-															<picture>
-																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
-															</picture>
-														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-i5j" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
 													</div>
 													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
 												</div>
 												<div class="auto-card__body">
-													<a href="" class="auto-card__name">BMW X7 xDrive40i</a>
+													<a href="/product.html" class="auto-card__name">BMW X7 xDrive40i</a>
 													<ul class="auto-card__props">
 														<li class="auto-card__props-item">
 															<div class="auto-card__props-name">Двигатель</div>
@@ -2512,34 +2697,35 @@
 														<div class="auto-card__price-value"> 6 597 093 ₽* </div>
 													</div>
 													<div class="auto-card__bottom">
-														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
 													</div>
 												</div>
 											</div>
 											<div class="auto-card swiper-slide">
 												<div class="auto-card__slider swiper">
 													<div class="swiper-wrapper">
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-k6l" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-k6l" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-k6l" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
 													</div>
 													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
 												</div>
 												<div class="auto-card__body">
-													<a href="" class="auto-card__name">Porsche Panamera 4s</a>
+													<a href="/product.html" class="auto-card__name">Porsche Panamera 4s</a>
 													<ul class="auto-card__props">
 														<li class="auto-card__props-item">
 															<div class="auto-card__props-name">Двигатель</div>
@@ -2559,34 +2745,35 @@
 														<div class="auto-card__price-value"> 8 634 000 ₽* </div>
 													</div>
 													<div class="auto-card__bottom">
-														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
 													</div>
 												</div>
 											</div>
 											<div class="auto-card swiper-slide">
 												<div class="auto-card__slider swiper">
 													<div class="swiper-wrapper">
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/01.png" data-fancybox="gallery-m7n" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/01.webp" type="image/webp"><img src="img/offers/01.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-m7n" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-m7n" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
 													</div>
 													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
 												</div>
 												<div class="auto-card__body">
-													<a href="" class="auto-card__name">Porsche Cayenne</a>
+													<a href="/product.html" class="auto-card__name">Porsche Cayenne</a>
 													<ul class="auto-card__props">
 														<li class="auto-card__props-item">
 															<div class="auto-card__props-name">Двигатель</div>
@@ -2606,34 +2793,35 @@
 														<div class="auto-card__price-value"> 6 851 000 ₽* </div>
 													</div>
 													<div class="auto-card__bottom">
-														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
 													</div>
 												</div>
 											</div>
 											<div class="auto-card swiper-slide">
 												<div class="auto-card__slider swiper">
 													<div class="swiper-wrapper">
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-o8p" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-o8p" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-o8p" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
 													</div>
 													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
 												</div>
 												<div class="auto-card__body">
-													<a href="" class="auto-card__name">BMW X7 xDrive40i</a>
+													<a href="/product.html" class="auto-card__name">BMW X7 xDrive40i</a>
 													<ul class="auto-card__props">
 														<li class="auto-card__props-item">
 															<div class="auto-card__props-name">Двигатель</div>
@@ -2653,34 +2841,35 @@
 														<div class="auto-card__price-value"> 6 597 093 ₽* </div>
 													</div>
 													<div class="auto-card__bottom">
-														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
 													</div>
 												</div>
 											</div>
 											<div class="auto-card swiper-slide">
 												<div class="auto-card__slider swiper">
 													<div class="swiper-wrapper">
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-q9r" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-q9r" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-q9r" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
 													</div>
 													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
 												</div>
 												<div class="auto-card__body">
-													<a href="" class="auto-card__name">Porsche Panamera 4s</a>
+													<a href="/product.html" class="auto-card__name">Porsche Panamera 4s</a>
 													<ul class="auto-card__props">
 														<li class="auto-card__props-item">
 															<div class="auto-card__props-name">Двигатель</div>
@@ -2700,34 +2889,35 @@
 														<div class="auto-card__price-value"> 8 634 000 ₽* </div>
 													</div>
 													<div class="auto-card__bottom">
-														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
 													</div>
 												</div>
 											</div>
 											<div class="auto-card swiper-slide">
 												<div class="auto-card__slider swiper">
 													<div class="swiper-wrapper">
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/01.png" data-fancybox="gallery-s1t" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/01.webp" type="image/webp"><img src="img/offers/01.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-s1t" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-s1t" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
 													</div>
 													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
 												</div>
 												<div class="auto-card__body">
-													<a href="" class="auto-card__name">Porsche Cayenne</a>
+													<a href="/product.html" class="auto-card__name">Porsche Cayenne</a>
 													<ul class="auto-card__props">
 														<li class="auto-card__props-item">
 															<div class="auto-card__props-name">Двигатель</div>
@@ -2747,34 +2937,35 @@
 														<div class="auto-card__price-value"> 6 851 000 ₽* </div>
 													</div>
 													<div class="auto-card__bottom">
-														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
 													</div>
 												</div>
 											</div>
 											<div class="auto-card swiper-slide">
 												<div class="auto-card__slider swiper">
 													<div class="swiper-wrapper">
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-u2v" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-u2v" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-u2v" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
 													</div>
 													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
 												</div>
 												<div class="auto-card__body">
-													<a href="" class="auto-card__name">BMW X7 xDrive40i</a>
+													<a href="/product.html" class="auto-card__name">BMW X7 xDrive40i</a>
 													<ul class="auto-card__props">
 														<li class="auto-card__props-item">
 															<div class="auto-card__props-name">Двигатель</div>
@@ -2794,34 +2985,35 @@
 														<div class="auto-card__price-value"> 6 597 093 ₽* </div>
 													</div>
 													<div class="auto-card__bottom">
-														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
 													</div>
 												</div>
 											</div>
 											<div class="auto-card swiper-slide">
 												<div class="auto-card__slider swiper">
 													<div class="swiper-wrapper">
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-w3x" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-w3x" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-w3x" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
 													</div>
 													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
 												</div>
 												<div class="auto-card__body">
-													<a href="" class="auto-card__name">Porsche Panamera 4s</a>
+													<a href="/product.html" class="auto-card__name">Porsche Panamera 4s</a>
 													<ul class="auto-card__props">
 														<li class="auto-card__props-item">
 															<div class="auto-card__props-name">Двигатель</div>
@@ -2841,8 +3033,152 @@
 														<div class="auto-card__price-value"> 8 634 000 ₽* </div>
 													</div>
 													<div class="auto-card__bottom">
-														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="img/offers/04.png" data-fancybox="gallery-u2y" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/04.webp" type="image/webp"><img src="img/offers/04.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="img/offers/02.png" data-fancybox="gallery-u2y" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="img/offers/03.png" data-fancybox="gallery-u2y" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
+												</div>
+												<div class="auto-card__body">
+													<a href="/product.html" class="auto-card__name">BMW X7 xDrive40i</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">62 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 6 597 093 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="img/offers/05.png" data-fancybox="gallery-w0x" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/05.webp" type="image/webp"><img src="img/offers/05.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="img/offers/02.png" data-fancybox="gallery-w0x" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="img/offers/03.png" data-fancybox="gallery-w0x" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
+												</div>
+												<div class="auto-card__body">
+													<a href="/product.html" class="auto-card__name">Porsche Panamera 4s</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">51 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 8 634 000 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+													</div>
+												</div>
+											</div>
+											<div class="auto-card swiper-slide">
+												<div class="auto-card__slider swiper">
+													<div class="swiper-wrapper">
+														<a href="img/offers/01.png" data-fancybox="gallery-12t" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/01.webp" type="image/webp"><img src="img/offers/01.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="img/offers/02.png" data-fancybox="gallery-12t" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+														<a href="img/offers/03.png" data-fancybox="gallery-12t" class="auto-card__image swiper-slide">
+															<picture>
+																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+															</picture>
+														</a>
+													</div>
+													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
+												</div>
+												<div class="auto-card__body">
+													<a href="/product.html" class="auto-card__name">Porsche Cayenne</a>
+													<ul class="auto-card__props">
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Двигатель</div>
+															<div class="auto-card__props-value">Бензиновый</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Пробег</div>
+															<div class="auto-card__props-value">37 000 км</div>
+														</li>
+														<li class="auto-card__props-item">
+															<div class="auto-card__props-name">Год</div>
+															<div class="auto-card__props-value">2021</div>
+														</li>
+													</ul>
+													<div class="auto-card__price">
+														<div class="auto-card__price-caption">Цена</div>
+														<div class="auto-card__price-value"> 6 851 000 ₽* </div>
+													</div>
+													<div class="auto-card__bottom">
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
 													</div>
 												</div>
 											</div>
@@ -2860,26 +3196,27 @@
 											<div class="auto-card swiper-slide">
 												<div class="auto-card__slider swiper">
 													<div class="swiper-wrapper">
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-x1a" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-x1a" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-x1a" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
 													</div>
 													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
 												</div>
 												<div class="auto-card__body">
-													<a href="" class="auto-card__name">BMW X7 xDrive40i</a>
+													<a href="/product.html" class="auto-card__name">BMW X7 xDrive40i</a>
 													<ul class="auto-card__props">
 														<li class="auto-card__props-item">
 															<div class="auto-card__props-name">Двигатель</div>
@@ -2899,34 +3236,35 @@
 														<div class="auto-card__price-value"> 6 597 093 ₽* </div>
 													</div>
 													<div class="auto-card__bottom">
-														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
 													</div>
 												</div>
 											</div>
 											<div class="auto-card swiper-slide">
 												<div class="auto-card__slider swiper">
 													<div class="swiper-wrapper">
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-y2b" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-y2b" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-y2b" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
 													</div>
 													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
 												</div>
 												<div class="auto-card__body">
-													<a href="" class="auto-card__name">Porsche Panamera 4s</a>
+													<a href="/product.html" class="auto-card__name">Porsche Panamera 4s</a>
 													<ul class="auto-card__props">
 														<li class="auto-card__props-item">
 															<div class="auto-card__props-name">Двигатель</div>
@@ -2946,34 +3284,35 @@
 														<div class="auto-card__price-value"> 8 634 000 ₽* </div>
 													</div>
 													<div class="auto-card__bottom">
-														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
 													</div>
 												</div>
 											</div>
 											<div class="auto-card swiper-slide">
 												<div class="auto-card__slider swiper">
 													<div class="swiper-wrapper">
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/01.png" data-fancybox="gallery-z3c" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/01.webp" type="image/webp"><img src="img/offers/01.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-z3c" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-z3c" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
 													</div>
 													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
 												</div>
 												<div class="auto-card__body">
-													<a href="" class="auto-card__name">Porsche Cayenne</a>
+													<a href="/product.html" class="auto-card__name">Porsche Cayenne</a>
 													<ul class="auto-card__props">
 														<li class="auto-card__props-item">
 															<div class="auto-card__props-name">Двигатель</div>
@@ -2993,34 +3332,35 @@
 														<div class="auto-card__price-value"> 6 851 000 ₽* </div>
 													</div>
 													<div class="auto-card__bottom">
-														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
 													</div>
 												</div>
 											</div>
 											<div class="auto-card swiper-slide">
 												<div class="auto-card__slider swiper">
 													<div class="swiper-wrapper">
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-u4d" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-u4d" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-u4d" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
 													</div>
 													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
 												</div>
 												<div class="auto-card__body">
-													<a href="" class="auto-card__name">BMW X7 xDrive40i</a>
+													<a href="/product.html" class="auto-card__name">BMW X7 xDrive40i</a>
 													<ul class="auto-card__props">
 														<li class="auto-card__props-item">
 															<div class="auto-card__props-name">Двигатель</div>
@@ -3040,34 +3380,35 @@
 														<div class="auto-card__price-value"> 6 597 093 ₽* </div>
 													</div>
 													<div class="auto-card__bottom">
-														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
 													</div>
 												</div>
 											</div>
 											<div class="auto-card swiper-slide">
 												<div class="auto-card__slider swiper">
 													<div class="swiper-wrapper">
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-v5e" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-v5e" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-v5e" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
 													</div>
 													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
 												</div>
 												<div class="auto-card__body">
-													<a href="" class="auto-card__name">Porsche Panamera 4s</a>
+													<a href="/product.html" class="auto-card__name">Porsche Panamera 4s</a>
 													<ul class="auto-card__props">
 														<li class="auto-card__props-item">
 															<div class="auto-card__props-name">Двигатель</div>
@@ -3087,34 +3428,35 @@
 														<div class="auto-card__price-value"> 8 634 000 ₽* </div>
 													</div>
 													<div class="auto-card__bottom">
-														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
 													</div>
 												</div>
 											</div>
 											<div class="auto-card swiper-slide">
 												<div class="auto-card__slider swiper">
 													<div class="swiper-wrapper">
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/01.png" data-fancybox="gallery-w6f" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/01.webp" type="image/webp"><img src="img/offers/01.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-w6f" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-w6f" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
 													</div>
 													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
 												</div>
 												<div class="auto-card__body">
-													<a href="" class="auto-card__name">Porsche Cayenne</a>
+													<a href="/product.html" class="auto-card__name">Porsche Cayenne</a>
 													<ul class="auto-card__props">
 														<li class="auto-card__props-item">
 															<div class="auto-card__props-name">Двигатель</div>
@@ -3134,34 +3476,35 @@
 														<div class="auto-card__price-value"> 6 851 000 ₽* </div>
 													</div>
 													<div class="auto-card__bottom">
-														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
 													</div>
 												</div>
 											</div>
 											<div class="auto-card swiper-slide">
 												<div class="auto-card__slider swiper">
 													<div class="swiper-wrapper">
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-t7g" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-t7g" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-t7g" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
 													</div>
 													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
 												</div>
 												<div class="auto-card__body">
-													<a href="" class="auto-card__name">BMW X7 xDrive40i</a>
+													<a href="/product.html" class="auto-card__name">BMW X7 xDrive40i</a>
 													<ul class="auto-card__props">
 														<li class="auto-card__props-item">
 															<div class="auto-card__props-name">Двигатель</div>
@@ -3181,34 +3524,35 @@
 														<div class="auto-card__price-value"> 6 597 093 ₽* </div>
 													</div>
 													<div class="auto-card__bottom">
-														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
 													</div>
 												</div>
 											</div>
 											<div class="auto-card swiper-slide">
 												<div class="auto-card__slider swiper">
 													<div class="swiper-wrapper">
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-s8h" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-s8h" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-s8h" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
 													</div>
 													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
 												</div>
 												<div class="auto-card__body">
-													<a href="" class="auto-card__name">Porsche Panamera 4s</a>
+													<a href="/product.html" class="auto-card__name">Porsche Panamera 4s</a>
 													<ul class="auto-card__props">
 														<li class="auto-card__props-item">
 															<div class="auto-card__props-name">Двигатель</div>
@@ -3228,34 +3572,35 @@
 														<div class="auto-card__price-value"> 8 634 000 ₽* </div>
 													</div>
 													<div class="auto-card__bottom">
-														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
 													</div>
 												</div>
 											</div>
 											<div class="auto-card swiper-slide">
 												<div class="auto-card__slider swiper">
 													<div class="swiper-wrapper">
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/01.png" data-fancybox="gallery-r9i" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/01.webp" type="image/webp"><img src="img/offers/01.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-r9i" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-r9i" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
 													</div>
 													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
 												</div>
 												<div class="auto-card__body">
-													<a href="" class="auto-card__name">Porsche Cayenne</a>
+													<a href="/product.html" class="auto-card__name">Porsche Cayenne</a>
 													<ul class="auto-card__props">
 														<li class="auto-card__props-item">
 															<div class="auto-card__props-name">Двигатель</div>
@@ -3275,34 +3620,35 @@
 														<div class="auto-card__price-value"> 6 851 000 ₽* </div>
 													</div>
 													<div class="auto-card__bottom">
-														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
 													</div>
 												</div>
 											</div>
 											<div class="auto-card swiper-slide">
 												<div class="auto-card__slider swiper">
 													<div class="swiper-wrapper">
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-q0j" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-q0j" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-q0j" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
 													</div>
 													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
 												</div>
 												<div class="auto-card__body">
-													<a href="" class="auto-card__name">BMW X7 xDrive40i</a>
+													<a href="/product.html" class="auto-card__name">BMW X7 xDrive40i</a>
 													<ul class="auto-card__props">
 														<li class="auto-card__props-item">
 															<div class="auto-card__props-name">Двигатель</div>
@@ -3322,34 +3668,35 @@
 														<div class="auto-card__price-value"> 6 597 093 ₽* </div>
 													</div>
 													<div class="auto-card__bottom">
-														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
 													</div>
 												</div>
 											</div>
 											<div class="auto-card swiper-slide">
 												<div class="auto-card__slider swiper">
 													<div class="swiper-wrapper">
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-p1k" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/02.png" data-fancybox="gallery-p1k" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/02.webp" type="image/webp"><img src="img/offers/02.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
-														<a href="" class="auto-card__image swiper-slide">
+														<a href="img/offers/03.png" data-fancybox="gallery-p1k" class="auto-card__image swiper-slide">
 															<picture>
 																<source srcset="img/offers/03.webp" type="image/webp"><img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
 															</picture>
 														</a>
 													</div>
 													<div class="auto-card__slider-pagination swiper-pagination"></div>
+													<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
 												</div>
 												<div class="auto-card__body">
-													<a href="" class="auto-card__name">Porsche Panamera 4s</a>
+													<a href="/product.html" class="auto-card__name">Porsche Panamera 4s</a>
 													<ul class="auto-card__props">
 														<li class="auto-card__props-item">
 															<div class="auto-card__props-name">Двигатель</div>
@@ -3369,8 +3716,8 @@
 														<div class="auto-card__price-value"> 8 634 000 ₽* </div>
 													</div>
 													<div class="auto-card__bottom">
-														<a href="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
-														<a href="" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
+														<a href="#order" data-fancybox="" class="auto-card__btn btn btn-primary btn-fullwidth">Оставить заявку</a>
+														<a href="/product.html" class="auto-card__btn btn btn-grey icon-arrow">Подробнее</a>
 													</div>
 												</div>
 											</div>
@@ -3671,11 +4018,11 @@
 			</div>
 		</div>
 		<!-- plugnis -->
-		<script src="js/libs/jquery-3.7.1.min.js?_v=20241114200103"></script>
-		<script src="js/libs/swiper-bundle.min.js?_v=20241114200103"></script>
-		<script src="js/libs/fancybox.umd.js?_v=20241114200103"></script>
+		<script src="js/libs/jquery-3.7.1.min.js?_v=20241117220734"></script>
+		<script src="js/libs/swiper-bundle.min.js?_v=20241117220734"></script>
+		<script src="js/libs/fancybox.umd.js?_v=20241117220734"></script>
 		<!-- plugnis -->
-		<script src="js/app.min.js?_v=20241114200103"></script>
+		<script src="js/app.min.js?_v=20241117220734"></script>
 	</section>
 </body>
 

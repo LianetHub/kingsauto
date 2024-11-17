@@ -109,7 +109,7 @@
 		cursor: pointer;
 		user-select: none;
 		&::before {
-			content: '';
+			content: "";
 			position: absolute;
 			top: 50%;
 			transform: translateY(-50%);
@@ -121,6 +121,7 @@
 			color: #2b3239;
 			width: rem(15);
 			height: rem(15);
+			border-radius: rem(3);
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -201,22 +202,60 @@
 		}
 	}
 	&.btn-secondary {
-		background: #1e1e1e;
-		border-radius: 0;
+		background: #81a6ca;
 		color: #fff;
 		@media (any-hover: hover) {
 			&:hover {
-				background: darken($color: #f3f2f2, $amount: 10);
+				background: darken($color: #81a6ca, $amount: 10);
 			}
+		}
+		&::before {
+			font-size: 1.25em;
 		}
 	}
 	&.btn-fullwidth {
 		width: 100%;
 	}
 	&:disabled,
-	&[aria-disabled='true'] {
+	&[aria-disabled="true"] {
 		cursor: default;
 		opacity: 0.7;
 		pointer-events: none;
+	}
+}
+
+.switcher {
+	// .switcher__input
+	&__input {
+		&:checked {
+			& + .switcher__btn {
+				&::before {
+					left: rem(17);
+				}
+				background: #81a6ca;
+			}
+		}
+	}
+	// .switcher__btn
+	&__btn {
+		position: relative;
+		width: rem(35);
+		height: rem(20);
+		border-radius: 6.25rem;
+		background: #c5d1e0;
+		display: block;
+		cursor: pointer;
+		transition: background-color 0.3s ease 0s;
+		&::before {
+			content: "";
+			position: absolute;
+			top: rem(2);
+			left: rem(2);
+			width: rem(16);
+			transition: left 0.3s ease 0s;
+			border-radius: 50%;
+			background: #fff;
+			height: calc(100% - rem(4));
+		}
 	}
 }

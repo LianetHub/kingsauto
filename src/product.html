@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    'title': 'KingsAuto | Страница товара'
+    })
+    <body>
+        <section class="wrapper">
+            @@include('html/_header.html', {
+            "className": "",
+            "login": false
+            })
+            <main class="page">
+                <nav aria-label="Хлебные крошки" class="breadcrumbs">
+                    <div class="breadcrumbs__container">
+                        <ul class="breadcrumbs__list" itemscope itemtype="http://schema.org/BreadcrumbList">
+                            <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                <a href="/" class="breadcrumbs__link" itemprop="item">
+                                    <span itemprop="name">Главная</span>
+                                </a>
+                                <meta itemprop="position" content="1">
+                            </li>
+                            <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                <a href="/" class="breadcrumbs__link" itemprop="item">
+                                    <span itemprop="name">Каталог автомобилей</span>
+                                </a>
+                                <meta itemprop="position" content="2">
+                            </li>
+                            <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                <a href="/" class="breadcrumbs__link" itemprop="item">
+                                    <span itemprop="name">Японские</span>
+                                </a>
+                                <meta itemprop="position" content="3">
+                            </li>
+                            <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                <a class="breadcrumbs__link active" itemprop="item">
+                                    <span itemprop="name">Каталог автомобилей</span>
+                                </a>
+                                <meta itemprop="position" content="4">
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <section class="product">
+                    <div class="product__container">
+                        <div class="product__body">
+                            <div class="product__main">
+                                <h1 class="product__title title-lg">Toyota PRIUS 2018</h1>
+                                <div class="product__info">
+                                    <div class="product__price">
+                                        1 491 400 ₽
+                                    </div>
+                                    <button type="button" aria-label="Добавить в избранное" class="product__favorite favorite-btn"></button>
+                                </div>
+                                <div class="product__actions">
+                                    <a href="#order" data-fancybox class="product__btn btn btn-primary">
+                                        Оставить заявку
+                                    </a>
+                                    <a href="" target="_blank" class="product__btn btn btn-secondary icon-wa">Написать в Whatsapp</a>
+                                </div>
+                                <ul class="product__properties">
+                                    <li class="product__property">
+                                        <div class="product__property-name">Год выпуска</div>
+                                        <div class="product__property-value">2018</div>
+                                    </li>
+                                    <li class="product__property">
+                                        <div class="product__property-name">Поколение</div>
+                                        <div class="product__property-value">IV (XW50)</div>
+                                    </li>
+                                    <li class="product__property">
+                                        <div class="product__property-name">Комплектация</div>
+                                        <div class="product__property-value">Люкс</div>
+                                    </li>
+                                    <li class="product__property">
+                                        <div class="product__property-name">Пробег</div>
+                                        <div class="product__property-value">26 000</div>
+                                    </li>
+                                    <li class="product__property">
+                                        <div class="product__property-name">Кузов</div>
+                                        <div class="product__property-value">Лифтбек</div>
+                                    </li>
+                                    <li class="product__property">
+                                        <div class="product__property-name">Двигатель</div>
+                                        <div class="product__property-value">1.8 л / 98 л.с. / Гибрид</div>
+                                    </li>
+                                    <li class="product__property">
+                                        <div class="product__property-name">Запас хода</div>
+                                        <div class="product__property-value">2 км</div>
+                                    </li>
+                                    <li class="product__property">
+                                        <div class="product__property-name">Коробка</div>
+                                        <div class="product__property-value">Автоматическая</div>
+                                    </li>
+                                    <li class="product__property">
+                                        <div class="product__property-name">Руль</div>
+                                        <div class="product__property-value">Правый</div>
+                                    </li>
+                                    <li class="product__property">
+                                        <div class="product__property-name">Привод</div>
+                                        <div class="product__property-value">Передний</div>
+                                    </li>
+                                    <li class="product__property">
+                                        <div class="product__property-name">Цвет</div>
+                                        <div class="product__property-value">Серебро</div>
+                                    </li>
+                                    <li class="product__property">
+                                        <div class="product__property-name">Состояние</div>
+                                        <div class="product__property-value">Не требует ремонта</div>
+                                    </li>
+                                    <li class="product__property">
+                                        <div class="product__property-name">Владельцы</div>
+                                        <div class="product__property-value">1 владелец</div>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <div class="product__slider"></div>
+                        </div>
+                        <div class="product__desc">
+                            <div class="product__desc-title title">
+                                Описание авто
+                            </div>
+                            <div class="tabs-wrapper">
+                                <div class="product__tabs tabs">
+                                    <button type="button" class="tabs__item active">Описание</button>
+                                    <button type="button" class="tabs__item">Комплектация</button>
+                                </div>
+                                <div class="product__tabs-contents">
+                                    <div class="product__tabs-content tab-content active">
+                                        TOYOTA PRIUS, 2019г., АКПП, 4wd. <br> Комплектация: <br> - Бесключевой доступ <br> - Цифровая приборная панель <br> - Функция CarPlay <br> - Круиз контроль <br> - Обогрев передних сидений <br> - Электроскладывание зеркал <br> И многое другое... <br> <br> Автомобиль в хорошем внешнем и техническом состоянии.
+                                    </div>
+                                    <div class="product__tabs-content tab-content">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="selections">
+                    <div class="selections__container">
+                        <div class="selections__header">
+                            <h2 class="selections__title title">
+                                Похожие автомобили:
+                            </h2>
+                            <a href="" class="selections__more more-link">[ перейти в подборку ]</a>
+                        </div>
+                        <div class="selections__slider">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    @@loop('./html/_car.html', './html/json/cars.json')
+                                </div>
+                            </div>
+                            <div class="selections__prev swiper-button-prev"></div>
+                            <div class="selections__next swiper-button-next"></div>
+                            <div class="selections__pagination swiper-pagination"></div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            @@include('html/_footer.html', {})
+            @@include('html/_modal.html', {})
+            @@include('html/_js.html', {})
+    </body>
+</html>

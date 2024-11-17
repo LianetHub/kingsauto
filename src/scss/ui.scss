@@ -1,9 +1,10 @@
 //============ МОДУЛИ ====================
-@import 'modules/popup';
-// @import "modules/breadcrumbs";
+@import "modules/popup";
+@import "modules/breadcrumbs";
+@import "modules/select";
+@import "modules/pagination";
 // @import "modules/before-slider";
 // @import "modules/datepicker";
-// @import "modules/select";
 // @import "modules/animation";
 
 //============ МОДУЛИ ====================
@@ -77,6 +78,40 @@
 	@media (any-hover: hover) {
 		&:hover {
 			color: #82a6ca;
+		}
+	}
+}
+
+.favorite-btn {
+	width: rem(40);
+	height: rem(40);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5rem;
+	background: #f3f6fa;
+	border-radius: 50%;
+	flex-shrink: 0;
+	&::before {
+		@extend %ic, .icon-heart;
+		transition: all 0.3s ease 0s;
+	}
+	&.active {
+		&::before {
+			@extend %ic, .icon-heart-fill;
+			color: #82a6ca;
+			animation: pulse 0.3s ease-in-out;
+			@keyframes pulse {
+				0% {
+					transform: scale(1);
+				}
+				50% {
+					transform: scale(1.4);
+				}
+				100% {
+					transform: scale(1);
+				}
+			}
 		}
 	}
 }

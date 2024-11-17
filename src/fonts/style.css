@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icons';
-  src:  url('fonts/icons.eot?nwcwgl');
-  src:  url('fonts/icons.eot?nwcwgl#iefix') format('embedded-opentype'),
-    url('fonts/icons.ttf?nwcwgl') format('truetype'),
-    url('fonts/icons.woff?nwcwgl') format('woff'),
-    url('fonts/icons.svg?nwcwgl#icons') format('svg');
+  src:  url('fonts/icons.eot?gug33w');
+  src:  url('fonts/icons.eot?gug33w#iefix') format('embedded-opentype'),
+    url('fonts/icons.ttf?gug33w') format('truetype'),
+    url('fonts/icons.woff?gug33w') format('woff'),
+    url('fonts/icons.svg?gug33w#icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,33 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-close-circle:before {
+  content: "\e911";
+}
+.icon-phone:before {
+  content: "\e910";
+}
+.icon-rows:before {
+  content: "\e90c";
+}
+.icon-grid:before {
+  content: "\e90d";
+}
+.icon-arrows:before {
+  content: "\e90e";
+}
+.icon-filter:before {
+  content: "\e90f";
+}
+.icon-heart-fill:before {
+  content: "\e90b";
+}
+.icon-heart:before {
+  content: "\e90a";
+}
+.icon-login:before {
+  content: "\e909";
+}
 .icon-close:before {
   content: "\e908";
 }

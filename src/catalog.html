@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    'title': 'KingsAuto'
+    })
+    <body>
+        <section class="wrapper">
+            @@include('html/_header.html', {
+            "className": "",
+            "login": false
+            })
+            <main class="page">
+                <nav aria-label="Хлебные крошки" class="breadcrumbs">
+                    <div class="breadcrumbs__container">
+                        <ul class="breadcrumbs__list" itemscope itemtype="http://schema.org/BreadcrumbList">
+                            <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                <a href="/" class="breadcrumbs__link" itemprop="item">
+                                    <span itemprop="name">Главная</span>
+                                </a>
+                                <meta itemprop="position" content="1">
+                            </li>
+                            <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                <a class="breadcrumbs__link active" itemprop="item">
+                                    <span itemprop="name">Каталог автомобилей</span>
+                                </a>
+                                <meta itemprop="position" content="2">
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <section class="catalog">
+                    <div class="catalog__container">
+                        <h2 class="catalog__title title">
+                            Популярные модели авто
+                        </h2>
+                        <div class="catalog__header">
+                            <form action="#" class="catalog__filter">
+                                <div class="catalog__filter-categories swiper">
+                                    <div class="swiper-wrapper">
+                                        <label class="catalog__filter-category swiper-slide">
+                                            <input type="radio" name="category" checked value="all" class="catalog__filter-input hidden" hidden>
+                                            <span class="catalog__filter-category-btn">
+                                                Все
+                                            </span>
+                                        </label>
+                                        <label class="catalog__filter-category swiper-slide">
+                                            <input type="radio" name="category" value="japanese" class="catalog__filter-input hidden" hidden>
+                                            <span class="catalog__filter-category-btn">
+                                                Японские
+                                            </span>
+                                        </label>
+                                        <label class="catalog__filter-category swiper-slide">
+                                            <input type="radio" name="category" value="american" class="catalog__filter-input hidden" hidden>
+                                            <span class="catalog__filter-category-btn">
+                                                Американские
+                                            </span>
+                                        </label>
+                                        <label class="catalog__filter-category swiper-slide">
+                                            <input type="radio" name="category" value="korean" class="catalog__filter-input hidden" hidden>
+                                            <span class="catalog__filter-category-btn">
+                                                Корейские
+                                            </span>
+                                        </label>
+                                        <label class="catalog__filter-category swiper-slide">
+                                            <input type="radio" name="category" value="european" class="catalog__filter-input hidden" hidden>
+                                            <span class="catalog__filter-category-btn">
+                                                Европейские
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="catalog__filter-bottom">
+                                    <button type="button" class="catalog__filter-btn icon-filter">
+                                        <span>Все фильтры</span>
+                                    </button>
+                                    <div class="catalog__filter-dropdown dropdown">
+                                        <button type="button" class="dropdown__button icon-chevron" aria-expanded="false" aria-haspopup="true">
+                                            <span class="dropdown__button-icon icon-arrows"></span>
+                                            <span class="dropdown__button-text">Выгодные предложения</span>
+                                        </button>
+                                        <div class="dropdown__body" aria-hidden="true">
+                                            <ul class="dropdown__list" role="listbox">
+                                                <li role="option" data-value="offers" aria-checked="true" class="dropdown__list-item">
+                                                    Выгодные предложения
+                                                </li>
+                                                <li role="option" data-value="price-asc" aria-checked="false" class="dropdown__list-item">
+                                                    По цене ↑
+                                                </li>
+                                                <li role="option" data-value="price-desc" aria-checked="false" class="dropdown__list-item">
+                                                    По цене ↓
+                                                </li>
+                                                <li role="option" data-value="year-asc" aria-checked="false" class="dropdown__list-item">
+                                                    По году ↑
+                                                </li>
+                                                <li role="option" data-value="year-desc" aria-checked="false" class="dropdown__list-item">
+                                                    По году ↓
+                                                </li>
+                                                <li role="option" data-value="mileage-asc" aria-checked="false" class="dropdown__list-item">
+                                                    По пробегу ↑
+                                                </li>
+                                                <li role="option" data-value="mileage-desc" aria-checked="false" class="dropdown__list-item">
+                                                    По пробегу ↓
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <input type="text" name="product-sort" class="dropdown__input hidden" hidden value="offers">
+                                    </div>
+                                </div>
+                                @@include('html/_filter.html')
+                            </form>
+                            <div class="catalog__layout">
+                                <label class="catalog__layout-item">
+                                    <input type="radio" name="layout" value="grid" checked class="catalog__layout-input hidden" hidden>
+                                    <span class="catalog__layout-btn icon-grid"></span>
+                                </label>
+                                <label class="catalog__layout-item">
+                                    <input type="radio" name="layout" value="rows" class="catalog__layout-input hidden" hidden>
+                                    <span class="catalog__layout-btn icon-rows"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="catalog__grid">
+                            @@loop('./html/_car.html', './html/json/cars-catalog.json')
+                        </div>
+                        <div class="catalog__bottom">
+                            <div class="pagination">
+                                <a href="" aria-disabled="true" class="pagination__prev">← <span>Назад</span></a>
+                                <a href="" class="pagination__item">1</a>
+                                <a href="" class="pagination__item active">2</a>
+                                <a href="" class="pagination__item">3</a>
+                                <a href="" class="pagination__item">4</a>
+                                <a href="" class="pagination__item">5</a>
+                                <span class="pagination__item">...</span>
+                                <a href="" class="pagination__item">38</a>
+                                <a href="" class="pagination__next"><span>Дальше</span> →</a>
+                            </div>
+                            <div class="catalog__total">15 из 584</div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            @@include('html/_footer.html', {})
+            @@include('html/_modal.html', {})
+            @@include('html/_js.html', {})
+    </body>
+</html>

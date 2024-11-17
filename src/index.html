@@ -5,7 +5,10 @@
     })
     <body>
         <section class="wrapper">
-            @@include('html/_header.html', {})
+            @@include('html/_header.html', {
+            "className": " header-transparent",
+            "login": false
+            })
             <main class="page">
                 <section class="promo">
                     <div class="promo__container container-lg">

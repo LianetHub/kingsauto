@@ -1,9 +1,16 @@
-<header class="header ">
+<header class="header@@className">
     <div class="header__wrapper">
         <div class="header__container container-lg">
+            <a href="/" class="header__logo">
+                @@if(className===' header-transparent'){
+                <img src="@img/logo.svg" class="header__logo-static" alt="logo">
+                }
+                <img src="@img/logo-black.svg" class="header__logo-scroll" alt="logo">
+                <span class="header__logo-text">Покупка авто из-за рубежа</span>
+            </a>
             <div class="header__menu">
                 <nav class="header__menu-left">
-                    <a href="" class="header__catalog icon-catalog">Каталог</a>
+                    <a href="/catalog.html" class="header__catalog icon-catalog">Каталог</a>
                     <ul class="menu__list">
                         <li class="menu__item menu-parent">
                             <a href="" class="menu__link">Услуги</a>
@@ -76,21 +83,21 @@
                         </div>
                         <div class="header__contacts-block">
                             <div class="header__contacts-caption">Личный кабинет:</div>
-                            <a href="" class="header__btn btn icon-arrow">Вход</a>
                         </div>
                     </div>
                     <div class="header__copy">© 2024 Kings Auto </div>
                 </nav>
             </div>
+            <a href="tel:+74959999999" class="header__phone icon-phone"><span>+7 495 999 99 99</span></a>
+            <div class="header__person">
+                @@if (login===false){
+                <a href="" class="header__btn btn icon-login"><span>Вход</span></a>
+                }
+            </div>
             <button type="button" class="menu__btn icon-catalog">
                 <span class="menu__btn-default">Меню</span>
                 <span class="menu__btn-active">Закрыть</span>
             </button>
-            <a href="/" class="header__logo">
-                <img src="@img/logo.svg" class="header__logo-static" alt="logo">
-                <img src="@img/logo-black.svg" class="header__logo-scroll" alt="logo">
-                <span class="header__logo-text">Покупка авто из-за рубежа</span>
-            </a>
         </div>
     </div>
 </header>
