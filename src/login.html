@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    'title': 'KingsAuto | Страница товара'
+    })
+    <body>
+        <section class="wrapper">
+            @@include('html/_header.html', {
+            "className": "",
+            "login": false
+            })
+            <main class="page">
+                <div class="login">
+                    <div class="login__container">
+                        <form action="#" class="login__form">
+                            <div class="login__form-title">
+                                Войти в профиль <br>
+                                или зарегистрироваться
+                            </div>
+                            <div class="login__form-label">Введите номер телефона</div>
+                            <input type="tel" name="phone" class="phone-input" placeholder="(___) ___–__–__">
+                            <label class="form__checkbox">
+                                <input type="checkbox" checked aria-required="true" class="form__checkbox-input hidden" hidden>
+                                <span class="form__checkbox-text">
+                                    я согласен(-на) с <a href="">политикой конфиденциальности</a>
+                                    и&nbsp;даю согласие на обработку <a href="">персональных данных</a>
+                                </span>
+                            </label>
+                            <button type="submit" class="login__form-btn btn btn-primary btn-fullwidth">
+                                Получить код
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </main>
+            @@include('html/_footer.html', {})
+            @@include('html/_modal.html', {})
+            @@include('html/_js.html', {})
+    </body>
+</html>

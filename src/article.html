@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    'title': 'KingsAuto'
+    })
+    <body>
+        <section class="wrapper">
+            @@include('html/_header.html', {
+            "className": "",
+            "login": false
+            })
+            <main class="page">
+                <nav aria-label="Хлебные крошки" class="breadcrumbs breadcrumbs-center">
+                    <div class="breadcrumbs__container">
+                        <ul class="breadcrumbs__list" itemscope itemtype="http://schema.org/BreadcrumbList">
+                            <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                <a href="/" class="breadcrumbs__link" itemprop="item">
+                                    <span itemprop="name">Главная</span>
+                                </a>
+                                <meta itemprop="position" content="1">
+                            </li>
+                            <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                <a href="/" class="breadcrumbs__link" itemprop="item">
+                                    <span itemprop="name">Журнал</span>
+                                </a>
+                                <meta itemprop="position" content="2">
+                            </li>
+                            <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                <a href="/" class="breadcrumbs__link" itemprop="item">
+                                    <span itemprop="name">Обзоры</span>
+                                </a>
+                                <meta itemprop="position" content="3">
+                            </li>
+                            <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                <a class="breadcrumbs__link active" itemprop="item">
+                                    <span itemprop="name">Автомобили с самым вместительным багажником</span>
+                                </a>
+                                <meta itemprop="position" content="4">
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <article class="article">
+                    <div class="article__container">
+                        <div class="article__header">
+                            <h1 class="article__title title">Автомобили с самым вместительным багажником</h1>
+                            <p class="article__desc">Для ряда покупателей емкость багажника является одним из важных критериев при подборе автомобиля. Вместимость багажного отсека важна людям, планирующим регулярно перевозить объемные и не слишком тяжелые грузы. В остальных ситуациях объем багажника является вторичным критерием при выборе машины или не учитывается совсем.</p>
+                            <time datetime="2025-10-15" class="article__time">15.10.2025</time>
+                            <div class="article__slider swiper">
+                                <div class="swiper-wrapper">
+                                    <a href="@img/magazine/01.jpg" data-fancybox="article-gallery" class="article__slide swiper-slide">
+                                        <img src="@img/magazine/01.jpg" class="cover-image" alt="Фото из галлереи">
+                                    </a>
+                                    <a href="@img/magazine/02.jpg" data-fancybox="article-gallery" class="article__slide swiper-slide">
+                                        <img src="@img/magazine/02.jpg" class="cover-image" alt="Фото из галлереи">
+                                    </a>
+                                    <a href="@img/magazine/03.jpg" data-fancybox="article-gallery" class="article__slide swiper-slide">
+                                        <img src="@img/magazine/03.jpg" class="cover-image" alt="Фото из галлереи">
+                                    </a>
+                                    <a href="@img/magazine/04.jpg" data-fancybox="article-gallery" class="article__slide swiper-slide">
+                                        <img src="@img/magazine/04.jpg" class="cover-image" alt="Фото из галлереи">
+                                    </a>
+                                </div>
+                                <div class="article__prev swiper-button-prev"></div>
+                                <div class="article__next swiper-button-next"></div>
+                            </div>
+                        </div>
+                        <div class="article__body">
+                            <h2>Общие сведения</h2>
+                            <p>Сам по себе объем багажника является очень размытым понятием. Грузовой отсек должен быть не только вместительным, но и удобным с точки зрения укладки багажа. Наличие кожухов стоек задней подвески может ограничить габариты груза – толку от такого багажника даже внушительного объема будет мало. Удобство использования багажника зависит от габаритов проема и конструкции перегородки за спинкой заднего ряда сидений на седанах. <br> Наиболее удобны и практичны багажники на машинах с кузовом универсал, лифтбэк или хэтчбэк. Общей проблемой таких кузовов является быстрое охлаждение салона зимой через открытую дверь багажного отсека. Полноразмерные внедорожники также имеют внушительного объема багажники, в которых зачастую установлены складные сиденья для дополнительных пассажиров.</p>
+                            <h2>Ford Excursion</h2>
+                            <p>Одним из лидеров рейтингов по вместимости багажника остается рамный внедорожник Ford Excursion, выпуск которого прекратился в далеком 2005 г. Автомобиль базировался на шасси пикапа F250/350 Super Duty, что сказалось на габаритах и вместимости машины. В салоне установлено 8 сидений для водителя и пассажиров, при сложенных креслах объем багажника составляет 4,145 куб. м. Машина не стала популярной даже в Северной Америке, суммарный тираж за 7 лет производства не превысил 200 тыс. экземпляров.</p>
+                            <img src="@img/magazine/01.jpg" alt="Фото статьи">
+                            <img src="@img/magazine/04.jpg" alt="Фото статьи">
+                            <h2>Китайские кроссоверы</h2>
+                            <p>От экзотического для российского рынка Ford Excursion есть смысл перейти к машинам, доступным в РФ. В условиях 2024 г. в России доминируют китайские бренды, предлагающие кроссоверы с багажниками объемом от 1443 л (Haval F7 и F7x) до 2021 л (Jaecoo J8). Нужно понимать, что красивые цифры достигаются только при сложенных сиденьях, при максимальной вместимости багажного отсека в салоне могут разместиться только водитель и один пассажир. При разложенных сиденьях объем багажника сокращается в 2 раза и более, хотя вместимости вполне достаточно для типовых нужд большинства покупателей.</p>
+                            <h2>Lada Largus</h2>
+                            <p>На вторичном рынке можно найти неплохие экземпляры Lada Largus с бензиновым 1,6-литровым мотором. Автомобиль изначально создавался как грузопассажирская модель, пригодная для коммерческой эксплуатации. Машина может оснащаться 5 или 7 местами, во втором варианте емкость багажника составляет всего 135 л. Пятиместный вариант имеет грузовой отсек объемом 560 л, а при сложенных задних кресла емкость увеличивается до 2540 л. Немаловажным фактором являются солидные габариты багажника – длина составляет 1940 мм при ширине по боковинам кузова 1080 мм. Ограничителем для укладки крупных коробок станут колесные арки, расстояние между которыми составляет всего 960 мм. На базе Largus был создан коммерческий фургон без остекления задней части салона и с высокой крышей, позволившей довести емкость багажника до 3800 или 4600 л (в зависимости от высоты крыши).</p>
+                            <img src="@img/magazine/04.jpg" alt="Фото статьи">
+                            <img src="@img/magazine/01.jpg" alt="Фото статьи">
+                            <h2>Renault Logan</h2>
+                            <p>В бюджетном сегменте можно обратить внимание на седан Logan, имеющий 510-литровый багажник. Погрузка крупных предметов затрудняется небольшим проемом, а также наличием перегородки позади заднего ряда сидений. Компоновка грузового отсека не слишком удобна из-за больших кожухов арок и петель крышки багажника – плотно уложенные вещи могут помешать закрытию крышки, нельзя исключать повреждение вещей и сумок петлями. Подобная проблема типична для седанов, оснащенных крышками багажников с большими петлями, заходящими в грузовой отсек.</p>
+                            <h2>Skoda Octavia Combi</h2>
+                            <p>В семейство Octavia всегда входили автомобили с кузовом универсал, популярность которых в РФ невелика. Вместимость багажника на универсалах III поколения составляет 588 или 610 л, что всего на 20 л больше, чем у традиционных лифтбэков. Емкость отсека зависит от наличия запасного колеса, при его отсутствии в багажнике имеется двойной пол с возможностью трансформации. Для автомобилей Skoda характерна продуманная компоновка багажника с такелажными петлями и сетками, позволяющими фиксировать груз. При необходимости водитель может сложить задний ряд сидений и перевозить крупные коробки. Полная вместимость багажника составляет около 1740 л.</p>
+                            <img src="@img/magazine/03.jpg" alt="Фото статьи">
+                            <img src="@img/magazine/02.jpg" alt="Фото статьи">
+                            <h2>Kia Ceed SW</h2>
+                            <p>Автомобиль с кузовом универсал немного уступает в практичности модели Octavia. Емкость багажника на машинах составляет 528-625 л в зависимости от поколения. На автомобилях III генерации предусмотрены тросовые приводы для складывания заднего ряда сидений из багажника, а спинка разделена на три части (опция, встречается только на дорогих комплектациях). На части автомобилей на полу багажника установлены направляющие для подвижного разделителя, позволяющего фиксировать багаж от смещения при резких маневрах.</p>
+                            <img src="@img/magazine/04.jpg" alt="Фото статьи">
+                            <img src="@img/magazine/03.jpg" alt="Фото статьи">
+                            <h2>Заключение</h2>
+                            <p>Большинство моделей машин с вместительными багажниками являются экзотикой и встречаются в РФ редко. Огромный грузовой отсек в подавляющем большинстве случаев просто не нужен – для перевозки габаритных вещей проще арендовать грузовик, а поездки с огромным количеством сумок в России непопулярны. Транспортировка ряда грузов в личной машине нецелесообразна из-за риска загрязнения или повреждения отделки салона и багажного отсека.</p>
+                        </div>
+                        <div class="article__footer">
+                            <div class="article__share">
+                                <div class="article__share-title">
+                                    Поделитесь публикацией с друзьями:
+                                </div>
+                                <div class="article__share-btns">
+                                    <a href="" class="article__share-btn icon-vk"></a>
+                                    <a href="" class="article__share-btn icon-telegram"></a>
+                                </div>
+                            </div>
+                            <form action="#" class="article__comment">
+                                <div class="article__comment-title">
+                                    Оставить комментарий
+                                </div>
+                                <div class="article__comment-body">
+                                    <textarea name="comment" class="form__textarea" placeholder="Комментарий"></textarea>
+                                    <div class="article__comment-actions">
+                                        <label class="form__file">
+                                            <input type="file" name="attachment" class="form__file-input hidden" hidden>
+                                            <span class="form__file-btn icon-attachment"></span>
+                                        </label>
+                                        <button type="submit" class="form__btn btn btn-primary">Отправить</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </article>
+            </main>
+            @@include('html/_footer.html', {})
+            @@include('html/_modal.html', {})
+            @@include('html/_js.html', {})
+    </body>
+</html>

@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>KingsAuto</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" itemprop="description" content="описание страницы">
+	<meta name="keywords" itemprop="keywords" content="ключевые слова">
+	<!-- favicon -->
+	<!-- <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff"> -->
+	<!-- favicon -->
+	<!-- Open Graph  -->
+	<meta property="og:type" content="business.business">
+	<meta property="og:title" content="KingsAuto">
+	<meta property="og:description" content="">
+	<meta property="og:url" content="">
+	<meta property="og:image" content="/OG.png">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="627">
+	<meta property="og:site_name" content="">
+	<meta property="og:locale" content="en_EN">
+	<!-- Open Graph  -->
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:title" content="KingsAuto">
+	<meta property="twitter:description" content="">
+	<meta property="twitter:site" content="">
+	<meta property="twitter:url" content="">
+	<meta property="twitter:image:src" content="/OG.png">
+	<!-- Twitter -->
+	<!-- plugnis -->
+	<link rel="stylesheet" href="css/libs/swiper-bundle.min.css?_v=20241121191324">
+	<link rel="stylesheet" href="css/libs/fancybox.css?_v=20241121191324">
+	<link rel="stylesheet" href="css/libs/nouislider.min.css?_v=20241121191324">
+	<link rel="stylesheet" href="css/libs/input-tel.css?_v=20241121191324" />
+	<!-- plugnis -->
+	<link rel="stylesheet" href="css/reset.min.css?_v=20241121191324">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241121191324">
+</head>
+
+<body>
+	<section class="wrapper">
+		<header class="header">
+			<div class="header__wrapper">
+				<div class="header__container container-lg">
+					<a href="/" class="header__logo">
+						<img src="img/logo-black.svg" class="header__logo-scroll" alt="logo">
+						<span class="header__logo-text">Покупка авто из-за рубежа</span>
+					</a>
+					<div class="header__menu">
+						<nav class="header__menu-left">
+							<a href="/catalog.html" class="header__catalog icon-catalog">Каталог</a>
+							<ul class="menu__list">
+								<li class="menu__item menu-parent">
+									<a href="" class="menu__link">Услуги</a>
+									<button aria-label="Открыть подменю" class="menu__arrow icon-chevron"></button>
+									<div class="submenu">
+										<ul class="submenu__list">
+											<li class="submenu__item">
+												<a href="/service.html" class="submenu__link"> Подбор авто </a>
+											</li>
+											<li class="submenu__item">
+												<a href="/service.html" class="submenu__link"> Калькулятор авто под полную пошлину </a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="menu__item menu-parent">
+									<a href="" class="menu__link">О компании</a>
+									<button aria-label="Открыть подменю" class="menu__arrow icon-chevron"></button>
+									<div class="submenu">
+										<ul class="submenu__list">
+											<li class="submenu__item">
+												<a href="" class="submenu__link"> О нас </a>
+											</li>
+											<li class="submenu__item">
+												<a href="/faq.html" class="submenu__link"> Вопрос–ответ </a>
+											</li>
+											<li class="submenu__item">
+												<a href="/payment.html" class="submenu__link"> Способы оплаты </a>
+											</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+						<nav class="header__menu-right">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="/magazine.html" class="menu__link">Журнал</a>
+								</li>
+								<li class="menu__item">
+									<a href="/reviews.html" class="menu__link">Отзывы</a>
+								</li>
+								<li class="menu__item">
+									<a href="" class="menu__link">Контакты</a>
+								</li>
+							</ul>
+							<div class="header__contacts">
+								<div class="header__contacts-block">
+									<div class="header__contacts-caption">По любым вопросам:</div>
+									<div class="header__contacts-body">
+										<a href="tel:+74959999999" class="header__contacts-link">+7 495 999 99 99</a>
+										<a href="mailto:info@kings-auto.ru" class="header__contacts-link">info@kings-auto.ru</a>
+										<div class="header__socials">
+											<a href="" class="header__social icon-telegram"></a>
+											<a href="" class="header__social icon-wa"></a>
+											<a href="" class="header__social icon-vk"></a>
+										</div>
+									</div>
+								</div>
+								<div class="header__contacts-block">
+									<div class="header__contacts-caption">Личный кабинет:</div>
+								</div>
+							</div>
+							<div class="header__copy">© 2024 Kings Auto</div>
+						</nav>
+					</div>
+					<a href="tel:+74959999999" class="header__phone icon-phone"><span>+7 495 999 99 99</span></a>
+					<div class="header__person">
+						<a href="/login.html" class="header__btn btn icon-login"><span>Вход</span></a>
+					</div>
+					<button type="button" class="menu__btn icon-catalog">
+						<span class="menu__btn-default">Меню</span>
+						<span class="menu__btn-active">Закрыть</span>
+					</button>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<nav aria-label="Хлебные крошки" class="breadcrumbs">
+				<div class="breadcrumbs__container">
+					<ul class="breadcrumbs__list" itemscope itemtype="http://schema.org/BreadcrumbList">
+						<li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+							<a href="/" class="breadcrumbs__link" itemprop="item">
+								<span itemprop="name">Главная</span>
+							</a>
+							<meta itemprop="position" content="1">
+						</li>
+						<li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+							<a class="breadcrumbs__link active" itemprop="item">
+								<span itemprop="name">Подбор автомобиля</span>
+							</a>
+							<meta itemprop="position" content="4">
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<section class="service">
+				<div class="service__container">
+					<div class="service__body">
+						<div class="service__offer">
+							<h1 class="service__title title-lg"> Подбор автомобиля из-за границы: как это работает </h1>
+							<p class="service__desc"> Подберем для вас идеальный автомобиль с учетом ваших предпочтений и бюджета. Оставьте заявку на сайте, наш менеджер перезвонит вам и уточнит детали: </p>
+							<a href="#order" data-fancybox class="service__btn btn btn-primary">Оставить заявку</a>
+							<ul class="service__list">
+								<li class="service__item">
+									<div class="service__item-icon">
+										<img src="img/icons/service-1.svg" alt="">
+									</div>
+									<div class="service__item-text"> Доставка от&nbsp;2&nbsp;недель </div>
+								</li>
+								<li class="service__item">
+									<div class="service__item-icon">
+										<img src="img/icons/service-2.svg" alt="">
+									</div>
+									<div class="service__item-text"> Дилерское обслуживание </div>
+								</li>
+								<li class="service__item">
+									<div class="service__item-icon">
+										<img src="img/icons/service-3.svg" alt="">
+									</div>
+									<div class="service__item-text"> Тщательный осмотр авто </div>
+								</li>
+							</ul>
+						</div>
+						<picture class="service__image">
+							<source media="(min-width: 576px)" srcset="img/services/service-1.jpg">
+							<img src="img/services/service-1-mobile.jpg" alt="Фото услуги">
+						</picture>
+					</div>
+				</div>
+			</section>
+			<section class="process">
+				<div class="process__container">
+					<h2 class="process__title title"> Как происходит покупка и&nbsp;доставка автомобиля? </h2>
+					<div class="process__body">
+						<div class="process__image">
+							<img src="img/services/service-2.jpg" alt="Фото услуги">
+						</div>
+						<div class="process__content">
+							<ol class="info__list">
+								<li class="info__item">
+									<button type="button" class="info__item-title active">
+										<span> Заявка и первичная консультация </span>
+									</button>
+									<div class="info__item-answer initial-block"> Вы оставляете заявку на сайте или связываетесь с вашим персональным менеджером. На этом этапе мы определяем ваши потребности и предпочтения: тип автомобиля, бюджет, необходимые характеристики. </div>
+								</li>
+								<li class="info__item">
+									<button type="button" class="info__item-title">
+										<span> Подбор авто </span>
+									</button>
+									<div class="info__item-answer"> Ищем подходящие варианты автомобиля исходя из ваших требований и согласуем с вами наиболее выгодные предложения </div>
+								</li>
+								<li class="info__item">
+									<button type="button" class="info__item-title">
+										<span> Заключение договора </span>
+									</button>
+									<div class="info__item-answer">
+										<p> После выбора автомобиля заключается договор, и мы открываем вам доступ к личному кабинету на сайте. Там вы сможете отслеживать все этапы сделки. Вносится депозит в зависимости от стоимости автомобиля: </p>
+										<ul>
+											<li>70,000 рублей за авто до 3,5 млн.</li>
+											<li>100,000 рублей за авто до 15 млн.</li>
+											<li>150,000 рублей за авто от 15 млн.</li>
+										</ul>
+									</div>
+								</li>
+								<li class="info__item">
+									<button type="button" class="info__item-title">
+										<span> Осмотр автомобиля </span>
+									</button>
+									<div class="info__item-answer"> После одобрения авто осуществляется оплата и покрываются расходы на логистику до порта назначения </div>
+								</li>
+								<li class="info__item">
+									<button type="button" class="info__item-title">
+										<span> Оплата автомобиля и расходов до порта прибытия </span>
+									</button>
+									<div class="info__item-answer"> Представитель нашей компании проводит детальный осмотр автомобиля с фото- и видеофиксацией, чтобы подтвердить его техническое состояние </div>
+								</li>
+								<li class="info__item">
+									<button type="button" class="info__item-title">
+										<span> Таможенное оформление </span>
+									</button>
+									<div class="info__item-answer"> Мы занимаемся таможенным оформлением автомобиля и получаем электронный паспорт транспортного средства (ЕПТС) </div>
+								</li>
+								<li class="info__item">
+									<button type="button" class="info__item-title">
+										<span> Доставка до клиента </span>
+									</button>
+									<div class="info__item-answer"> Вы можете отслеживать процесс доставки через <a href="">личный кабинет</a>, а также с помощью установленного в автомобиль GPS-трекера </div>
+								</li>
+								<li class="info__item">
+									<button type="button" class="info__item-title">
+										<span> Выдача автомобиля </span>
+									</button>
+									<div class="info__item-answer"> Мы передаем вам авто с полным пакетом документов и поддержкой в дальнейшем обслуживании </div>
+								</li>
+								<li class="info__item">
+									<button type="button" class="info__item-title">
+										<span> Поддержка клиента </span>
+									</button>
+									<div class="info__item-answer"> Наше с Вами сотрудничество не заканчивается после вручения автомобиля, и мы всегда готовы помочь с покупкой и доставкой оригинальных запчастей и расходников для наших клиентов из-за границы БЕСПЛАТНО </div>
+								</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="benefits">
+				<div class="benefits__container">
+					<div class="benefits__header">
+						<div class="benefits__header-column">
+							<div class="benefits__hint">Качественный сервис</div>
+							<h2 class="benefits__title title"> Почему стоит выбрать Kings Auto? </h2>
+						</div>
+						<p class="benefits__header-text"> Многие компании на российском рынке работают по непрозрачным схемам, завышая стоимость автомобилей. Мы в Kings Auto придерживаемся честного и открытого подхода: </p>
+					</div>
+					<ul class="benefits__cards">
+						<li class="benefits__card benefits__card-sm">
+							<div class="benefits__card-header">
+								<div class="benefits__card-icon">
+									<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+										<path d="M20.0007 36.6666C29.2053 36.6666 36.6673 29.2046 36.6673 19.9999C36.6673 10.7952 29.2053 3.33325 20.0007 3.33325C10.7959 3.33325 3.33398 10.7952 3.33398 19.9999C3.33398 29.2046 10.7959 36.6666 20.0007 36.6666Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M4.16602 20.8333L13.3327 24.1666L11.666 29.9999L13.3327 34.9999" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M28.334 34.1666L27.5007 29.9999L23.334 28.3333V22.4999L28.334 20.8333L35.834 21.6666" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M31.6667 9.16675L30.8333 11.6667L25 12.5001V17.5001L29.1667 15.8334H32.5L35.8333 17.5001" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M4.16602 17.5L8.33268 14.1667L12.4993 13.3333L15.8327 8.33333L14.166 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</div>
+								<div class="benefits__card-title"> Широкая география </div>
+							</div>
+							<div class="benefits__card-desc"> У нас есть представители в США, Канаде, Южной Корее, Грузии и Китае — это позволяет нам выбирать лучшие автомобили по конкурентным ценам и договариваться о скидках </div>
+						</li>
+						<li class="benefits__card benefits__card-sm">
+							<div class="benefits__card-header">
+								<div class="benefits__card-icon">
+									<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+										<path d="M26.6673 11.6666V6.66659C26.6673 4.82564 25.175 3.33325 23.334 3.33325H16.6673C14.8264 3.33325 13.334 4.82564 13.334 6.66659V11.6666M36.6673 19.9999L20.6543 23.2026C20.2228 23.2888 19.7785 23.2888 19.347 23.2026L3.33398 19.9999M6.66732 36.6666H33.334C35.175 36.6666 36.6673 35.1743 36.6673 33.3333V14.9999C36.6673 13.159 35.175 11.6666 33.334 11.6666H6.66732C4.82637 11.6666 3.33398 13.159 3.33398 14.9999V33.3333C3.33398 35.1743 4.82637 36.6666 6.66732 36.6666Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</div>
+								<div class="benefits__card-title">Уверенность в&nbsp;сделке</div>
+							</div>
+							<div class="benefits__card-desc">Мы сотрудничаем только с проверенными производителями и гарантируем высокие стандарты качества как автомобилей, так и предоставляемых услуг</div>
+						</li>
+						<li class="benefits__card benefits__card-sm">
+							<div class="benefits__card-header">
+								<div class="benefits__card-icon">
+									<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+										<path d="M9.60045 33.0413C11.5295 29.2578 15.4625 26.6666 20.0007 26.6666C24.5038 26.6666 28.411 29.2179 30.3558 32.9538M23.8895 17.4073C23.8895 19.6574 22.0655 21.4814 19.8155 21.4814C17.5655 21.4814 15.7414 19.6574 15.7414 17.4073C15.7414 15.1573 17.5655 13.3333 19.8155 13.3333C22.0655 13.3333 23.8895 15.1573 23.8895 17.4073ZM20.0007 36.6666C10.7959 36.6666 3.33398 29.2046 3.33398 19.9999C3.33398 10.7952 10.7959 3.33325 20.0007 3.33325C29.2053 3.33325 36.6673 10.7952 36.6673 19.9999C36.6673 29.2046 29.2053 36.6666 20.0007 36.6666Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</div>
+								<div class="benefits__card-title">Личный кабинет</div>
+							</div>
+							<div class="benefits__card-desc">Вы всегда в курсе статуса вашего автомобиля, можете видеть фото- и видеоматериалы, а также местоположение машины по GPS</div>
+						</li>
+						<li class="benefits__card benefits__card-sm">
+							<div class="benefits__card-header">
+								<div class="benefits__card-icon">
+									<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+										<path d="M3.33398 8.33325C3.33398 5.57184 5.57257 3.33325 8.33398 3.33325H31.6673C34.4288 3.33325 36.6673 5.57184 36.6673 8.33325V31.6666C36.6673 34.4281 34.4288 36.6666 31.6673 36.6666H8.33398C5.57257 36.6666 3.33398 34.4281 3.33398 31.6666V8.33325Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M30.0007 24.1667H23.334M30.0007 29.1667H23.334" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M26.6673 10V16.6667M30.0007 13.3333H23.334" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M16.6667 13.3333H10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M16.6667 23.3333L10 29.9999M10 23.3333L16.6667 29.9999" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</div>
+								<div class="benefits__card-title">Прозрачные расчеты</div>
+							</div>
+							<div class="benefits__card-desc">Все затраты обоснованы и подтверждены документально</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="why">
+				<div class="why__container">
+					<div class="why__main">
+						<h2 class="why__title title"> Почему стоит покупать авто&nbsp;из-за рубежа? </h2>
+						<p class="why__desc"> Основные преимущества покупки автомобиля за границей: </p>
+						<ul class="why__list">
+							<li class="why__item">Экономия до 40%: в большинстве случаев покупка автомобиля из-за рубежа оказывается значительно выгоднее по сравнению с покупкой аналогичного авто в России</li>
+							<li class="why__item">Лучшее оснащение: вы получаете машину с более продвинутыми комплектациями и дилерским обслуживанием</li>
+							<li class="why__item">Уникальные автомобили: возможность приобрести модели, которые не доступны на российском рынке</li>
+						</ul>
+					</div>
+					<form action="#" class="why__form">
+						<div class="why__form-image">
+							<img src="img/product.jpg" class="cover-image" alt="product">
+						</div>
+						<div class="why__form-title"> Оставить заявку на&nbsp;подбор авто: </div>
+						<div class="why__form-fields">
+							<input type="name" name="name" class="form__input" placeholder="Имя">
+							<input type="tel" name="phone" class="form__input" placeholder="+7 (999) 999-99-99">
+						</div>
+						<label class="form__checkbox">
+							<input type="checkbox" checked aria-required="true" class="form__checkbox-input hidden" hidden>
+							<span class="form__checkbox-text">Я согласен с политикой конфиденциальности</span>
+						</label>
+						<button type="submit" class="form__btn btn btn-fullwidth btn-white">Отправить</button>
+					</form>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__main">
+				<div class="footer__container">
+					<div class="footer__columns">
+						<div class="footer__column">
+							<a href="/" class="footer__logo">
+								<img src="img/logo-black.svg" alt="Лого">
+								<span class="footer__logo-text">Покупка авто из-за рубежа</span>
+							</a>
+							<div class="footer__contacts">
+								<div class="footer__caption">По любым вопросам:</div>
+								<a href="tel:+74959999999" class="footer__contacts-link">+7 495 999 99 99</a>
+								<a href="mailto:info@kings-auto.ru" class="footer__contacts-link">info@kings-auto.ru</a>
+								<div class="footer__socials">
+									<a href="" class="footer__social icon-telegram"></a>
+									<a href="" class="footer__social icon-wa"></a>
+									<a href="" class="footer__social icon-vk"></a>
+								</div>
+							</div>
+							<div class="footer__worktime">
+								<div class="footer__caption">Режим работы (МСК)</div>
+								<div class="footer__worktime-text">Ежедневно 09:00–19:00</div>
+							</div>
+							<div class="footer__reqs">
+								<div class="footer__reqs-caption"> ИП Иванов Иван Иванович </div>
+								<div class="footer__reqs-body"> Юридический адрес: <br> г. Москва, ул. Примерная, офис 111 <br> ИНН 123456789123 <br> ОГРНИП 123456789123456 </div>
+							</div>
+						</div>
+						<div class="footer__column">
+							<nav class="footer__menu">
+								<div class="footer__caption">Каталог</div>
+								<ul class="footer__menu-list">
+									<li class="footer__menu-item">
+										<a href="" class="footer__menu-link">Японские автомобили</a>
+									</li>
+									<li class="footer__menu-item">
+										<a href="" class="footer__menu-link">Корейские автомобили</a>
+									</li>
+									<li class="footer__menu-item">
+										<a href="" class="footer__menu-link">Европейские автомобили</a>
+									</li>
+									<li class="footer__menu-item">
+										<a href="" class="footer__menu-link">Американские автомобили</a>
+									</li>
+								</ul>
+							</nav>
+							<nav class="footer__menu">
+								<div class="footer__caption">Инфо</div>
+								<ul class="footer__menu-list">
+									<li class="footer__menu-item">
+										<a href="" class="footer__menu-link">О компании</a>
+									</li>
+									<li class="footer__menu-item">
+										<a href="" class="footer__menu-link">Вопрос–ответ</a>
+									</li>
+									<li class="footer__menu-item">
+										<a href="" class="footer__menu-link">Отзывы</a>
+									</li>
+									<li class="footer__menu-item">
+										<a href="" class="footer__menu-link">Журнал</a>
+									</li>
+									<li class="footer__menu-item">
+										<a href="" class="footer__menu-link">Способы оплаты</a>
+									</li>
+									<li class="footer__menu-item">
+										<a href="" class="footer__menu-link">Контакты</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<div class="footer__column">
+							<nav class="footer__menu">
+								<div class="footer__caption">Услуги</div>
+								<ul class="footer__menu-list">
+									<li class="footer__menu-item">
+										<a href="" class="footer__menu-link">Подбор авто</a>
+									</li>
+									<li class="footer__menu-item">
+										<a href="" class="footer__menu-link">Калькулятор авто под полную пошлину</a>
+									</li>
+								</ul>
+							</nav>
+							<form action="#" class="footer__form form">
+								<div class="footer__form-main">
+									<div class="form__caption">Задать вопрос менеджеру:</div>
+									<input type="tel" name="phone" class="form__input" placeholder="+7 (999) 999-99-99">
+									<textarea name="message" class="form__textarea" placeholder="Ваш вопрос:"></textarea>
+								</div>
+								<label class="form__checkbox">
+									<input type="checkbox" checked aria-required="true" class="form__checkbox-input hidden" hidden>
+									<span class="form__checkbox-text">Я согласен с политикой конфиденциальности</span>
+								</label>
+								<button type="submit" class="form__btn btn btn-primary btn-fullwidth">Отправить</button>
+							</form>
+						</div>
+					</div>
+					<div class="footer-bottom__heading">
+						<div class="footer-bottom__copy"> © 2024 Kings Auto </div>
+						<nav class="footer-bottom__menu">
+							<ul class="footer-bottom__menu-list">
+								<li class="footer-bottom__menu-item">
+									<a href="" class="footer-bottom__menu-link">Политика обработки персональных данных</a>
+								</li>
+								<li class="footer-bottom__menu-item">
+									<a href="" class="footer-bottom__menu-link">Публичная оферта</a>
+								</li>
+								<li class="footer-bottom__menu-item">
+									<a href="" class="footer-bottom__menu-link">Разработка сайта</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="footer-bottom__image">
+					<div class="footer-bottom__image-subtract">
+						<div class="footer-bottom__container">
+							<img src="img/footer-subtract.svg" alt="Название компани">
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div id="order" class="popup">
+			<div class="popup__body">
+				<button type="button" class="popup__close" data-fancybox-close></button>
+				<h3 class="popup__title">Заявка на подбор авто</h3>
+				<p class="popup__subtitle"> Заполните форму ниже, наш менеджер свяжется с вами </p>
+				<form action="#" class="popup__form">
+					<div class="popup__form-rows">
+						<input type="text" name="name" class="form__input" placeholder="Имя">
+						<input type="tel" name="phone" class="form__input" placeholder="+ 7 (999) 999-99-99">
+					</div>
+					<label class="form__checkbox">
+						<input type="checkbox" name="privacy" class="form__checkbox-input hidden" hidden>
+						<span class="form__checkbox-text"> Я согласен с <a href="">политикой конфиденциальности</a>
+						</span>
+					</label>
+					<button class="form__btn btn btn-primary btn-fullwidth">Отправить</button>
+				</form>
+			</div>
+		</div>
+		<!-- plugnis -->
+		<script src="js/libs/jquery-3.7.1.min.js?_v=20241121191324"></script>
+		<script src="js/libs/swiper-bundle.min.js?_v=20241121191324"></script>
+		<script src="js/libs/fancybox.umd.js?_v=20241121191324"></script>
+		<script src="js/libs/formatter.min.js?_v=20241121191324"></script>
+		<script src="js/libs/intlTelInput.min.js?_v=20241121191324"></script>
+		<!-- plugnis -->
+		<script src="js/app.min.js?_v=20241121191324"></script>
+</body>
+
+</html>

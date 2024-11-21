@@ -75,8 +75,10 @@ body {
 	min-height: 100%;
 	display: flex;
 	flex-direction: column;
-
-	overflow: hidden;
+	overflow-x: hidden;
+	@media (min-width: $md4) {
+		overflow-x: clip;
+	}
 }
 
 //================== ОБОЛОЧКА==================================
@@ -128,6 +130,12 @@ body {
 
 @import "pages/home";
 @import "pages/catalog";
+@import "pages/magazine";
+@import "pages/article";
+@import "pages/info";
+@import "pages/product";
+@import "pages/service";
+@import "pages/lk";
 
 .auto-card {
 	min-width: 0;
@@ -306,118 +314,5 @@ body {
 	}
 	// .auto-card__btn
 	&__btn {
-	}
-}
-
-.magazine {
-	padding: rem(50) 0;
-	@media (min-width: $md3) {
-		padding: rem(70) 0;
-	}
-	// .magazine__container
-	&__container {
-	}
-	// .magazine__header
-	&__header {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		@media (min-width: $md4) {
-			align-items: flex-end;
-		}
-	}
-	// .magazine__title
-	&__title {
-	}
-	// .magazine__more
-	&__more {
-	}
-	// .magazine__body
-	&__body {
-		margin-top: 2.5rem;
-		display: grid;
-		gap: 1.31rem;
-		@media (min-width: $md3) {
-			grid-template-columns: repeat(2, 1fr);
-		}
-	}
-	// .magazine__card
-	&__card {
-		display: flex;
-		align-items: flex-start;
-		gap: 1.25rem;
-		@media (min-width: $md4) {
-			gap: 1.88rem;
-		}
-		&.magazine__card-lg {
-			flex-direction: column;
-			grid-row: span 2;
-			.magazine__card-image {
-				flex: 0 1 auto;
-				@media (max-width: $md5) {
-					aspect-ratio: 1;
-				}
-			}
-			.magazine__card-name {
-				font-size: 1.375rem;
-			}
-			.magazine__card-desc {
-				display: -webkit-box;
-			}
-		}
-	}
-
-	// .magazine__card-image
-	&__card-image {
-		flex: 0 0 10rem;
-		@media (min-width: $md2) {
-			flex: 0 0 15rem;
-		}
-		& img {
-			border-radius: 0.625rem;
-			@media (max-width: $md5) {
-				aspect-ratio: math.div(157, 117);
-			}
-		}
-	}
-	// .magazine__card-body
-	&__card-body {
-		align-self: stretch;
-		display: flex;
-		flex-direction: column;
-	}
-	// .magazine__card-name
-	&__card-name {
-		font-weight: 500;
-		line-height: 130%;
-		font-size: 1rem;
-		@media (min-width: $md4) {
-			font-size: 1.375rem;
-		}
-	}
-	// .magazine__card-desc
-	&__card-desc {
-		margin-top: 0.94rem;
-		overflow: hidden;
-		text-overflow: ellipsis;
-		overflow: hidden;
-		font-size: 1rem;
-		line-height: 150%;
-		display: -webkit-box;
-		-webkit-box-orient: vertical;
-		-webkit-line-clamp: 2;
-		align-self: stretch;
-		margin-bottom: auto;
-		@media (max-width: $md4) {
-			display: none;
-		}
-	}
-	// .magazine__card-time
-	&__card-time {
-		margin-top: 0.94rem;
-		color: rgba(43, 50, 57, 0.5);
-		font-size: 0.875rem;
-		font-weight: 500;
-		line-height: 150%;
 	}
 }

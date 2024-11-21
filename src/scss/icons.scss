@@ -18,11 +18,47 @@
 	}
 }
 
+.icon-search:before {
+	content: "\e91d";
+}
+.icon-copy:before {
+	content: "\e914";
+}
+.icon-share:before {
+	content: "\e915";
+}
+.icon-docs:before {
+	content: "\e916";
+}
+.icon-delivery:before {
+	content: "\e917";
+}
+.icon-user:before {
+	content: "\e918";
+}
+.icon-user-circle:before {
+	content: "\e919";
+}
+.icon-envelope-open:before {
+	content: "\e91a";
+}
+.icon-user-fill:before {
+	content: "\e91b";
+}
+.icon-phone-fill:before {
+	content: "\e91c";
+}
+.icon-attachment:before {
+	content: "\e912";
+}
 .icon-close-circle:before {
 	content: "\e911";
 }
 .icon-phone:before {
 	content: "\e910";
+}
+.icon-check-circle:before {
+	content: "\e913";
 }
 .icon-rows:before {
 	content: "\e90c";

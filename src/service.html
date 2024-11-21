@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    'title': 'KingsAuto'
+    })
+    <body>
+        <section class="wrapper">
+            @@include('html/_header.html', {
+            "className": "",
+            "login": false
+            })
+            <main class="page">
+                <nav aria-label="Хлебные крошки" class="breadcrumbs">
+                    <div class="breadcrumbs__container">
+                        <ul class="breadcrumbs__list" itemscope itemtype="http://schema.org/BreadcrumbList">
+                            <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                <a href="/" class="breadcrumbs__link" itemprop="item">
+                                    <span itemprop="name">Главная</span>
+                                </a>
+                                <meta itemprop="position" content="1">
+                            </li>
+                            <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                <a class="breadcrumbs__link active" itemprop="item">
+                                    <span itemprop="name">Подбор автомобиля</span>
+                                </a>
+                                <meta itemprop="position" content="4">
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <section class="service">
+                    <div class="service__container">
+                        <div class="service__body">
+                            <div class="service__offer">
+                                <h1 class="service__title title-lg">
+                                    Подбор автомобиля из-за границы: как это работает
+                                </h1>
+                                <p class="service__desc">
+                                    Подберем для вас идеальный автомобиль с учетом ваших предпочтений и бюджета. Оставьте заявку на сайте, наш менеджер перезвонит вам и уточнит детали:
+                                </p>
+                                <a href="#order" data-fancybox class="service__btn btn btn-primary">Оставить заявку</a>
+                                <ul class="service__list">
+                                    <li class="service__item">
+                                        <div class="service__item-icon">
+                                            <img src="@img/icons/service-1.svg" alt="">
+                                        </div>
+                                        <div class="service__item-text">
+                                            Доставка от&nbsp;2&nbsp;недель
+                                        </div>
+                                    </li>
+                                    <li class="service__item">
+                                        <div class="service__item-icon">
+                                            <img src="@img/icons/service-2.svg" alt="">
+                                        </div>
+                                        <div class="service__item-text">
+                                            Дилерское обслуживание
+                                        </div>
+                                    </li>
+                                    <li class="service__item">
+                                        <div class="service__item-icon">
+                                            <img src="@img/icons/service-3.svg" alt="">
+                                        </div>
+                                        <div class="service__item-text">
+                                            Тщательный осмотр авто
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <picture class="service__image">
+                                <source media="(min-width: 576px)" srcset="@img/services/service-1.jpg">
+                                <img src="@img/services/service-1-mobile.jpg" alt="Фото услуги">
+                            </picture>
+                        </div>
+                    </div>
+                </section>
+                <section class="process">
+                    <div class="process__container">
+                        <h2 class="process__title title">
+                            Как происходит покупка
+                            и&nbsp;доставка автомобиля?
+                        </h2>
+                        <div class="process__body">
+                            <div class="process__image">
+                                <img src="@img/services/service-2.jpg" alt="Фото услуги">
+                            </div>
+                            <div class="process__content">
+                                <ol class="info__list">
+                                    <li class="info__item">
+                                        <button type="button" class="info__item-title active">
+                                            <span>
+                                                Заявка и первичная консультация
+                                            </span>
+                                        </button>
+                                        <div class="info__item-answer initial-block">
+                                            Вы оставляете заявку на сайте или связываетесь с вашим персональным менеджером. На этом этапе мы определяем ваши потребности и предпочтения: тип автомобиля, бюджет, необходимые характеристики.
+                                        </div>
+                                    </li>
+                                    <li class="info__item">
+                                        <button type="button" class="info__item-title">
+                                            <span>
+                                                Подбор авто
+                                            </span>
+                                        </button>
+                                        <div class="info__item-answer">
+                                            Ищем подходящие варианты автомобиля исходя из ваших требований и согласуем с вами наиболее выгодные предложения
+                                        </div>
+                                    </li>
+                                    <li class="info__item">
+                                        <button type="button" class="info__item-title">
+                                            <span>
+                                                Заключение договора
+                                            </span>
+                                        </button>
+                                        <div class="info__item-answer">
+                                            <p>
+                                                После выбора автомобиля заключается договор, и мы открываем вам доступ к личному кабинету на сайте. Там вы сможете отслеживать все этапы сделки. Вносится депозит в зависимости от стоимости автомобиля:
+                                            </p>
+                                            <ul>
+                                                <li>70,000 рублей за авто до 3,5 млн.</li>
+                                                <li>100,000 рублей за авто до 15 млн.</li>
+                                                <li>150,000 рублей за авто от 15 млн.</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="info__item">
+                                        <button type="button" class="info__item-title">
+                                            <span>
+                                                Осмотр автомобиля
+                                            </span>
+                                        </button>
+                                        <div class="info__item-answer">
+                                            После одобрения авто осуществляется оплата и покрываются расходы на логистику до порта назначения
+                                        </div>
+                                    </li>
+                                    <li class="info__item">
+                                        <button type="button" class="info__item-title">
+                                            <span>
+                                                Оплата автомобиля и расходов до порта прибытия
+                                            </span>
+                                        </button>
+                                        <div class="info__item-answer">
+                                            Представитель нашей компании проводит детальный осмотр автомобиля с фото- и видеофиксацией, чтобы подтвердить его техническое состояние
+                                        </div>
+                                    </li>
+                                    <li class="info__item">
+                                        <button type="button" class="info__item-title">
+                                            <span>
+                                                Таможенное оформление
+                                            </span>
+                                        </button>
+                                        <div class="info__item-answer">
+                                            Мы занимаемся таможенным оформлением автомобиля и получаем электронный паспорт транспортного средства (ЕПТС)
+                                        </div>
+                                    </li>
+                                    <li class="info__item">
+                                        <button type="button" class="info__item-title">
+                                            <span>
+                                                Доставка до клиента
+                                            </span>
+                                        </button>
+                                        <div class="info__item-answer">
+                                            Вы можете отслеживать процесс доставки через <a href="">личный кабинет</a>, а также с помощью установленного в автомобиль GPS-трекера
+                                        </div>
+                                    </li>
+                                    <li class="info__item">
+                                        <button type="button" class="info__item-title">
+                                            <span>
+                                                Выдача автомобиля
+                                            </span>
+                                        </button>
+                                        <div class="info__item-answer">
+                                            Мы передаем вам авто с полным пакетом документов и поддержкой в дальнейшем обслуживании
+                                        </div>
+                                    </li>
+                                    <li class="info__item">
+                                        <button type="button" class="info__item-title">
+                                            <span>
+                                                Поддержка клиента
+                                            </span>
+                                        </button>
+                                        <div class="info__item-answer">
+                                            Наше с Вами сотрудничество не заканчивается после вручения автомобиля, и мы всегда готовы помочь с покупкой и доставкой оригинальных запчастей и расходников для наших клиентов из-за границы БЕСПЛАТНО
+                                        </div>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="benefits">
+                    <div class="benefits__container">
+                        <div class="benefits__header">
+                            <div class="benefits__header-column">
+                                <div class="benefits__hint">Качественный сервис</div>
+                                <h2 class="benefits__title title">
+                                    Почему стоит выбрать Kings Auto?
+                                </h2>
+                            </div>
+                            <p class="benefits__header-text">
+                                Многие компании на российском рынке работают по непрозрачным схемам, завышая стоимость автомобилей. Мы в Kings Auto придерживаемся честного и открытого подхода:
+                            </p>
+                        </div>
+                        <ul class="benefits__cards">
+                            <li class="benefits__card benefits__card-sm">
+                                <div class="benefits__card-header">
+                                    <div class="benefits__card-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                            <path d="M20.0007 36.6666C29.2053 36.6666 36.6673 29.2046 36.6673 19.9999C36.6673 10.7952 29.2053 3.33325 20.0007 3.33325C10.7959 3.33325 3.33398 10.7952 3.33398 19.9999C3.33398 29.2046 10.7959 36.6666 20.0007 36.6666Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M4.16602 20.8333L13.3327 24.1666L11.666 29.9999L13.3327 34.9999" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M28.334 34.1666L27.5007 29.9999L23.334 28.3333V22.4999L28.334 20.8333L35.834 21.6666" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M31.6667 9.16675L30.8333 11.6667L25 12.5001V17.5001L29.1667 15.8334H32.5L35.8333 17.5001" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M4.16602 17.5L8.33268 14.1667L12.4993 13.3333L15.8327 8.33333L14.166 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <div class="benefits__card-title">
+                                        Широкая география
+                                    </div>
+                                </div>
+                                <div class="benefits__card-desc">
+                                    У нас есть представители в США, Канаде, Южной Корее, Грузии и Китае — это позволяет нам выбирать лучшие автомобили по конкурентным ценам и договариваться о скидках
+                                </div>
+                            </li>
+                            <li class="benefits__card benefits__card-sm">
+                                <div class="benefits__card-header">
+                                    <div class="benefits__card-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                            <path d="M26.6673 11.6666V6.66659C26.6673 4.82564 25.175 3.33325 23.334 3.33325H16.6673C14.8264 3.33325 13.334 4.82564 13.334 6.66659V11.6666M36.6673 19.9999L20.6543 23.2026C20.2228 23.2888 19.7785 23.2888 19.347 23.2026L3.33398 19.9999M6.66732 36.6666H33.334C35.175 36.6666 36.6673 35.1743 36.6673 33.3333V14.9999C36.6673 13.159 35.175 11.6666 33.334 11.6666H6.66732C4.82637 11.6666 3.33398 13.159 3.33398 14.9999V33.3333C3.33398 35.1743 4.82637 36.6666 6.66732 36.6666Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <div class="benefits__card-title">Уверенность в&nbsp;сделке</div>
+                                </div>
+                                <div class="benefits__card-desc">Мы сотрудничаем только с проверенными производителями и гарантируем высокие стандарты качества как автомобилей, так и предоставляемых услуг</div>
+                            </li>
+                            <li class="benefits__card benefits__card-sm">
+                                <div class="benefits__card-header">
+                                    <div class="benefits__card-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                            <path d="M9.60045 33.0413C11.5295 29.2578 15.4625 26.6666 20.0007 26.6666C24.5038 26.6666 28.411 29.2179 30.3558 32.9538M23.8895 17.4073C23.8895 19.6574 22.0655 21.4814 19.8155 21.4814C17.5655 21.4814 15.7414 19.6574 15.7414 17.4073C15.7414 15.1573 17.5655 13.3333 19.8155 13.3333C22.0655 13.3333 23.8895 15.1573 23.8895 17.4073ZM20.0007 36.6666C10.7959 36.6666 3.33398 29.2046 3.33398 19.9999C3.33398 10.7952 10.7959 3.33325 20.0007 3.33325C29.2053 3.33325 36.6673 10.7952 36.6673 19.9999C36.6673 29.2046 29.2053 36.6666 20.0007 36.6666Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <div class="benefits__card-title">Личный кабинет</div>
+                                </div>
+                                <div class="benefits__card-desc">Вы всегда в курсе статуса вашего автомобиля, можете видеть фото- и видеоматериалы, а также местоположение машины по GPS</div>
+                            </li>
+                            <li class="benefits__card benefits__card-sm">
+                                <div class="benefits__card-header">
+                                    <div class="benefits__card-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                            <path d="M3.33398 8.33325C3.33398 5.57184 5.57257 3.33325 8.33398 3.33325H31.6673C34.4288 3.33325 36.6673 5.57184 36.6673 8.33325V31.6666C36.6673 34.4281 34.4288 36.6666 31.6673 36.6666H8.33398C5.57257 36.6666 3.33398 34.4281 3.33398 31.6666V8.33325Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M30.0007 24.1667H23.334M30.0007 29.1667H23.334" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M26.6673 10V16.6667M30.0007 13.3333H23.334" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M16.6667 13.3333H10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M16.6667 23.3333L10 29.9999M10 23.3333L16.6667 29.9999" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <div class="benefits__card-title">Прозрачные расчеты</div>
+                                </div>
+                                <div class="benefits__card-desc">Все затраты обоснованы и подтверждены документально</div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="why">
+                    <div class="why__container">
+                        <div class="why__main">
+                            <h2 class="why__title title">
+                                Почему стоит покупать авто&nbsp;из-за рубежа?
+                            </h2>
+                            <p class="why__desc">
+                                Основные преимущества покупки автомобиля за границей:
+                            </p>
+                            <ul class="why__list">
+                                <li class="why__item">Экономия до 40%: в большинстве случаев покупка автомобиля из-за рубежа оказывается значительно выгоднее по сравнению с покупкой аналогичного авто в России</li>
+                                <li class="why__item">Лучшее оснащение: вы получаете машину с более продвинутыми комплектациями и дилерским обслуживанием</li>
+                                <li class="why__item">Уникальные автомобили: возможность приобрести модели, которые не доступны на российском рынке</li>
+                            </ul>
+                        </div>
+                        <form action="#" class="why__form">
+                            <div class="why__form-image">
+                                <img src="@img/product.jpg" class="cover-image" alt="product">
+                            </div>
+                            <div class="why__form-title">
+                                Оставить заявку на&nbsp;подбор авто:
+                            </div>
+                            <div class="why__form-fields">
+                                <input type="name" name="name" class="form__input" placeholder="Имя">
+                                <input type="tel" name="phone" class="form__input" placeholder="+7 (999) 999-99-99">
+                            </div>
+                            <label class="form__checkbox">
+                                <input type="checkbox" checked aria-required="true" class="form__checkbox-input hidden" hidden>
+                                <span class="form__checkbox-text">Я согласен с политикой конфиденциальности</span>
+                            </label>
+                            <button type="submit" class="form__btn btn btn-fullwidth btn-white">Отправить</button>
+                        </form>
+                    </div>
+                </section>
+            </main>
+            @@include('html/_footer.html', {})
+            @@include('html/_modal.html', {})
+            @@include('html/_js.html', {})
+    </body>
+</html>

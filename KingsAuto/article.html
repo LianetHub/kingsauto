@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>KingsAuto</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" itemprop="description" content="описание страницы">
+	<meta name="keywords" itemprop="keywords" content="ключевые слова">
+	<!-- favicon -->
+	<!-- <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff"> -->
+	<!-- favicon -->
+	<!-- Open Graph  -->
+	<meta property="og:type" content="business.business">
+	<meta property="og:title" content="KingsAuto">
+	<meta property="og:description" content="">
+	<meta property="og:url" content="">
+	<meta property="og:image" content="/OG.png">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="627">
+	<meta property="og:site_name" content="">
+	<meta property="og:locale" content="en_EN">
+	<!-- Open Graph  -->
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:title" content="KingsAuto">
+	<meta property="twitter:description" content="">
+	<meta property="twitter:site" content="">
+	<meta property="twitter:url" content="">
+	<meta property="twitter:image:src" content="/OG.png">
+	<!-- Twitter -->
+	<!-- plugnis -->
+	<link rel="stylesheet" href="css/libs/swiper-bundle.min.css?_v=20241121191324">
+	<link rel="stylesheet" href="css/libs/fancybox.css?_v=20241121191324">
+	<link rel="stylesheet" href="css/libs/nouislider.min.css?_v=20241121191324">
+	<link rel="stylesheet" href="css/libs/input-tel.css?_v=20241121191324" />
+	<!-- plugnis -->
+	<link rel="stylesheet" href="css/reset.min.css?_v=20241121191324">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241121191324">
+</head>
+
+<body>
+	<section class="wrapper">
+		<header class="header">
+			<div class="header__wrapper">
+				<div class="header__container container-lg">
+					<a href="/" class="header__logo">
+						<img src="img/logo-black.svg" class="header__logo-scroll" alt="logo">
+						<span class="header__logo-text">Покупка авто из-за рубежа</span>
+					</a>
+					<div class="header__menu">
+						<nav class="header__menu-left">
+							<a href="/catalog.html" class="header__catalog icon-catalog">Каталог</a>
+							<ul class="menu__list">
+								<li class="menu__item menu-parent">
+									<a href="" class="menu__link">Услуги</a>
+									<button aria-label="Открыть подменю" class="menu__arrow icon-chevron"></button>
+									<div class="submenu">
+										<ul class="submenu__list">
+											<li class="submenu__item">
+												<a href="/service.html" class="submenu__link"> Подбор авто </a>
+											</li>
+											<li class="submenu__item">
+												<a href="/service.html" class="submenu__link"> Калькулятор авто под полную пошлину </a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="menu__item menu-parent">
+									<a href="" class="menu__link">О компании</a>
+									<button aria-label="Открыть подменю" class="menu__arrow icon-chevron"></button>
+									<div class="submenu">
+										<ul class="submenu__list">
+											<li class="submenu__item">
+												<a href="" class="submenu__link"> О нас </a>
+											</li>
+											<li class="submenu__item">
+												<a href="/faq.html" class="submenu__link"> Вопрос–ответ </a>
+											</li>
+											<li class="submenu__item">
+												<a href="/payment.html" class="submenu__link"> Способы оплаты </a>
+											</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+						<nav class="header__menu-right">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="/magazine.html" class="menu__link">Журнал</a>
+								</li>
+								<li class="menu__item">
+									<a href="/reviews.html" class="menu__link">Отзывы</a>
+								</li>
+								<li class="menu__item">
+									<a href="" class="menu__link">Контакты</a>
+								</li>
+							</ul>
+							<div class="header__contacts">
+								<div class="header__contacts-block">
+									<div class="header__contacts-caption">По любым вопросам:</div>
+									<div class="header__contacts-body">
+										<a href="tel:+74959999999" class="header__contacts-link">+7 495 999 99 99</a>
+										<a href="mailto:info@kings-auto.ru" class="header__contacts-link">info@kings-auto.ru</a>
+										<div class="header__socials">
+											<a href="" class="header__social icon-telegram"></a>
+											<a href="" class="header__social icon-wa"></a>
+											<a href="" class="header__social icon-vk"></a>
+										</div>
+									</div>
+								</div>
+								<div class="header__contacts-block">
+									<div class="header__contacts-caption">Личный кабинет:</div>
+								</div>
+							</div>
+							<div class="header__copy">© 2024 Kings Auto</div>
+						</nav>
+					</div>
+					<a href="tel:+74959999999" class="header__phone icon-phone"><span>+7 495 999 99 99</span></a>
+					<div class="header__person">
+						<a href="/login.html" class="header__btn btn icon-login"><span>Вход</span></a>
+					</div>
+					<button type="button" class="menu__btn icon-catalog">
+						<span class="menu__btn-default">Меню</span>
+						<span class="menu__btn-active">Закрыть</span>
+					</button>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<nav aria-label="Хлебные крошки" class="breadcrumbs breadcrumbs-center">
+				<div class="breadcrumbs__container">
+					<ul class="breadcrumbs__list" itemscope itemtype="http://schema.org/BreadcrumbList">
+						<li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+							<a href="/" class="breadcrumbs__link" itemprop="item">
+								<span itemprop="name">Главная</span>
+							</a>
+							<meta itemprop="position" content="1">
+						</li>
+						<li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+							<a href="/" class="breadcrumbs__link" itemprop="item">
+								<span itemprop="name">Журнал</span>
+							</a>
+							<meta itemprop="position" content="2">
+						</li>
+						<li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+							<a href="/" class="breadcrumbs__link" itemprop="item">
+								<span itemprop="name">Обзоры</span>
+							</a>
+							<meta itemprop="position" content="3">
+						</li>
+						<li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+							<a class="breadcrumbs__link active" itemprop="item">
+								<span itemprop="name">Автомобили с самым вместительным багажником</span>
+							</a>
+							<meta itemprop="position" content="4">
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<article class="article">
+				<div class="article__container">
+					<div class="article__header">
+						<h1 class="article__title title">Автомобили с самым вместительным багажником</h1>
+						<p class="article__desc">Для ряда покупателей емкость багажника является одним из важных критериев при подборе автомобиля. Вместимость багажного отсека важна людям, планирующим регулярно перевозить объемные и не слишком тяжелые грузы. В остальных ситуациях объем багажника является вторичным критерием при выборе машины или не учитывается совсем.</p>
+						<time datetime="2025-10-15" class="article__time">15.10.2025</time>
+						<div class="article__slider swiper">
+							<div class="swiper-wrapper">
+								<a href="img/magazine/01.jpg" data-fancybox="article-gallery" class="article__slide swiper-slide">
+									<img src="img/magazine/01.jpg" class="cover-image" alt="Фото из галлереи">
+								</a>
+								<a href="img/magazine/02.jpg" data-fancybox="article-gallery" class="article__slide swiper-slide">
+									<img src="img/magazine/02.jpg" class="cover-image" alt="Фото из галлереи">
+								</a>
+								<a href="img/magazine/03.jpg" data-fancybox="article-gallery" class="article__slide swiper-slide">
+									<img src="img/magazine/03.jpg" class="cover-image" alt="Фото из галлереи">
+								</a>
+								<a href="img/magazine/04.jpg" data-fancybox="article-gallery" class="article__slide swiper-slide">
+									<img src="img/magazine/04.jpg" class="cover-image" alt="Фото из галлереи">
+								</a>
+							</div>
+							<div class="article__prev swiper-button-prev"></div>
+							<div class="article__next swiper-button-next"></div>
+						</div>
+					</div>
+					<div class="article__body">
+						<h2>Общие сведения</h2>
+						<p>Сам по себе объем багажника является очень размытым понятием. Грузовой отсек должен быть не только вместительным, но и удобным с точки зрения укладки багажа. Наличие кожухов стоек задней подвески может ограничить габариты груза – толку от такого багажника даже внушительного объема будет мало. Удобство использования багажника зависит от габаритов проема и конструкции перегородки за спинкой заднего ряда сидений на седанах. <br> Наиболее удобны и практичны багажники на машинах с кузовом универсал, лифтбэк или хэтчбэк. Общей проблемой таких кузовов является быстрое охлаждение салона зимой через открытую дверь багажного отсека. Полноразмерные внедорожники также имеют внушительного объема багажники, в которых зачастую установлены складные сиденья для дополнительных пассажиров.</p>
+						<h2>Ford Excursion</h2>
+						<p>Одним из лидеров рейтингов по вместимости багажника остается рамный внедорожник Ford Excursion, выпуск которого прекратился в далеком 2005 г. Автомобиль базировался на шасси пикапа F250/350 Super Duty, что сказалось на габаритах и вместимости машины. В салоне установлено 8 сидений для водителя и пассажиров, при сложенных креслах объем багажника составляет 4,145 куб. м. Машина не стала популярной даже в Северной Америке, суммарный тираж за 7 лет производства не превысил 200 тыс. экземпляров.</p>
+						<img src="img/magazine/01.jpg" alt="Фото статьи">
+						<img src="img/magazine/04.jpg" alt="Фото статьи">
+						<h2>Китайские кроссоверы</h2>
+						<p>От экзотического для российского рынка Ford Excursion есть смысл перейти к машинам, доступным в РФ. В условиях 2024 г. в России доминируют китайские бренды, предлагающие кроссоверы с багажниками объемом от 1443 л (Haval F7 и F7x) до 2021 л (Jaecoo J8). Нужно понимать, что красивые цифры достигаются только при сложенных сиденьях, при максимальной вместимости багажного отсека в салоне могут разместиться только водитель и один пассажир. При разложенных сиденьях объем багажника сокращается в 2 раза и более, хотя вместимости вполне достаточно для типовых нужд большинства покупателей.</p>
+						<h2>Lada Largus</h2>
+						<p>На вторичном рынке можно найти неплохие экземпляры Lada Largus с бензиновым 1,6-литровым мотором. Автомобиль изначально создавался как грузопассажирская модель, пригодная для коммерческой эксплуатации. Машина может оснащаться 5 или 7 местами, во втором варианте емкость багажника составляет всего 135 л. Пятиместный вариант имеет грузовой отсек объемом 560 л, а при сложенных задних кресла емкость увеличивается до 2540 л. Немаловажным фактором являются солидные габариты багажника – длина составляет 1940 мм при ширине по боковинам кузова 1080 мм. Ограничителем для укладки крупных коробок станут колесные арки, расстояние между которыми составляет всего 960 мм. На базе Largus был создан коммерческий фургон без остекления задней части салона и с высокой крышей, позволившей довести емкость багажника до 3800 или 4600 л (в зависимости от высоты крыши).</p>
+						<img src="img/magazine/04.jpg" alt="Фото статьи">
+						<img src="img/magazine/01.jpg" alt="Фото статьи">
+						<h2>Renault Logan</h2>
+						<p>В бюджетном сегменте можно обратить внимание на седан Logan, имеющий 510-литровый багажник. Погрузка крупных предметов затрудняется небольшим проемом, а также наличием перегородки позади заднего ряда сидений. Компоновка грузового отсека не слишком удобна из-за больших кожухов арок и петель крышки багажника – плотно уложенные вещи могут помешать закрытию крышки, нельзя исключать повреждение вещей и сумок петлями. Подобная проблема типична для седанов, оснащенных крышками багажников с большими петлями, заходящими в грузовой отсек.</p>
+						<h2>Skoda Octavia Combi</h2>
+						<p>В семейство Octavia всегда входили автомобили с кузовом универсал, популярность которых в РФ невелика. Вместимость багажника на универсалах III поколения составляет 588 или 610 л, что всего на 20 л больше, чем у традиционных лифтбэков. Емкость отсека зависит от наличия запасного колеса, при его отсутствии в багажнике имеется двойной пол с возможностью трансформации. Для автомобилей Skoda характерна продуманная компоновка багажника с такелажными петлями и сетками, позволяющими фиксировать груз. При необходимости водитель может сложить задний ряд сидений и перевозить крупные коробки. Полная вместимость багажника составляет около 1740 л.</p>
+						<img src="img/magazine/03.jpg" alt="Фото статьи">
+						<img src="img/magazine/02.jpg" alt="Фото статьи">
+						<h2>Kia Ceed SW</h2>
+						<p>Автомобиль с кузовом универсал немного уступает в практичности модели Octavia. Емкость багажника на машинах составляет 528-625 л в зависимости от поколения. На автомобилях III генерации предусмотрены тросовые приводы для складывания заднего ряда сидений из багажника, а спинка разделена на три части (опция, встречается только на дорогих комплектациях). На части автомобилей на полу багажника установлены направляющие для подвижного разделителя, позволяющего фиксировать багаж от смещения при резких маневрах.</p>
+						<img src="img/magazine/04.jpg" alt="Фото статьи">
+						<img src="img/magazine/03.jpg" alt="Фото статьи">
+						<h2>Заключение</h2>
+						<p>Большинство моделей машин с вместительными багажниками являются экзотикой и встречаются в РФ редко. Огромный грузовой отсек в подавляющем большинстве случаев просто не нужен – для перевозки габаритных вещей проще арендовать грузовик, а поездки с огромным количеством сумок в России непопулярны. Транспортировка ряда грузов в личной машине нецелесообразна из-за риска загрязнения или повреждения отделки салона и багажного отсека.</p>
+					</div>
+					<div class="article__footer">
+						<div class="article__share">
+							<div class="article__share-title"> Поделитесь публикацией с друзьями: </div>
+							<div class="article__share-btns">
+								<a href="" class="article__share-btn icon-vk"></a>
+								<a href="" class="article__share-btn icon-telegram"></a>
+							</div>
+						</div>
+						<form action="#" class="article__comment">
+							<div class="article__comment-title"> Оставить комментарий </div>
+							<div class="article__comment-body">
+								<textarea name="comment" class="form__textarea" placeholder="Комментарий"></textarea>
+								<div class="article__comment-actions">
+									<label class="form__file">
+										<input type="file" name="attachment" class="form__file-input hidden" hidden>
+										<span class="form__file-btn icon-attachment"></span>
+									</label>
+									<button type="submit" class="form__btn btn btn-primary">Отправить</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</article>
+		</main>
+		<footer class="footer">
+			<div class="footer__main">
+				<div class="footer__container">
+					<div class="footer__columns">
+						<div class="footer__column">
+							<a href="/" class="footer__logo">
+								<img src="img/logo-black.svg" alt="Лого">
+								<span class="footer__logo-text">Покупка авто из-за рубежа</span>
+							</a>
+							<div class="footer__contacts">
+								<div class="footer__caption">По любым вопросам:</div>
+								<a href="tel:+74959999999" class="footer__contacts-link">+7 495 999 99 99</a>
+								<a href="mailto:info@kings-auto.ru" class="footer__contacts-link">info@kings-auto.ru</a>
+								<div class="footer__socials">
+									<a href="" class="footer__social icon-telegram"></a>
+									<a href="" class="footer__social icon-wa"></a>
+									<a href="" class="footer__social icon-vk"></a>
+								</div>
+							</div>
+							<div class="footer__worktime">
+								<div class="footer__caption">Режим работы (МСК)</div>
+								<div class="footer__worktime-text">Ежедневно 09:00–19:00</div>
+							</div>
+							<div class="footer__reqs">
+								<div class="footer__reqs-caption"> ИП Иванов Иван Иванович </div>
+								<div class="footer__reqs-body"> Юридический адрес: <br> г. Москва, ул. Примерная, офис 111 <br> ИНН 123456789123 <br> ОГРНИП 123456789123456 </div>
+							</div>
+						</div>
+						<div class="footer__column">
+							<nav class="footer__menu">
+								<div class="footer__caption">Каталог</div>
+								<ul class="footer__menu-list">
+									<li class="footer__menu-item">
+										<a href="" class="footer__menu-link">Японские автомобили</a>
+									</li>
+									<li class="footer__menu-item">
+										<a href="" class="footer__menu-link">Корейские автомобили</a>
+									</li>
+									<li class="footer__menu-item">
+										<a href="" class="footer__menu-link">Европейские автомобили</a>
+									</li>
+									<li class="footer__menu-item">
+										<a href="" class="footer__menu-link">Американские автомобили</a>
+									</li>
+								</ul>
+							</nav>
+							<nav class="footer__menu">
+								<div class="footer__caption">Инфо</div>
+								<ul class="footer__menu-list">
+									<li class="footer__menu-item">
+										<a href="" class="footer__menu-link">О компании</a>
+									</li>
+									<li class="footer__menu-item">
+										<a href="" class="footer__menu-link">Вопрос–ответ</a>
+									</li>
+									<li class="footer__menu-item">
+										<a href="" class="footer__menu-link">Отзывы</a>
+									</li>
+									<li class="footer__menu-item">
+										<a href="" class="footer__menu-link">Журнал</a>
+									</li>
+									<li class="footer__menu-item">
+										<a href="" class="footer__menu-link">Способы оплаты</a>
+									</li>
+									<li class="footer__menu-item">
+										<a href="" class="footer__menu-link">Контакты</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<div class="footer__column">
+							<nav class="footer__menu">
+								<div class="footer__caption">Услуги</div>
+								<ul class="footer__menu-list">
+									<li class="footer__menu-item">
+										<a href="" class="footer__menu-link">Подбор авто</a>
+									</li>
+									<li class="footer__menu-item">
+										<a href="" class="footer__menu-link">Калькулятор авто под полную пошлину</a>
+									</li>
+								</ul>
+							</nav>
+							<form action="#" class="footer__form form">
+								<div class="footer__form-main">
+									<div class="form__caption">Задать вопрос менеджеру:</div>
+									<input type="tel" name="phone" class="form__input" placeholder="+7 (999) 999-99-99">
+									<textarea name="message" class="form__textarea" placeholder="Ваш вопрос:"></textarea>
+								</div>
+								<label class="form__checkbox">
+									<input type="checkbox" checked aria-required="true" class="form__checkbox-input hidden" hidden>
+									<span class="form__checkbox-text">Я согласен с политикой конфиденциальности</span>
+								</label>
+								<button type="submit" class="form__btn btn btn-primary btn-fullwidth">Отправить</button>
+							</form>
+						</div>
+					</div>
+					<div class="footer-bottom__heading">
+						<div class="footer-bottom__copy"> © 2024 Kings Auto </div>
+						<nav class="footer-bottom__menu">
+							<ul class="footer-bottom__menu-list">
+								<li class="footer-bottom__menu-item">
+									<a href="" class="footer-bottom__menu-link">Политика обработки персональных данных</a>
+								</li>
+								<li class="footer-bottom__menu-item">
+									<a href="" class="footer-bottom__menu-link">Публичная оферта</a>
+								</li>
+								<li class="footer-bottom__menu-item">
+									<a href="" class="footer-bottom__menu-link">Разработка сайта</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="footer-bottom__image">
+					<div class="footer-bottom__image-subtract">
+						<div class="footer-bottom__container">
+							<img src="img/footer-subtract.svg" alt="Название компани">
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div id="order" class="popup">
+			<div class="popup__body">
+				<button type="button" class="popup__close" data-fancybox-close></button>
+				<h3 class="popup__title">Заявка на подбор авто</h3>
+				<p class="popup__subtitle"> Заполните форму ниже, наш менеджер свяжется с вами </p>
+				<form action="#" class="popup__form">
+					<div class="popup__form-rows">
+						<input type="text" name="name" class="form__input" placeholder="Имя">
+						<input type="tel" name="phone" class="form__input" placeholder="+ 7 (999) 999-99-99">
+					</div>
+					<label class="form__checkbox">
+						<input type="checkbox" name="privacy" class="form__checkbox-input hidden" hidden>
+						<span class="form__checkbox-text"> Я согласен с <a href="">политикой конфиденциальности</a>
+						</span>
+					</label>
+					<button class="form__btn btn btn-primary btn-fullwidth">Отправить</button>
+				</form>
+			</div>
+		</div>
+		<!-- plugnis -->
+		<script src="js/libs/jquery-3.7.1.min.js?_v=20241121191324"></script>
+		<script src="js/libs/swiper-bundle.min.js?_v=20241121191324"></script>
+		<script src="js/libs/fancybox.umd.js?_v=20241121191324"></script>
+		<script src="js/libs/formatter.min.js?_v=20241121191324"></script>
+		<script src="js/libs/intlTelInput.min.js?_v=20241121191324"></script>
+		<!-- plugnis -->
+		<script src="js/app.min.js?_v=20241121191324"></script>
+</body>
+
+</html>

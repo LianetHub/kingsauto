@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    'title': 'KingsAuto | Страница товара'
+    })
+    <body>
+        <section class="wrapper">
+            @@include('html/_header.html', {
+            "className": "",
+            "login": true
+            })
+            <main class="page">
+                <div class="lk">
+                    <div class="lk__container">
+                        @@include('./html/_lk-sidebar.html', {
+                        "active": 4
+                        })
+                        <div class="lk__body active">
+                            <div class="lk__title">
+                                Договор
+                            </div>
+                            <div class="lk__doc">
+                                <div class="lk__doc-text">
+                                    Договор от 15.10.2024 г.
+                                </div>
+                                <a href="" class="lk__doc-btn btn btn-primary icon-share">Открыть</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            @@include('html/_footer.html', {})
+            @@include('html/_modal.html', {})
+            @@include('html/_js.html', {})
+    </body>
+</html>

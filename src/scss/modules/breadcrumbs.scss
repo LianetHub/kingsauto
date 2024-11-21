@@ -3,7 +3,19 @@
 	@media (min-width: $md2) {
 		padding: 3.5rem 0 rem(20);
 	}
-
+	&.breadcrumbs-center {
+		.breadcrumbs__list {
+			@media (min-width: $md5) {
+				justify-content: center;
+			}
+		}
+	}
+	& + .reviews {
+		padding-top: 0.875rem;
+		@media (min-width: $md5) {
+			padding-top: 1.25rem;
+		}
+	}
 	// .breadcrumbs__container
 	&__container {
 	}
@@ -11,14 +23,16 @@
 	&__list {
 		display: flex;
 		align-items: center;
+		flex-wrap: wrap;
+		row-gap: 0.63rem;
 	}
 	// .breadcrumbs__item
 	&__item {
 		display: inline-flex;
 		align-items: center;
 		font-size: rem(14);
-		&:not(:first-child) {
-			&::before {
+		&:not(:last-child) {
+			&::after {
 				content: "/";
 				margin: 0 rem(10);
 			}
@@ -27,11 +41,7 @@
 	// .breadcrumbs__link
 	&__link {
 		transition: color 0.3s ease 0s;
-		white-space: nowrap;
 		max-width: 100%;
-		overflow: hidden;
-		text-overflow: ellipsis;
-
 		@media (any-hover: hover) {
 			&:hover {
 				color: rgba(43, 50, 57, 0.5);

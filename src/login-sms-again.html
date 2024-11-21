@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    'title': 'KingsAuto | Страница товара'
+    })
+    <body>
+        <section class="wrapper">
+            @@include('html/_header.html', {
+            "className": "",
+            "login": false
+            })
+            <main class="page">
+                <div class="login">
+                    <div class="login__container">
+                        <form action="#" class="login__form">
+                            <div class="login__form-title text-center">
+                                Подтвердите вход по смс
+                            </div>
+                            <div class="login__form-send">
+                                Отправили код на
+                                <strong>
+                                    + 7 987 ***-**-68
+                                </strong>
+                            </div>
+                            <div class="login__form-code code">
+                                <div class="code__caption">
+                                    Код подтверждения
+                                </div>
+                                <div class="code__inputs">
+                                    <input class="code__input" name="confirmNumberOne" inputmode="numeric" type="text" maxlength="1" pattern="[0-9]">
+                                    <input class="code__input" name="confirmNumberTwo" inputmode="numeric" type="text" maxlength="1" pattern="[0-9]">
+                                    <input class="code__input" name="confirmNumberThree" inputmode="numeric" type="text" maxlength="1" pattern="[0-9]">
+                                    <input class="code__input" name="confirmNumberFour" inputmode="numeric" type="text" maxlength="1" pattern="[0-9]">
+                                    <input class="code__input" name="confirmNumberFive" inputmode="numeric" type="text" maxlength="1" pattern="[0-9]">
+                                    <input class="code__input" name="confirmNumberSix" inputmode="numeric" type="text" maxlength="1" pattern="[0-9]">
+                                </div>
+                            </div>
+                            <button type="submit" class="login__form-btn btn btn-primary btn-fullwidth">
+                                Получить новый код
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </main>
+            @@include('html/_footer.html', {})
+            @@include('html/_modal.html', {})
+            @@include('html/_js.html', {})
+    </body>
+</html>

@@ -1,5 +1,5 @@
 .footer {
-	background-image: url('@img/footer-car.jpg');
+	background-image: url("@img/footer-car.jpg");
 	background-attachment: fixed;
 	background-position: center bottom;
 	background-repeat: no-repeat;
@@ -107,6 +107,15 @@
 		@media (any-hover: hover) {
 			&:hover {
 				color: $accent;
+				&.icon-wa {
+					color: #64d448;
+				}
+				&.icon-vk {
+					color: #07f;
+				}
+				&.icon-telegram {
+					color: #0088cc;
+				}
 			}
 		}
 	}
@@ -271,7 +280,7 @@
 		}
 		&::before,
 		&::after {
-			content: '';
+			content: "";
 			position: absolute;
 			top: 0;
 			height: 100%;

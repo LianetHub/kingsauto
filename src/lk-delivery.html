@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    'title': 'KingsAuto | Страница товара'
+    })
+    <body>
+        <section class="wrapper">
+            @@include('html/_header.html', {
+            "className": "",
+            "login": true
+            })
+            <main class="page">
+                <div class="lk">
+                    <div class="lk__container">
+                        @@include('./html/_lk-sidebar.html', {
+                        "active": 2
+                        })
+                        <div class="lk__content">
+                            <div class="lk__body active">
+                                <div class="lk__delivery">
+                                    <div class="lk__delivery-block">
+                                        <div class="lk__delivery-title">
+                                            Фото и видео авто
+                                        </div>
+                                        <ul class="lk__delivery-list">
+                                            <li class="lk__delivery-item">
+                                                <a href="" class="lk__delivery-link icon-chevron">Фото и видео с осмотра авто</a>
+                                            </li>
+                                            <li class="lk__delivery-item">
+                                                <a href="" aria-disabled="true" class="lk__delivery-link icon-chevron">Фото и видео перед погрузкой</a>
+                                            </li>
+                                            <li class="lk__delivery-item">
+                                                <a href="" aria-disabled="true" class="lk__delivery-link icon-chevron">Фото и видео после таможенного оформления </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="lk__delivery-block">
+                                        <div class="lk__delivery-title">
+                                            Отслеживание авто
+                                        </div>
+                                        <ul class="lk__delivery-list">
+                                            <li class="lk__delivery-item">
+                                                <div class="lk__delivery-row">
+                                                    Ваш GPS-трекер отслеживания
+                                                    <div class="lk__delivery-copy copy-btn">
+                                                        <div class="copy-btn__text">
+                                                            aaa123-15-jk
+                                                        </div>
+                                                        <button type="button" class="copy-btn__btn icon-copy"></button>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="lk__delivery-item icon-search">
+                                                <input type="text" name="trek" class="lk__delivery-input" placeholder="Введите трек-номер">
+                                            </li>
+                                            <li class="lk__delivery-item">
+                                                <div class="lk__map">карта</div>
+                                            </li>
+                                        </ul>
+                                        <div class="lk__delivery-points">
+                                            <div class="lk__delivery-point completed">Отгружен из порта Пусан</div>
+                                            <div class="lk__delivery-point completed">Доставлен в г. Владивосток</div>
+                                            <div class="lk__delivery-point">Доставка ожидается 15.02.2025</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lk__contacts">
+                                <div class="lk__contacts-title">Контактные данные перевозчика:</div>
+                                <ul class="lk__contacts-list">
+                                    <li class="lk__contacts-item">
+                                        <div class="lk__contacts-caption">По вопросам доставки:</div>
+                                        <a href="tel:+79999999999" class="lk__contacts-value">+7 (999) 999-99-99</a>
+                                    </li>
+                                    <li class="lk__contacts-item">
+                                        <div class="lk__contacts-caption">По другим вопросам:</div>
+                                        <a href="tel:+79999999999" class="lk__contacts-value">+7 (999) 999-99-99</a>
+                                    </li>
+                                    <li class="lk__contacts-item">
+                                        <div class="lk__contacts-text">
+                                            <p>ООО «Грузоперевозки РФ»</p>
+                                            <p>ИНН 123456789</p>
+                                            <p>ОГРН 123456789</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            @@include('html/_footer.html', {})
+            @@include('html/_modal.html', {})
+            @@include('html/_js.html', {})
+    </body>
+</html>

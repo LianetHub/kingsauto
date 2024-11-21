@@ -319,6 +319,19 @@
 	}
 	// .filter__switcher-hint
 	&__switcher-hint {
+		cursor: pointer;
+		&:first-child {
+			& + input {
+				&:checked {
+					& + .switcher__btn {
+						&::before {
+							left: rem(2);
+						}
+						background: #c5d1e0;
+					}
+				}
+			}
+		}
 	}
 	// .filter__bottom
 	&__bottom {

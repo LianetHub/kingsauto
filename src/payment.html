@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    'title': 'KingsAuto'
+    })
+    <body>
+        <section class="wrapper">
+            @@include('html/_header.html', {
+            "className": "",
+            "login": false
+            })
+            <main class="page">
+                <nav aria-label="Хлебные крошки" class="breadcrumbs">
+                    <div class="breadcrumbs__container">
+                        <ul class="breadcrumbs__list" itemscope itemtype="http://schema.org/BreadcrumbList">
+                            <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                <a href="/" class="breadcrumbs__link" itemprop="item">
+                                    <span itemprop="name">Главная</span>
+                                </a>
+                                <meta itemprop="position" content="1">
+                            </li>
+                            <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                <a class="breadcrumbs__link active" itemprop="item">
+                                    <span itemprop="name">Варианты оплаты</span>
+                                </a>
+                                <meta itemprop="position" content="2">
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <section class="info">
+                    <div class="info__container">
+                        <h1 class="info__title title">
+                            Способы оплаты, внесение <br> депозита (предоплаты)
+                        </h1>
+                        <ol class="info__list">
+                            <li class="info__item">
+                                <button type="button" class="info__item-title active">
+                                    <span>
+                                        Оплата депозита за участие в аукционе
+                                    </span>
+                                </button>
+                                <div class="info__item-answer initial-block">
+                                    Депозит возвращается в полном объеме, если вы по каким-либо причинам передумали приобретать автомобиль. Но только в том случае, если не была произведена ставка на аукционе.
+                                </div>
+                            </li>
+                            <li class="info__item">
+                                <button type="button" class="info__item-title">
+                                    <span>
+                                        Способы оплаты услуг
+                                    </span>
+                                </button>
+                                <div class="info__item-answer">
+                                    <p>
+                                        Сумма депозита за участие в аукционе составляет <strong>100 000 рублей.</strong> <br>
+                                    </p>
+                                    <p>
+                                        Перечислить депозит можно любым удобным способом:
+                                    </p>
+                                    <ul>
+                                        <li>внести платеж с помощью QR-кода от СберБанка</li>
+                                        <li>эквайринг (через наш сайт)</li>
+                                        <li>по счету на расчетный счет компании;</li>
+                                        <li>по ИНН в СберОнлайн.</li>
+                                    </ul>
+                                    <p>
+                                        Депозит служит гарантией ваших намерений купить автомобиль с аукциона Японии. В случае не выкупа автомобиля с аукциона, компания «Kings Auto» вынуждена будет выплатить аукциону штраф. Этот депозит сможет полностью или частично покрыть сумму штрафа.
+                                    </p>
+                                    <p>
+                                        Если вы передумали покупать авто или пользоваться услугами компании «Kings Auto», сумма депозита возвращается в полном объеме. Но только в том случае, если автомобиль еще не куплен.
+                                    </p>
+                                    <p>
+                                        Обратите внимание, что наши специалисты могут начинать ставить ставки, только после зачисления полной суммы депозита на счет компании.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="info__item">
+                                <button type="button" class="info__item-title">
+                                    <span>
+                                        Возврат депозита
+                                    </span>
+                                </button>
+                                <div class="info__item-answer">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo similique expedita quidem ex! Voluptatum enim tempora quidem a id commodi. Officia, veniam? Autem inventore rerum ad amet necessitatibus, in culpa expedita odit sapiente temporibus, iusto quasi modi delectus quaerat dicta doloremque cum esse reiciendis. Blanditiis est deserunt explicabo necessitatibus, velit quibusdam atque libero reprehenderit, aspernatur sint suscipit natus, quasi ipsum! Blanditiis nostrum fugiat ex ducimus odio eos ut deserunt iusto veritatis rerum eius, hic iste mollitia tempore maxime quis ullam voluptatum. Veniam nisi, cupiditate voluptatum, nulla unde reprehenderit obcaecati eveniet totam non, neque quidem distinctio qui temporibus odio doloremque tempora.
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                </section>
+            </main>
+            @@include('html/_footer.html', {})
+            @@include('html/_modal.html', {})
+            @@include('html/_js.html', {})
+    </body>
+</html>

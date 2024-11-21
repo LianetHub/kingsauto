@@ -447,6 +447,14 @@
 		&.full {
 			display: block;
 		}
+		& p {
+			&:not(:last-child) {
+				margin-bottom: 0.75rem;
+				@media (min-width: $md4) {
+					margin-bottom: 1rem;
+				}
+			}
+		}
 	}
 	// .reviews__card-btn
 	&__card-btn {
@@ -473,12 +481,107 @@
 			}
 		}
 	}
+
+	// .reviews__items
+	&__items {
+		margin-top: rem(40);
+	}
+	// .reviews__item
+	&__item {
+		border-radius: 0.625rem;
+		background: #f3f6fa;
+		display: flex;
+		flex-direction: column;
+		gap: 1.88rem;
+		padding: 1.25rem;
+		@media (min-width: $md4) {
+			padding: 1.875rem;
+			gap: 2.5rem;
+			flex-direction: row;
+			align-items: flex-start;
+		}
+		&:not(:last-child) {
+			margin-bottom: 1.88rem;
+			@media (min-width: $md5) {
+				margin-bottom: 1.25rem;
+			}
+		}
+	}
+	// .reviews__item-image
+	&__item-image {
+		@media (min-width: $md4) {
+			flex: 0 0 44%;
+		}
+		& img {
+			width: 100%;
+			border-radius: 0.625rem;
+			min-height: 12.5rem;
+		}
+	}
+	// .reviews__item-body
+	&__item-body {
+		max-width: 36.5rem;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		.reviews__card-quote {
+			margin-top: 1.25rem;
+			-webkit-line-clamp: 3;
+			@media (min-width: $md4) {
+				margin-top: 2.19rem;
+			}
+		}
+		.reviews__card-btn {
+			margin-top: 1.25rem;
+			@media (min-width: $md4) {
+				margin-top: 2.19rem;
+			}
+		}
+		.reviews__card-label {
+			background: #dde7f3;
+		}
+	}
 }
 
 .benefits {
 	padding: rem(50) 0;
 	@media (min-width: $md3) {
 		padding: rem(70) 0;
+	}
+	// .benefits__header
+	&__header {
+		display: grid;
+		gap: rem(30);
+		margin-bottom: 3.13rem;
+		@media (min-width: $md4) {
+			gap: 1.25rem;
+			margin-bottom: 3.5rem;
+			align-items: end;
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+	// .benefits__header-column
+	&__header-column {
+		max-width: 25.9375rem;
+	}
+	// .benefits__header-text
+	&__header-text {
+		line-height: 155%;
+		font-size: 1rem;
+		@media (min-width: $md3) {
+			font-size: 1.125rem;
+		}
+	}
+	// .benefits__hint
+	&__hint {
+		color: rgba(43, 50, 57, 0.5);
+		font-size: 0.875rem;
+		font-weight: 500;
+		line-height: 130%;
+		margin-bottom: 1.25rem;
+	}
+	// .benefits__title
+	&__title {
 	}
 	// .benefits__container
 	&__container {
@@ -525,7 +628,59 @@
 				}
 			}
 		}
+		&.benefits__card-sm {
+			@media (any-hover: hover) {
+				&:hover {
+					.benefits__card-icon {
+						color: #fff;
+					}
+				}
+			}
+			padding: 1.88rem;
+			flex-direction: column;
+			gap: rem(25);
+			@media (min-width: $md2) {
+				gap: 1.25rem;
+				min-height: 0;
+			}
+			.benefits__card-icon {
+				width: rem(45);
+				height: rem(45);
+				@media (min-width: $md4) {
+					width: 3.75rem;
+					height: 3.75rem;
+				}
+				color: #81a6ca;
+				margin: 0;
+			}
+			.benefits__card-title {
+				margin-top: 0;
+				font-size: 1.25rem;
+				line-height: 130%;
+				@media (min-width: $md2) {
+					max-width: 9.3125rem;
+				}
+			}
+			.benefits__card-desc {
+				margin-top: 0;
+				line-height: 155%;
+				font-size: 1rem;
+			}
+		}
 	}
+	&__card-header {
+		display: flex;
+		align-items: center;
+		gap: rem(15);
+		@media (min-width: $md5) {
+			gap: 1.25rem;
+		}
+		@media (min-width: $md2) {
+			align-items: flex-start;
+			flex-direction: column;
+		}
+	}
+	// .benefits__card-main
 	&__card-main {
 		@media (min-width: $md2) {
 			margin-bottom: auto;

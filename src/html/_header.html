@@ -18,12 +18,12 @@
                             <div class="submenu">
                                 <ul class="submenu__list">
                                     <li class="submenu__item">
-                                        <a href="" class="submenu__link">
+                                        <a href="/service.html" class="submenu__link">
                                             Подбор авто
                                         </a>
                                     </li>
                                     <li class="submenu__item">
-                                        <a href="" class="submenu__link">
+                                        <a href="/service.html" class="submenu__link">
                                             Калькулятор авто
                                             под полную пошлину
                                         </a>
@@ -42,12 +42,12 @@
                                         </a>
                                     </li>
                                     <li class="submenu__item">
-                                        <a href="" class="submenu__link">
+                                        <a href="/faq.html" class="submenu__link">
                                             Вопрос–ответ
                                         </a>
                                     </li>
                                     <li class="submenu__item">
-                                        <a href="" class="submenu__link">
+                                        <a href="/payment.html" class="submenu__link">
                                             Способы оплаты
                                         </a>
                                     </li>
@@ -59,10 +59,10 @@
                 <nav class="header__menu-right">
                     <ul class="menu__list">
                         <li class="menu__item">
-                            <a href="" class="menu__link">Журнал</a>
+                            <a href="/magazine.html" class="menu__link">Журнал</a>
                         </li>
                         <li class="menu__item">
-                            <a href="" class="menu__link">Отзывы</a>
+                            <a href="/reviews.html" class="menu__link">Отзывы</a>
                         </li>
                         <li class="menu__item">
                             <a href="" class="menu__link">Контакты</a>
@@ -85,13 +85,37 @@
                             <div class="header__contacts-caption">Личный кабинет:</div>
                         </div>
                     </div>
-                    <div class="header__copy">© 2024 Kings Auto </div>
+                    <div class="header__copy">© 2024 Kings Auto</div>
                 </nav>
             </div>
             <a href="tel:+74959999999" class="header__phone icon-phone"><span>+7 495 999 99 99</span></a>
             <div class="header__person">
                 @@if (login===false){
-                <a href="" class="header__btn btn icon-login"><span>Вход</span></a>
+                <a href="/login.html" class="header__btn btn icon-login"><span>Вход</span></a>
+                }
+                @@if (login===true){
+                <a href="/lk.html" class="header__btn btn login-btn icon-user-circle">
+                    <span class="header__btn-notification"></span>
+                </a>
+                <ul class="header__person-list">
+                    <li class="header__person-item">
+                        <a href="" class="header__person-link icon-user">Профиль</a>
+                    </li>
+                    <li class="header__person-item">
+                        <a href="" class="header__person-link icon-delivery">Отслеживание авто</a>
+                    </li>
+                    <li class="header__person-item">
+                        <a href="" class="header__person-link icon-heart">Избранное
+                            <span class="header__person-quantity">3</span>
+                        </a>
+                    </li>
+                    <li class="header__person-item">
+                        <a href="" class="header__person-link icon-docs">Договор с Kings Auto</a>
+                    </li>
+                    <li class="header__person-item">
+                        <a href="" class="header__person-link icon-login"> Выйти</a>
+                    </li>
+                </ul>
                 }
             </div>
             <button type="button" class="menu__btn icon-catalog">

@@ -1,0 +1,221 @@
+.article {
+	padding: 1rem 0 3rem;
+	@media (min-width: $md5) {
+		padding: 1.5rem 0 3rem;
+	}
+	// .article__container
+	&__container {
+		max-width: rem(794);
+	}
+	// .article__header
+	&__header {
+		@media (min-width: $md5) {
+			text-align: center;
+		}
+	}
+	// .article__title
+	&__title {
+	}
+	// .article__desc
+	&__desc {
+		line-height: 155%;
+		margin-top: 1.25rem;
+		font-size: 0.875rem;
+		@media (min-width: $md5) {
+			font-size: 1rem;
+		}
+	}
+	// .article__time
+	&__time {
+		display: inline-block;
+		color: rgba(43, 50, 57, 0.3);
+		text-align: center;
+		font-weight: 500;
+		line-height: 150%;
+		margin-top: 1.88rem;
+		font-size: 0.8125rem;
+		@media (min-width: $md5) {
+			font-size: 0.875rem;
+			margin-top: 2.5rem;
+		}
+	}
+	// .article__slider
+	&__slider {
+		position: relative;
+		margin-top: 2.5rem;
+	}
+	// .article__slide
+	&__slide {
+		height: 0;
+		width: 100%;
+		padding-bottom: 90%;
+		@media (min-width: $md5) {
+			padding-bottom: 50.378%;
+		}
+		& img {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+	// .article__prev
+	&__prev {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 0.5rem;
+		@media (min-width: $md5) {
+			left: 1rem;
+		}
+	}
+	// .article__next
+	&__next {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 0.5rem;
+		@media (min-width: $md5) {
+			right: 1rem;
+		}
+	}
+	// .article__body
+	&__body {
+		margin-top: rem(50);
+		@media (min-width: $md5) {
+			margin-top: rem(60);
+		}
+		& h2 {
+			font-size: 1.125rem;
+			@media (min-width: $md5) {
+				font-size: 1.25rem;
+			}
+			font-weight: 600;
+			line-height: 130%;
+			&:not(:first-child) {
+				margin-top: 3.12rem;
+				@media (min-width: $md5) {
+					margin-top: 3.75rem;
+				}
+			}
+		}
+		& p {
+			font-size: 0.875rem;
+			line-height: 158%;
+
+			@media (min-width: $md5) {
+				line-height: 160%;
+				font-size: 1rem;
+			}
+			&:not(:first-child) {
+				margin-top: 1.25rem;
+			}
+		}
+		& img {
+			display: inline-block;
+			width: 100%;
+			object-fit: cover;
+			height: 15.625rem;
+			&:not(:first-child) {
+				margin-top: 1.87rem;
+			}
+			@media (min-width: $md5) {
+				height: 18.75rem;
+				width: calc(50% - 0.625rem);
+				& + img {
+					margin-left: 0.625rem;
+				}
+			}
+			@media (max-width: $md5) {
+				& + img {
+					&:not(:first-child) {
+						margin-top: 1.25rem;
+					}
+				}
+			}
+		}
+	}
+	// .article__footer
+	&__footer {
+		margin-top: 3rem;
+		@media (min-width: $md5) {
+			margin-top: 3.75rem;
+		}
+	}
+	// .article__share
+	&__share {
+	}
+	// .article__share-title
+	&__share-title {
+		color: rgba(43, 50, 57, 0.4);
+		font-size: 0.875rem;
+		font-weight: 500;
+		line-height: 160%;
+	}
+	// .article__share-btns
+	&__share-btns {
+		margin-top: 0.94rem;
+		display: flex;
+		gap: 0.62rem;
+		font-size: 1.5rem;
+	}
+	// .article__share-btn
+	&__share-btn {
+		transition: color 0.3s ease 0s;
+		@media (any-hover: hover) {
+			&:hover {
+				&.icon-vk {
+					color: #07f;
+				}
+				&.icon-telegram {
+					color: #0088cc;
+				}
+			}
+		}
+	}
+	// .article__comment
+	&__comment {
+		margin-top: 2.5rem;
+	}
+	// .article__comment-title
+	&__comment-title {
+		font-weight: 500;
+		line-height: 130%;
+		font-size: 1.125rem;
+		@media (min-width: $md5) {
+			font-size: 1.25rem;
+		}
+	}
+	// .article__comment-body
+	&__comment-body {
+		position: relative;
+		margin-top: 1.25rem;
+		.form__textarea {
+			height: 15.5625rem;
+			@media (min-width: $md5) {
+				height: 13.0625rem;
+			}
+			border: rem(1) solid #ededed;
+			background: #fff;
+			border-radius: 0.5rem;
+			padding: 1.25rem 13rem 1.25rem 1.25rem;
+			&:focus {
+				border-color: $accent;
+			}
+		}
+		.btn {
+			margin: 0;
+			min-width: 8.9375rem;
+			@media (min-width: $md5) {
+				min-width: 9.4375rem;
+			}
+		}
+	}
+	&__comment-actions {
+		position: absolute;
+		bottom: 1.25rem;
+		right: 1.25rem;
+		display: flex;
+		align-items: center;
+		gap: 0.63rem;
+	}
+}

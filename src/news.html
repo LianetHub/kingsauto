@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    'title': 'KingsAuto'
+    })
+    <body>
+        <section class="wrapper">
+            @@include('html/_header.html', {
+            "className": "",
+            "login": false
+            })
+            <main class="page">
+                <nav aria-label="Хлебные крошки" class="breadcrumbs">
+                    <div class="breadcrumbs__container">
+                        <ul class="breadcrumbs__list" itemscope itemtype="http://schema.org/BreadcrumbList">
+                            <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                <a href="/" class="breadcrumbs__link" itemprop="item">
+                                    <span itemprop="name">Главная</span>
+                                </a>
+                                <meta itemprop="position" content="1">
+                            </li>
+                            <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                <a href="/" class="breadcrumbs__link" itemprop="item">
+                                    <span itemprop="name">Журнал</span>
+                                </a>
+                                <meta itemprop="position" content="2">
+                            </li>
+                            <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                <a class="breadcrumbs__link active" itemprop="item">
+                                    <span itemprop="name">Все новости</span>
+                                </a>
+                                <meta itemprop="position" content="3">
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <section class="news">
+                    <div class="news__container">
+                        <h1 class="news__title title">
+                            Новости
+                        </h1>
+                        <ul class="news__grid">
+                            <li class="news__item">
+                                <a href="/article.html" class="news__card">
+                                    <span class="news__card-poster">
+                                        <img src="@img/magazine/03.jpg" class="cover-image" alt="Постер">
+                                    </span>
+                                    <span class="news__card-info">
+                                        <span class="news__card-main">
+                                            <span class="news__card-name">Эти машины заметно подешевели в сентябре: называем цены</span>
+                                            <span class="news__card-desc">Автомобили семи брендов подешевели в России в сентябре 2024 года</span>
+                                        </span>
+                                        <time datetime="2025-01-01" class="news__card-time">01.01.2025</time>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="news__item">
+                                <a href="/article.html" class="news__card">
+                                    <span class="news__card-poster">
+                                        <img src="@img/magazine/02.jpg" class="cover-image" alt="Постер">
+                                    </span>
+                                    <span class="news__card-info">
+                                        <span class="news__card-main">
+                                            <span class="news__card-name">Спорткар Lexus LC получил обновки к 2025 модельному году</span>
+                                            <span class="news__card-desc">Изменения, которые получили купе и кабриолет японской марки, представленные на американском рынке, не коснулись техники.</span>
+                                        </span>
+                                        <time datetime="2025-01-01" class="news__card-time">01.01.2025</time>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="news__item">
+                                <a href="/article.html" class="news__card">
+                                    <span class="news__card-poster">
+                                        <img src="@img/magazine/01.jpg" class="cover-image" alt="Постер">
+                                    </span>
+                                    <span class="news__card-info">
+                                        <span class="news__card-main">
+                                            <span class="news__card-name">Авторынок РФ в сентябре: больше, чем в августе, чтобы успеть до роста цен.</span>
+                                            <span class="news__card-desc">На российском рынке новых легковых автомобилей за первые три квартала текущего года было продано 1 154 778 экземпляров, что на 60,9% больше, чем в январе-сентябре 2023-го.</span>
+                                        </span>
+                                        <time datetime="2025-01-01" class="news__card-time">01.01.2025</time>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="news__item">
+                                <a href="/article.html" class="news__card">
+                                    <span class="news__card-poster">
+                                        <img src="@img/magazine/01.jpg" class="cover-image" alt="Постер">
+                                    </span>
+                                    <span class="news__card-info">
+                                        <span class="news__card-main">
+                                            <span class="news__card-name">Эти машины заметно подешевели в сентябре: называем цены</span>
+                                            <span class="news__card-desc">Автомобили семи брендов подешевели в России в сентябре 2024 года</span>
+                                        </span>
+                                        <time datetime="2025-01-01" class="news__card-time">01.01.2025</time>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="news__item">
+                                <a href="/article.html" class="news__card">
+                                    <span class="news__card-poster">
+                                        <img src="@img/magazine/03.jpg" class="cover-image" alt="Постер">
+                                    </span>
+                                    <span class="news__card-info">
+                                        <span class="news__card-main">
+                                            <span class="news__card-name">Спорткар Lexus LC получил обновки к 2025 модельному году</span>
+                                            <span class="news__card-desc">Изменения, которые получили купе и кабриолет японской марки, представленные на американском рынке, не коснулись техники.</span>
+                                        </span>
+                                        <time datetime="2025-01-01" class="news__card-time">01.01.2025</time>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="news__item">
+                                <a href="/article.html" class="news__card">
+                                    <span class="news__card-poster">
+                                        <img src="@img/magazine/02.jpg" class="cover-image" alt="Постер">
+                                    </span>
+                                    <span class="news__card-info">
+                                        <span class="news__card-main">
+                                            <span class="news__card-name">Авторынок РФ в сентябре: больше, чем в августе, чтобы успеть до роста цен.</span>
+                                            <span class="news__card-desc">На российском рынке новых легковых автомобилей за первые три квартала текущего года было продано 1 154 778 экземпляров, что на 60,9% больше, чем в январе-сентябре 2023-го.</span>
+                                        </span>
+                                        <time datetime="2025-01-01" class="news__card-time">01.01.2025</time>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="news__item">
+                                <a href="/article.html" class="news__card">
+                                    <span class="news__card-poster">
+                                        <img src="@img/magazine/02.jpg" class="cover-image" alt="Постер">
+                                    </span>
+                                    <span class="news__card-info">
+                                        <span class="news__card-main">
+                                            <span class="news__card-name">Эти машины заметно подешевели в сентябре: называем цены</span>
+                                            <span class="news__card-desc">Автомобили семи брендов подешевели в России в сентябре 2024 года</span>
+                                        </span>
+                                        <time datetime="2025-01-01" class="news__card-time">01.01.2025</time>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="news__item">
+                                <a href="/article.html" class="news__card">
+                                    <span class="news__card-poster">
+                                        <img src="@img/magazine/01.jpg" class="cover-image" alt="Постер">
+                                    </span>
+                                    <span class="news__card-info">
+                                        <span class="news__card-main">
+                                            <span class="news__card-name">Спорткар Lexus LC получил обновки к 2025 модельному году</span>
+                                            <span class="news__card-desc">Изменения, которые получили купе и кабриолет японской марки, представленные на американском рынке, не коснулись техники.</span>
+                                        </span>
+                                        <time datetime="2025-01-01" class="news__card-time">01.01.2025</time>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="news__item">
+                                <a href="/article.html" class="news__card">
+                                    <span class="news__card-poster">
+                                        <img src="@img/magazine/03.jpg" class="cover-image" alt="Постер">
+                                    </span>
+                                    <span class="news__card-info">
+                                        <span class="news__card-main">
+                                            <span class="news__card-name">Авторынок РФ в сентябре: больше, чем в августе, чтобы успеть до роста цен.</span>
+                                            <span class="news__card-desc">На российском рынке новых легковых автомобилей за первые три квартала текущего года было продано 1 154 778 экземпляров, что на 60,9% больше, чем в январе-сентябре 2023-го.</span>
+                                        </span>
+                                        <time datetime="2025-01-01" class="news__card-time">01.01.2025</time>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="" class="news__more btn btn-grey">Показать еще</a>
+                    </div>
+                </section>
+            </main>
+            @@include('html/_footer.html', {})
+            @@include('html/_modal.html', {})
+            @@include('html/_js.html', {})
+    </body>
+</html>

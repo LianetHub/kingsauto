@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    'title': 'KingsAuto'
+    })
+    <body>
+        <section class="wrapper">
+            @@include('html/_header.html', {
+            "className": "",
+            "login": false
+            })
+            <main class="page">
+                <nav aria-label="Хлебные крошки" class="breadcrumbs">
+                    <div class="breadcrumbs__container">
+                        <ul class="breadcrumbs__list" itemscope itemtype="http://schema.org/BreadcrumbList">
+                            <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                <a href="/" class="breadcrumbs__link" itemprop="item">
+                                    <span itemprop="name">Главная</span>
+                                </a>
+                                <meta itemprop="position" content="1">
+                            </li>
+                            <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                <a class="breadcrumbs__link active" itemprop="item">
+                                    <span itemprop="name">Журнал</span>
+                                </a>
+                                <meta itemprop="position" content="2">
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <section class="news">
+                    <div class="news__container">
+                        <div class="news__header">
+                            <h1 class="news__title title">
+                                Новости
+                            </h1>
+                            <a href="/news.html" class="news__link">[ смотреть все ]</a>
+                        </div>
+                        <ul class="news__grid">
+                            <li class="news__item news__item_lg">
+                                <a href="/article.html" class="news__card">
+                                    <span class="news__card-poster">
+                                        <picture>
+                                            <source media="(min-width: 576px)" srcset="@img/magazine/02.jpg">
+                                            <img src="@img/magazine/02-mobile.jpg" class="cover-image" alt="Постер">
+                                        </picture>
+                                    </span>
+                                    <span class="news__card-info">
+                                        <span class="news__card-main">
+                                            <span class="news__card-name">Эти машины заметно подешевели в сентябре: называем цены</span>
+                                            <span class="news__card-desc">Автомобили семи брендов подешевели в России в сентябре 2024 года</span>
+                                        </span>
+                                        <time datetime="2025-01-01" class="news__card-time">01.01.2025</time>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="news__item">
+                                <a href="/article.html" class="news__card">
+                                    <span class="news__card-poster">
+                                        <img src="@img/magazine/04.jpg" class="cover-image" alt="Постер">
+                                    </span>
+                                    <span class="news__card-info">
+                                        <span class="news__card-main">
+                                            <span class="news__card-name">Эти машины заметно подешевели в сентябре: называем цены</span>
+                                            <span class="news__card-desc">Автомобили семи брендов подешевели в России в сентябре 2024 года</span>
+                                        </span>
+                                        <time datetime="2025-01-01" class="news__card-time">01.01.2025</time>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="news__item">
+                                <a href="/article.html" class="news__card">
+                                    <span class="news__card-poster">
+                                        <img src="@img/magazine/01.jpg" class="cover-image" alt="Постер">
+                                    </span>
+                                    <span class="news__card-info">
+                                        <span class="news__card-main">
+                                            <span class="news__card-name">Спорткар Lexus LC получил обновки к 2025 модельному году</span>
+                                            <span class="news__card-desc">Изменения, которые получили купе и кабриолет японской марки, представленные на американском рынке, не коснулись техники.</span>
+                                        </span>
+                                        <time datetime="2025-01-01" class="news__card-time">01.01.2025</time>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="news__item">
+                                <a href="/article.html" class="news__card">
+                                    <span class="news__card-poster">
+                                        <img src="@img/magazine/03.jpg" class="cover-image" alt="Постер">
+                                    </span>
+                                    <span class="news__card-info">
+                                        <span class="news__card-main">
+                                            <span class="news__card-name">Авторынок РФ в сентябре: больше, чем в августе, чтобы успеть до роста цен.</span>
+                                            <span class="news__card-desc">На российском рынке новых легковых автомобилей за первые три квартала текущего года было продано 1 154 778 экземпляров, что на 60,9% больше, чем в январе-сентябре 2023-го.</span>
+                                        </span>
+                                        <time datetime="2025-01-01" class="news__card-time">01.01.2025</time>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="magazine">
+                    <div class="magazine__container">
+                        <div class="magazine__header">
+                            <h2 class="magazine__title title">
+                                Обзоры
+                            </h2>
+                            <a href="" class="magazine__more more-link">[ смотреть все ]</a>
+                        </div>
+                        <div class="magazine__body">
+                            <a href="" class="magazine__card magazine__card-xl">
+                                <span class="magazine__card-image">
+                                    <img src="@img/magazine/01.jpg" class="cover-image" alt="Фото">
+                                </span>
+                                <span class="magazine__card-body">
+                                    <span class="magazine__card-name">Топ-5 авто для охоты и рыбалки</span>
+                                    <span class="magazine__card-desc">Каким должен быть автомобиль для рыбалки и охоты? У каждого автолюбителя на этот счет найдутся свои критерии, но важнейшие параметры остаются неизменными: вместительность, надежность и проходимость.</span>
+                                    <time class="magazine__card-time" datetime="2024-12-20">20.12.2024</time>
+                                </span>
+                            </a>
+                            <a href="" class="magazine__card magazine__card-sm">
+                                <span class="magazine__card-image">
+                                    <img src="@img/magazine/02.jpg" class="cover-image" alt="Фото">
+                                </span>
+                                <span class="magazine__card-body">
+                                    <span class="magazine__card-name">Азартнее Toyota Camry, мягче Kia K5: тест-драйв Geely Preface</span>
+                                    <span class="magazine__card-desc">Японские и европейские седаны бизнес-класса хоть и уступали в популярности кроссоверам, но все же были очень востребованы у нашего покупателя. В 2022 году в России официально не представили...</span>
+                                    <time class="magazine__card-time" datetime="2024-12-17">17.12.2024</time>
+                                </span>
+                            </a>
+                            <a href="" class="magazine__card magazine__card-sm">
+                                <span class="magazine__card-image">
+                                    <img src="@img/magazine/03.jpg" class="cover-image" alt="Фото">
+                                </span>
+                                <span class="magazine__card-body">
+                                    <span class="magazine__card-name">Первый тест-драйв обновленного Chery Tiggo 7 Pro Max</span>
+                                    <span class="magazine__card-desc">Мы привыкли, что время рестайлинга приходит после того, как автомобиль три-четыре года провел на рынке, слегка приелся покупателям, и его продажи начали падать. Но Chery Tiggo 7 Pro Max был...</span>
+                                    <time class="magazine__card-time" datetime="2024-12-03">03.12.2024</time>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <section class="magazine">
+                    <div class="magazine__container">
+                        <div class="magazine__header">
+                            <h2 class="magazine__title title">
+                                Новинки
+                            </h2>
+                            <a href="" class="magazine__more more-link">[ смотреть все ]</a>
+                        </div>
+                        <div class="magazine__body">
+                            <a href="" class="magazine__card magazine__card-sm">
+                                <span class="magazine__card-image">
+                                    <img src="@img/magazine/02.jpg" class="cover-image" alt="Фото">
+                                </span>
+                                <span class="magazine__card-body">
+                                    <span class="magazine__card-name">Азартнее Toyota Camry, мягче Kia K5: тест-драйв Geely Preface</span>
+                                    <span class="magazine__card-desc">Японские и европейские седаны бизнес-класса хоть и уступали в популярности кроссоверам, но все же были очень востребованы у нашего покупателя. В 2022 году в России официально не представили...</span>
+                                    <time class="magazine__card-time" datetime="2024-12-17">17.12.2024</time>
+                                </span>
+                            </a>
+                            <a href="" class="magazine__card magazine__card-xl">
+                                <span class="magazine__card-image">
+                                    <img src="@img/magazine/04.jpg" class="cover-image" alt="Фото">
+                                </span>
+                                <span class="magazine__card-body">
+                                    <span class="magazine__card-name">Топ-5 авто для охоты и рыбалки</span>
+                                    <span class="magazine__card-desc">Каким должен быть автомобиль для рыбалки и охоты? У каждого автолюбителя на этот счет найдутся свои критерии, но важнейшие параметры остаются неизменными: вместительность, надежность и проходимость.</span>
+                                    <time class="magazine__card-time" datetime="2024-12-20">20.12.2024</time>
+                                </span>
+                            </a>
+                            <a href="" class="magazine__card magazine__card-sm">
+                                <span class="magazine__card-image">
+                                    <img src="@img/magazine/03.jpg" class="cover-image" alt="Фото">
+                                </span>
+                                <span class="magazine__card-body">
+                                    <span class="magazine__card-name">Первый тест-драйв обновленного Chery Tiggo 7 Pro Max</span>
+                                    <span class="magazine__card-desc">Мы привыкли, что время рестайлинга приходит после того, как автомобиль три-четыре года провел на рынке, слегка приелся покупателям, и его продажи начали падать. Но Chery Tiggo 7 Pro Max был...</span>
+                                    <time class="magazine__card-time" datetime="2024-12-03">03.12.2024</time>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <section class="news">
+                    <div class="news__container">
+                        <div class="news__header">
+                            <h1 class="news__title title">
+                                Советы
+                            </h1>
+                            <a href="/news.html" class="news__link">[ смотреть все ]</a>
+                        </div>
+                        <ul class="news__grid">
+                            <li class="news__item">
+                                <a href="/article.html" class="news__card">
+                                    <span class="news__card-poster">
+                                        <img src="@img/magazine/01.jpg" class="cover-image" alt="Постер">
+                                    </span>
+                                    <span class="news__card-info">
+                                        <span class="news__card-main">
+                                            <span class="news__card-name">Топ-5 авто для охоты и рыбалки</span>
+                                            <span class="news__card-desc">Каким должен быть автомобиль для рыбалки и охоты? У каждого автолюбителя на этот счет найдутся свои критерии, но важнейшие параметры остаются неизменными: вместительность, надежность и проходимость.</span>
+                                        </span>
+                                        <time datetime="2025-01-01" class="news__card-time">01.01.2025</time>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="news__item">
+                                <a href="/article.html" class="news__card">
+                                    <span class="news__card-poster">
+                                        <img src="@img/magazine/02.jpg" class="cover-image" alt="Постер">
+                                    </span>
+                                    <span class="news__card-info">
+                                        <span class="news__card-main">
+                                            <span class="news__card-name">Азартнее Toyota Camry, мягче Kia K5: тест-драйв Geely Preface</span>
+                                            <span class="news__card-desc">Японские и европейские седаны бизнес-класса хоть и уступали в популярности кроссоверам, но все же были очень востребованы у нашего покупателя. В 2022 году в России официально не представили...</span>
+                                        </span>
+                                        <time datetime="2025-01-01" class="news__card-time">01.01.2025</time>
+                                    </span>
+                                </a>
+                            </li>
+
+                            <li class="news__item">
+                                <a href="/article.html" class="news__card">
+                                    <span class="news__card-poster">
+                                        <img src="@img/magazine/03.jpg" class="cover-image" alt="Постер">
+                                    </span>
+                                    <span class="news__card-info">
+                                        <span class="news__card-main">
+                                            <span class="news__card-name">Первый тест-драйв обновленного Chery Tiggo 7 Pro Max</span>
+                                            <span class="news__card-desc">Мы привыкли, что время рестайлинга приходит после того, как автомобиль три-четыре года провел на рынке, слегка приелся покупателям, и его продажи начали падать. Но Chery Tiggo 7 Pro Max был...</span>
+                                        </span>
+                                        <time datetime="2025-01-01" class="news__card-time">01.01.2025</time>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </main>
+            @@include('html/_footer.html', {})
+            @@include('html/_modal.html', {})
+            @@include('html/_js.html', {})
+    </body>
+</html>

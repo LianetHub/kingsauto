@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    'title': 'KingsAuto | Страница товара'
+    })
+    <body>
+        <section class="wrapper">
+            @@include('html/_header.html', {
+            "className": "",
+            "login": true
+            })
+            <main class="page">
+                <div class="lk">
+                    <div class="lk__container">
+                        @@include('./html/_lk-sidebar.html', {
+                        "active": 1
+                        })
+                        <div class="lk__body active">
+                            <div class="lk__title">
+                                Добрый день!
+                            </div>
+                            <ul class="lk__person">
+                                <li class="lk__person-item icon-phone-fill">
+                                    +7 987 123 45 54
+                                    <a href="" class="lk__person-more"></a>
+                                </li>
+                                <li class="lk__person-item icon-user-fill">
+                                    <a href="" class="lk__person-link">Добавить Имя</a>
+                                    <a href="" class="lk__person-more"></a>
+                                </li>
+                                <li class="lk__person-item icon-envelope-open">
+                                    <div class="lk__person-column">
+                                        <a href="" class="lk__person-link">
+                                            Добавить почту
+                                        </a>
+                                        <div class="lk__person-hint">
+                                            и получать уведомления о статусе заказа
+                                        </div>
+                                    </div>
+                                    <a href="" class="lk__person-more"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            @@include('html/_footer.html', {})
+            @@include('html/_modal.html', {})
+            @@include('html/_js.html', {})
+    </body>
+</html>

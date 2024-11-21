@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>KingsAuto</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" itemprop="description" content="описание страницы">
+	<meta name="keywords" itemprop="keywords" content="ключевые слова">
+	<!-- favicon -->
+	<!-- <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff"> -->
+	<!-- favicon -->
+	<!-- Open Graph  -->
+	<meta property="og:type" content="business.business">
+	<meta property="og:title" content="KingsAuto">
+	<meta property="og:description" content="">
+	<meta property="og:url" content="">
+	<meta property="og:image" content="/OG.png">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="627">
+	<meta property="og:site_name" content="">
+	<meta property="og:locale" content="en_EN">
+	<!-- Open Graph  -->
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:title" content="KingsAuto">
+	<meta property="twitter:description" content="">
+	<meta property="twitter:site" content="">
+	<meta property="twitter:url" content="">
+	<meta property="twitter:image:src" content="/OG.png">
+	<!-- Twitter -->
+	<!-- plugnis -->
+	<link rel="stylesheet" href="css/libs/swiper-bundle.min.css?_v=20241121191324">
+	<link rel="stylesheet" href="css/libs/fancybox.css?_v=20241121191324">
+	<link rel="stylesheet" href="css/libs/nouislider.min.css?_v=20241121191324">
+	<link rel="stylesheet" href="css/libs/input-tel.css?_v=20241121191324" />
+	<!-- plugnis -->
+	<link rel="stylesheet" href="css/reset.min.css?_v=20241121191324">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241121191324">
+</head>
+
+<body>
+	<section class="wrapper">
+		<header class="header">
+			<div class="header__wrapper">
+				<div class="header__container container-lg">
+					<a href="/" class="header__logo">
+						<img src="img/logo-black.svg" class="header__logo-scroll" alt="logo">
+						<span class="header__logo-text">Покупка авто из-за рубежа</span>
+					</a>
+					<div class="header__menu">
+						<nav class="header__menu-left">
+							<a href="/catalog.html" class="header__catalog icon-catalog">Каталог</a>
+							<ul class="menu__list">
+								<li class="menu__item menu-parent">
+									<a href="" class="menu__link">Услуги</a>
+									<button aria-label="Открыть подменю" class="menu__arrow icon-chevron"></button>
+									<div class="submenu">
+										<ul class="submenu__list">
+											<li class="submenu__item">
+												<a href="/service.html" class="submenu__link"> Подбор авто </a>
+											</li>
+											<li class="submenu__item">
+												<a href="/service.html" class="submenu__link"> Калькулятор авто под полную пошлину </a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="menu__item menu-parent">
+									<a href="" class="menu__link">О компании</a>
+									<button aria-label="Открыть подменю" class="menu__arrow icon-chevron"></button>
+									<div class="submenu">
+										<ul class="submenu__list">
+											<li class="submenu__item">
+												<a href="" class="submenu__link"> О нас </a>
+											</li>
+											<li class="submenu__item">
+												<a href="/faq.html" class="submenu__link"> Вопрос–ответ </a>
+											</li>
+											<li class="submenu__item">
+												<a href="/payment.html" class="submenu__link"> Способы оплаты </a>
+											</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+						<nav class="header__menu-right">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="/magazine.html" class="menu__link">Журнал</a>
+								</li>
+								<li class="menu__item">
+									<a href="/reviews.html" class="menu__link">Отзывы</a>
+								</li>
+								<li class="menu__item">
+									<a href="" class="menu__link">Контакты</a>
+								</li>
+							</ul>
+							<div class="header__contacts">
+								<div class="header__contacts-block">
+									<div class="header__contacts-caption">По любым вопросам:</div>
+									<div class="header__contacts-body">
+										<a href="tel:+74959999999" class="header__contacts-link">+7 495 999 99 99</a>
+										<a href="mailto:info@kings-auto.ru" class="header__contacts-link">info@kings-auto.ru</a>
+										<div class="header__socials">
+											<a href="" class="header__social icon-telegram"></a>
+											<a href="" class="header__social icon-wa"></a>
+											<a href="" class="header__social icon-vk"></a>
+										</div>
+									</div>
+								</div>
+								<div class="header__contacts-block">
+									<div class="header__contacts-caption">Личный кабинет:</div>
+								</div>
+							</div>
+							<div class="header__copy">© 2024 Kings Auto</div>
+						</nav>
+					</div>
+					<a href="tel:+74959999999" class="header__phone icon-phone"><span>+7 495 999 99 99</span></a>
+					<div class="header__person">
+						<a href="/login.html" class="header__btn btn icon-login"><span>Вход</span></a>
+					</div>
+					<button type="button" class="menu__btn icon-catalog">
+						<span class="menu__btn-default">Меню</span>
+						<span class="menu__btn-active">Закрыть</span>
+					</button>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<nav aria-label="Хлебные крошки" class="breadcrumbs">
+				<div class="breadcrumbs__container">
+					<ul class="breadcrumbs__list" itemscope itemtype="http://schema.org/BreadcrumbList">
+						<li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+							<a href="/" class="breadcrumbs__link" itemprop="item">
+								<span itemprop="name">Главная</span>
+							</a>
+							<meta itemprop="position" content="1">
+						</li>
+						<li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+							<a class="breadcrumbs__link active" itemprop="item">
+								<span itemprop="name">Вопрос-ответ</span>
+							</a>
+							<meta itemprop="position" content="2">
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<section class="info">
+				<div class="info__container">
+					<h1 class="info__title title"> Отвечаем на ваши вопросы о покупке и доставке автомобилей из-за границы </h1>
+					<ol class="info__list">
+						<li class="info__item">
+							<button type="button" class="info__item-title active">
+								<span> Если Вы не найдете авто, подходящий по моим параметрам, депозит возвращается? </span>
+							</button>
+							<div class="info__item-answer initial-block"> Депозит возвращается в полном объеме, если вы по каким-либо причинам передумали приобретать автомобиль. Но только в том случае, если не была произведена ставка на аукционе. </div>
+						</li>
+						<li class="info__item">
+							<button type="button" class="info__item-title">
+								<span> В какой момент оплачивается комиссия за услуги? </span>
+							</button>
+							<div class="info__item-answer"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eveniet, cupiditate consequuntur fugit expedita in provident, libero quia soluta aliquid itaque iste fugiat! Laborum illo minima voluptate cupiditate tempore distinctio rem tenetur unde sapiente ullam quas dolorum nesciunt, earum sit corrupti ipsum blanditiis aspernatur harum quasi! Vitae consectetur praesentium iusto aliquam voluptas repudiandae vel nihil itaque iure, tenetur reprehenderit voluptates doloribus fugit deserunt ipsa placeat minima, maxime amet suscipit quisquam? Adipisci saepe fugit sequi reiciendis, tempora rem et dolor numquam possimus quo inventore iusto rerum? In velit, minus repellendus accusantium mollitia amet, dolores asperiores illo modi eum, placeat quam minima! </div>
+						</li>
+						<li class="info__item">
+							<button type="button" class="info__item-title">
+								<span> Сколько времени занимает доставка автомобиля из-за рубежа? </span>
+							</button>
+							<div class="info__item-answer"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo similique expedita quidem ex! Voluptatum enim tempora quidem a id commodi. Officia, veniam? Autem inventore rerum ad amet necessitatibus, in culpa expedita odit sapiente temporibus, iusto quasi modi delectus quaerat dicta doloremque cum esse reiciendis. Blanditiis est deserunt explicabo necessitatibus, velit quibusdam atque libero reprehenderit, aspernatur sint suscipit natus, quasi ipsum! Blanditiis nostrum fugiat ex ducimus odio eos ut deserunt iusto veritatis rerum eius, hic iste mollitia tempore maxime quis ullam voluptatum. Veniam nisi, cupiditate voluptatum, nulla unde reprehenderit obcaecati eveniet totam non, neque quidem distinctio qui temporibus odio doloremque tempora. </div>
+						</li>
+						<li class="info__item">
+							<button type="button" class="info__item-title">
+								<span> Какие дополнительные расходы могут возникнуть при покупке автомобиля из-за рубежа? </span>
+							</button>
+							<div class="info__item-answer"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos molestias debitis deleniti fugiat quas? Adipisci dolore assumenda nostrum officia, tempore reiciendis minus, ratione temporibus dolores consectetur, nisi nihil officiis molestiae. Aut recusandae magni pariatur perferendis, ratione assumenda, beatae at id vitae in nisi libero modi nihil quod amet cumque deserunt. Nemo enim eligendi aspernatur laudantium similique hic? Optio, id quod, ipsam in eum quasi voluptatum omnis eligendi facere laborum similique labore. Atque, quaerat dolores velit aspernatur nam deleniti libero doloribus officiis excepturi consectetur facilis cum? Ipsam similique aut ab corrupti consequatur, dignissimos eveniet quam illo sunt. Eum earum excepturi labore? </div>
+						</li>
+						<li class="info__item">
+							<button type="button" class="info__item-title">
+								<span> Как проверить состояние подержанного автомобиля перед покупкой? </span>
+							</button>
+							<div class="info__item-answer"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius pariatur alias molestiae doloremque voluptas eos in sequi veniam explicabo! Voluptates libero laboriosam voluptatum omnis tenetur aut vel, dolore earum incidunt corrupti sunt. Illum sequi quas molestiae perferendis voluptas, quis quos repellendus itaque tempore commodi molestias totam omnis! Suscipit explicabo sequi doloribus neque consequuntur fuga aspernatur itaque dolorum repellat dolorem reiciendis, expedita laudantium laborum ratione sed dolores exercitationem, architecto, esse corrupti velit sapiente quae? Minima consequatur quidem eveniet repudiandae! Quia, modi sed reiciendis incidunt aspernatur esse dolore veritatis consequuntur! Obcaecati nihil necessitatibus, omnis quia natus tempore quidem mollitia quis est nisi. </div>
+						</li>
+						<li class="info__item">
+							<button type="button" class="info__item-title">
+								<span> Как выбрать между новым и подержанным автомобилем? </span>
+							</button>
+							<div class="info__item-answer"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quod quo neque libero, vitae consequuntur recusandae voluptatibus! Laboriosam laudantium libero commodi iure esse laborum aut voluptate corrupti odit. Enim amet explicabo dignissimos repudiandae aspernatur neque quos corporis cumque, recusandae, nesciunt, ipsam rem maiores eius beatae veritatis? Laborum excepturi nam voluptatum facilis quibusdam maiores! Facere, maxime doloribus ullam quia dicta adipisci tenetur ea magni, debitis eveniet tempore? Voluptas, vitae debitis eligendi recusandae vero aspernatur qui veritatis minima unde dolorem? Eum distinctio nostrum cumque fugiat a, soluta nam. Adipisci, nobis illo. Magni deleniti omnis quo mollitia aliquam! Explicabo veritatis ut quas laboriosam! </div>
+						</li>
+						<li class="info__item">
+							<button type="button" class="info__item-title">
+								<span> Что будет, если автомобиль получит повреждения во время транспортировки? </span>
+							</button>
+							<div class="info__item-answer"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos quidem neque aspernatur reiciendis eligendi maiores accusamus placeat, aliquam assumenda quo dolorem fugiat ipsa fugit necessitatibus! Vitae, tenetur a laboriosam accusantium at pariatur repellendus nisi rem, odio cum sequi vero, voluptates eveniet! Saepe sunt dolores reprehenderit aut temporibus vitae sint quas ipsam, voluptatibus cum rerum nobis natus ratione dolore quod obcaecati perferendis? Itaque amet qui facere exercitationem aut, iure sunt error assumenda placeat impedit perferendis earum voluptatibus dolorum eaque quos consectetur expedita sed porro ut nostrum molestias? Nam corrupti libero ad quibusdam veritatis esse incidunt in consequatur sint, praesentium sed! Ipsum? </div>
+						</li>
+						<li class="info__item">
+							<button type="button" class="info__item-title">
+								<span> Что делать, если у автомобиля окажутся скрытые дефекты? </span>
+							</button>
+							<div class="info__item-answer"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex autem dicta quidem maxime. Minus est architecto modi repellendus fugit voluptatibus pariatur et rem, cupiditate ad, sint reprehenderit, cum tenetur ipsa temporibus accusantium ipsam quis facere suscipit corporis culpa ut iure neque. Officiis neque dignissimos animi magnam harum similique, deserunt corporis enim accusantium sit, eveniet placeat odit quaerat accusamus dolore rem ipsam nesciunt ipsum possimus commodi quis ducimus. Debitis, reiciendis quibusdam. Similique, adipisci maxime, ipsum incidunt commodi aut error nulla neque, aliquam officiis numquam. Nulla quos, illum minus, mollitia quia repellendus alias dolore blanditiis ipsam velit libero quisquam? Quaerat, ad enim. </div>
+						</li>
+						<li class="info__item">
+							<button type="button" class="info__item-title">
+								<span> Можно ли продать автомобиль, купленный через вашу компанию, в России? </span>
+							</button>
+							<div class="info__item-answer"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, fuga pariatur voluptate nostrum corporis iusto ipsam perspiciatis unde distinctio laborum accusantium ipsum? Dolor sed eum quae ipsam illo, sapiente ut! Provident eum quae repellat nam eius maiores, aliquid ut magnam similique odit praesentium architecto dicta voluptatibus! Perferendis sed modi autem dignissimos mollitia consectetur provident obcaecati neque recusandae, commodi quam? Placeat nobis nostrum nulla voluptatibus nam reprehenderit hic atque impedit, saepe iure minima dicta consequuntur magni deleniti ut mollitia dolor enim facilis ratione repellat velit nemo. Deserunt ut magnam omnis deleniti hic modi tempore natus quis fuga corporis. Excepturi, quisquam nam. </div>
+						</li>
+						<li class="info__item">
+							<button type="button" class="info__item-title">
+								<span> Нужно ли самостоятельно заниматься таможенным оформлением? </span>
+							</button>
+							<div class="info__item-answer"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique eveniet temporibus cum, quia, eos vitae quasi ad est rerum soluta non eaque voluptatem vel? Sunt vero quas vel! Maxime nesciunt cupiditate culpa fugit rerum, molestiae porro nisi iusto, amet voluptatum exercitationem! Qui enim quos aliquid repellendus, eaque aut consequatur quia non illo laudantium iusto odit dolore cumque atque tempora quae consectetur hic molestias dicta temporibus quaerat aspernatur. Vel molestias eligendi laborum recusandae. Assumenda tempore impedit cupiditate autem totam architecto fugit illum explicabo necessitatibus cumque eos repudiandae corporis, dicta nesciunt voluptatibus. Dicta impedit odit cupiditate mollitia reprehenderit facere praesentium enim eaque! </div>
+						</li>
+					</ol>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__main">
+				<div class="footer__container">
+					<div class="footer__columns">
+						<div class="footer__column">
+							<a href="/" class="footer__logo">
+								<img src="img/logo-black.svg" alt="Лого">
+								<span class="footer__logo-text">Покупка авто из-за рубежа</span>
+							</a>
+							<div class="footer__contacts">
+								<div class="footer__caption">По любым вопросам:</div>
+								<a href="tel:+74959999999" class="footer__contacts-link">+7 495 999 99 99</a>
+								<a href="mailto:info@kings-auto.ru" class="footer__contacts-link">info@kings-auto.ru</a>
+								<div class="footer__socials">
+									<a href="" class="footer__social icon-telegram"></a>
+									<a href="" class="footer__social icon-wa"></a>
+									<a href="" class="footer__social icon-vk"></a>
+								</div>
+							</div>
+							<div class="footer__worktime">
+								<div class="footer__caption">Режим работы (МСК)</div>
+								<div class="footer__worktime-text">Ежедневно 09:00–19:00</div>
+							</div>
+							<div class="footer__reqs">
+								<div class="footer__reqs-caption"> ИП Иванов Иван Иванович </div>
+								<div class="footer__reqs-body"> Юридический адрес: <br> г. Москва, ул. Примерная, офис 111 <br> ИНН 123456789123 <br> ОГРНИП 123456789123456 </div>
+							</div>
+						</div>
+						<div class="footer__column">
+							<nav class="footer__menu">
+								<div class="footer__caption">Каталог</div>
+								<ul class="footer__menu-list">
+									<li class="footer__menu-item">
+										<a href="" class="footer__menu-link">Японские автомобили</a>
+									</li>
+									<li class="footer__menu-item">
+										<a href="" class="footer__menu-link">Корейские автомобили</a>
+									</li>
+									<li class="footer__menu-item">
+										<a href="" class="footer__menu-link">Европейские автомобили</a>
+									</li>
+									<li class="footer__menu-item">
+										<a href="" class="footer__menu-link">Американские автомобили</a>
+									</li>
+								</ul>
+							</nav>
+							<nav class="footer__menu">
+								<div class="footer__caption">Инфо</div>
+								<ul class="footer__menu-list">
+									<li class="footer__menu-item">
+										<a href="" class="footer__menu-link">О компании</a>
+									</li>
+									<li class="footer__menu-item">
+										<a href="" class="footer__menu-link">Вопрос–ответ</a>
+									</li>
+									<li class="footer__menu-item">
+										<a href="" class="footer__menu-link">Отзывы</a>
+									</li>
+									<li class="footer__menu-item">
+										<a href="" class="footer__menu-link">Журнал</a>
+									</li>
+									<li class="footer__menu-item">
+										<a href="" class="footer__menu-link">Способы оплаты</a>
+									</li>
+									<li class="footer__menu-item">
+										<a href="" class="footer__menu-link">Контакты</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<div class="footer__column">
+							<nav class="footer__menu">
+								<div class="footer__caption">Услуги</div>
+								<ul class="footer__menu-list">
+									<li class="footer__menu-item">
+										<a href="" class="footer__menu-link">Подбор авто</a>
+									</li>
+									<li class="footer__menu-item">
+										<a href="" class="footer__menu-link">Калькулятор авто под полную пошлину</a>
+									</li>
+								</ul>
+							</nav>
+							<form action="#" class="footer__form form">
+								<div class="footer__form-main">
+									<div class="form__caption">Задать вопрос менеджеру:</div>
+									<input type="tel" name="phone" class="form__input" placeholder="+7 (999) 999-99-99">
+									<textarea name="message" class="form__textarea" placeholder="Ваш вопрос:"></textarea>
+								</div>
+								<label class="form__checkbox">
+									<input type="checkbox" checked aria-required="true" class="form__checkbox-input hidden" hidden>
+									<span class="form__checkbox-text">Я согласен с политикой конфиденциальности</span>
+								</label>
+								<button type="submit" class="form__btn btn btn-primary btn-fullwidth">Отправить</button>
+							</form>
+						</div>
+					</div>
+					<div class="footer-bottom__heading">
+						<div class="footer-bottom__copy"> © 2024 Kings Auto </div>
+						<nav class="footer-bottom__menu">
+							<ul class="footer-bottom__menu-list">
+								<li class="footer-bottom__menu-item">
+									<a href="" class="footer-bottom__menu-link">Политика обработки персональных данных</a>
+								</li>
+								<li class="footer-bottom__menu-item">
+									<a href="" class="footer-bottom__menu-link">Публичная оферта</a>
+								</li>
+								<li class="footer-bottom__menu-item">
+									<a href="" class="footer-bottom__menu-link">Разработка сайта</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="footer-bottom__image">
+					<div class="footer-bottom__image-subtract">
+						<div class="footer-bottom__container">
+							<img src="img/footer-subtract.svg" alt="Название компани">
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div id="order" class="popup">
+			<div class="popup__body">
+				<button type="button" class="popup__close" data-fancybox-close></button>
+				<h3 class="popup__title">Заявка на подбор авто</h3>
+				<p class="popup__subtitle"> Заполните форму ниже, наш менеджер свяжется с вами </p>
+				<form action="#" class="popup__form">
+					<div class="popup__form-rows">
+						<input type="text" name="name" class="form__input" placeholder="Имя">
+						<input type="tel" name="phone" class="form__input" placeholder="+ 7 (999) 999-99-99">
+					</div>
+					<label class="form__checkbox">
+						<input type="checkbox" name="privacy" class="form__checkbox-input hidden" hidden>
+						<span class="form__checkbox-text"> Я согласен с <a href="">политикой конфиденциальности</a>
+						</span>
+					</label>
+					<button class="form__btn btn btn-primary btn-fullwidth">Отправить</button>
+				</form>
+			</div>
+		</div>
+		<!-- plugnis -->
+		<script src="js/libs/jquery-3.7.1.min.js?_v=20241121191324"></script>
+		<script src="js/libs/swiper-bundle.min.js?_v=20241121191324"></script>
+		<script src="js/libs/fancybox.umd.js?_v=20241121191324"></script>
+		<script src="js/libs/formatter.min.js?_v=20241121191324"></script>
+		<script src="js/libs/intlTelInput.min.js?_v=20241121191324"></script>
+		<!-- plugnis -->
+		<script src="js/app.min.js?_v=20241121191324"></script>
+</body>
+
+</html>
