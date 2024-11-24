@@ -148,6 +148,11 @@
 		&[aria-checked="true"] {
 			background: #c5d1e0;
 		}
+
+		&[aria-disabled="true"] {
+			opacity: 0.5;
+			pointer-events: none;
+		}
 		&:not(:last-child) {
 			margin-bottom: 0.125rem;
 		}

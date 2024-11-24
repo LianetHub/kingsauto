@@ -102,7 +102,7 @@ $(function () {
             $('body').addClass('filter-lock');
         }
 
-        if ($target.is('.filter.visible') || $target.is('.filter__close') || $target.is('.filter__reset')) {
+        if ($target.is('.filter.visible') || $target.is('.filter__close')) {
             $('.filter').removeClass('visible');
             $('body').removeClass('filter-lock');
         }
@@ -493,7 +493,7 @@ $(function () {
 
             this.$select.closest('form').on('reset', () => this.restoreInitialState());
 
-            const observer = new MutationObserver(() => {
+            const observerDisabled = new MutationObserver(() => {
                 const isSelectDisabled = this.$select.is(':disabled');
                 const $button = this.$dropdown.find('.dropdown__button');
 
@@ -504,9 +504,20 @@ $(function () {
                 }
             });
 
-            observer.observe(this.$select[0], {
+            observerDisabled.observe(this.$select[0], {
                 attributes: true,
                 attributeFilter: ['disabled']
+            });
+
+            const observerSelected = new MutationObserver(() => {
+                this.syncSelectedOption();
+            });
+
+            observerSelected.observe(this.$select[0], {
+                childList: true,
+                subtree: true,
+                attributes: true,
+                attributeFilter: ['selected']
             });
         }
 
@@ -557,13 +568,25 @@ $(function () {
                 .attr('aria-checked', 'true');
             this.$dropdown.find('.dropdown__button-text').text(state.selectedText);
         }
+
+        syncSelectedOption() {
+            const $selectedOption = this.$select.find('option:selected');
+            const selectedValue = $selectedOption.val();
+            const selectedText = $selectedOption.text();
+
+            this.$dropdown.find('.dropdown__list-item').removeClass('selected').attr('aria-checked', 'false');
+            this.$dropdown
+                .find(`.dropdown__list-item[data-value="${selectedValue}"]`)
+                .addClass('selected')
+                .attr('aria-checked', 'true');
+            this.$dropdown.find('.dropdown__button-text').text(selectedText);
+        }
     }
 
 
     $('.select').each((index, element) => {
         new CustomSelect(element);
     });
-
 
 
     // international phone input
