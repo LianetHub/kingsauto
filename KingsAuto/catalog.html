@@ -38,13 +38,13 @@
 	<meta property="twitter:image:src" content="/OG.png">
 	<!-- Twitter -->
 	<!-- plugnis -->
-	<link rel="stylesheet" href="css/libs/swiper-bundle.min.css?_v=20241124142157">
-	<link rel="stylesheet" href="css/libs/fancybox.css?_v=20241124142157">
-	<link rel="stylesheet" href="css/libs/nouislider.min.css?_v=20241124142157">
-	<link rel="stylesheet" href="css/libs/input-tel.css?_v=20241124142157" />
+	<link rel="stylesheet" href="css/libs/swiper-bundle.min.css?_v=20241130211811">
+	<link rel="stylesheet" href="css/libs/fancybox.css?_v=20241130211811">
+	<link rel="stylesheet" href="css/libs/nouislider.min.css?_v=20241130211811">
+	<link rel="stylesheet" href="css/libs/input-tel.css?_v=20241130211811" />
 	<!-- plugnis -->
-	<link rel="stylesheet" href="css/reset.min.css?_v=20241124142157">
-	<link rel="stylesheet" href="css/style.min.css?_v=20241124142157">
+	<link rel="stylesheet" href="css/reset.min.css?_v=20241130211811">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241130211811">
 </head>
 
 <body>
@@ -75,7 +75,7 @@
 									</div>
 								</li>
 								<li class="menu__item menu-parent">
-									<a href="" class="menu__link">О компании</a>
+									<a href="/about.html" class="menu__link">О компании</a>
 									<button aria-label="Открыть подменю" class="menu__arrow icon-chevron"></button>
 									<div class="submenu">
 										<ul class="submenu__list">
@@ -102,7 +102,7 @@
 									<a href="/reviews.html" class="menu__link">Отзывы</a>
 								</li>
 								<li class="menu__item">
-									<a href="" class="menu__link">Контакты</a>
+									<a href="/contacts.html" class="menu__link">Контакты</a>
 								</li>
 							</ul>
 							<div class="header__contacts">
@@ -189,15 +189,20 @@
 									<span>Все фильтры</span>
 								</button>
 								<div class="catalog__filter-dropdown dropdown">
-									<select name="product-sort" class="select" data-icon="icon-arrows">
-										<option value="all">Выгодные предложения</option>
-										<option value="price-asc">По цене ↑</option>
-										<option value="price-desc">По цене ↓</option>
-										<option value="year-asc">По году ↑</option>
-										<option value="year-desc">По году ↓</option>
-										<option value="mileage-asc">По пробегу ↑</option>
-										<option value="mileage-desc">По пробегу ↓</option>
-									</select>
+									<button type="button" class="dropdown__button sort-btn icon-chevron" aria-expanded="false" aria-haspopup="true">
+										<span class="dropdown__button-icon icon-arrows"></span>
+										<span class="dropdown__button-text">Выгодные предложения</span>
+									</button>
+									<div class="dropdown__body">
+										<div class="dropdown__list" id="mse2_sort">
+											<a href="#" data-sort="ms|price" data-dir="{if $sort == 'ms|price:desc'}desc{/if}" data-default="desc" class="dropdown__list-item sort"> По цене <span></span>
+											</a>
+											<a href="#" data-sort="tv|year" data-dir="{if $sort == 'tv|year:desc'}desc{/if}" data-default="desc" class="dropdown__list-item sort"> По году <span></span>
+											</a>
+											<a href="#" data-sort="tv|mileage" data-dir="{if $sort == 'tv|mileage:desc'}desc{/if}" data-default="desc" class="dropdown__list-item sort"> По пробегу <span></span>
+											</a>
+										</div>
+									</div>
 								</div>
 							</div>
 							<div class="filter">
@@ -217,49 +222,31 @@
 										</div>
 										<div class="filter__grid">
 											<div class="filter__grid-item lg-item">
-												<select name="brands" class="select" data-title="Марка">
-													<option value="all">Все модели</option>
-													<option value="audi">Audi</option>
-													<option value="bmw">BMW</option>
-													<option value="daihatsu">Daihatsu</option>
-													<option value="honda">Honda</option>
-													<option value="lexus">Lexus</option>
-													<option value="mazda">Mazda</option>
-													<option value="mercedes">Mercedes-Benz</option>
-													<option value="toyota">Toyota</option>
-													<option value="nissan">Nissan</option>
-													<option value="volkswagen">Volkswagen</option>
-													<option value="volvo">Volvo</option>
-													<option value="chevrolet">Chevrolet</option>
-													<option value="ford">Ford</option>
-													<option value="kia">Kia</option>
-													<option value="hyundai">Hyundai</option>
-													<option value="porsche">Porsche</option>
-													<option value="jaguar">Jaguar</option>
-													<option value="subaru">Subaru</option>
-													<option value="peugeot">Peugeot</option>
-													<option value="mitsubishi">Mitsubishi</option>
-													<option value="land-rover">Land Rover</option>
-													<option value="tesla">Tesla</option>
-													<option value="renault">Renault</option>
-													<option value="infiniti">Infiniti</option>
-													<option value="alfa-romeo">Alfa Romeo</option>
+												<select name="marka" id="tv|marka_0" class="select" data-title="Марка">
+													<option value selected="selected">Выберите из списка</option>
+													<option value="BMW">BMW&nbsp;(3)</option>
+													<option value="Mercedes">Mercedes&nbsp;(2)</option>
+													<option value="Mercedes-Benz">Mercedes-Benz&nbsp;(1)</option>
+													<option value="Porshe">Porshe&nbsp;(1)</option>
+													<option value="Porsсhe">Porsсhe&nbsp;(1)</option>
 												</select>
 											</div>
 											<div class="filter__grid-item lg-item">
-												<select disabled name="car-make" class="select" data-title="Модель">
-													<option value="none">в начале выберите марку</option>
-													<option value="1">Марка 1</option>
-													<option value="2">Марка 2</option>
-													<option value="3">Марка 3</option>
+												<select name="model" id="tv|model_0" class="select" disabled data-title="Модель">
+													<option value="" selected="selected">Выберите из списка</option>
+													<option value="911 GTS Convertible">911 GTS Convertible&nbsp;(1)</option>
+													<option value="AMG C43 4MATIC">AMG C43 4MATIC&nbsp;(1)</option>
+													<option value="E 53 4MATIC">E 53 4MATIC&nbsp;(1)</option>
+													<option value="GLE 53 4MATIC">GLE 53 4MATIC&nbsp;(1)</option>
+													<option value="M3 Competition">M3 Competition&nbsp;(1)</option>
 												</select>
 											</div>
 											<div class="filter__grid-item lg-item">
-												<select disabled name="car-body" class="select" data-title="Кузов">
-													<option value="none">в начале выберите модель</option>
-													<option value="1">Кузов 1</option>
-													<option value="2">Кузов 2</option>
-													<option value="3">Кузов 3</option>
+												<select name="carcase" id="tv|carcase_0" class="select" data-title="Кузов" disabled>
+													<option value="" selected="selected">Выберите из списка</option>
+													<option value="GLE 53 4MATIC">GLE 53 4MATIC&nbsp;(1)</option>
+													<option value="Кабриолет">Кабриолет&nbsp;(1)</option>
+													<option value="Седан">Седан&nbsp;(3)</option>
 												</select>
 											</div>
 											<div class="filter__grid-item">
@@ -453,7 +440,7 @@
 									</a>
 								</div>
 								<div class="auto-card__slider-pagination swiper-pagination"></div>
-								<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
+								<a href="" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></a>
 							</div>
 							<div class="auto-card__body">
 								<a href="/product.html" class="auto-card__name">Porsche Cayenne</a>
@@ -495,7 +482,7 @@
 									</a>
 								</div>
 								<div class="auto-card__slider-pagination swiper-pagination"></div>
-								<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
+								<a href="" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></a>
 							</div>
 							<div class="auto-card__body">
 								<a href="/product.html" class="auto-card__name">BMW X7 xDrive40i</a>
@@ -537,7 +524,7 @@
 									</a>
 								</div>
 								<div class="auto-card__slider-pagination swiper-pagination"></div>
-								<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
+								<a href="" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></a>
 							</div>
 							<div class="auto-card__body">
 								<a href="/product.html" class="auto-card__name">Porsche Panamera 4s</a>
@@ -579,7 +566,7 @@
 									</a>
 								</div>
 								<div class="auto-card__slider-pagination swiper-pagination"></div>
-								<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
+								<a href="" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></a>
 							</div>
 							<div class="auto-card__body">
 								<a href="/product.html" class="auto-card__name">Porsche Cayenne</a>
@@ -621,7 +608,7 @@
 									</a>
 								</div>
 								<div class="auto-card__slider-pagination swiper-pagination"></div>
-								<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
+								<a href="" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></a>
 							</div>
 							<div class="auto-card__body">
 								<a href="/product.html" class="auto-card__name">BMW X7 xDrive40i</a>
@@ -663,7 +650,7 @@
 									</a>
 								</div>
 								<div class="auto-card__slider-pagination swiper-pagination"></div>
-								<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
+								<a href="" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></a>
 							</div>
 							<div class="auto-card__body">
 								<a href="/product.html" class="auto-card__name">Porsche Panamera 4s</a>
@@ -705,7 +692,7 @@
 									</a>
 								</div>
 								<div class="auto-card__slider-pagination swiper-pagination"></div>
-								<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
+								<a href="" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></a>
 							</div>
 							<div class="auto-card__body">
 								<a href="/product.html" class="auto-card__name">Porsche Cayenne</a>
@@ -747,7 +734,7 @@
 									</a>
 								</div>
 								<div class="auto-card__slider-pagination swiper-pagination"></div>
-								<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
+								<a href="" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></a>
 							</div>
 							<div class="auto-card__body">
 								<a href="/product.html" class="auto-card__name">BMW X7 xDrive40i</a>
@@ -789,7 +776,7 @@
 									</a>
 								</div>
 								<div class="auto-card__slider-pagination swiper-pagination"></div>
-								<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
+								<a href="" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></a>
 							</div>
 							<div class="auto-card__body">
 								<a href="/product.html" class="auto-card__name">Porsche Panamera 4s</a>
@@ -831,7 +818,7 @@
 									</a>
 								</div>
 								<div class="auto-card__slider-pagination swiper-pagination"></div>
-								<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
+								<a href="" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></a>
 							</div>
 							<div class="auto-card__body">
 								<a href="/product.html" class="auto-card__name">Porsche Cayenne</a>
@@ -873,7 +860,7 @@
 									</a>
 								</div>
 								<div class="auto-card__slider-pagination swiper-pagination"></div>
-								<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
+								<a href="" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></a>
 							</div>
 							<div class="auto-card__body">
 								<a href="/product.html" class="auto-card__name">BMW X7 xDrive40i</a>
@@ -915,7 +902,7 @@
 									</a>
 								</div>
 								<div class="auto-card__slider-pagination swiper-pagination"></div>
-								<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
+								<a href="" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></a>
 							</div>
 							<div class="auto-card__body">
 								<a href="/product.html" class="auto-card__name">Porsche Panamera 4s</a>
@@ -957,7 +944,7 @@
 									</a>
 								</div>
 								<div class="auto-card__slider-pagination swiper-pagination"></div>
-								<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
+								<a href="" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></a>
 							</div>
 							<div class="auto-card__body">
 								<a href="/product.html" class="auto-card__name">BMW X7 xDrive40i</a>
@@ -999,7 +986,7 @@
 									</a>
 								</div>
 								<div class="auto-card__slider-pagination swiper-pagination"></div>
-								<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
+								<a href="" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></a>
 							</div>
 							<div class="auto-card__body">
 								<a href="/product.html" class="auto-card__name">Porsche Panamera 4s</a>
@@ -1041,7 +1028,7 @@
 									</a>
 								</div>
 								<div class="auto-card__slider-pagination swiper-pagination"></div>
-								<button type="button" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></button>
+								<a href="" aria-label="Добавить в избранное" class="auto-card__favorite favorite-btn"></a>
 							</div>
 							<div class="auto-card__body">
 								<a href="/product.html" class="auto-card__name">Porsche Cayenne</a>
@@ -1231,13 +1218,13 @@
 			</div>
 		</div>
 		<!-- plugnis -->
-		<script src="js/libs/jquery-3.7.1.min.js?_v=20241124142157"></script>
-		<script src="js/libs/swiper-bundle.min.js?_v=20241124142157"></script>
-		<script src="js/libs/fancybox.umd.js?_v=20241124142157"></script>
-		<script src="js/libs/formatter.min.js?_v=20241124142157"></script>
-		<script src="js/libs/intlTelInput.min.js?_v=20241124142157"></script>
+		<script src="js/libs/jquery-3.7.1.min.js?_v=20241130211811"></script>
+		<script src="js/libs/swiper-bundle.min.js?_v=20241130211811"></script>
+		<script src="js/libs/fancybox.umd.js?_v=20241130211811"></script>
+		<script src="js/libs/formatter.min.js?_v=20241130211811"></script>
+		<script src="js/libs/intlTelInput.min.js?_v=20241130211811"></script>
 		<!-- plugnis -->
-		<script src="js/app.min.js?_v=20241124142157"></script>
+		<script src="js/app.min.js?_v=20241130211811"></script>
 </body>
 
 </html>

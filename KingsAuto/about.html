@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-	<title>KingsAuto | Страница товара</title>
+	<title>KingsAuto</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,7 +20,7 @@
 	<!-- favicon -->
 	<!-- Open Graph  -->
 	<meta property="og:type" content="business.business">
-	<meta property="og:title" content="KingsAuto | Страница товара">
+	<meta property="og:title" content="KingsAuto">
 	<meta property="og:description" content="">
 	<meta property="og:url" content="">
 	<meta property="og:image" content="/OG.png">
@@ -31,7 +31,7 @@
 	<!-- Open Graph  -->
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image">
-	<meta property="twitter:title" content="KingsAuto | Страница товара">
+	<meta property="twitter:title" content="KingsAuto">
 	<meta property="twitter:description" content="">
 	<meta property="twitter:site" content="">
 	<meta property="twitter:url" content="">
@@ -49,10 +49,11 @@
 
 <body>
 	<section class="wrapper">
-		<header class="header">
+		<header class="header header-transparent-mobile">
 			<div class="header__wrapper">
 				<div class="header__container container-lg">
 					<a href="/" class="header__logo">
+						<img src="img/logo.svg" class="header__logo-static" alt="logo">
 						<img src="img/logo-black.svg" class="header__logo-scroll" alt="logo">
 						<span class="header__logo-text">Покупка авто из-за рубежа</span>
 					</a>
@@ -137,309 +138,48 @@
 			</div>
 		</header>
 		<main class="page">
-			<nav aria-label="Хлебные крошки" class="breadcrumbs">
-				<div class="breadcrumbs__container">
-					<ul class="breadcrumbs__list" itemscope itemtype="http://schema.org/BreadcrumbList">
-						<li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-							<a href="/" class="breadcrumbs__link" itemprop="item">
-								<span itemprop="name">Главная</span>
-							</a>
-							<meta itemprop="position" content="1">
-						</li>
-						<li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-							<a href="/" class="breadcrumbs__link" itemprop="item">
-								<span itemprop="name">Каталог автомобилей</span>
-							</a>
-							<meta itemprop="position" content="2">
-						</li>
-						<li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-							<a href="/" class="breadcrumbs__link" itemprop="item">
-								<span itemprop="name">Японские</span>
-							</a>
-							<meta itemprop="position" content="3">
-						</li>
-						<li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-							<a class="breadcrumbs__link active" itemprop="item">
-								<span itemprop="name">Каталог автомобилей</span>
-							</a>
-							<meta itemprop="position" content="4">
-						</li>
-					</ul>
+			<section class="about">
+				<div class="about__wrapper">
+					<div class="about__container">
+						<div class="about__content">
+							<nav aria-label="Хлебные крошки" class="about__breadcrumbs breadcrumbs">
+								<ul class="breadcrumbs__list" itemscope itemtype="http://schema.org/BreadcrumbList">
+									<li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+										<a href="/" class="breadcrumbs__link" itemprop="item">
+											<span itemprop="name">Главная</span>
+										</a>
+										<meta itemprop="position" content="1">
+									</li>
+									<li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+										<a class="breadcrumbs__link active" itemprop="item">
+											<span itemprop="name">О компании</span>
+										</a>
+										<meta itemprop="position" content="2">
+									</li>
+								</ul>
+							</nav>
+							<h1 class="about__title"> Компания Kings Auto успешно работает на рынке подбора и поставки автомобилей из-за рубежа уже более 5 лет </h1>
+							<p class="about__desc"> Мы специализируемся на подборе и привозе новых и подержанных автомобилей по индивидуальному заказу из популярных автомобильных рынков: <span>США, Южная Корея, Китай, Европа и Грузия.</span>
+							</p>
+							<a href="#order" data-fancybox class="about__btn btn btn-primary"> Оставить заявку </a>
+						</div>
+					</div>
 				</div>
-			</nav>
-			<section class="product">
-				<div class="product__container">
-					<div class="product__body">
-						<div class="product__main">
-							<h1 class="product__title title-lg">Toyota PRIUS 2018</h1>
-							<div class="product__info">
-								<div class="product__price"> 1 491 400 ₽ </div>
-								<button type="button" aria-label="Добавить в избранное" class="product__favorite favorite-btn"></button>
-							</div>
-							<div class="product__actions">
-								<a href="#order" data-fancybox class="product__btn btn btn-primary"> Оставить заявку </a>
-								<a href="" target="_blank" class="product__btn btn btn-secondary icon-wa">Написать в Whatsapp</a>
-							</div>
-							<ul class="product__properties">
-								<li class="product__property">
-									<div class="product__property-name">Год выпуска</div>
-									<div class="product__property-value">2018</div>
-								</li>
-								<li class="product__property">
-									<div class="product__property-name">Поколение</div>
-									<div class="product__property-value">IV (XW50)</div>
-								</li>
-								<li class="product__property">
-									<div class="product__property-name">Комплектация</div>
-									<div class="product__property-value">Люкс</div>
-								</li>
-								<li class="product__property">
-									<div class="product__property-name">Пробег</div>
-									<div class="product__property-value">26 000</div>
-								</li>
-								<li class="product__property">
-									<div class="product__property-name">Кузов</div>
-									<div class="product__property-value">Лифтбек</div>
-								</li>
-								<li class="product__property">
-									<div class="product__property-name">Двигатель</div>
-									<div class="product__property-value">1.8 л / 98 л.с. / Гибрид</div>
-								</li>
-								<li class="product__property">
-									<div class="product__property-name">Запас хода</div>
-									<div class="product__property-value">2 км</div>
-								</li>
-								<li class="product__property">
-									<div class="product__property-name">Коробка</div>
-									<div class="product__property-value">Автоматическая</div>
-								</li>
-								<li class="product__property">
-									<div class="product__property-name">Руль</div>
-									<div class="product__property-value">Правый</div>
-								</li>
-								<li class="product__property">
-									<div class="product__property-name">Привод</div>
-									<div class="product__property-value">Передний</div>
-								</li>
-								<li class="product__property">
-									<div class="product__property-name">Цвет</div>
-									<div class="product__property-value">Серебро</div>
-								</li>
-								<li class="product__property">
-									<div class="product__property-name">Состояние</div>
-									<div class="product__property-value">Не требует ремонта</div>
-								</li>
-								<li class="product__property">
-									<div class="product__property-name">Владельцы</div>
-									<div class="product__property-value">1 владелец</div>
-								</li>
-								<li class="product__property">
-									<div class="product__property-name">Коробка</div>
-									<div class="product__property-value">Автоматическая</div>
-								</li>
-							</ul>
-						</div>
-						<div class="product__slider">
-							<div class="product__slider-content swiper">
-								<div class="swiper-wrapper">
-									<a href="img/product.jpg" data-fancybox="product-gallery" class="product__slide swiper-slide">
-										<img src="img/product.jpg" alt="product">
-									</a>
-									<a href="img/magazine/01.jpg" data-fancybox="product-gallery" class="product__slide swiper-slide">
-										<img src="img/magazine/01.jpg" alt="product">
-									</a>
-									<a href="img/magazine/02.jpg" data-fancybox="product-gallery" class="product__slide swiper-slide">
-										<img src="img/magazine/02.jpg" alt="product">
-									</a>
-									<a href="img/magazine/03.jpg" data-fancybox="product-gallery" class="product__slide swiper-slide">
-										<img src="img/magazine/03.jpg" alt="product">
-									</a>
-									<a href="img/product.jpg" data-fancybox="product-gallery" class="product__slide swiper-slide">
-										<img src="img/magazine/04.jpg" alt="product">
-									</a>
-									<a href="img/product.jpg" data-fancybox="product-gallery" class="product__slide swiper-slide">
-										<img src="img/product.jpg" alt="product">
-									</a>
-									<a href="img/product.jpg" data-fancybox="product-gallery" class="product__slide swiper-slide">
-										<img src="img/product.jpg" alt="product">
-									</a>
-									<a href="img/product.jpg" data-fancybox="product-gallery" class="product__slide swiper-slide">
-										<img src="img/product.jpg" alt="product">
-									</a>
-									<a href="img/product.jpg" data-fancybox="product-gallery" class="product__slide swiper-slide">
-										<img src="img/product.jpg" alt="product">
-									</a>
-									<a href="img/product.jpg" data-fancybox="product-gallery" class="product__slide swiper-slide">
-										<img src="img/product.jpg" alt="product">
-									</a>
-									<a href="img/product.jpg" data-fancybox="product-gallery" class="product__slide swiper-slide">
-										<img src="img/product.jpg" alt="product">
-									</a>
-									<a href="img/product.jpg" data-fancybox="product-gallery" class="product__slide swiper-slide">
-										<img src="img/product.jpg" alt="product">
-									</a>
-								</div>
-								<div class="product__slider-prev swiper-button-prev"></div>
-								<div class="product__slider-next swiper-button-next"></div>
-							</div>
-							<div class="product__thumbs">
-								<button type="button" class="product__thumb active">
-									<img src="img/product.jpg" alt="product">
-								</button>
-								<button type="button" class="product__thumb">
-									<img src="img/magazine/01.jpg" alt="product">
-								</button>
-								<button type="button" class="product__thumb">
-									<img src="img/magazine/02.jpg" alt="product">
-								</button>
-								<button type="button" class="product__thumb">
-									<img src="img/magazine/03.jpg" alt="product">
-								</button>
-								<button type="button" class="product__thumb">
-									<img src="img/magazine/04.jpg" alt="product">
-								</button>
-								<button type="button" class="product__thumb">
-									<img src="img/product.jpg" alt="product">
-								</button>
-								<button type="button" class="product__thumb">
-									<img src="img/product.jpg" alt="product">
-								</button>
-								<button type="button" class="product__thumb">
-									<img src="img/product.jpg" alt="product">
-								</button>
-								<button type="button" class="product__thumb">
-									<img src="img/product.jpg" alt="product">
-								</button>
-								<button type="button" class="product__thumb">
-									<img src="img/product.jpg" alt="product">
-								</button>
-								<button type="button" class="product__thumb">
-									<img src="img/product.jpg" alt="product">
-								</button>
-								<button type="button" class="product__thumb">
-									<img src="img/product.jpg" alt="product">
-								</button>
-							</div>
-						</div>
-					</div>
-					<div class="product__desc">
-						<div class="product__desc-title title"> Описание авто </div>
-						<div class="tabs-wrapper">
-							<div class="product__tabs tabs">
-								<button type="button" class="tabs__item active">Описание</button>
-								<button type="button" class="tabs__item">Комплектация</button>
-							</div>
-							<div class="product__tabs-contents">
-								<div class="product__tabs-content tab-content active">
-									<p class="product__desc-text"> TOYOTA PRIUS, 2019г., АКПП, 4wd. <br> Комплектация: <br> - Бесключевой доступ <br> - Цифровая приборная панель <br> - Функция CarPlay <br> - Круиз контроль <br> - Обогрев передних сидений <br> - Электроскладывание зеркал <br> И многое другое... <br> <br> Автомобиль в хорошем внешнем и техническом состоянии. </p>
-								</div>
-								<div class="product__tabs-content tab-content">
-									<div class="product__equipment">
-										<div class="product__equipment-column">
-											<div class="product__equipment-block">
-												<div class="product__equipment-caption">Безопасность</div>
-												<ul class="product__equipment-list">
-													<li>Подушка безопасности водителя</li>
-													<li>Подушка безопасности пассажира</li>
-													<li>Подушки безопасности боковые</li>
-													<li>Подушки безопасности оконные (шторки)</li>
-													<li>Подушка безопасности для защиты коленей водителя</li>
-													<li>Система помощи при старте в гору (HSA)</li>
-													<li>Крепление детского кресла (задний ряд) ISOFIX</li>
-													<li>Датчик давления в шинах</li>
-													<li>Антиблокировочная система (ABS)</li>
-													<li>Система стабилизации (ESP)</li>
-													<li>Блокировка замков задних дверей</li>
-												</ul>
-											</div>
-											<div class="product__equipment-block">
-												<div class="product__equipment-caption">Обзор</div>
-												<ul class="product__equipment-list">
-													<li>Противотуманные фары</li>
-													<li>Датчик дождя</li>
-													<li>Датчик света</li>
-													<li>Система управления дальним светом</li>
-													<li>Светодиодные фары</li>
-													<li>Электрообогрев боковых зеркал</li>
-												</ul>
-											</div>
-											<div class="product__equipment-block">
-												<div class="product__equipment-caption">Мультимедиа</div>
-												<ul class="product__equipment-list">
-													<li>USB</li>
-													<li>Навигационная система</li>
-													<li>AUX</li>
-													<li>Bluetooth</li>
-													<li>Розетка 12V</li>
-													<li>Премиальная аудиосистема</li>
-													<li>Аудиосистема</li>
-													<li>Аудиоподготовка</li>
-												</ul>
-											</div>
-											<div class="product__equipment-block">
-												<div class="product__equipment-caption">Защита от угона</div>
-												<ul class="product__equipment-list">
-													<li>Центральный замок</li>
-													<li>Иммобилайзер</li>
-												</ul>
-											</div>
-										</div>
-										<div class="product__equipment-column">
-											<div class="product__equipment-block">
-												<div class="product__equipment-caption">Комфорт</div>
-												<ul class="product__equipment-list">
-													<li>Климат-контроль 1-зонный</li>
-													<li>Климат-контроль 2-зонный</li>
-													<li>Кондиционер</li>
-													<li>Круиз-контроль</li>
-													<li>Камера задняя</li>
-													<li>Регулировка руля по высоте</li>
-													<li>Регулировка руля по вылету</li>
-													<li>Мультифункциональное рулевое колесо</li>
-													<li>Бортовой компьютер</li>
-													<li>Система доступа без ключа</li>
-													<li>Запуск двигателя с кнопки</li>
-													<li>Электропривод крышки багажника</li>
-													<li>Электроскладывание зеркал</li>
-													<li>Электропривод зеркал</li>
-													<li>Электростеклоподъемники передние</li>
-													<li>Электростеклоподъемники задние</li>
-													<li>Активный усилитель руля</li>
-												</ul>
-											</div>
-											<div class="product__equipment-block">
-												<div class="product__equipment-caption">Салон</div>
-												<ul class="product__equipment-list">
-													<li>Комбинированный (материал салона)</li>
-													<li>Кожа (материал салона)</li>
-													<li>Подогрев передних сидений</li>
-													<li>Отделка кожей рулевого колеса</li>
-													<li>Складывающееся заднее сиденье</li>
-													<li>Функция складывания спинки сиденья пассажира</li>
-													<li>Передний центральный подлокотник</li>
-													<li>Третий задний подголовник</li>
-													<li>Количество мест: 5</li>
-												</ul>
-											</div>
-											<div class="product__equipment-block">
-												<div class="product__equipment-caption">Элементы экстерьера</div>
-												<ul class="product__equipment-list">
-													<li>Диски 15</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+				<div class="about__image">
+					<img src="img/about.jpg" class="cover-image" alt="Фото">
 				</div>
 			</section>
 			<section class="selections">
 				<div class="selections__container">
+					<div class="selections__hint">Подбор авто</div>
 					<div class="selections__header">
-						<h2 class="selections__title title"> Похожие автомобили: </h2>
-						<a href="" class="selections__more more-link">[ перейти в каталог ]</a>
+						<div class="selections__main">
+							<h2 class="selections__title title"> От экономичных решений до&nbsp;премиальных моделей </h2>
+						</div>
+						<div class="selections__column">
+							<p class="selections__desc"> Мы подберем авто, которое будет идеально соответствовать вашим ожиданиям, независимо от бюджета. Цена формируется на основе стоимости автомобиля, текущего валютного курса и стандартных расходов на логистику, таможенные сборы и оформление. </p>
+							<a href="" class="selections__more more-link">[ перейти в каталог ]</a>
+						</div>
 					</div>
 					<div class="selections__slider">
 						<div class="swiper">
@@ -1082,24 +822,104 @@
 					</div>
 				</div>
 			</section>
-			<section class="feedback">
-				<div class="feedback__container">
-					<div class="feedback__body">
-						<div class="feedback__info">
-							<h2 class="feedback__title"> Расскажем о машине и&nbsp;способах покупки </h2>
-							<p class="feedback__desc"> Оставьте заявку на сайте, наш менеджер свяжется с вами в ближайшее время </p>
+			<section class="description">
+				<div class="description__container">
+					<div class="description__content">
+						<div class="description__image">
+							<img src="img/description.jpg" class="cover-image" alt="Фото">
 						</div>
-						<form action="#" class="feedback__form">
-							<div class="feedback__form-fields">
-								<input type="name" name="name" class="form__input" placeholder="Имя">
-								<input type="tel" name="phone" class="form__input" placeholder="+7 (999) 999-99-99">
+						<div class="description__body">
+							<div class="description__hint">Главное преимущество</div>
+							<h2 class="description__title title"> Полная прозрачность <br> и честность на всех этапах сделки </h2>
+							<div class="description__text">
+								<p> Мы предоставляем детализированные расчеты, каждый этап подтверждается документами, и у вас всегда есть возможность следить за процессом в личном кабинете. Благодаря этому вы всегда знаете, за что платите. </p>
+								<p> Если вам не нравится предложение другой компании, вы можете предоставить нам VIN автомобиля и страну его нахождения, и мы бесплатно сделаем перерасчет, чтобы вы видели реальную стоимость. </p>
 							</div>
-							<label class="form__checkbox">
-								<input type="checkbox" checked aria-required="true" class="form__checkbox-input hidden" hidden>
-								<span class="form__checkbox-text">Я согласен с политикой конфиденциальности</span>
-							</label>
-							<button type="submit" class="form__btn btn btn-fullwidth btn-white">Отправить</button>
-						</form>
+							<a href="" class="description__btn btn btn-primary">Проверить стоимость авто</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="warranties">
+				<div class="warranties__container">
+					<div class="warranties__hint"> Гарантии и поддержка </div>
+					<h2 class="warranties__title title"> Каждый автомобиль, заказанный через Kings Auto, сопровождается рядом гарантий: </h2>
+					<div class="warranties__body">
+						<div class="warranties__image">
+							<img src="img/warranties.jpg" class="cover-image" alt="Фото">
+						</div>
+						<ul class="warranties__list">
+							<li class="benefits__card benefits__card-sm">
+								<div class="benefits__card-icon">
+									<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+										<path d="M22.5577 10.0553V5.88862C22.5577 4.35449 21.3141 3.11084 19.7799 3.11084H14.2244C12.6903 3.11084 11.4466 4.35449 11.4466 5.88862V10.0553M30.8911 16.9997L17.5469 19.6686C17.1873 19.7404 16.817 19.7404 16.4574 19.6686L3.11328 16.9997M5.89106 30.8886H28.1133C29.6474 30.8886 30.8911 29.645 30.8911 28.1108V12.8331C30.8911 11.2989 29.6474 10.0553 28.1133 10.0553H5.89106C4.35693 10.0553 3.11328 11.2989 3.11328 12.8331V28.1108C3.11328 29.645 4.35693 30.8886 5.89106 30.8886Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</div>
+								<div class="benefits__card-title"> Юридическая защита </div>
+								<div class="benefits__card-desc"> Все сделки оформляются официальным договором </div>
+							</li>
+							<li class="benefits__card benefits__card-sm">
+								<div class="benefits__card-icon">
+									<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+										<path d="M8.7134 22.3989L17.0017 31.7221L25.29 22.3989C31.647 15.2482 26.5702 3.94434 17.0017 3.94434C7.43324 3.94434 2.35643 15.2482 8.7134 22.3989Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M21.1654 15.0556C21.1654 17.3568 19.2999 19.2222 16.9987 19.2222C14.6976 19.2222 12.832 17.3568 12.832 15.0556C12.832 12.7544 14.6976 10.8889 16.9987 10.8889C19.2999 10.8889 21.1654 12.7544 21.1654 15.0556Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</div>
+								<div class="benefits__card-title">GPS-трекер</div>
+								<div class="benefits__card-desc">Вы сможете в реальном времени отслеживать путь вашего автомобиля с момента покупки до доставки</div>
+							</li>
+							<li class="benefits__card benefits__card-sm">
+								<div class="benefits__card-icon">
+									<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+										<path d="M9.60045 33.0413C11.5295 29.2578 15.4625 26.6666 20.0007 26.6666C24.5038 26.6666 28.411 29.2179 30.3558 32.9538M23.8895 17.4073C23.8895 19.6574 22.0655 21.4814 19.8155 21.4814C17.5655 21.4814 15.7414 19.6574 15.7414 17.4073C15.7414 15.1573 17.5655 13.3333 19.8155 13.3333C22.0655 13.3333 23.8895 15.1573 23.8895 17.4073ZM20.0007 36.6666C10.7959 36.6666 3.33398 29.2046 3.33398 19.9999C3.33398 10.7952 10.7959 3.33325 20.0007 3.33325C29.2053 3.33325 36.6673 10.7952 36.6673 19.9999C36.6673 29.2046 29.2053 36.6666 20.0007 36.6666Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</div>
+								<div class="benefits__card-title">Личный кабинет</div>
+								<div class="benefits__card-desc">Доступ ко всем документам, видео и фото отчётам, а также возможность следить за всеми этапами процесса через удобную платформу. </div>
+							</li>
+							<li class="benefits__card benefits__card-sm">
+								<div class="benefits__card-icon">
+									<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+										<path d="M19.0962 19.7255C22.1835 20.8974 25.859 20.1985 28.404 17.6535C31.1063 14.9512 31.5263 10.7734 30.0363 7.57949L24.0066 13.6093L20.3888 9.99139L26.4185 3.96164C23.2245 2.4717 19.0467 2.89171 16.3445 5.59399C13.7995 8.13899 13.1006 11.8144 14.2724 14.9017M14.2074 14.9667L4.10842 25.0658C2.77636 26.3978 2.77636 28.5576 4.10842 29.8895C5.44047 31.2216 7.60017 31.2216 8.93222 29.8895L19.0312 19.7905" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</div>
+								<div class="benefits__card-title">Дилерское обслуживание</div>
+								<div class="benefits__card-desc">Кроме того, мы готовы поддерживать вас даже после завершения сделки: покупка и доставка оригинальных запчастей и расходных материалов для наших клиентов из-за границы — БЕСПЛАТНО</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="quality">
+				<div class="quality__container">
+					<div class="quality__content">
+						<div class="quality__column">
+							<div class="quality__hint"> Качественный сервис </div>
+							<h2 class="quality__title title"> Почему стоит заказать авто из-за&nbsp;рубежа в Kings Auto? </h2>
+							<p class="quality__desc"> Kings Auto — это честный и надежный сервис, проверенный временем. Мы сотрудничаем только с проверенными производителями и гарантируем высокие стандарты качества как автомобилей, так и предоставляемых услуг. </p>
+						</div>
+						<div class="quality__column">
+							<ul class="quality__list">
+								<li class="quality__item">
+									<div class="quality__item-icon">
+										<img src="img/icons/quality-1.svg" alt="Иконка">
+									</div>
+									<div class="quality__item-text"> Бесплатное Т.О. с заменой масел и салонного фильтра </div>
+								</li>
+								<li class="quality__item">
+									<div class="quality__item-icon">
+										<img src="img/icons/quality-2.svg" alt="Иконка">
+									</div>
+									<div class="quality__item-text"> Доп. поручения касаемо автомобиля: поставим сигнализацию, новую резину, сделаем химчистку, детейлинг </div>
+								</li>
+								<li class="quality__item">
+									<div class="quality__item-icon">
+										<img src="img/icons/quality-3.svg" alt="Иконка">
+									</div>
+									<div class="quality__item-text"> Приятные комплименты: ароматизатор для авто, брендированные номерные рамки и эксклюзивный гифт-бокс с полезными подарками из Японии </div>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</section>

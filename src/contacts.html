@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    'title': 'KingsAuto'
+    })
+    <body>
+        <section class="wrapper">
+            @@include('html/_header.html', {
+            "className": "",
+            "login": false
+            })
+            <main class="page">
+                <nav aria-label="Хлебные крошки" class="breadcrumbs">
+                    <div class="breadcrumbs__container">
+                        <ul class="breadcrumbs__list" itemscope itemtype="http://schema.org/BreadcrumbList">
+                            <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                <a href="/" class="breadcrumbs__link" itemprop="item">
+                                    <span itemprop="name">Главная</span>
+                                </a>
+                                <meta itemprop="position" content="1">
+                            </li>
+                            <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                <a class="breadcrumbs__link active" itemprop="item">
+                                    <span itemprop="name">Контакты</span>
+                                </a>
+                                <meta itemprop="position" content="2">
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <section class="contacts">
+                    <div class="contacts__container">
+                        <h1 class="contacts__title">
+                            Наш офис находится по адресу: <br>
+                            г. Москва, ул. Примерная, офис 111
+                        </h1>
+                        <div class="contacts__body">
+                            <div class="contacts__map">
+                                <img src="@img/map.png" alt="Карта">
+                            </div>
+                            <div class="contacts__content">
+                                <div class="contacts__column">
+                                    <div class="contacts__block">
+                                        <div class="contacts__caption">Реквизиты</div>
+                                        <div class="contacts__block-row">
+                                            ИП Иванов Иван Иванович
+                                        </div>
+                                        <div class="contacts__block-row">
+                                            Юридический адрес: <br>
+                                            <address>г. Москва, ул. Примерная, офис 111</address>
+                                        </div>
+                                        <div class="contacts__block-row">
+                                            ИНН: 123456789123 <br>
+                                            ОГРНИП: 123456789123456
+                                        </div>
+                                    </div>
+                                    <div class="contacts__block">
+                                        <div class="contacts__caption">Реквизиты</div>
+                                        <div class="contacts__block-row">
+                                            <div class="contacts__block-worktime">
+                                                Ежедневно 09:00–19:00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contacts__column">
+                                    <div class="contacts__block">
+                                        <div class="contacts__caption">Телефон</div>
+                                        <div class="contacts__block-row">
+                                            <a href="tel:+79999999999" class="contacts__block-link"> +7 (999) 999-99-99</a>
+                                        </div>
+                                    </div>
+                                    <div class="contacts__block">
+                                        <div class="contacts__caption">Эл. почта</div>
+                                        <div class="contacts__block-row">
+                                            <a href="mailto:info@kings-auto.ru" class="contacts__block-link">info@kings-auto.ru</a>
+                                        </div>
+                                    </div>
+                                    <div class="contacts__block">
+                                        <div class="contacts__caption">Пишите, мы онлайн:</div>
+                                        <div class="contacts__block-row">
+                                            <div class="contacts__socials">
+                                                <a href="" class="contacts__social icon-telegram"></a>
+                                                <a href="" class="contacts__social icon-wa"></a>
+                                                <a href="" class="contacts__social icon-vk"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            @@include('html/_footer.html', {})
+            @@include('html/_modal.html', {})
+            @@include('html/_js.html', {})
+    </body>
+</html>

@@ -74,15 +74,26 @@
                                         <span>Все фильтры</span>
                                     </button>
                                     <div class="catalog__filter-dropdown dropdown">
-                                        <select name="product-sort" class="select" data-icon="icon-arrows">
-                                            <option value="all">Выгодные предложения</option>
-                                            <option value="price-asc">По цене ↑</option>
-                                            <option value="price-desc">По цене ↓</option>
-                                            <option value="year-asc">По году ↑</option>
-                                            <option value="year-desc">По году ↓</option>
-                                            <option value="mileage-asc">По пробегу ↑</option>
-                                            <option value="mileage-desc">По пробегу ↓</option>
-                                        </select>
+                                        <button type="button" class="dropdown__button sort-btn icon-chevron" aria-expanded="false" aria-haspopup="true">
+                                            <span class="dropdown__button-icon icon-arrows"></span>
+                                            <span class="dropdown__button-text">Выгодные предложения</span>
+                                        </button>
+                                        <div class="dropdown__body">
+                                            <div class="dropdown__list" id="mse2_sort">
+                                                <a href="#" data-sort="ms|price" data-dir="{if $sort == 'ms|price:desc'}desc{/if}" data-default="desc" class="dropdown__list-item sort">
+                                                    По цене
+                                                    <span></span>
+                                                </a>
+                                                <a href="#" data-sort="tv|year" data-dir="{if $sort == 'tv|year:desc'}desc{/if}" data-default="desc" class="dropdown__list-item sort">
+                                                    По году
+                                                    <span></span>
+                                                </a>
+                                                <a href="#" data-sort="tv|mileage" data-dir="{if $sort == 'tv|mileage:desc'}desc{/if}" data-default="desc" class="dropdown__list-item sort">
+                                                    По пробегу
+                                                    <span></span>
+                                                </a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 @@include('html/_filter.html')

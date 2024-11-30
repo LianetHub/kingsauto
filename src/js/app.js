@@ -133,6 +133,22 @@ $(function () {
             $('.lk__body').removeClass('active');
         }
 
+        if ($target[0].closest('.sort-btn')) {
+            const $dropdown = $target.closest('.dropdown');
+            $dropdown.toggleClass('visible')
+        }
+
+        if ($target[0].closest('.dropdown__list-item.sort')) {
+            const $dropdown = $target.closest('.dropdown');
+            const $dropdownText = $dropdown.find('.dropdown__button-text');
+            console.log($dropdownText);
+
+            const $listItem = $target.closest('.sort');
+            $listItem.addClass('active').siblings().removeClass('active');
+            $dropdownText.html($listItem.html())
+            $dropdown.removeClass('visible');
+        }
+
     });
 
     function toggleMenu() {
@@ -370,6 +386,9 @@ $(function () {
     // Custom Select
 
     class CustomSelect {
+
+        static openDropdown = null
+
         constructor(selectElement) {
             this.$select = $(selectElement);
             this.defaultText = this.$select.find('option:selected').text();
@@ -509,19 +528,41 @@ $(function () {
                 attributeFilter: ['disabled']
             });
 
-            const observerSelected = new MutationObserver(() => {
-                this.syncSelectedOption();
+            const observerSelected = new MutationObserver((mutations) => {
+                mutations.forEach((mutation) => {
+                    if (mutation.type === 'attributes' && mutation.attributeName === 'disabled') {
+                        const $option = $(mutation.target);
+                        const value = $option.attr('value');
+                        const isDisabled = $option.is(':disabled');
+                        const $item = this.$dropdown.find(`.dropdown__list-item[data-value="${value}"]`);
+
+                        $item.toggleClass('disabled', isDisabled);
+                        if (isDisabled) {
+                            $item.attr('aria-disabled', 'true');
+                        } else {
+                            $item.removeAttr('aria-disabled');
+                        }
+                    }
+
+                    if (mutation.type === 'attributes' && mutation.attributeName === 'selected') {
+                        this.syncSelectedOption();
+                    }
+                });
             });
 
             observerSelected.observe(this.$select[0], {
                 childList: true,
                 subtree: true,
                 attributes: true,
-                attributeFilter: ['selected']
+                attributeFilter: ['selected', 'disabled']
             });
         }
 
         toggleDropdown(isOpen) {
+            if (isOpen && CustomSelect.openDropdown && CustomSelect.openDropdown !== this) {
+                CustomSelect.openDropdown.closeDropdown();
+            }
+
             const $body = this.$dropdown.find('.dropdown__body');
             const $list = this.$dropdown.find('.dropdown__list');
             const hasScroll = $list[0].scrollHeight > $list[0].clientHeight;
@@ -531,6 +572,7 @@ $(function () {
             $body.attr('aria-hidden', !isOpen);
 
             if (isOpen) {
+                CustomSelect.openDropdown = this;
                 this.$dropdown.removeClass('dropdown-top');
                 const dropdownRect = $body[0].getBoundingClientRect();
                 const viewportHeight = window.innerHeight;
@@ -539,6 +581,10 @@ $(function () {
                 }
 
                 $list.toggleClass('has-scroll', hasScroll);
+            } else {
+                if (CustomSelect.openDropdown === this) {
+                    CustomSelect.openDropdown = null;
+                }
             }
         }
 
@@ -573,6 +619,7 @@ $(function () {
             const $selectedOption = this.$select.find('option:selected');
             const selectedValue = $selectedOption.val();
             const selectedText = $selectedOption.text();
+
 
             this.$dropdown.find('.dropdown__list-item').removeClass('selected').attr('aria-checked', 'false');
             this.$dropdown

@@ -44,12 +44,12 @@
 		max-width: 100%;
 		@media (any-hover: hover) {
 			&:hover {
-				color: rgba(43, 50, 57, 0.5);
+				opacity: 0.5;
 			}
 		}
 		&.active {
 			pointer-events: none;
-			color: rgba(43, 50, 57, 0.5);
+			opacity: 0.5;
 		}
 	}
 }
