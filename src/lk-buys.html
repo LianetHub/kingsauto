@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    'title': 'KingsAuto | Страница товара'
+    })
+    <body>
+        <section class="wrapper">
+            @@include('html/_header.html', {
+            "className": "",
+            "login": true
+            })
+            <main class="page">
+                <div class="lk">
+                    <div class="lk__container">
+                        @@include('./html/_lk-sidebar.html', {
+                        "active": 4
+                        })
+                        <div class="lk__body active">
+                            <div class="lk__title">
+                                Купленные авто
+                            </div>
+                            <ul class="lk__car-items">
+                                <li class="lk__car-item car-item">
+                                    <a href="/lk-buys-card.html" class="car-item__image">
+                                        <img src="@img/offers/04.png" class="cover-image" alt="Фото автомобиля">
+                                    </a>
+                                    <div class="car-item__info">
+                                        <div class="car-item__info-column">
+                                            <a href="/lk-buys-card.html" class="car-item__name">Mercedes-Benz v class 2023</a>
+                                            <div class="car-item__price">7 740 000 ₽</div>
+                                        </div>
+                                        <div class="car-item__info-column">
+                                            <ul class="car-item__list">
+                                                <li class="car-item__row">
+                                                    <span class="car-item__row-name">
+                                                        Дата покупки:
+                                                    </span>
+                                                    <span class="car-item__row-value">
+                                                        15.10.2024
+                                                    </span>
+                                                </li>
+                                                <li class="car-item__row">
+                                                    <span class="car-item__row-name">
+                                                        Цвет:
+                                                    </span>
+                                                    <span class="car-item__row-value">
+                                                        Белый
+                                                    </span>
+                                                </li>
+                                                <li class="car-item__row">
+                                                    <span class="car-item__row-name">
+                                                        VIN код:
+                                                    </span>
+                                                    <span class="car-item__row-value">
+                                                        JHMCM56557C404453
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                            <a href="/lk-buys-card.html" class="car-item__more more-link">[ В карточку авто → ]</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="lk__car-item car-item">
+                                    <a href="/lk-buys-card.html" class="car-item__image">
+                                        <img src="@img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+                                    </a>
+                                    <div class="car-item__info">
+                                        <div class="car-item__info-column">
+                                            <a href="/lk-buys-card.html" class="car-item__name">Porshe Panamera 4s</a>
+                                            <div class="car-item__price">8 634 000 ₽</div>
+                                        </div>
+                                        <div class="car-item__info-column">
+                                            <ul class="car-item__list">
+                                                <li class="car-item__row">
+                                                    <span class="car-item__row-name">
+                                                        Дата покупки:
+                                                    </span>
+                                                    <span class="car-item__row-value">
+                                                        03.04.2024
+                                                    </span>
+                                                </li>
+                                                <li class="car-item__row">
+                                                    <span class="car-item__row-name">
+                                                        Цвет:
+                                                    </span>
+                                                    <span class="car-item__row-value">
+                                                        Синий
+                                                    </span>
+                                                </li>
+                                                <li class="car-item__row">
+                                                    <span class="car-item__row-name">
+                                                        VIN код:
+                                                    </span>
+                                                    <span class="car-item__row-value">
+                                                        JHMCM56557C404453
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                            <a href="/lk-buys-card.html" class="car-item__more more-link">[ В карточку авто → ]</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="lk__car-item car-item">
+                                    <a href="/lk-buys-card.html" class="car-item__image">
+                                        <img src="@img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+                                    </a>
+                                    <div class="car-item__info">
+                                        <div class="car-item__info-column">
+                                            <a href="/lk-buys-card.html" class="car-item__name">Porshe Panamera 4s</a>
+                                            <div class="car-item__price">8 634 000 ₽</div>
+                                        </div>
+                                        <div class="car-item__info-column">
+                                            <ul class="car-item__list">
+                                                <li class="car-item__row">
+                                                    <span class="car-item__row-name">
+                                                        Дата покупки:
+                                                    </span>
+                                                    <span class="car-item__row-value">
+                                                        03.04.2024
+                                                    </span>
+                                                </li>
+                                                <li class="car-item__row">
+                                                    <span class="car-item__row-name">
+                                                        Цвет:
+                                                    </span>
+                                                    <span class="car-item__row-value">
+                                                        Синий
+                                                    </span>
+                                                </li>
+                                                <li class="car-item__row">
+                                                    <span class="car-item__row-name">
+                                                        VIN код:
+                                                    </span>
+                                                    <span class="car-item__row-value">
+                                                        JHMCM56557C404453
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                            <a href="/lk-buys-card.html" class="car-item__more more-link">[ В карточку авто → ]</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            @@include('html/_footer.html', {})
+            @@include('html/_modal.html', {})
+            @@include('html/_js.html', {})
+    </body>
+</html>

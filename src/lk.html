@@ -16,30 +16,71 @@
                         "active": 1
                         })
                         <div class="lk__body active">
-                            <div class="lk__title">
-                                Добрый день!
-                            </div>
-                            <ul class="lk__person">
-                                <li class="lk__person-item icon-phone-fill">
-                                    +7 987 123 45 54
-                                    <a href="" class="lk__person-more"></a>
-                                </li>
-                                <li class="lk__person-item icon-user-fill">
-                                    <a href="" class="lk__person-link">Добавить Имя</a>
-                                    <a href="" class="lk__person-more"></a>
-                                </li>
-                                <li class="lk__person-item icon-envelope-open">
-                                    <div class="lk__person-column">
-                                        <a href="" class="lk__person-link">
-                                            Добавить почту
-                                        </a>
-                                        <div class="lk__person-hint">
-                                            и получать уведомления о статусе заказа
+                            <form action="#" class="lk__form">
+                                <div class="lk__form-block">
+                                    <div class="lk__title">
+                                        Личные данные
+                                    </div>
+                                    <div class="lk__form-grid">
+                                        <div class="lk__form-row">
+                                            <label for="username" class="label">Имя и фамилия</label>
+                                            <div class="form__field icon-user-fill">
+                                                <input type="text" name="username" id="username" class="form__input" placeholder="Не указано">
+                                            </div>
+                                        </div>
+                                        <div class="lk__form-row">
+                                            <label for="user-email" class="label">Почта для уведомлений</label>
+                                            <div class="form__field icon-envelope-open">
+                                                <input type="email" name="email" id="user-email" class="form__input" placeholder="Не указана">
+                                            </div>
+                                        </div>
+                                        <div class="lk__form-row">
+                                            <label for="user-phone" class="label">Телефон</label>
+                                            <div class="form__field icon-phone-fill">
+                                                <input type="tel" name="phone" id="user-phone" class="form__input" placeholder="+7" value="+7 987 123 45 54">
+                                            </div>
+                                        </div>
+                                        <div class="lk__form-row">
+                                            <label for="user-phone-messagers" class="label">Телефон для связи в Telegram / Whatsapp</label>
+                                            <div class="form__field icon-phone-fill">
+                                                <input type="tel" name="phone" id="user-phone-messagers" class="form__input" placeholder="+7">
+                                            </div>
                                         </div>
                                     </div>
-                                    <a href="" class="lk__person-more"></a>
-                                </li>
-                            </ul>
+                                </div>
+                                <div class="lk__form-block">
+                                    <div class="lk__title">
+                                        Данные компании
+                                    </div>
+                                    <div class="lk__form-grid">
+                                        <div class="lk__form-row">
+                                            <label for="company-name" class="label">Название компании</label>
+                                            <div class="form__field icon-user-fill">
+                                                <input type="text" name="company-name" id="company-name" class="form__input" placeholder="Не указано">
+                                            </div>
+                                        </div>
+                                        <div class="lk__form-row">
+                                            <label for="legal-name" class="label">Название юр. лица </label>
+                                            <div class="form__field icon-user-fill">
+                                                <input type="text" name="legal-name" id="legal-name" class="form__input" placeholder="Не указано">
+                                            </div>
+                                        </div>
+                                        <div class="lk__form-row">
+                                            <label for="inn-value" class="label">ИНН</label>
+                                            <div class="form__field icon-list">
+                                                <input type="number" name="inn-value" id="inn-value" class="form__input" placeholder="1234567890">
+                                            </div>
+                                        </div>
+                                        <div class="lk__form-row">
+                                            <label for="office-address" class="label">Адрес головного офиса</label>
+                                            <div class="form__field icon-location">
+                                                <input type="text" name="office-address" id="office-address" class="form__input" placeholder="Не указан">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button disabled class="lk__form-submit btn btn-blue">Сохранить изменения</button>
+                            </form>
                         </div>
                     </div>
                 </div>

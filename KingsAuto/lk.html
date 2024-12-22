@@ -38,13 +38,13 @@
 	<meta property="twitter:image:src" content="/OG.png">
 	<!-- Twitter -->
 	<!-- plugnis -->
-	<link rel="stylesheet" href="css/libs/swiper-bundle.min.css?_v=20241221081202">
-	<link rel="stylesheet" href="css/libs/fancybox.css?_v=20241221081202">
-	<link rel="stylesheet" href="css/libs/nouislider.min.css?_v=20241221081202">
-	<link rel="stylesheet" href="css/libs/input-tel.css?_v=20241221081202" />
+	<link rel="stylesheet" href="css/libs/swiper-bundle.min.css?_v=20241222140421">
+	<link rel="stylesheet" href="css/libs/fancybox.css?_v=20241222140421">
+	<link rel="stylesheet" href="css/libs/nouislider.min.css?_v=20241222140421">
+	<link rel="stylesheet" href="css/libs/input-tel.css?_v=20241222140421" />
 	<!-- plugnis -->
-	<link rel="stylesheet" href="css/reset.min.css?_v=20241221081202">
-	<link rel="stylesheet" href="css/style.min.css?_v=20241221081202">
+	<link rel="stylesheet" href="css/reset.min.css?_v=20241222140421">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241222140421">
 </head>
 
 <body>
@@ -165,13 +165,13 @@
 								<a href="/lk.html" class="lk__sidebar-link icon-user active">Профиль</a>
 							</li>
 							<li class="lk__sidebar-item">
-								<a href="/lk-delivery.html" class="lk__sidebar-link icon-delivery">Отслеживание авто</a>
+								<a href="/lk-tracking.html" class="lk__sidebar-link icon-delivery">Отслеживание авто</a>
 							</li>
 							<li class="lk__sidebar-item">
-								<a href="/lk-favorite.html" class="lk__sidebar-link icon-buys">Избранное <span class="lk__sidebar-quantity">6</span></a>
+								<a href="/lk-favorite.html" class="lk__sidebar-link icon-heart">Избранное <span class="lk__sidebar-quantity">6</span></a>
 							</li>
 							<li class="lk__sidebar-item">
-								<a href="/lk-buys.html" class="lk__sidebar-link icon-heart">Купленные авто</a>
+								<a href="/lk-buys.html" class="lk__sidebar-link icon-buys">Купленные авто</a>
 							</li>
 							<li class="lk__sidebar-item">
 								<a href="/lk-views.html" class="lk__sidebar-link icon-search-views">Осмотренные авто</a>
@@ -180,34 +180,79 @@
 								<a href="/lk-doc.html" class="lk__sidebar-link icon-docs">Договор с Kings Auto</a>
 							</li>
 							<li class="lk__sidebar-item">
-								<a href="/lk-info.html" class="lk__sidebar-link icon-info">Полезная информация</a>
+								<a href="" class="lk__sidebar-link icon-info">Полезная информация</a>
 							</li>
 							<li class="lk__sidebar-item">
 								<a href="/" class="lk__sidebar-link icon-login">Выйти</a>
 							</li>
 						</ul>
 						<div class="lk__caption">
-							<button type="button" class="lk__caption-back icon-arrow"></button>
+							<button type="button" class="lk__caption-back icon-chevron"></button>
 							<div class="lk__caption-text"> Профиль </div>
 						</div>
 					</aside>
 					<div class="lk__body active">
-						<div class="lk__title"> Добрый день! </div>
-						<ul class="lk__person">
-							<li class="lk__person-item icon-phone-fill"> +7 987 123 45 54 <a href="" class="lk__person-more"></a>
-							</li>
-							<li class="lk__person-item icon-user-fill">
-								<a href="" class="lk__person-link">Добавить Имя</a>
-								<a href="" class="lk__person-more"></a>
-							</li>
-							<li class="lk__person-item icon-envelope-open">
-								<div class="lk__person-column">
-									<a href="" class="lk__person-link"> Добавить почту </a>
-									<div class="lk__person-hint"> и получать уведомления о статусе заказа </div>
+						<form action="#" class="lk__form">
+							<div class="lk__form-block">
+								<div class="lk__title"> Личные данные </div>
+								<div class="lk__form-grid">
+									<div class="lk__form-row">
+										<label for="username" class="label">Имя и фамилия</label>
+										<div class="form__field icon-user-fill">
+											<input type="text" name="username" id="username" class="form__input" placeholder="Не указано">
+										</div>
+									</div>
+									<div class="lk__form-row">
+										<label for="user-email" class="label">Почта для уведомлений</label>
+										<div class="form__field icon-envelope-open">
+											<input type="email" name="email" id="user-email" class="form__input" placeholder="Не указана">
+										</div>
+									</div>
+									<div class="lk__form-row">
+										<label for="user-phone" class="label">Телефон</label>
+										<div class="form__field icon-phone-fill">
+											<input type="tel" name="phone" id="user-phone" class="form__input" placeholder="+7" value="+7 987 123 45 54">
+										</div>
+									</div>
+									<div class="lk__form-row">
+										<label for="user-phone-messagers" class="label">Телефон для связи в Telegram / Whatsapp</label>
+										<div class="form__field icon-phone-fill">
+											<input type="tel" name="phone" id="user-phone-messagers" class="form__input" placeholder="+7">
+										</div>
+									</div>
 								</div>
-								<a href="" class="lk__person-more"></a>
-							</li>
-						</ul>
+							</div>
+							<div class="lk__form-block">
+								<div class="lk__title"> Данные компании </div>
+								<div class="lk__form-grid">
+									<div class="lk__form-row">
+										<label for="company-name" class="label">Название компании</label>
+										<div class="form__field icon-user-fill">
+											<input type="text" name="company-name" id="company-name" class="form__input" placeholder="Не указано">
+										</div>
+									</div>
+									<div class="lk__form-row">
+										<label for="legal-name" class="label">Название юр. лица </label>
+										<div class="form__field icon-user-fill">
+											<input type="text" name="legal-name" id="legal-name" class="form__input" placeholder="Не указано">
+										</div>
+									</div>
+									<div class="lk__form-row">
+										<label for="inn-value" class="label">ИНН</label>
+										<div class="form__field icon-list">
+											<input type="number" name="inn-value" id="inn-value" class="form__input" placeholder="1234567890">
+										</div>
+									</div>
+									<div class="lk__form-row">
+										<label for="office-address" class="label">Адрес головного офиса</label>
+										<div class="form__field icon-location">
+											<input type="text" name="office-address" id="office-address" class="form__input" placeholder="Не указан">
+										</div>
+									</div>
+								</div>
+							</div>
+							<button disabled class="lk__form-submit btn btn-blue">Сохранить изменения</button>
+						</form>
 					</div>
 				</div>
 			</div>
@@ -356,13 +401,13 @@
 			</div>
 		</div>
 		<!-- plugnis -->
-		<script src="js/libs/jquery-3.7.1.min.js?_v=20241221081202"></script>
-		<script src="js/libs/swiper-bundle.min.js?_v=20241221081202"></script>
-		<script src="js/libs/fancybox.umd.js?_v=20241221081202"></script>
-		<script src="js/libs/formatter.min.js?_v=20241221081202"></script>
-		<script src="js/libs/intlTelInput.min.js?_v=20241221081202"></script>
+		<script src="js/libs/jquery-3.7.1.min.js?_v=20241222140421"></script>
+		<script src="js/libs/swiper-bundle.min.js?_v=20241222140421"></script>
+		<script src="js/libs/fancybox.umd.js?_v=20241222140421"></script>
+		<script src="js/libs/formatter.min.js?_v=20241222140421"></script>
+		<script src="js/libs/intlTelInput.min.js?_v=20241222140421"></script>
 		<!-- plugnis -->
-		<script src="js/app.min.js?_v=20241221081202"></script>
+		<script src="js/app.min.js?_v=20241222140421"></script>
 </body>
 
 </html>

@@ -149,6 +149,10 @@ $(function () {
             $dropdown.removeClass('visible');
         }
 
+        if (!$target.closest('.lk__dropdown').length) {
+            $('.lk__dropdown-body').slideUp();
+        }
+
     });
 
     function toggleMenu() {
@@ -755,6 +759,36 @@ $(function () {
         });
     }
 
+
+    // observer LK form changes
+    if ($('.lk__form').length > 0) {
+        $('.lk__form').on('change', function () {
+            $('.lk__form').find('.lk__form-submit').removeAttr('disabled')
+        })
+    }
+
+
+    $('.lk__dropdown-btn').on('click', function () {
+        $('.lk__dropdown-body').slideToggle();
+    });
+
+
+    $('.lk__dropdown-item').on('click', function () {
+        var carName = $(this).find('.car-item__name').text();
+        var carDate = $(this).find('.car-item__date').text();
+
+        $('.lk__dropdown-text').html(
+            `<span class="lk__delivery-item-name">${carName}</span>
+             <span class="lk__delivery-item-date">Дата покупки: ${carDate}</span>`
+        );
+
+        $('.lk__dropdown-item').removeClass('active');
+        $(this).addClass('active');
+
+        $('.lk__dropdown-body').slideUp();
+        $('.lk__delivery-info').removeClass('hidden');
+        $('.lk__contacts').removeClass('hidden');
+    });
 
 
 })

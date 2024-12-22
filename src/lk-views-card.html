@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    'title': 'KingsAuto | Страница товара'
+    })
+    <body>
+        <section class="wrapper">
+            @@include('html/_header.html', {
+            "className": "",
+            "login": true
+            })
+            <main class="page">
+                <div class="lk">
+                    <div class="lk__container">
+                        @@include('./html/_lk-sidebar.html', {
+                        "active": 56
+                        })
+                        <div class="lk__body active">
+                            <div class="lk__title">
+                                Осмотренные авто / <span class="lk__title-category">Mercedes-Benz v class 2023</span>
+                            </div>
+                            <div class="lk__car">
+                                <div class="lk__car-block">
+                                    <div class="lk__car-title">Основные данные</div>
+                                    <ul class="lk__car-list">
+                                        <li class="lk__car-info">
+                                            <div class="lk__car-info-name">Дата покупки</div>
+                                            <div class="lk__car-info-value">15.10.2024</div>
+                                        </li>
+                                        <li class="lk__car-info">
+                                            <div class="lk__car-info-name">Марка</div>
+                                            <div class="lk__car-info-value">Mercedes-Benz</div>
+                                        </li>
+                                        <li class="lk__car-info">
+                                            <div class="lk__car-info-name">Модель</div>
+                                            <div class="lk__car-info-value">v class</div>
+                                        </li>
+                                        <li class="lk__car-info">
+                                            <div class="lk__car-info-name">Дата производства</div>
+                                            <div class="lk__car-info-value">01.01.2023</div>
+                                        </li>
+                                        <li class="lk__car-info">
+                                            <div class="lk__car-info-name">Цвет</div>
+                                            <div class="lk__car-info-value">Белый</div>
+                                        </li>
+                                        <li class="lk__car-info">
+                                            <div class="lk__car-info-name">Штат погрузки</div>
+                                            <div class="lk__car-info-value">Название штата погрузки авто</div>
+                                        </li>
+                                        <li class="lk__car-info">
+                                            <div class="lk__car-info-name">Порт погрузки</div>
+                                            <div class="lk__car-info-value">Название штата погрузки авто</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="lk__car-block">
+                                    <div class="lk__car-title">Предпродажная инспекция</div>
+                                    <a href="" class="lk__car-btn btn btn-blue">Скачать (PDF)</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            @@include('html/_footer.html', {})
+            @@include('html/_modal.html', {})
+            @@include('html/_js.html', {})
+    </body>
+</html>

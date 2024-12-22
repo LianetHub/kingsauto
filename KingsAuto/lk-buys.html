@@ -38,13 +38,13 @@
 	<meta property="twitter:image:src" content="/OG.png">
 	<!-- Twitter -->
 	<!-- plugnis -->
-	<link rel="stylesheet" href="css/libs/swiper-bundle.min.css?_v=20241221081202">
-	<link rel="stylesheet" href="css/libs/fancybox.css?_v=20241221081202">
-	<link rel="stylesheet" href="css/libs/nouislider.min.css?_v=20241221081202">
-	<link rel="stylesheet" href="css/libs/input-tel.css?_v=20241221081202" />
+	<link rel="stylesheet" href="css/libs/swiper-bundle.min.css?_v=20241222140421">
+	<link rel="stylesheet" href="css/libs/fancybox.css?_v=20241222140421">
+	<link rel="stylesheet" href="css/libs/nouislider.min.css?_v=20241222140421">
+	<link rel="stylesheet" href="css/libs/input-tel.css?_v=20241222140421" />
 	<!-- plugnis -->
-	<link rel="stylesheet" href="css/reset.min.css?_v=20241221081202">
-	<link rel="stylesheet" href="css/style.min.css?_v=20241221081202">
+	<link rel="stylesheet" href="css/reset.min.css?_v=20241222140421">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241222140421">
 </head>
 
 <body>
@@ -165,13 +165,13 @@
 								<a href="/lk.html" class="lk__sidebar-link icon-user">Профиль</a>
 							</li>
 							<li class="lk__sidebar-item">
-								<a href="/lk-delivery.html" class="lk__sidebar-link icon-delivery active">Отслеживание авто</a>
+								<a href="/lk-tracking.html" class="lk__sidebar-link icon-delivery">Отслеживание авто</a>
 							</li>
 							<li class="lk__sidebar-item">
-								<a href="/lk-favorite.html" class="lk__sidebar-link icon-buys">Избранное <span class="lk__sidebar-quantity">6</span></a>
+								<a href="/lk-favorite.html" class="lk__sidebar-link icon-heart">Избранное <span class="lk__sidebar-quantity">6</span></a>
 							</li>
 							<li class="lk__sidebar-item">
-								<a href="/lk-buys.html" class="lk__sidebar-link icon-heart">Купленные авто</a>
+								<a href="/lk-buys.html" class="lk__sidebar-link icon-buys active">Купленные авто</a>
 							</li>
 							<li class="lk__sidebar-item">
 								<a href="/lk-views.html" class="lk__sidebar-link icon-search-views">Осмотренные авто</a>
@@ -180,79 +180,105 @@
 								<a href="/lk-doc.html" class="lk__sidebar-link icon-docs">Договор с Kings Auto</a>
 							</li>
 							<li class="lk__sidebar-item">
-								<a href="/lk-info.html" class="lk__sidebar-link icon-info">Полезная информация</a>
+								<a href="" class="lk__sidebar-link icon-info">Полезная информация</a>
 							</li>
 							<li class="lk__sidebar-item">
 								<a href="/" class="lk__sidebar-link icon-login">Выйти</a>
 							</li>
 						</ul>
 						<div class="lk__caption">
-							<button type="button" class="lk__caption-back icon-arrow"></button>
-							<div class="lk__caption-text"> Отслеживание авто </div>
+							<button type="button" class="lk__caption-back icon-chevron"></button>
+							<div class="lk__caption-text"> Купленные авто </div>
 						</div>
 					</aside>
-					<div class="lk__content">
-						<div class="lk__body active">
-							<div class="lk__delivery">
-								<div class="lk__delivery-block">
-									<div class="lk__delivery-title"> Фото и видео авто </div>
-									<ul class="lk__delivery-list">
-										<li class="lk__delivery-item">
-											<a href="" class="lk__delivery-link icon-chevron">Фото и видео с осмотра авто</a>
-										</li>
-										<li class="lk__delivery-item">
-											<a href="" aria-disabled="true" class="lk__delivery-link icon-chevron">Фото и видео перед погрузкой</a>
-										</li>
-										<li class="lk__delivery-item">
-											<a href="" aria-disabled="true" class="lk__delivery-link icon-chevron">Фото и видео после таможенного оформления </a>
-										</li>
-									</ul>
-								</div>
-								<div class="lk__delivery-block">
-									<div class="lk__delivery-title"> Отслеживание авто </div>
-									<ul class="lk__delivery-list">
-										<li class="lk__delivery-item">
-											<div class="lk__delivery-row"> Ваш GPS-трекер отслеживания <div class="lk__delivery-copy copy-btn">
-													<div class="copy-btn__text"> aaa123-15-jk </div>
-													<button type="button" class="copy-btn__btn icon-copy"></button>
-												</div>
-											</div>
-										</li>
-										<li class="lk__delivery-item icon-search">
-											<input type="text" name="trek" class="lk__delivery-input" placeholder="Введите трек-номер">
-										</li>
-										<li class="lk__delivery-item">
-											<div class="lk__map">карта</div>
-										</li>
-									</ul>
-									<div class="lk__delivery-points">
-										<div class="lk__delivery-point completed">Отгружен из порта Пусан</div>
-										<div class="lk__delivery-point completed">Доставлен в г. Владивосток</div>
-										<div class="lk__delivery-point">Доставка ожидается 15.02.2025</div>
+					<div class="lk__body active">
+						<div class="lk__title"> Купленные авто </div>
+						<ul class="lk__car-items">
+							<li class="lk__car-item car-item">
+								<a href="/lk-buys-card.html" class="car-item__image">
+									<img src="img/offers/04.png" class="cover-image" alt="Фото автомобиля">
+								</a>
+								<div class="car-item__info">
+									<div class="car-item__info-column">
+										<a href="/lk-buys-card.html" class="car-item__name">Mercedes-Benz v class 2023</a>
+										<div class="car-item__price">7 740 000 ₽</div>
+									</div>
+									<div class="car-item__info-column">
+										<ul class="car-item__list">
+											<li class="car-item__row">
+												<span class="car-item__row-name"> Дата покупки: </span>
+												<span class="car-item__row-value"> 15.10.2024 </span>
+											</li>
+											<li class="car-item__row">
+												<span class="car-item__row-name"> Цвет: </span>
+												<span class="car-item__row-value"> Белый </span>
+											</li>
+											<li class="car-item__row">
+												<span class="car-item__row-name"> VIN код: </span>
+												<span class="car-item__row-value"> JHMCM56557C404453 </span>
+											</li>
+										</ul>
+										<a href="/lk-buys-card.html" class="car-item__more more-link">[ В карточку авто → ]</a>
 									</div>
 								</div>
-							</div>
-						</div>
-						<div class="lk__contacts">
-							<div class="lk__contacts-title">Контактные данные перевозчика:</div>
-							<ul class="lk__contacts-list">
-								<li class="lk__contacts-item">
-									<div class="lk__contacts-caption">По вопросам доставки:</div>
-									<a href="tel:+79999999999" class="lk__contacts-value">+7 (999) 999-99-99</a>
-								</li>
-								<li class="lk__contacts-item">
-									<div class="lk__contacts-caption">По другим вопросам:</div>
-									<a href="tel:+79999999999" class="lk__contacts-value">+7 (999) 999-99-99</a>
-								</li>
-								<li class="lk__contacts-item">
-									<div class="lk__contacts-text">
-										<p>ООО «Грузоперевозки РФ»</p>
-										<p>ИНН 123456789</p>
-										<p>ОГРН 123456789</p>
+							</li>
+							<li class="lk__car-item car-item">
+								<a href="/lk-buys-card.html" class="car-item__image">
+									<img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+								</a>
+								<div class="car-item__info">
+									<div class="car-item__info-column">
+										<a href="/lk-buys-card.html" class="car-item__name">Porshe Panamera 4s</a>
+										<div class="car-item__price">8 634 000 ₽</div>
 									</div>
-								</li>
-							</ul>
-						</div>
+									<div class="car-item__info-column">
+										<ul class="car-item__list">
+											<li class="car-item__row">
+												<span class="car-item__row-name"> Дата покупки: </span>
+												<span class="car-item__row-value"> 03.04.2024 </span>
+											</li>
+											<li class="car-item__row">
+												<span class="car-item__row-name"> Цвет: </span>
+												<span class="car-item__row-value"> Синий </span>
+											</li>
+											<li class="car-item__row">
+												<span class="car-item__row-name"> VIN код: </span>
+												<span class="car-item__row-value"> JHMCM56557C404453 </span>
+											</li>
+										</ul>
+										<a href="/lk-buys-card.html" class="car-item__more more-link">[ В карточку авто → ]</a>
+									</div>
+								</div>
+							</li>
+							<li class="lk__car-item car-item">
+								<a href="/lk-buys-card.html" class="car-item__image">
+									<img src="img/offers/03.png" class="cover-image" alt="Фото автомобиля">
+								</a>
+								<div class="car-item__info">
+									<div class="car-item__info-column">
+										<a href="/lk-buys-card.html" class="car-item__name">Porshe Panamera 4s</a>
+										<div class="car-item__price">8 634 000 ₽</div>
+									</div>
+									<div class="car-item__info-column">
+										<ul class="car-item__list">
+											<li class="car-item__row">
+												<span class="car-item__row-name"> Дата покупки: </span>
+												<span class="car-item__row-value"> 03.04.2024 </span>
+											</li>
+											<li class="car-item__row">
+												<span class="car-item__row-name"> Цвет: </span>
+												<span class="car-item__row-value"> Синий </span>
+											</li>
+											<li class="car-item__row">
+												<span class="car-item__row-name"> VIN код: </span>
+												<span class="car-item__row-value"> JHMCM56557C404453 </span>
+											</li>
+										</ul>
+										<a href="/lk-buys-card.html" class="car-item__more more-link">[ В карточку авто → ]</a>
+									</div>
+								</div>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -401,13 +427,13 @@
 			</div>
 		</div>
 		<!-- plugnis -->
-		<script src="js/libs/jquery-3.7.1.min.js?_v=20241221081202"></script>
-		<script src="js/libs/swiper-bundle.min.js?_v=20241221081202"></script>
-		<script src="js/libs/fancybox.umd.js?_v=20241221081202"></script>
-		<script src="js/libs/formatter.min.js?_v=20241221081202"></script>
-		<script src="js/libs/intlTelInput.min.js?_v=20241221081202"></script>
+		<script src="js/libs/jquery-3.7.1.min.js?_v=20241222140421"></script>
+		<script src="js/libs/swiper-bundle.min.js?_v=20241222140421"></script>
+		<script src="js/libs/fancybox.umd.js?_v=20241222140421"></script>
+		<script src="js/libs/formatter.min.js?_v=20241222140421"></script>
+		<script src="js/libs/intlTelInput.min.js?_v=20241222140421"></script>
 		<!-- plugnis -->
-		<script src="js/app.min.js?_v=20241221081202"></script>
+		<script src="js/app.min.js?_v=20241222140421"></script>
 </body>
 
 </html>

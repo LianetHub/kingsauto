@@ -4,34 +4,39 @@
             <a href="/lk.html" class="lk__sidebar-link icon-user@@if(active===1){ active}">Профиль</a>
         </li>
         <li class="lk__sidebar-item">
-            <a href="/lk-delivery.html" class="lk__sidebar-link icon-delivery@@if(active===2){ active}">Отслеживание авто</a>
+            <a href="/lk-tracking.html" class="lk__sidebar-link icon-delivery@@if(active===2){ active}">Отслеживание авто</a>
         </li>
         <li class="lk__sidebar-item">
-            <a href="/lk-favorite.html" class="lk__sidebar-link icon-buys@@if(active===3){ active}">Избранное <span class="lk__sidebar-quantity">6</span></a>
+            <a href="/lk-favorite.html" class="lk__sidebar-link icon-heart@@if(active===3){ active}">Избранное <span class="lk__sidebar-quantity">6</span></a>
         </li>
         <li class="lk__sidebar-item">
-            <a href="/lk-buys.html" class="lk__sidebar-link icon-heart@@if(active===4){ active}">Купленные авто</a>
+            <a href="/lk-buys.html" class="lk__sidebar-link icon-buys@@if(active===4){ active}@@if(active===45){ active}">Купленные авто</a>
         </li>
         <li class="lk__sidebar-item">
-            <a href="/lk-views.html" class="lk__sidebar-link icon-search-views@@if(active===5){ active}">Осмотренные авто</a>
+            <a href="/lk-views.html" class="lk__sidebar-link icon-search-views@@if(active===5){ active}@@if(active===56){ active}">Осмотренные авто</a>
         </li>
         <li class="lk__sidebar-item">
             <a href="/lk-doc.html" class="lk__sidebar-link icon-docs@@if(active===6){ active}">Договор с Kings Auto</a>
         </li>
         <li class="lk__sidebar-item">
-            <a href="/lk-info.html" class="lk__sidebar-link icon-info@@if(active===7){ active}">Полезная информация</a>
+            <a href="" class="lk__sidebar-link icon-info@@if(active===7){ active}">Полезная информация</a>
         </li>
         <li class="lk__sidebar-item">
             <a href="/" class="lk__sidebar-link icon-login@@if(active===8){ active}">Выйти</a>
         </li>
     </ul>
     <div class="lk__caption">
-        <button type="button" class="lk__caption-back icon-arrow"></button>
+        <button type="button" class="lk__caption-back icon-chevron"></button>
         <div class="lk__caption-text">
             @@if(active===1){Профиль}
             @@if(active===2){Отслеживание авто}
             @@if(active===3){Избранное}
-            @@if(active===4){Договор}
+            @@if(active===4){Купленные авто}
+            @@if(active===45){Купленные авто / <span>Mercedes-Benz v class 2023</span> }
+            @@if(active===5){Осмотренные авто}
+            @@if(active===56){Осмотренные авто / <span>Mercedes-Benz v class 2023</span>}
+            @@if(active===6){Договор}
+            @@if(active===7){Полезная информация}
         </div>
     </div>
 </aside>
