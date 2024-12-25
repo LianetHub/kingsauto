@@ -1,4 +1,11 @@
 @font-face {
+                            font-family: 'icons';
+                            font-display: swap;
+                            src: url("../fonts/icons.woff") format("woff"), url("../fonts/icons.woff2") format("woff2");
+                            font-weight: 400;
+                            font-style: normal;
+                        }
+@font-face {
                             font-family: 'InterTight';
                             font-display: swap;
                             src: url("../fonts/InterTight-Medium.woff") format("woff"), url("../fonts/InterTight-Medium.woff2") format("woff2");
@@ -6,9 +13,9 @@
                             font-style: normal;
                         }
 @font-face {
-                            font-family: 'icons';
+                            font-family: 'InterTight';
                             font-display: swap;
-                            src: url("../fonts/icons.woff") format("woff"), url("../fonts/icons.woff2") format("woff2");
+                            src: url("../fonts/InterTight-Regular.woff") format("woff"), url("../fonts/InterTight-Regular.woff2") format("woff2");
                             font-weight: 400;
                             font-style: normal;
                         }
@@ -22,14 +29,14 @@
 @font-face {
                             font-family: 'VelaSans';
                             font-display: swap;
-                            src: url("../fonts/VelaSans-Regular.woff") format("woff"), url("../fonts/VelaSans-Regular.woff2") format("woff2");
-                            font-weight: 400;
+                            src: url("../fonts/VelaSans-Medium.woff") format("woff"), url("../fonts/VelaSans-Medium.woff2") format("woff2");
+                            font-weight: 500;
                             font-style: normal;
                         }
 @font-face {
-                            font-family: 'InterTight';
+                            font-family: 'VelaSans';
                             font-display: swap;
-                            src: url("../fonts/InterTight-Regular.woff") format("woff"), url("../fonts/InterTight-Regular.woff2") format("woff2");
+                            src: url("../fonts/VelaSans-Regular.woff") format("woff"), url("../fonts/VelaSans-Regular.woff2") format("woff2");
                             font-weight: 400;
                             font-style: normal;
                         }
@@ -38,12 +45,5 @@
                             font-display: swap;
                             src: url("../fonts/VelaSans-SemiBold.woff") format("woff"), url("../fonts/VelaSans-SemiBold.woff2") format("woff2");
                             font-weight: 600;
-                            font-style: normal;
-                        }
-@font-face {
-                            font-family: 'VelaSans';
-                            font-display: swap;
-                            src: url("../fonts/VelaSans-Medium.woff") format("woff"), url("../fonts/VelaSans-Medium.woff2") format("woff2");
-                            font-weight: 500;
                             font-style: normal;
                         }

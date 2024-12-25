@@ -373,6 +373,12 @@
 			color: rgba(43, 50, 57, 0.4);
 		}
 	}
+	// .lk__docs
+	&__docs {
+		display: grid;
+		gap: 1.5rem;
+		grid-template-columns: repeat(auto-fit, minmax(rem(240), 1fr));
+	}
 	// .lk__doc
 	&__doc {
 		display: flex;

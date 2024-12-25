@@ -5,9 +5,12 @@
 	display: flex;
 	align-items: flex-end;
 	min-height: 100vh;
-	@media (min-width: $md3) {
-		min-height: 46.25rem;
+	@supports (height: 100dvh) {
+		min-height: 100dvh;
 	}
+	// @media (min-width: $md3) {
+	// 	min-height: 46.25rem;
+	// }
 	// .promo__container
 	&__container {
 	}
@@ -16,6 +19,11 @@
 	}
 	// .promo__slide
 	&__slide {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-end;
+		height: auto;
 		padding: $header 0 3.75rem;
 	}
 	// .promo__title
@@ -47,7 +55,6 @@
 			padding: 1.06rem;
 			display: flex;
 			column-gap: 0.25rem;
-
 			& .swiper-pagination-bullet {
 				background: #767676;
 				margin: 0;
