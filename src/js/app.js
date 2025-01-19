@@ -36,23 +36,6 @@ $(function () {
         getNavigator();
     });
 
-
-
-    // detect support WebP
-    // function testWebP(callback) {
-    //     let webP = new Image();
-    //     webP.onload = webP.onerror = function () {
-    //         callback(webP.height == 2);
-    //     };
-    //     webP.src = 'data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA';
-    // }
-
-    // testWebP((support) => {
-    //     $('body').addClass(support ? 'webp' : 'no-webp');
-    // });
-
-
-
     // event handlers
     $(document).on('click', (e) => {
         const $target = $(e.target);
@@ -151,6 +134,16 @@ $(function () {
 
         if (!$target.closest('.lk__dropdown').length) {
             $('.lk__dropdown-body').slideUp();
+        }
+
+        if ($target.is('.login__input-btn')) {
+            $target.addClass('active').siblings().removeClass('active');
+            $('.login__input-block').eq($target.index()).addClass('active').siblings().removeClass('active');
+        }
+
+        if ($target.is('.login__add-btn')) {
+            $target.closest('.login__add').addClass('hidden');
+            $target.closest('.login__form').find('.form__field.hidden').removeClass('hidden')
         }
 
     });

@@ -1,6 +1,14 @@
 @font-face {
   font-family: "InterTight";
   font-display: swap;
+  src: url("../fonts/InterTight-Medium.woff") format("woff"), url("../fonts/InterTight-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "InterTight";
+  font-display: swap;
   src: url("../fonts/InterTight-Regular.woff") format("woff"), url("../fonts/InterTight-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
@@ -17,15 +25,15 @@
 @font-face {
   font-family: "InterTight";
   font-display: swap;
-  src: url("../fonts/InterTight-Medium.woff") format("woff"), url("../fonts/InterTight-Medium.woff2") format("woff2");
-  font-weight: 500;
+  src: url("../fonts/InterTight-SemiBold.woff") format("woff"), url("../fonts/InterTight-SemiBold.woff2") format("woff2");
+  font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "InterTight";
+  font-family: "VelaSans";
   font-display: swap;
-  src: url("../fonts/InterTight-SemiBold.woff") format("woff"), url("../fonts/InterTight-SemiBold.woff2") format("woff2");
+  src: url("../fonts/VelaSans-SemiBold.woff") format("woff"), url("../fonts/VelaSans-SemiBold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
 }
@@ -43,14 +51,6 @@
   font-display: swap;
   src: url("../fonts/VelaSans-Regular.woff") format("woff"), url("../fonts/VelaSans-Regular.woff2") format("woff2");
   font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "VelaSans";
-  font-display: swap;
-  src: url("../fonts/VelaSans-SemiBold.woff") format("woff"), url("../fonts/VelaSans-SemiBold.woff2") format("woff2");
-  font-weight: 600;
   font-style: normal;
 }
 
@@ -1020,6 +1020,10 @@ body.filter-lock {
 .form__field .form__input::placeholder {
   opacity: 1;
   color: #99a2b3;
+}
+
+.form__field.hidden {
+  display: none;
 }
 
 .form__input {
@@ -4286,6 +4290,61 @@ body.filter-lock {
           align-items: center;
 }
 
+.login__input {
+  max-width: 28.125rem;
+  width: 100%;
+}
+
+.login__input-header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.3125rem;
+}
+
+.login__input-btn {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 155%;
+  border-radius: 0.625rem;
+  padding: 0.62rem;
+  background: #f3f6fa;
+  color: rgba(43, 50, 57, 0.5);
+  -webkit-transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.login__input-btn.active {
+  color: #fff;
+  background: #2b3239;
+}
+
+.login__input-blocks {
+  margin-top: 1.25rem;
+}
+
+.login__input-block {
+  display: none;
+}
+
+.login__input-block.active {
+  display: block;
+}
+
+.login__add {
+  margin-top: 0.62rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 155%;
+  color: rgba(43, 50, 57, 0.4);
+}
+
+.login__add-btn {
+  text-decoration: underline;
+  color: #2b3239;
+}
+
 .login__form {
   border-radius: 1.25rem;
   background: #f3f6fa;
@@ -4317,6 +4376,58 @@ body.filter-lock {
 
 .login__form .form__checkbox-text a {
   color: #81a6ca;
+}
+
+.login__form .label {
+  color: #99a2b3;
+  font-size: 1rem;
+  line-height: 155%;
+  display: inline-block;
+  margin-bottom: 0.62rem;
+}
+
+.login__form .form__input {
+  border-radius: 0.5rem;
+  border: 0.0625rem solid #fff;
+  background: #fff;
+  font-weight: 500;
+  padding: 1rem;
+}
+
+.login__form .form__input::-webkit-input-placeholder {
+  opacity: 1;
+  color: #99a2b3;
+}
+
+.login__form .form__input::-moz-placeholder {
+  opacity: 1;
+  color: #99a2b3;
+}
+
+.login__form .form__input:-ms-input-placeholder {
+  opacity: 1;
+  color: #99a2b3;
+}
+
+.login__form .form__input::-ms-input-placeholder {
+  opacity: 1;
+  color: #99a2b3;
+}
+
+.login__form .form__input::placeholder {
+  opacity: 1;
+  color: #99a2b3;
+}
+
+.login__form-fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.88rem;
 }
 
 .login__form-title {
@@ -8014,6 +8125,15 @@ body.filter-lock {
 
   .product__thumb:hover::before {
     opacity: 1;
+  }
+
+  .login__input-btn:hover {
+    color: #fff;
+    background: #2b3239;
+  }
+
+  .login__add-btn:hover {
+    text-decoration: none;
   }
 
   .lk__sidebar-link:hover {

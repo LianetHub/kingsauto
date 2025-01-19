@@ -32,6 +32,9 @@
 				color: #99a2b3;
 			}
 		}
+		&.hidden {
+			display: none;
+		}
 	}
 	// .form__input
 	&__input {

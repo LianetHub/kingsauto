@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    'title': 'KingsAuto | Страница товара'
+    })
+    <body>
+        <section class="wrapper">
+            @@include('html/_header.html', {
+            "className": "",
+            "login": false
+            })
+            <main class="page">
+                <div class="login">
+                    <div class="login__container">
+                        <div class="login__input">
+                            <div class="login__input-header">
+                                <button type="button" class="login__input-btn active">Войти в профиль</button>
+                                <button type="button" class="login__input-btn">Зарегистрироваться</button>
+                            </div>
+                            <div class="login__input-blocks">
+                                <div class="login__input-block active">
+                                    <form action="#" class="login__form">
+                                        <div class="login__form-fields">
+                                            <div class="form__field">
+                                                <div class="label">E-mail:</div>
+                                                <input type="email" name="email" class="form__input" placeholder="Введите e-mail">
+                                            </div>
+                                            <div class="form__field">
+                                                <div class="label">Пароль:</div>
+                                                <input type="password" name="password" class="form__input" placeholder="Введите пароль">
+                                            </div>
+                                        </div>
+
+                                        <label class="form__checkbox">
+                                            <input type="checkbox" checked aria-required="true" class="form__checkbox-input hidden" hidden>
+                                            <span class="form__checkbox-text">
+                                                Запомнить меня
+                                            </span>
+                                        </label>
+                                        <button type="submit" class="login__form-btn btn btn-primary btn-fullwidth">
+                                            Войти
+                                        </button>
+                                    </form>
+                                </div>
+                                <div class="login__input-block">
+                                    <form action="#" class="login__form">
+                                        <div class="login__form-fields">
+                                            <div class="form__field">
+                                                <div class="label">Имя и фамилия:</div>
+                                                <input type="text" name="name" class="form__input">
+                                            </div>
+                                            <div class="form__field">
+                                                <div class="label">Телефон:</div>
+                                                <input type="tel" name="phone" class="phone-input" placeholder="(___) ___–__–__">
+                                            </div>
+                                            <div class="form__field">
+                                                <div class="label">Организация (необязательно)</div>
+                                                <input type="text" name="organization" class="form__input">
+                                                <div class="login__add">
+                                                    <button type="button" class="login__add-btn">
+                                                        + Добавить сведения об организации
+                                                    </button>
+                                                    <span>(можно позже)</span>
+                                                </div>
+                                            </div>
+                                            <div class="form__field hidden">
+                                                <div class="label">Название юр. лица </div>
+                                                <input type="text" name="name-ur" class="form__input">
+                                            </div>
+                                            <div class="form__field hidden">
+                                                <div class="label">ИНН</div>
+                                                <input type="text" name="inn" class="form__input">
+                                            </div>
+                                            <div class="form__field hidden">
+                                                <div class="label">Адрес головного офиса</div>
+                                                <input type="text" name="address" class="form__input">
+                                            </div>
+                                            <div class="form__field">
+                                                <div class="label">E-mail:</div>
+                                                <input type="email" name="email" class="form__input">
+                                            </div>
+                                            <div class="form__field">
+                                                <div class="label">Пароль:</div>
+                                                <input type="password" name="password" class="form__input" placeholder="Введите пароль">
+                                            </div>
+                                        </div>
+                                        <label class="form__checkbox">
+                                            <input type="checkbox" checked aria-required="true" class="form__checkbox-input hidden" hidden>
+                                            <span class="form__checkbox-text">
+                                                я согласен(-на) с <a href="">политикой конфиденциальности</a>
+                                                и&nbsp;даю согласие на обработку <a href="">персональных данных</a>
+                                            </span>
+                                        </label>
+                                        <button type="submit" disabled class="login__form-btn btn btn-primary btn-fullwidth">
+                                            Войти
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            @@include('html/_footer.html', {})
+            @@include('html/_modal.html', {})
+            @@include('html/_js.html', {})
+    </body>
+</html>

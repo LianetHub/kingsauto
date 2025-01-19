@@ -9,6 +9,68 @@
 		justify-content: center;
 		align-items: center;
 	}
+
+	// .login__input
+	&__input {
+		max-width: 28.125rem;
+		width: 100%;
+	}
+	// .login__input-header
+	&__input-header {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: rem(5);
+	}
+	// .login__input-btn
+	&__input-btn {
+		font-size: 0.875rem;
+		font-weight: 500;
+		line-height: 155%;
+		border-radius: 0.625rem;
+		padding: 0.62rem;
+		background: #f3f6fa;
+		color: rgba(43, 50, 57, 0.5);
+		transition: background-color 0.3s ease, color 0.3s ease;
+		&.active {
+			color: #fff;
+			background: #2b3239;
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				color: #fff;
+				background: #2b3239;
+			}
+		}
+	}
+	// .login__input-blocks
+	&__input-blocks {
+		margin-top: 1.25rem;
+	}
+	// .login__input-block
+	&__input-block {
+		display: none;
+		&.active {
+			display: block;
+		}
+	}
+	// .form__add
+	&__add {
+		margin-top: 0.62rem;
+		font-size: 0.75rem;
+		font-weight: 500;
+		line-height: 155%;
+		color: rgba(43, 50, 57, 0.4);
+	}
+	// .form__add-btn
+	&__add-btn {
+		text-decoration: underline;
+		color: #2b3239;
+		@media (any-hover: hover) {
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
 	// .login__form
 	&__form {
 		border-radius: 1.25rem;
@@ -38,6 +100,29 @@
 				color: #81a6ca;
 			}
 		}
+		.label {
+			color: #99a2b3;
+			font-size: 1rem;
+			line-height: 155%;
+			display: inline-block;
+			margin-bottom: 0.62rem;
+		}
+		.form__input {
+			border-radius: 0.5rem;
+			border: rem(1) solid #fff;
+			background: #fff;
+			font-weight: 500;
+			padding: 1rem;
+			&::placeholder {
+				opacity: 1;
+				color: #99a2b3;
+			}
+		}
+	}
+	&__form-fields {
+		display: flex;
+		flex-direction: column;
+		gap: 1.88rem;
 	}
 	// .login__form-title
 	&__form-title {
