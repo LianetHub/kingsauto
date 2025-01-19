@@ -1,0 +1,62 @@
+.error {
+	padding: rem(20) 0 rem(50) 0;
+	@media (min-width: $md5) {
+		padding: rem(30) 0 rem(100) 0;
+	}
+	// .error__container
+	&__container {
+	}
+	// .error__offer
+	&__offer {
+		max-width: rem(503);
+	}
+	// .error__status
+	&__status {
+		font-weight: 500;
+		line-height: math.div(104, 80);
+		font-size: rem(40);
+		@media (min-width: $md5) {
+			font-size: rem(80);
+		}
+	}
+	// .error__title
+	&__title {
+		font-weight: 500;
+		line-height: math.div(62.4, 48);
+		font-size: rem(20);
+		@media (min-width: $md5) {
+			font-size: rem(48);
+		}
+	}
+	// .error__desc
+	&__desc {
+		font-size: rem(14);
+		@media (min-width: $md5) {
+			font-size: 1rem;
+		}
+		margin-top: rem(30);
+		max-width: rem(430);
+		font-weight: 500;
+		line-height: math.div(24.8, 16);
+		& a {
+			text-decoration: underline;
+			color: $accent;
+			font-weight: 700;
+			@media (any-hover: hover) {
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+	// .error__btn
+	&__btn {
+		margin-top: rem(30);
+		@media (max-width: $md5) {
+			font-size: rem(13);
+		}
+		@media (min-width: $md5) {
+			margin-top: rem(50);
+		}
+	}
+}
